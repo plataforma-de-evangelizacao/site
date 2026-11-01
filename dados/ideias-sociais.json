@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "itens": [
+    {
+      "id": "fome-partilha",
+      "tipo": "artigo",
+      "titulo": "Fome e partilha: caminhos para investigar",
+      "descricao": "Artigo proposto para estudar desperdício, acesso a alimentos e cooperação local, com dados e limites das estimativas.",
+      "status": "proposta",
+      "link": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Hunger and sharing: paths to investigate",
+          "descricao": "A proposed article on waste, food access and local cooperation, with data and limits of estimates."
+        },
+        "es": {
+          "titulo": "Hambre y solidaridad: caminos por investigar",
+          "descricao": "Artículo propuesto sobre desperdicio, acceso a alimentos y cooperación local, con datos y límites de las estimaciones."
+        }
+      }
+    },
+    {
+      "id": "ia-bem-comum",
+      "tipo": "palestra",
+      "titulo": "IA para o bem comum",
+      "descricao": "Palestra proposta sobre tarefas que a IA pode apoiar em escolas e comunidades, com supervisão humana e avaliação de resultados.",
+      "status": "proposta",
+      "link": "",
+      "traducoes": {
+        "en": {
+          "titulo": "AI for the common good",
+          "descricao": "A proposed talk on tasks AI may support in schools and communities, with human oversight and evaluation."
+        },
+        "es": {
+          "titulo": "IA para el bien común",
+          "descricao": "Charla propuesta sobre tareas que la IA puede apoyar en escuelas y comunidades, con supervisión humana y evaluación."
+        }
+      }
+    },
+    {
+      "id": "educacao-comunidade",
+      "tipo": "artigo",
+      "titulo": "Educação e comunidade: aprender para servir",
+      "descricao": "Artigo proposto sobre acesso ao conhecimento e colaboração entre educadores, famílias e comunidades.",
+      "status": "proposta",
+      "link": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Education and community: learning to serve",
+          "descricao": "A proposed article on knowledge access and collaboration among educators, families and communities."
+        },
+        "es": {
+          "titulo": "Educación y comunidad: aprender para servir",
+          "descricao": "Artículo propuesto sobre acceso al conocimiento y colaboración entre docentes, familias y comunidades."
+        }
+      }
+    }
+  ]
+}

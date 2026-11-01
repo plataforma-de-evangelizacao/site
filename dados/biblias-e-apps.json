@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Bíblia Online",
+    "tipo": "Site",
+    "descricao": "Leia a Bíblia no navegador e escolha uma tradução. Os links protestantes desta página usam Almeida Corrigida Fiel (ACF).",
+    "link": "https://www.bibliaonline.com.br/acf"
+  },
+  {
+    "titulo": "Bíblia Católica Online",
+    "tipo": "Site",
+    "descricao": "Leitura de edições católicas. Os links católicos desta página usam a Bíblia Ave-Maria.",
+    "link": "https://www.bibliacatolica.com.br/"
+  },
+  {
+    "titulo": "App da Bíblia — YouVersion",
+    "tipo": "Aplicativo",
+    "descricao": "Página oficial para baixar o aplicativo no celular. Confira as traduções disponíveis e escolha a edição desejada.",
+    "link": "https://www.bible.com/pt/app"
+  }
+]

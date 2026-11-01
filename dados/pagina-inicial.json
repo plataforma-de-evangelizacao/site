@@ -1,0 +1,169 @@
+{
+  "how": "Conheça a plataforma",
+  "howIntro": "Encontre caminhos para conhecer a Bíblia, estudar o mundo à luz da fé cristã e transformar aprendizado em cuidado. Aqui você pode ler, ouvir, assistir, fazer perguntas e participar de iniciativas para o bem comum. Escolha por onde começar e siga no seu tempo.",
+  "howSteps": [
+    "Conhecer e estudar: leia a Bíblia e explore fé, virtudes, cuidado de si e disciplinas como filosofia, história e ciências.",
+    "Acompanhar conteúdos: encontre artigos, estudos, filmes, desenhos, músicas, playlists e encontros, escolhendo o formato que combina com você.",
+    "Ajudar e participar: ofereça tempo, conhecimento, alimentos, roupas ou uma parceria; conheça também as ferramentas que queremos desenvolver para a comunidade."
+  ],
+  "library": "Uma biblioteca. Muitas formas de aprender.",
+  "libraryIntro": "Veja o que você encontra por aqui.",
+  "school": "Escola: fé e conhecimento",
+  "schoolIntro": "Filosofia, sociologia, história, artes e outras disciplinas em diálogo com a fé cristã. Aprender com rigor para compreender o mundo e servir melhor ao próximo.",
+  "schoolNote": "Introduções já disponíveis; cursos e materiais aprofundados em preparação. A reflexão teológica é identificada e respeita os métodos de cada disciplina.",
+  "openSchool": "Conhecer a escola →",
+  "fundamentals": "Ler os fundamentos e as introduções →",
+  "projects": "Projeto: tecnologia para servir",
+  "projectsIntro": "Ferramentas gratuitas que queremos desenvolver com apoio de inteligência artificial, começando por necessidades de Nova Bandeirantes. Escolas, igrejas e serviços da comunidade são nossos primeiros focos.",
+  "projectsNote": "Desenvolvimento · etapa de planejamento. Os nomes abaixo são propostas: ainda não há software entregue, vínculo com a prefeitura ou implantação em instituições. Cada ficha terá acesso ao código e à documentação quando disponíveis.",
+  "allProjects": "Ver todos os projetos →",
+  "ideas": "Ideias para o bem comum",
+  "ideasIntro": "Artigos e palestras para investigar desafios sociais, como fome, educação e uso responsável da IA. São propostas de estudo e debate; as soluções precisam de dados, escuta e avaliação.",
+  "partners": "Parcerias que queremos construir",
+  "partnersIntro": "Queremos conversar com comunidades e instituições de Nova Bandeirantes para somar cuidado, ensino e tecnologia. Igreja Católica, Igreja Batista Nacional e Vicentinos são possíveis interlocutores para essa construção.",
+  "partnersNote": "As parcerias com as comunidades abaixo ainda serão propostas. A presença nesta página não indica vínculo institucional ou apoio formal confirmado.",
+  "partnerAction": "Seja nosso parceiro →",
+  "communities": "Conhecer as comunidades →",
+  "donate": "Ajude a levar alimento, roupas e cuidado a quem precisa.",
+  "donateIntro": "Sua contribuição voluntária pode apoiar principalmente pessoas em situação de necessidade em Nova Bandeirantes: alimentos, refeições, roupas e calçados. Também pode sustentar as ferramentas de inteligência artificial, o tempo de desenvolvimento e a produção de materiais da plataforma.",
+  "donateAction": "Conhecer as doações e acessar o Pix →",
+  "contact": "Conversar com a plataforma →",
+  "dayTitle": "Seu momento de hoje",
+  "dayIntro": "Escolha um dia no calendário para encontrar uma oração, uma reflexão, um louvor e uma leitura.",
+  "prev": "Mês anterior",
+  "next": "Próximo mês",
+  "today": "Hoje",
+  "week": [
+    "Dom",
+    "Seg",
+    "Ter",
+    "Qua",
+    "Qui",
+    "Sex",
+    "Sáb"
+  ],
+  "reading": "Leitura bíblica do dia",
+  "pendingReading": "O cronograma da igreja ainda será incluído. Enquanto isso, a passagem sugerida abaixo é uma escolha editorial da plataforma.",
+  "scheduled": "Leitura conforme o cronograma cadastrado.",
+  "prayer": "Comece com uma oração",
+  "prayerNote": "Ore conosco. Você também pode conversar com Deus com suas próprias palavras.",
+  "reflection": "Reflexão do dia",
+  "song": "Um louvor para acompanhar",
+  "listen": "Ouvir ou buscar no YouTube ↗",
+  "openPassage": "Abrir a passagem · ACF em português ↗",
+  "developed": "Disponível",
+  "developing": "Em desenvolvimento",
+  "proposal": "Proposta",
+  "paused": "Pausado",
+  "waitingLink": "Concluído · link a informar",
+  "access": "Acessar projeto ↗",
+  "open": "Abrir conteúdo ↗",
+  "docs": "Documentação ↗",
+  "priority": "",
+  "noResults": "Nenhum item corresponde à busca.",
+  "projectSearch": "Buscar projetos",
+  "all": "Todos os estados",
+  "projectHelp": "Tem uma necessidade ou quer colaborar?",
+  "sharedNote": "Os conteúdos externos podem estar em português. Cada ficha informa o destino disponível; a tradução da interface não traduz vídeos ou softwares.",
+  "libraryItems": [
+    {
+      "id": "biblias",
+      "titulo": "Bíblias e aplicativos",
+      "descricao": "Links para ler a Bíblia, conhecer edições e encontrar aplicativos para o celular."
+    },
+    {
+      "id": "estudo-diario",
+      "titulo": "Estudo diário",
+      "descricao": "Calendário, oração, reflexão e leitura por data."
+    },
+    {
+      "id": "artigos-estudos",
+      "titulo": "Artigos e estudos",
+      "descricao": "Textos e publicações. Primeiros materiais em preparação."
+    },
+    {
+      "id": "filmes-desenhos",
+      "titulo": "Filmes e desenhos",
+      "descricao": "Espaço para filmes bíblicos, desenhos e histórias de fé e superação. A seleção de títulos está em preparação."
+    },
+    {
+      "id": "musicas",
+      "titulo": "Músicas e playlists",
+      "descricao": "Louvores e espaço para playlists do YouTube e Spotify: músicas para ouvir, recomendar e compartilhar."
+    },
+    {
+      "id": "palestras",
+      "titulo": "Palestras e lives",
+      "descricao": "Gravações, encontros e próximos temas. Programação em preparação."
+    },
+    {
+      "id": "baixar-biblia",
+      "titulo": "Bíblias para ler e baixar",
+      "descricao": "Edições, fontes externas, PDFs e aplicativos."
+    },
+    {
+      "id": "escola",
+      "titulo": "Escola e disciplinas",
+      "descricao": "Conhecimento, fé cristã e aplicações no cotidiano."
+    },
+    {
+      "id": "projetos",
+      "titulo": "Projeto: ferramentas e ideias",
+      "descricao": "Ferramentas para escolas, igrejas e comunidade."
+    }
+  ],
+  "libraryLabel": "BIBLIOTECA",
+  "donationPlans": "Queremos organizar apoio a pessoas em situação de rua, famílias e instituições de acolhimento de crianças, conforme as necessidades identificadas e as parcerias que forem construídas. As ações serão apresentadas com seus registros quando realizadas.",
+  "donationFreedom": "Contribua com o que for possível. Doar é voluntário; tempo, conhecimento e trabalho em equipe também fazem diferença.",
+  "qrTitle": "Contribua pelo Pix",
+  "qrNote": "Abra o aplicativo do seu banco e escaneie o QR Code. Confira os dados do destinatário antes de confirmar.",
+  "solidarity": "Ajudar o próximo começa com um gesto.",
+  "solidarityIntro": "Além da contribuição financeira, queremos reunir pessoas para ações concretas em Nova Bandeirantes. Conte o que você pode oferecer ou a necessidade que conhece; combinaremos cada ação antes de receber doações ou organizar um mutirão.",
+  "solidarityItems": [
+    [
+      "Doe alimentos",
+      "Um quilo de alimento não perecível pode fazer parte de uma ação combinada. Fale conosco sobre itens, validade e entrega."
+    ],
+    [
+      "Compartilhe roupas e calçados",
+      "Separe peças limpas e em bom estado. Vamos combinar tamanhos, necessidades e recebimento antes da entrega."
+    ],
+    [
+      "Participe de um mutirão",
+      "Ofereça tempo para preparar refeições, organizar doações ou apoiar melhorias e moradia. Atividades de construção dependem de planejamento e responsáveis qualificados."
+    ]
+  ],
+  "volunteer": "Quero oferecer ajuda →",
+  "whatsapp": "Conversar pelo WhatsApp ↗",
+  "partnersTitle": "Comunidades e possíveis parcerias.",
+  "partnerPending": "Parceria a propor",
+  "qrAlt": "QR Code Pix para contribuição voluntária",
+  "allSpacesAction": "Explorar todos os conteúdos e formas de participar →",
+  "solidarityMore": "Conhecer as formas de ajudar →",
+  "readyGroup": "Gravados, concluídos ou publicados",
+  "pendingGroup": "A desenvolver",
+  "recorded": "Gravado · publicação pendente",
+  "producing": "Em produção",
+  "author1": "Sou Marcos Lucas Pereira, criador da Plataforma Global de Evangelização, em Nova Bandeirantes, Mato Grosso. Meu propósito é servir a Deus e compartilhar os ensinamentos de Jesus por meio do estudo das Escrituras, de reflexões e da criação de conteúdos em linguagem acessível.",
+  "author2": "Quero aproximar fé e vida cotidiana: aprender, fazer perguntas, ensinar com clareza e transformar conhecimento em cuidado com o próximo. A plataforma reúne estudos, artigos, vídeos e propostas de ferramentas que possam ser úteis a escolas, igrejas e à comunidade.",
+  "author3": "Acredito no valor de compartilhar o que aprendemos e de colocar nossas capacidades a serviço das pessoas. Por isso, a proposta também inclui desenvolver ferramentas com apoio de inteligência artificial e construir ações de solidariedade, educação e ajuda a quem mais precisa. Essa caminhada será construída por etapas, com diálogo, responsabilidade e parcerias.",
+  "careHomeTitle": "Cuidar de si também importa.",
+  "careHomeIntro": "Alimentação, descanso, emoções e relações merecem atenção. Encontre reflexões e orientações educativas para reconhecer seus limites, cultivar convivências respeitosas e unir vida espiritual ao cuidado de cada dia.",
+  "careHighlights": [
+    "Corpo e rotina: alimentação, descanso e pausas possíveis.",
+    "Emoções e convivência: reconhecer sentimentos, conversar e buscar apoio.",
+    "Vida espiritual: oração, meditação na Palavra e cuidado com o próximo."
+  ],
+  "faithCenterIntro": "Deus é o centro desta caminhada. Partimos da fé cristã para compreender a criação, buscar sentido no que estudamos e transformar conhecimento em amor e cuidado. Ciência, matemática, história, linguagem, filosofia, artes e ofícios são espaços para essa busca.",
+  "faithCenterPrinciple": "Nossa orientação é buscar em Deus o fundamento para compreender todas as coisas. Estudamos as Escrituras, investigamos cada disciplina e desenvolvemos reflexões sobre criação, existência de Deus e propósito. Identificamos as referências, os argumentos e as interpretações apresentados, com responsabilidade pelo que ensinamos.",
+  "faithCenterMethod": "Cada material deve unir estudo, fé e serviço: conhecer o assunto, refletir sobre Deus como Criador e perguntar como esse aprendizado pode servir à vida e ao próximo. Questões em aberto são acolhidas como parte da busca, com humildade para estudar, ouvir e revisar.",
+  "faithCenterScripture": "Gênesis apresenta a criação como boa; Colossenses expressa a centralidade de Cristo na criação. Essas passagens orientam nossa convicção cristã de colocar Deus no centro do conhecimento e da vida. A leitura das Escrituras acompanha o estudo e a reflexão de cada disciplina.",
+  "projectsHubTitle": "Projeto",
+  "technologyGroup": "Tecnologia para servir",
+  "projectsUnderway": "Projetos em desenvolvimento",
+  "projectHubIntro": "Conheça as ferramentas e ideias que queremos transformar em benefício para a comunidade. Abra um grupo para explorar suas propostas e acompanhar o andamento.",
+  "communityAgenda": "Celebrações, encontros e atividades",
+  "communityIntro": "Conheça os espaços das comunidades de Nova Bandeirantes. Aqui serão apresentados os horários de celebrações, encontros de oração, formação e ações, após confirmação com cada instituição.",
+  "communityPending": "Agenda aguardando informações confirmadas. As parcerias ainda serão propostas.",
+  "openCommunity": "Conhecer a comunidade e sua agenda →"
+}

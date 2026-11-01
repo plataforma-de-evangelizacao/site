@@ -1,0 +1,44 @@
+[
+  {
+    "id": "abraao",
+    "titulo": "Abraham",
+    "testamento": "Antigo Testamento",
+    "ordem": 1,
+    "descricao": "Llamado, camino y alianza. Lectura general de contexto: Génesis 12–25; cada video tendrá sus referencias específicas tras la revisión.",
+    "passagens": [
+      {
+        "referencia": "Génesis 12 — inicio de la lectura de contexto",
+        "protestante": "https://www.bibliaonline.com.br/acf/gn/12",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/genesis/12/"
+      }
+    ]
+  },
+  {
+    "id": "moises",
+    "titulo": "Moisés",
+    "testamento": "Antigo Testamento",
+    "ordem": 2,
+    "descricao": "Nacimiento, salida de Egipto y camino por el desierto. La vida de Moisés se narra principalmente desde Éxodo hasta Deuteronomio; Génesis integra el Pentateuco, pero no narra su vida.",
+    "passagens": [
+      {
+        "referencia": "Éxodo 1 — inicio del contexto narrativo",
+        "protestante": "https://www.bibliaonline.com.br/acf/ex/1",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/exodo/1/"
+      }
+    ]
+  },
+  {
+    "id": "jonas",
+    "titulo": "Jonás",
+    "testamento": "Antigo Testamento",
+    "ordem": 3,
+    "descricao": "La historia de Jonás se narra en los cuatro capítulos del libro. Empieza por el capítulo 1 y continúa hasta el 4.",
+    "passagens": [
+      {
+        "referencia": "Jonás 1 — inicio del libro",
+        "protestante": "https://www.bibliaonline.com.br/acf/jn/1",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/jonas/1/"
+      }
+    ]
+  }
+]

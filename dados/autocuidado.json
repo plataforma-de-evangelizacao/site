@@ -1,0 +1,117 @@
+{
+  "titulo": "Cuidar de si também importa.",
+  "introducao": "Uma vida de fé também pode incluir atenção ao corpo, às emoções, às relações e aos próprios limites. O cuidado não exige perfeição: comece pelo que é possível, sem transformar saúde ou felicidade em uma obrigação.",
+  "nota": "Orientações educativas gerais, com fontes de saúde e reflexões espirituais identificadas. Não substituem avaliação individual. Nenhuma rotina garante uma vida sem tristeza, ansiedade ou dificuldades.",
+  "temas": [
+    {
+      "titulo": "Alimentar o corpo com cuidado",
+      "area": "Corpo",
+      "explicacao": "Prefira, quando possível, alimentos in natura ou minimamente processados e refeições variadas. Considere sua realidade, cultura e acesso a alimentos.",
+      "evitar": "Dietas extremas por conta própria, culpa ao comer e excesso de ultraprocessados.",
+      "pratica": "Planeje uma refeição simples com os alimentos que você tem disponíveis. Necessidades específicas pedem orientação individual.",
+      "reflexao": "Alimentação é cuidado, não medida de santidade ou valor pessoal.",
+      "fonte": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "fonte_titulo": "Guia Alimentar · Ministério da Saúde"
+    },
+    {
+      "titulo": "Descansar também faz parte",
+      "area": "Corpo",
+      "explicacao": "Uma rotina de sono e um ambiente tranquilo podem ajudar no descanso. Busque horários regulares e reduza telas e estimulantes perto de dormir.",
+      "evitar": "Transformar cansaço em culpa e substituir repetidamente o descanso por tarefas.",
+      "pratica": "Escolha um horário possível para começar a desacelerar hoje.",
+      "reflexao": "Você não precisa estar produzindo o tempo todo. A necessidade de sono varia com idade e circunstâncias.",
+      "fonte": "https://www.who.int/news-room/questions-and-answers/item/stress",
+      "fonte_titulo": "Sono e estresse · OMS"
+    },
+    {
+      "titulo": "Movimentar-se dentro das possibilidades",
+      "area": "Corpo",
+      "explicacao": "O movimento faz parte do autocuidado. Escolha uma atividade compatível com suas condições, como caminhar ou fazer uma pausa do tempo sentado.",
+      "evitar": "Comparar desempenho, forçar dor ou buscar uma rotina impossível de sustentar.",
+      "pratica": "Escolha um movimento acessível e agradável. Se houver limitação ou dúvida de saúde, peça orientação.",
+      "reflexao": "Pequenos passos podem ser mais viáveis do que uma mudança radical.",
+      "fonte": "https://www.who.int/news-room/fact-sheets/detail/self-care-health-interventions",
+      "fonte_titulo": "Autocuidado e saúde · OMS"
+    },
+    {
+      "titulo": "Reconhecer emoções sem se condenar",
+      "area": "Emoções",
+      "explicacao": "Nomear uma emoção pode ser um começo para perceber como responder. Um pensamento difícil não precisa determinar a próxima atitude.",
+      "evitar": "Tratar toda tristeza como falha moral ou acreditar que precisa resolver tudo sozinho.",
+      "pratica": "Pergunte: o que estou sentindo, do que preciso e qual pequeno passo combina com meus valores?",
+      "reflexao": "Exercício de reflexão inspirado em educação para manejo do estresse, não diagnóstico nem promessa de cura.",
+      "fonte": "https://www.who.int/thailand/news/feature-stories/detail/doing-what-matters-in-times-of-stress",
+      "fonte_titulo": "Lidar com estresse · OMS"
+    },
+    {
+      "titulo": "Oração e meditação na Palavra",
+      "area": "Fé",
+      "explicacao": "Reserve um momento possível para ler a passagem em contexto, orar com sinceridade e refletir sobre uma atitude concreta.",
+      "evitar": "Usar a oração para se punir, comparar sua fé com a de outras pessoas ou abandonar cuidados de saúde necessários.",
+      "pratica": "Leia uma passagem do calendário e leve uma pergunta e uma gratidão à oração.",
+      "reflexao": "Prática espiritual e cuidado psicológico ou médico podem caminhar juntos. Sofrimento emocional não prova falta de fé.",
+      "fonte": "https://www.bibliaonline.com.br/acf/mc/6",
+      "fonte_titulo": "Marcos 6:30–32 · leitura bíblica"
+    },
+    {
+      "titulo": "Escolher convivência respeitosa",
+      "area": "Convivência",
+      "explicacao": "Busque relações em que haja escuta, respeito aos limites e espaço para pedir ajuda. Diferenças de opinião não tornam alguém uma má companhia.",
+      "evitar": "Normalizar humilhações, ameaças, controle ou pressão para fazer algo que fere seus limites.",
+      "pratica": "Converse com uma pessoa de confiança. Em relações violentas, priorize proteção e apoio, em vez de enfrentar tudo sem ajuda.",
+      "reflexao": "Estabelecer limites não exige desprezar pessoas nem se isolar de todos.",
+      "fonte": "https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+      "fonte_titulo": "Ambientes e saúde mental · OMS"
+    },
+    {
+      "titulo": "Criar ambientes que favoreçam o bem",
+      "area": "Convivência",
+      "explicacao": "Observe situações que se repetem antes de um hábito que você quer mudar. Ajuste o ambiente e prepare uma alternativa possível.",
+      "evitar": "Concluir que um lugar ou um grupo inteiro é impuro; ignorar situações concretas de risco ou violência.",
+      "pratica": "Se discussões em uma conversa online sempre terminam em agressão, silencie as notificações e reserve outro momento para responder.",
+      "reflexao": "Esses são exemplos de organização da rotina e auto-observação, não regras universais sobre pessoas.",
+      "fonte": "https://www.who.int/news-room/questions-and-answers/item/stress",
+      "fonte_titulo": "Rotina e conexão social · OMS"
+    },
+    {
+      "titulo": "Músicas e conteúdos: observe o efeito em você",
+      "area": "Música e telas",
+      "explicacao": "Não há uma lista universal de gêneros que deixam todas as pessoas para baixo. Avalie letras, lembranças e o que você percebe antes e depois de ouvir.",
+      "evitar": "Continuar por obrigação quando um conteúdo agrava seu sofrimento; ouvir em volume alto por muito tempo.",
+      "pratica": "Experimente uma pausa ou outra seleção e observe a diferença. Mantenha volume confortável e faça intervalos.",
+      "reflexao": "Uma música triste também pode acolher. Escolher outra faixa é uma decisão pessoal, não uma condenação de todo um gênero.",
+      "fonte": "https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-safe-listening",
+      "fonte_titulo": "Escuta segura · OMS (orientações sobre volume e exposição)"
+    },
+    {
+      "titulo": "Limites para telas e sobrecarga",
+      "area": "Rotina",
+      "explicacao": "Distribua seu tempo entre responsabilidades, pausas, convivência e atividades de que gosta. Reduza a exposição a notícias se perceber sobrecarga.",
+      "evitar": "Passar horas consumindo discussões ou comparações que roubam seu descanso.",
+      "pratica": "Escolha uma pequena janela sem notificações para comer, conversar ou descansar.",
+      "reflexao": "Ajustar uma rotina pede tentativas e apoio; dificuldades de atenção não devem virar motivo de vergonha.",
+      "fonte": "https://www.who.int/news-room/questions-and-answers/item/stress",
+      "fonte_titulo": "Manejo do estresse · OMS"
+    },
+    {
+      "titulo": "Pedir ajuda também é autocuidado",
+      "area": "Apoio",
+      "explicacao": "Se o sofrimento persiste ou interfere no sono, na alimentação e na vida cotidiana, procure uma UBS ou um profissional de saúde.",
+      "evitar": "Substituir tratamento por conselhos genéricos ou interromper medicação por conta própria.",
+      "pratica": "Compartilhe suas dificuldades com alguém confiável e peça ajuda para organizar um atendimento.",
+      "reflexao": "Descanso, apoio e tratamento não diminuem sua fé. Não é preciso esperar piorar para buscar cuidado.",
+      "fonte": "https://www.who.int/en/news-room/fact-sheets/detail/depression",
+      "fonte_titulo": "Cuidado e busca de atendimento · OMS"
+    }
+  ],
+  "pausa": {
+    "titulo": "Uma pausa de atenção",
+    "texto": "Se for confortável, pare por um momento, perceba os pés apoiados e observe o ambiente ao seu redor. Nomeie o que sente sem precisar resolver tudo agora. Depois, escolha uma próxima ação pequena e possível.",
+    "fonte": "https://www.who.int/thailand/news/feature-stories/detail/doing-what-matters-in-times-of-stress"
+  },
+  "passagem": {
+    "referencia": "Marcos 6:30–32",
+    "explicacao": "Nesse episódio, Jesus convida os apóstolos a se retirarem e descansarem depois de suas atividades. É uma passagem para refletir sobre limites e descanso, não uma prescrição clínica.",
+    "link": "https://www.bibliaonline.com.br/acf/mc/6"
+  }
+}

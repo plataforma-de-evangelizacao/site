@@ -1,0 +1,72 @@
+{
+  "nav": "I need help",
+  "short": "Help",
+  "eyebrow": "WELCOME AND SUPPORT",
+  "title": "You do not have to face this without support.",
+  "intro": "If you are distressed, deeply sad, anguished or thinking of hurting yourself, you deserve to be heard and taken seriously. This space helps you find a next step and human support.",
+  "now": "I need help now",
+  "later": "I want support for the days ahead",
+  "urgentTitle": "If you are thinking of suicide or hurting yourself now",
+  "urgentText": "If you feel you may act, have already injured yourself or taken something to harm yourself, seek emergency care now. In Brazil, call 192 (SAMU) or go to an emergency department with someone. Do not wait for a reply from the project.",
+  "emergency": "Call 192 · SAMU (Brazil)",
+  "country": "The services below are in Brazil, regardless of the language selected. Outside Brazil, seek the official emergency service and crisis resources of the country where you are.",
+  "safeTitle": "One safe next step",
+  "safeSteps": [
+    "Try to stay with someone you trust. Tell them directly that you need company and help.",
+    "Move away from objects or situations that could put you at risk. If possible, ask someone to help make the environment safer.",
+    "If you are a child or adolescent, seek a safe adult: a relative, teacher, caregiver or health professional.",
+    "If there is immediate danger, prioritize emergency care. Chat and email do not replace emergency treatment."
+  ],
+  "listenTitle": "Talk with someone",
+  "listenText": "CVV offers compassionate, free and confidential listening by phone and chat. The phone service operates 24 hours; check chat availability when opening the service.",
+  "call": "Call 188 · CVV (Brazil)",
+  "chat": "Open CVV chat",
+  "connectTitle": "Finding the words can be difficult.",
+  "connectText": "You can copy this message and send it to someone you trust. The site does not send it for you.",
+  "message": "I am not doing well and need company. Can you stay with me or help me get care?",
+  "copy": "Copy a message asking for company",
+  "copied": "Message copied. Choose someone you trust and send it in whichever way you prefer.",
+  "copyFailed": "Select the message above and copy it using your device’s menu.",
+  "nextTitle": "Care beyond this moment",
+  "nextText": "Faith can accompany care. Depression and emotional suffering do not prove a lack of faith. Psychotherapy, medical assessment, social support and spiritual care can be part of a support network.",
+  "cards": [
+    {
+      "title": "Depression, anguish and existential distress",
+      "text": "If sadness or anguish persists or affects your life, seek a primary health unit (UBS), a CAPS centre or a health professional. You do not have to wait until you reach a breaking point to ask for help.",
+      "action": "Learn about Brazil’s SUS CAPS network",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps/caps/"
+    },
+    {
+      "title": "Alcohol and other substances",
+      "text": "Seek a primary health unit or CAPS to discuss appropriate care. For someone with alcohol dependence, stopping suddenly can cause severe withdrawal; seek medical guidance to do so safely. Do not change medication on your own.",
+      "action": "Brazilian Ministry of Health guidance on alcohol",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/transtornos-por-uso-de-alcool-no-adulto/servico-de-atendimento-movel/manejo-inicial/"
+    },
+    {
+      "title": "I want to stop smoking",
+      "text": "Brazil’s SUS offers care for people who want to stop smoking. Ask a nearby primary health unit about local services. You can seek support to plan the change and deal with difficulties without condemning yourself for needing help.",
+      "action": "Brazil’s SUS guidance for stopping smoking",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/tabagismo/sou-paciente/"
+    },
+    {
+      "title": "If there is a risk of hurting someone",
+      "text": "Step away from the argument and confrontations. Seek a safe person or emergency care if you cannot keep yourself and others safe. You can ask for help before acting.",
+      "action": "Learn about SAMU emergency care in Brazil",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192"
+    }
+  ],
+  "pauseTitle": "An optional pause, without pressure",
+  "pauseText": "If it feels comfortable, notice your feet or body being supported and observe a few things around you. You do not have to solve everything this minute. If this increases discomfort, stop and seek company. A pause does not replace help in an emergency.",
+  "faithTitle": "If prayer feels right for you",
+  "prayer": "God of mercy, receive my pain and help me take a safe next step. Give me courage to ask for company and accept care. May I find people who listen respectfully. In Jesus’ name, amen.",
+  "faithNote": "An original prayer by the platform. It is not a promise of healing and does not replace treatment. Asking for help does not diminish your faith.",
+  "contactTitle": "Contacting the platform",
+  "contactText": "For a conversation about the project or a prayer request, you can write to Marcos. Email is not monitored 24 hours, has no guaranteed response time and is not a crisis channel.",
+  "contactAction": "Write an email to the project",
+  "careAction": "Continue to Caring for yourself →",
+  "privacy": "This space does not ask for a diagnosis, collect crisis accounts or send messages automatically. External sites have their own policies.",
+  "sourcesTitle": "Sources and limits",
+  "sourcesText": "This is an educational and referral space. Guidance does not replace professional assessment. Colours, music and texts may feel more or less comfortable for each person; they do not cure depression or guarantee prevention of a crisis.",
+  "home": "Is it difficult right now? Find human support and ways to ask for help.",
+  "homeAction": "Open welcome and support →"
+}

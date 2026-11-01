@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Bíblia Livre — edição Textus Receptus",
+    "tradicao": "Protestante",
+    "versao": "BLIVRE · edição 2018",
+    "conteudo": "Bíblia completa · 66 livros",
+    "descricao": "PDF em formato A4 para leitura offline e impressão. Preserve os créditos e a licença presentes no arquivo.",
+    "link": "https://ebible.org/pdf/porbr2018/porbr2018_a4.pdf",
+    "fonte": "https://ebible.org/pdf/porbr2018/",
+    "creditos": "© Diego Santos, Mario Sérgio e Marco Teles. Licença e atribuição conforme o PDF de origem."
+  },
+  {
+    "titulo": "Bíblia Livre Para Todos",
+    "tradicao": "Protestante",
+    "versao": "BLT · Novo Testamento",
+    "conteudo": "Somente o Novo Testamento",
+    "descricao": "PDFs em diferentes tamanhos. Este material não inclui o Antigo Testamento.",
+    "link": "https://ebible.org/pdf/porblt/",
+    "fonte": "https://ebible.org/details.php?id=porblt",
+    "creditos": "© 2022 Free Bible Ministry, Inc. CC BY-SA 4.0; preserve os créditos e a licença."
+  },
+  {
+    "titulo": "Bíblia católica em PDF",
+    "tradicao": "Católica",
+    "versao": "Edição a selecionar",
+    "conteudo": "Espaço reservado · 73 livros",
+    "descricao": "O arquivo e o link serão adicionados depois de conferir a edição e a autorização de distribuição.",
+    "link": "",
+    "fonte": "",
+    "creditos": ""
+  }
+]

@@ -1,0 +1,1 @@
+# Title / Category / HTTPS URL / Description; separated by |. Keep category identifiers in Portuguese.
