@@ -73,3 +73,9 @@ Fontes consultadas:
 - OMS, Doing What Matters in Times of Stress: https://www.who.int/publications-detail-redirect/9789240003927
 
 Validação: conteúdo e navegação nos três idiomas, sete áreas, quatro passos de discernimento e quatro de colaboração; preservação dos acervos anteriores e do planejamento compartilhado. Nenhum conteúdo externo foi traduzido automaticamente.
+
+## Ajustes finais de apresentação e manual
+
+Entrada reorganizada, convites simplificados e fontes ampliadas; reflexão editorial ligada ao seu passo e referência; doações com QR preservado, contato WhatsApp, solidariedade e três comunidades ainda sem parceria formal. Caminho da Escola passa a descrever registro de saída e retirada, em aplicação futura restrita. README.md documenta todas as áreas, arquivos, receitas de edição e limites das integrações. scripts/validar_site.py permite conferência básica local.
+
+Requisitos de repositório privado e Pages consultados na documentação oficial do GitHub em 1/11/2026: https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site e https://docs.github.com/en/get-started/learning-about-github/githubs-plans. A visibilidade do repositório não foi alterada.

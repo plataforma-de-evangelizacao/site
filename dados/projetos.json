@@ -4,10 +4,10 @@
     {
       "id": "escola-aberta",
       "titulo": "Escola Aberta — gestão escolar",
-      "descricao": "Primeira frente de desenvolvimento. Proposta para organizar calendário, tarefas administrativas, materiais e comunicação de uma escola. O escopo será definido com educadores antes da programação.",
+      "descricao": "Proposta para organizar calendário, tarefas administrativas, materiais e comunicação de uma escola. O escopo será definido com educadores antes da programação.",
       "status": "em-desenvolvimento",
       "etapa": "planejamento",
-      "prioridade": true,
+      "prioridade": false,
       "link": "",
       "repositorio": "",
       "documentacao": "",
@@ -15,11 +15,11 @@
       "traducoes": {
         "en": {
           "titulo": "Open School — school management",
-          "descricao": "First development priority. A proposal to organize a school’s calendar, administrative tasks, resources and communication. Scope will be defined with educators before coding."
+          "descricao": "A proposal to organize a school’s calendar, administrative tasks, resources and communication. Scope will be defined with educators before coding."
         },
         "es": {
           "titulo": "Escuela Abierta — gestión escolar",
-          "descricao": "Primera prioridad de desarrollo. Propuesta para organizar calendario, tareas administrativas, materiales y comunicación de una escuela. El alcance se definirá con educadores antes de programar."
+          "descricao": "Propuesta para organizar calendario, tareas administrativas, materiales y comunicación de una escuela. El alcance se definirá con educadores antes de programar."
         }
       }
     },
@@ -48,7 +48,7 @@
     {
       "id": "caminho-escola",
       "titulo": "Caminho da Escola — apoio ao transporte escolar",
-      "descricao": "Proposta para organizar rotas, horários e ocorrências do transporte escolar. Ainda exige levantamento local e avaliação dos responsáveis; sem rastreamento de alunos nesta plataforma.",
+      "descricao": "Ferramenta proposta para apoiar a saída segura das crianças: registrar se vão no transporte escolar ou se foram retiradas por um responsável autorizado. Motorista, secretaria e portaria poderão consultar a mesma atualização no celular ou computador. Identificação com foto, confirmação por profissional autorizado e histórico das saídas serão planejados em uma área restrita. O sistema ainda não foi desenvolvido.",
       "status": "em-desenvolvimento",
       "etapa": "planejamento",
       "prioridade": false,
@@ -59,11 +59,11 @@
       "traducoes": {
         "en": {
           "titulo": "School Route — school transport support",
-          "descricao": "A proposal to organize school transport routes, schedules and incidents. Local assessment and review by responsible staff are still needed; this platform does not track students."
+          "descricao": "A proposed tool to support children’s safe departure: record whether they take school transport or have been collected by an authorized guardian. Drivers, office staff and gate staff would share updates on phones or computers. Photo identification, confirmation by authorized staff and departure history are planned for a restricted area. The system has not yet been developed."
         },
         "es": {
           "titulo": "Camino a la Escuela — apoyo al transporte escolar",
-          "descricao": "Propuesta para organizar rutas, horarios e incidencias del transporte escolar. Requiere evaluación local y de los responsables; esta plataforma no rastrea estudiantes."
+          "descricao": "Herramienta propuesta para apoyar la salida segura de los niños: registrar si usan transporte escolar o si los recogió un responsable autorizado. Conductores, secretaría y portería podrán consultar la misma actualización en móvil u ordenador. Identificación con foto, confirmación autorizada e historial se planificarán en un área restringida. El sistema aún no está desarrollado."
         }
       }
     },

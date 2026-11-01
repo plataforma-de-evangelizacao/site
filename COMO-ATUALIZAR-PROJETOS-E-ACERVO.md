@@ -21,7 +21,7 @@ A regra verifica se há uma URL HTTPS no arquivo. Ela não verifica se o softwar
 - documentacao: endereço HTTPS de documentação pública, por exemplo no Drive.
 - status: em-desenvolvimento, proposta, pausado, concluido ou disponivel.
 - etapa: planejamento, prototipo ou outra descrição interna; os seis atuais estão em planejamento.
-- prioridade: true para o primeiro projeto; false nos demais.
+- prioridade: campo legado, sem selo visual nesta versão.
 - licenca: a-definir até escolher a licença real do software.
 
 Quando o projeto tiver código pronto para divulgar, preencha repositorio e/ou link. A ficha e a vitrine inicial mudam juntas. No momento, as três primeiras fichas formam o destaque da página inicial; a página Projetos mostra todas, com busca e filtro.
@@ -70,3 +70,7 @@ Ao editar JSON publicados, o site os relê. A prévia HTML independente é uma f
 5. Abra o botão e confira o destino como visitante.
 
 Não existe consulta contínua à sua conta GitHub nem acesso ao computador de quem administra. A atualização acontece porque o JSON foi publicado junto do site. Agendamentos e sincronizações externas continuam pendentes.
+
+## Grupos de andamento e manual completo
+
+Projetos, ideias sociais e catálogo comum agora separam A desenvolver e Gravados, concluídos ou publicados. gravado mantém publicação pendente sem botão principal; em-producao sem link permanece em desenvolvimento. As regras detalhadas, exemplos antes/depois e procedimentos completos estão no README.md, que é a referência atual.

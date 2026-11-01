@@ -1,13 +1,13 @@
 {
   "how": "Discover the platform",
-  "howIntro": "A meeting place for Christian faith, learning and care. Choose a subject, find your preferred format and continue at your own pace.",
+  "howIntro": "Find paths to explore the Bible, study the world in dialogue with Christian faith and turn learning into care. Read, listen, watch, ask questions and take part in initiatives for the common good. Choose where to begin and continue at your own pace.",
   "howSteps": [
-    "Discover: three paths organize all the spaces.",
-    "Choose: the library brings together studies, videos, music and resources.",
-    "Participate: share knowledge, propose a partnership or support an activity."
+    "Learn and study: read the Bible and explore faith, virtues, self-care and subjects such as philosophy, history and science.",
+    "Follow the content: find articles, studies, films, animation, music, playlists and gatherings in your preferred format.",
+    "Help and participate: offer time, knowledge, food, clothing or a partnership; discover the tools we aim to develop for the community."
   ],
   "library": "One library. Many ways to learn.",
-  "libraryIntro": "See what you can find here. Spaces under preparation are clearly marked.",
+  "libraryIntro": "See what you can find here.",
   "school": "School: faith and knowledge",
   "schoolIntro": "Philosophy, sociology, history, arts and other subjects in dialogue with Christian faith. Learn carefully to understand the world and better serve others.",
   "schoolNote": "Introductions are available; courses and in-depth resources are in preparation. Theological reflection is identified and respects each discipline’s methods.",
@@ -20,16 +20,16 @@
   "ideas": "Ideas for the common good",
   "ideasIntro": "Articles and talks to investigate social challenges such as hunger, education and responsible AI. These are proposals for study and discussion; solutions require data, listening and evaluation.",
   "partners": "Partnerships we want to build",
-  "partnersIntro": "People, communities and institutions can contribute care, education and technology. Explore the communities presented and contact us to build a partnership.",
-  "partnersNote": "The communities mentioned are faith references. Formal institutional partnerships will be identified when confirmed.",
+  "partnersIntro": "We want to talk with communities and institutions in Nova Bandeirantes to contribute care, education and technology. The Catholic Church, Igreja Batista Nacional and Vincentian volunteers are potential partners for these conversations.",
+  "partnersNote": "Partnerships with the communities below have yet to be proposed. Their presence on this page does not indicate a confirmed institutional relationship or formal support.",
   "partnerAction": "Become a partner →",
   "communities": "Explore the communities →",
-  "donate": "A voluntary contribution can support care.",
-  "donateIntro": "Food, clothing and dignity guide our mission. View Pix information, the QR code and the channel for receipts. You can also contribute time, knowledge and partnerships.",
+  "donate": "Help bring food, clothing and care to those in need.",
+  "donateIntro": "Your voluntary contribution can primarily support people in need in Nova Bandeirantes with food, meals, clothing and footwear. It can also sustain AI tools, development time and the production of platform resources.",
   "donateAction": "View donations and Pix details →",
   "contact": "Contact the platform →",
   "dayTitle": "Your moment today",
-  "dayIntro": "Choose a calendar day to find a prayer, a reflection, a worship song and the scheduled reading.",
+  "dayIntro": "Choose a day on the calendar to find a prayer, a reflection, a worship song and a reading.",
   "prev": "Previous month",
   "next": "Next month",
   "today": "Today",
@@ -46,7 +46,7 @@
   "pendingReading": "The church’s reading schedule will be added later. Meanwhile, the passage suggested below is an editorial choice by the platform.",
   "scheduled": "Reading from the registered schedule.",
   "prayer": "Begin with a prayer",
-  "prayerNote": "An original platform prayer, selected by date from 2,000 variations. You can pray in your own words.",
+  "prayerNote": "Pray with us. You can also speak to God in your own words.",
   "reflection": "Reflection of the day",
   "song": "A worship song to accompany you",
   "listen": "Listen or search on YouTube ↗",
@@ -59,13 +59,18 @@
   "access": "Open project ↗",
   "open": "Open content ↗",
   "docs": "Documentation ↗",
-  "priority": "FIRST PROJECT",
+  "priority": "",
   "noResults": "No items match your search.",
   "projectSearch": "Search projects",
   "all": "All statuses",
   "projectHelp": "Have a need or want to collaborate?",
   "sharedNote": "External content may be in Portuguese. Each entry shows its available destination; translating the interface does not translate videos or software.",
   "libraryItems": [
+    {
+      "id": "biblias",
+      "titulo": "Bibles and apps",
+      "descricao": "Links to read the Bible, explore editions and find mobile apps."
+    },
     {
       "id": "estudo-diario",
       "titulo": "Daily study",
@@ -79,12 +84,12 @@
     {
       "id": "filmes-desenhos",
       "titulo": "Films and animation",
-      "descricao": "Catalogue by title and story; selection in preparation."
+      "descricao": "A space for biblical films, animation and stories of faith and resilience. Title selection is in preparation."
     },
     {
       "id": "musicas",
-      "titulo": "Music and worship",
-      "descricao": "Listening suggestions and a space for playlists."
+      "titulo": "Music and playlists",
+      "descricao": "Worship songs and a space for YouTube and Spotify playlists to listen to, recommend and share."
     },
     {
       "id": "palestras",
@@ -107,5 +112,50 @@
       "descricao": "Tools for schools, churches and the community."
     }
   ],
-  "libraryLabel": "LIBRARY"
+  "libraryLabel": "LIBRARY",
+  "donationPlans": "We aim to organize support for people experiencing homelessness, families and child-care institutions according to identified needs and partnerships built. Activities will be presented with records when carried out.",
+  "donationFreedom": "Contribute what you can. Giving is voluntary; time, knowledge and teamwork also make a difference.",
+  "qrTitle": "Contribute with Pix",
+  "qrNote": "Open your banking app and scan the QR code. Check the recipient details before confirming.",
+  "solidarity": "Helping others starts with one act.",
+  "solidarityIntro": "Beyond financial contributions, we want to bring people together for practical activities in Nova Bandeirantes. Tell us what you can offer or a need you know; each activity will be arranged before receiving donated goods or organizing volunteers.",
+  "solidarityItems": [
+    [
+      "Donate food",
+      "A kilogram of non-perishable food can contribute to an arranged activity. Contact us about items, expiry dates and delivery."
+    ],
+    [
+      "Share clothing and footwear",
+      "Set aside clean items in good condition. We will agree on sizes, needs and collection before delivery."
+    ],
+    [
+      "Volunteer together",
+      "Offer time to prepare meals, organize donations or support improvements and housing. Construction work requires planning and qualified supervision."
+    ]
+  ],
+  "volunteer": "I want to help →",
+  "whatsapp": "Talk on WhatsApp ↗",
+  "partnersTitle": "Communities and potential partnerships.",
+  "partnerPending": "Partnership to propose",
+  "qrAlt": "Pix QR code for voluntary contributions",
+  "allSpacesAction": "Explore all content and ways to participate →",
+  "solidarityMore": "Explore ways to help →",
+  "readyGroup": "Recorded, completed or published",
+  "pendingGroup": "To develop",
+  "recorded": "Recorded · publication pending",
+  "producing": "In production",
+  "author1": "I am Marcos Lucas Pereira, creator of the Global Evangelization Platform in Nova Bandeirantes, Mato Grosso, Brazil. My purpose is to serve God and share Jesus’ teachings through the study of Scripture, reflection and content in accessible language.",
+  "author2": "I want to bring faith and everyday life closer: learn, ask questions, teach clearly and turn knowledge into care for others. The platform brings together studies, articles, videos and proposed tools that may help schools, churches and the community.",
+  "author3": "I believe in sharing what we learn and putting our abilities at the service of others. The project therefore also includes developing tools with AI assistance and building initiatives for solidarity, education and support for those most in need. This work will grow step by step through dialogue, responsibility and partnerships.",
+  "careHomeTitle": "Caring for yourself matters too.",
+  "careHomeIntro": "Food, rest, emotions and relationships deserve attention. Find reflections and educational guidance to recognize your limits, nurture respectful relationships and bring spiritual life into everyday care.",
+  "careHighlights": [
+    "Body and routine: food, rest and achievable breaks.",
+    "Emotions and relationships: recognize feelings, talk and seek support.",
+    "Spiritual life: prayer, reflection on Scripture and care for others."
+  ],
+  "faithCenterIntro": "God is at the centre of this journey. We begin from Christian faith to understand creation, seek meaning in what we study and turn knowledge into love and care. Science, mathematics, history, language, philosophy, arts and crafts are places for this search.",
+  "faithCenterPrinciple": "Our guiding commitment is to look to God as the foundation for understanding all things. We study Scripture, investigate each discipline and develop reflections on creation, God’s existence and purpose. We identify the sources, arguments and interpretations we present, taking responsibility for what we teach.",
+  "faithCenterMethod": "Each resource should unite study, faith and service: learn the subject, reflect on God as Creator and ask how this learning can serve life and others. Open questions are part of the search, with humility to study, listen and revise.",
+  "faithCenterScripture": "Genesis presents creation as good; Colossians expresses Christ’s centrality in creation. These passages guide our Christian conviction to place God at the centre of knowledge and life. Reading Scripture accompanies the study and reflection of each discipline."
 }

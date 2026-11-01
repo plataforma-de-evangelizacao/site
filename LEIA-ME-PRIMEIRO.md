@@ -50,3 +50,7 @@ Na página inicial, abra Corpo, vontade e escolhas. O estudo reúne atenção, s
 ## Página inicial ampliada e projetos
 
 Abra a nova prévia. O início mostra como a plataforma funciona, momento diário com calendário, biblioteca, Escola, projetos e participação. O primeiro software proposto é Escola Aberta. Os seis projetos ainda estão em planejamento. Para atualizar estados e links, leia COMO-ATUALIZAR-PROJETOS-E-ACERVO.md. README.md apresenta o repositório.
+
+## Manual completo
+
+O README.md desta entrega é o guia principal, com mapa de áreas, tabela de arquivos, modelos e passo a passo de manutenção. As alterações dos áudios já estão aplicadas. O mesmo manual é fornecido separadamente como README-PLATAFORMA-GLOBAL.md. Não confundir com o README do plugin editorial pessoal.

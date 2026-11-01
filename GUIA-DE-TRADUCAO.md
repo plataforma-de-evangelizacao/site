@@ -59,3 +59,5 @@ corpo-escolhas.json existe nas três pastas de idioma. Os sete campos são uma o
 ## Novos catálogos compartilhados
 
 projetos.json, ideias-sociais.json e catalogo-conteudos.json ficam somente na raiz dados/, como planejamento.json. Estados e links são compartilhados, títulos e descrições têm traducoes.en/es. pagina-inicial.json possui versões em cada idioma. Preservar essas exceções no roteador de fetch.
+
+A prestação de contas usa dados/prestacao-contas.json compartilhado, sem cópias EN/ES dos números. assets/accounts.js traduz interface e meses; descrições/documentos podem permanecer no idioma original. A pergunta de fé em Ciência foi atualizada em todas as fontes equivalentes.

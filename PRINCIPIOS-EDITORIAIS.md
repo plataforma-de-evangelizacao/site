@@ -2,7 +2,7 @@
 
 Orientação definida por Marcos Lucas Pereira em 1 de novembro de 2026 para a Plataforma Global de Evangelização.
 
-**Estudar o mundo à luz da fé cristã, colocando Deus em evidência e relacionando o conhecimento ao cuidado com a criação e com o próximo.**
+**Deus é o centro e o fundamento da abordagem da plataforma. Estudar o mundo à luz da fé cristã, buscando em Deus compreensão, sentido e propósito, e relacionar o conhecimento ao cuidado com a criação e com o próximo.**
 
 A proposta está ligada à playlist “Deus, de uma forma quase não vista ou comentada”. Aplica-se ao planejamento dos artigos, livros, roteiros, aulas, palestras, músicas comentadas e materiais de ensino. Não exige repetir o nome de Deus artificialmente a cada parágrafo: o propósito deve orientar a abordagem e suas aplicações.
 
@@ -22,7 +22,7 @@ Antes de começar, retomar com Marcos: “Você escolheu relacionar o aprendizad
 
 - Apresentar Deus como Criador como convicção da fé cristã. Não apresentar isso como resultado de um experimento.
 - Não afirmar conhecer por que Deus criou uma regra, fenômeno ou disciplina quando as fontes não sustentarem essa afirmação. Formular a pergunta e explicitar a interpretação.
-- Não preencher lacunas do conhecimento com uma alegação divina nem inventar concordâncias científicas, causalidades psicológicas ou citações bíblicas.
+- Levar a Deus, pela fé, as perguntas e os limites do que conhecemos, buscando sentido, orientação e respostas à luz das Escrituras. Identificar a interpretação cristã apresentada e não inventar concordâncias científicas, causalidades psicológicas ou citações bíblicas.
 - Ciência e fé podem dialogar; não têm todos os mesmos métodos, perguntas ou critérios de verificação. Registrar tensões e diferentes interpretações com honestidade.
 - Tratar pessoas de outras crenças e pessoas sem religião com dignidade. Convidar à reflexão sem constranger a consciência.
 - Distinguir explicação de fenômenos de orientação de saúde. Não diagnosticar visitantes, associar sofrimento automaticamente a pecado ou substituir cuidado profissional por oração.
@@ -53,3 +53,11 @@ Ciência; matemática; história; geografia; linguagem e semântica; filosofia; 
 A fé cristã orienta o propósito, mas não deve ser usada para responsabilizar quem está em sofrimento por sua condição. Depressão, crise e dependência pedem cuidado e encaminhamento adequado. Oração e comunidade podem acompanhar, sem substituir atendimento profissional. Não prometer cura pelo site, por cores ou por conteúdos.
 
 Nas traduções, preservar o sentido, a sequência, as referências e a atribuição. Distinguir traduções editoriais de citações de edições bíblicas publicadas. Respeitar diferenças linguísticas sem acrescentar conclusões ao texto. Os contatos de apoio são regionais: idioma não equivale a país.
+
+## Deus no centro das disciplinas
+
+Marcos reafirmou que Deus deve ser o centro da abordagem em todas as áreas. As perguntas da plataforma investigam criação, propósito, existência de Deus e serviço ao próximo a partir da perspectiva cristã. Os materiais poderão apresentar argumentos filosóficos e teológicos sobre a existência de Deus e interpretações bíblicas identificadas. Cada argumento deve explicitar suas premissas, alcance e limites, sem ser rotulado como prova experimental ou demonstração matemática quando não o for. Não atribuir uma intenção divina específica como revelação recebida pelo autor ou pelo assistente. Artigos, playlists, livros e palestras serão desenvolvidos e revisados por disciplina.
+
+## Orientação reafirmada pelo responsável
+
+Marcos definiu como inegociável nesta plataforma: “Preciso de Deus para explicar todas as coisas.” Esse é o ponto de partida confessional do projeto, a ser respeitado em todos os materiais. Os conteúdos devem buscar em Deus compreensão da criação, do conhecimento e da vida, incluindo questões em aberto. Ao desenvolver respostas, registrar as Escrituras, o contexto e os argumentos usados, distinguindo a convicção cristã da alegação de uma demonstração formal. A plataforma acolhe perguntas e pessoas com respeito.

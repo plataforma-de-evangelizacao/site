@@ -2,7 +2,7 @@
 
 ## Publicar pela primeira vez
 
-Extraia o ZIP e envie index.html, catalogo.txt, .nojekyll e a pasta dados COMPLETA para a raiz do repositório site. Preserve o nome dados e todos os arquivos dentro dela. Pelo computador, arraste a pasta dados na tela Add file → Upload files. Não envie só o ZIP.
+Extraia o ZIP e envie index.html, assets, scripts, catalogo.txt, .nojekyll (se presente) e a pasta dados COMPLETA para a raiz do repositório site. Preserve o nome dados e todos os arquivos dentro dela. Pelo computador, arraste a pasta dados na tela Add file → Upload files. Não envie só o ZIP.
 
 Depois dessa publicação, mude somente os arquivos de conteúdo e confirme Commit changes. O GitHub Pages leva alguns minutos para publicar. A página busca os dados ao abrir, ao voltar para a aba e a cada cinco minutos enquanto estiver aberta. Nenhum serviço pago ou senha é necessário.
 
@@ -23,7 +23,7 @@ Depois dessa publicação, mude somente os arquivos de conteúdo e confirme Comm
 | dados/estudos.json | Igual a artigos; traducao opcional para identificar a Bíblia usada. Vazio. |
 | dados/livros.json | titulo, descricao e link de compra; só preencher quando houver publicação real. |
 | dados/acoes.json | titulo, data, descricao, texto e link público opcional do relatório. Não enviar comprovantes sem ocultar dados pessoais. |
-| dados/parceiros.json | titulo, descricao e link opcional. Já contém as duas igrejas. |
+| dados/parceiros.json | titulo, descricao e link opcional. Contém as duas igrejas e os Vicentinos como possíveis parceiros, ainda a propor. |
 | catalogo.txt | Catálogo de filmes e desenhos; instruções no arquivo COMO-ATUALIZAR-CATALOGO.md. |
 
 JSON é um arquivo de dados estruturados: mantenha aspas duplas, colchetes e vírgulas. Não coloque comentários no JSON. Use [] para lista vazia e {} para cronograma vazio. Os exemplos estão em EXEMPLOS-DE-PREENCHIMENTO.json e NÃO são carregados no site. Você pode enviar suas listas ao ChatGPT para produzir os arquivos corretos. Esses arquivos não são uma planilha Excel: não renomeie XLSX para JSON.
@@ -39,7 +39,7 @@ Spotify: escuta, recomendacoes, autorais. O id é a sequência de 22 caracteres 
 
 ## Limites
 
-O site não busca arquivos no seu PC nem escreve no GitHub. Arquivo local selecionado na prévia do catálogo não publica alterações. Para testar dados externos, use a página hospedada: o navegador pode bloquear fetch de arquivos locais ao abrir o HTML baixado. A prévia HTML tem uma pequena reserva de orações para uso local, mas o acervo completo está no TXT.
+O site não busca arquivos no seu PC nem escreve no GitHub. Arquivo local selecionado na prévia do catálogo não publica alterações. Para testar dados externos, use a página hospedada: o navegador pode bloquear fetch de arquivos locais ao abrir o HTML baixado. A prévia HTML desta entrega inclui o acervo selecionado para funcionamento independente; o site publicado lê os TXT/JSON.
 
 Arquivos inválidos ou indisponíveis mantêm os últimos dados carregados na aba (ou a reserva inicial); consulte o arquivo para corrigir. Não há banco privado: TODOS os arquivos enviados ao repositório público serão públicos. Não coloque senhas, tokens, pedidos de oração, telefones de visitantes nem dados privados. Não há envio de avisos nem detecção real de lives por esses arquivos; horários cadastrados só controlam o destaque. APIs do YouTube/Spotify ficam para configuração posterior.
 
@@ -64,7 +64,7 @@ Edite dados/recursos-santidade.txt. Uma linha: tema | tipo | titulo | autor/font
 Buscando.json também controla ensinamentos_jesus, pai_nosso, vicios, vicios_nota, ambiente_nota e integridade. Mantenha autoria, licença e texto da tradução ao editar uma citação. Pecados capitais não equivalem automaticamente a pecados mortais na classificação católica.
 
 ## Parcerias e ensino
-Edite dados/parcerias.json para título, convite, email, whatsapp, cidade, estado, endereco, frentes, partilha e etapas. O WhatsApp deve conter DDI+DDD+número, só dígitos (Brasil começa com 55). Está vazio porque o número de contato ainda não foi informado; não foi reutilizada a chave Pix. O endereço completo também está vazio: a página indica apenas Nova Bandeirantes, Mato Grosso, e pede para combinar visitas. Não publicar endereço residencial sem intenção explícita.
+Edite dados/parcerias.json para título, convite, email, whatsapp, cidade, estado, endereco, frentes, partilha e etapas. O WhatsApp deve conter DDI+DDD+número, só dígitos (Brasil começa com 55). O número de contato autorizado foi incluído. Ao alterá-lo, confira os três idiomas e os botões fixos em index.html e assets/vitrine.js; não usar a chave Pix como telefone. O endereço completo também está vazio: a página indica apenas Nova Bandeirantes, Mato Grosso, e pede para combinar visitas. Não publicar endereço residencial sem intenção explícita.
 Edite dados/materiais-ensino.json para incluir titulo, area, publico, formato, descricao, autor, fonte, link HTTPS e licenca. As áreas e os públicos aceitos aparecem nos filtros. O acervo começa vazio; a pasta geral do Drive não é apresentada como catálogo educacional revisado. Revise a faixa etária, a qualidade do conteúdo e os direitos antes de compartilhar. Links devem ser públicos apenas quando o material é destinado à publicação.
 Os botões de contato apenas abrem e-mail/WhatsApp com rascunho; a pessoa revisa e envia. Não há envio automático nem formalização de parceria por um clique. Não preencher registros de crianças, pedidos de ajuda ou dados privados nos JSONs públicos.
 
@@ -95,3 +95,7 @@ Os estudos novos estão em pecado.json e espirito-santidade.json, com versões e
 ## Corpo, vontade e escolhas
 
 A seção está em dados/corpo-escolhas.json, com versões completas em dados/en/ e dados/es/. Preserve as sete áreas, referências e campos existentes ao editar. assets/body.js contém o conteúdo inicial equivalente usado pela prévia independente; ao atualizar o texto, mantenha esse conteúdo inicial coerente. A página publicada relê os arquivos JSON.
+
+## Revisão mais recente
+
+Leia README.md para o manual completo desta versão. A entrada mantém reflexão editorial, passo e passagem coerentes; ela não usa a reflexão TXT independente por cima dessa explicação. O cronograma pode personalizar reflectionTitle, step e reflectionPassages na entrada, além dos campos já existentes. As parcerias estão a propor. O WhatsApp está configurado por autorização do responsável. O Caminho da Escola descreve saída e retirada segura de crianças em futuro sistema restrito, sem banco de alunos no site público.

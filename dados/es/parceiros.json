@@ -2,11 +2,19 @@
   {
     "titulo": "Iglesia católica",
     "descricao": "Fe, comunión y cuidado del prójimo.",
-    "link": ""
+    "link": "",
+    "status": "a-propor"
   },
   {
     "titulo": "Igreja Batista Nacional (Iglesia Bautista Nacional)",
     "descricao": "Fe, enseñanza bíblica y comunión.",
-    "link": ""
+    "link": "",
+    "status": "a-propor"
+  },
+  {
+    "titulo": "Vicentinos",
+    "descricao": "Posible diálogo para acciones solidarias en Nova Bandeirantes. Contacto y alianza pendientes.",
+    "link": "",
+    "status": "a-propor"
   }
 ]

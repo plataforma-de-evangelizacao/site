@@ -100,3 +100,39 @@ A revisão foi verificada em navegador de desktop. O CSS tem regras responsivas,
 - [ ] Desenvolver o primeiro software, definir licença e validar com interessados.
 - [ ] Configurar integrações e GitHub Actions após inspeção do repositório real.
 - [ ] Conferir aparência do menu nativo no computador do Marcos; variações de sistema operacional podem afetar o seletor.
+
+## Revisão dos áudios e manual completo
+
+- [x] Conheça a plataforma ampliado, sem o cabeçalho redundante.
+- [x] Biblioteca, Escola e projetos antes do momento diário; textos e fontes ajustados.
+- [x] Convite Ore conosco e reflexão editorial coerente com seu passo e passagem.
+- [x] Bloco de alimentos, roupas, calçados e voluntariado na entrada.
+- [x] Mesmo QR Code da seção Doações na entrada, sem mudar destino.
+- [x] Destinos pretendidos das contribuições descritos; sem ações realizadas inventadas.
+- [x] WhatsApp de contato autorizado e Vicentinos incluídos.
+- [x] Comunidades apresentadas como possíveis parcerias, ainda a propor.
+- [x] Selo Primeiro projeto removido; escopo do Caminho da Escola corrigido.
+- [x] README completo e validador local incluídos.
+- [ ] Confirmar plano do proprietário do repositório antes de torná-lo privado, para preservar a publicação desejada.
+
+## Estados, prestação de contas e apresentação
+
+- [x] Catálogos de projetos, ideias e novos conteúdos separados por andamento; mudanças derivam dos arquivos publicados.
+- [x] README com procedimentos completos de edição, publicação, gravação, pausa e verificação.
+- [x] Prestação de contas mensal com histórico, gráfico percentual, totais, KPIs e downloads.
+- [x] Modelo Excel vazio e importador local com geração opcional de PDF; sem dados fictícios publicados.
+- [x] Apresentação do autor e resumo de autocuidado ampliados.
+- [x] Bíblias/aplicativos, filmes/desenhos e músicas explicitados na biblioteca inicial.
+- [x] Biblioteca de ensino aceita capa opcional e documento genérico; origem pode ser o Drive.
+- [x] Atalhos finais nomeiam os destinos.
+- [x] Pergunta de fé em Ciência atualizada nos três idiomas.
+- [ ] Inserir o primeiro mês real e revisar planilha/PDF antes de publicar.
+- [ ] Configurar automação de pastas/contas somente em etapa futura.
+
+## Disciplinas e princípio central
+
+- [x] Deus reafirmado como centro da abordagem em todas as disciplinas.
+- [x] Perguntas sobre criação, propósito e existência de Deus revisadas em PT/EN/ES.
+- [x] Artigos, playlists, livros e palestras organizados por disciplina; propostas identificadas.
+- [x] Cartões fechados compactos e abertura individual verificados no navegador.
+- [x] README e princípios editoriais atualizados para próximas revisões.

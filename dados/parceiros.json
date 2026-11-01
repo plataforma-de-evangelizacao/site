@@ -2,11 +2,19 @@
   {
     "titulo": "Igreja Católica",
     "descricao": "Fé, comunhão e cuidado com o próximo.",
-    "link": ""
+    "link": "",
+    "status": "a-propor"
   },
   {
     "titulo": "Igreja Batista Nacional",
     "descricao": "Fé, ensino bíblico e comunhão.",
-    "link": ""
+    "link": "",
+    "status": "a-propor"
+  },
+  {
+    "titulo": "Vicentinos",
+    "descricao": "Possível diálogo para ações de solidariedade em Nova Bandeirantes. Contato e parceria ainda a combinar.",
+    "link": "",
+    "status": "a-propor"
   }
 ]
