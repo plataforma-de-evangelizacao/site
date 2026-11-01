@@ -1,0 +1,33 @@
+{
+  "titulo": "Seja nosso parceiro",
+  "convite": "Venha fazer parte de uma comunidade que deseja unir a mensagem do Evangelho ao cuidado com as pessoas. Juntos, podemos construir ações de alimentação, vestuário, educação e acolhimento, com respeito à dignidade de cada pessoa.",
+  "email": "marcoslucaspereira1@gmail.com",
+  "whatsapp": "",
+  "cidade": "Nova Bandeirantes",
+  "estado": "Mato Grosso",
+  "endereco": "",
+  "frentes": [
+    {
+      "titulo": "Alimento e necessidades essenciais",
+      "descricao": "Construir ações para que mais pessoas tenham acesso a comida, roupas, calçados e itens necessários ao cotidiano."
+    },
+    {
+      "titulo": "Educação e formação",
+      "descricao": "Reunir materiais e pessoas dispostas a apoiar o aprendizado, a reflexão e a formação do caráter de crianças, jovens, adultos e idosos."
+    },
+    {
+      "titulo": "Acolhimento e dignidade",
+      "descricao": "Dialogar com instituições e profissionais para desenvolver apoio a pessoas em situação de vulnerabilidade, inclusive quem vive nas ruas."
+    },
+    {
+      "titulo": "Encontros e mensagem",
+      "descricao": "Receber convites para palestras, visitas e encontros em outras cidades, planejando cada participação em conjunto."
+    }
+  ],
+  "partilha": "Compartilhar é reconhecer no outro alguém com a mesma dignidade que nós. Queremos transformar fé e recursos em cuidado: o alimento que falta, a roupa necessária, uma oportunidade de aprender e uma presença que acolhe. Cada parceria pode começar com um gesto possível, feito com responsabilidade, respeito e transparência.",
+  "etapas": [
+    "Conte quem você é e qual é sua comunidade ou instituição.",
+    "Apresente a ideia, a necessidade e a cidade onde deseja realizar a ação.",
+    "Vamos conversar sobre possibilidades, responsabilidades e próximos passos."
+  ]
+}

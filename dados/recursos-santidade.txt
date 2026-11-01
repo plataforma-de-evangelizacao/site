@@ -1,0 +1,10 @@
+# Tema | Tipo | Título | Autor/Fonte | Link HTTPS | Descrição
+# Temas: ira, soberba, pai-nosso, vicios, jesus, generosidade, outros.
+# Tipos livres: Artigo, Pregação, Palestra, Catequese, Estudo bíblico, Vídeo.
+# Não invente resumos; revise o conteúdo antes de publicar.
+ira | Artigo | Sobre a ira e autocontrole | Dom João Santos Cardoso · CNBB · perspectiva católica | https://www.cnbb.org.br/sobre-a-ira-e-autocontrole/ | Relaciona a ira destrutiva aos danos nas relações e discute paciência e autocontrole.
+soberba | Artigo | A soberba e os vícios capitais | Dom João Santos Cardoso · CNBB · perspectiva católica | https://www.cnbb.org.br/a-soberba-o-vicio-capital-que-da-origem-aos-demais-pecados/ | Apresenta uma reflexão sobre autoexaltação, humildade e a relação entre os vícios capitais.
+pai-nosso | Catequese | Pai-Nosso: perdão recebido e oferecido | Papa Francisco · 24/04/2019 · perspectiva católica | https://www.vatican.va/content/francesco/pt/audiences/2019/documents/papa-francesco_20190424_udienza-generale.html | Reflete sobre o perdão pedido a Deus e sua relação com a disposição de perdoar o próximo.
+vicios | Referência doutrinal | Pecados capitais, mortal e venial | Catecismo da Igreja Católica · 1854–1876 | https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap1_1699-1876_po.html | Explica as distinções da doutrina católica sobre gravidade do pecado, vícios e pecados capitais.
+jesus | Estudo bíblico | O Sermão do Monte | Evangelho de Mateus · leitura bíblica ACF | https://www.bibliaonline.com.br/acf/mt/5 | Comece em Mateus 5 e prossiga pelos capítulos 6 e 7: vida no Reino, oração e prática dos ensinamentos de Jesus.
+generosidade | Estudo bíblico | Fé, acolhimento e ajuda concreta | Carta de Tiago · leitura bíblica ACF | https://www.bibliaonline.com.br/acf/tg/2 | Tiago 2:1–17 aborda favoritismo e a relação entre a fé professada e a ajuda a quem precisa.

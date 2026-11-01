@@ -1,0 +1,566 @@
+{
+  "introducao": "Do you want a life closer to God, holier and more consistent with Jesus’ teachings? Begin with Scripture and consider how faith can transform your choices, relationships and care for others.",
+  "temas": [
+    {
+      "titulo": "Loving God and our neighbour",
+      "explicacao": "Jesus places love for God and our neighbour at the heart of the commandments. Love among his disciples should reflect his own love.",
+      "abandonar": "Indifference to others’ needs and faith reduced to appearances.",
+      "cultivar": "Love for God, respect for every person and a willingness to serve.",
+      "exemplo": "Listen attentively to someone and offer concrete help within your means.",
+      "passagens": [
+        {
+          "referencia": "Matthew 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        },
+        {
+          "referencia": "John 13:34–35",
+          "link": "https://www.bibliaonline.com.br/acf/jo/13"
+        }
+      ]
+    },
+    {
+      "titulo": "Repenting and changing direction",
+      "explicacao": "Repentance involves recognizing sin and turning to God, bearing fruit in the way we live. In Luke 3, John the Baptist gives examples of sharing and leaving exploitation behind.",
+      "abandonar": "Justifying your own wrongdoing and continuing to harm someone.",
+      "cultivar": "Sincere confession, a change of attitude and making amends where possible.",
+      "exemplo": "If you overcharged someone dishonestly, correct the amount and explain the mistake honestly.",
+      "passagens": [
+        {
+          "referencia": "Mark 1:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mc/1"
+        },
+        {
+          "referencia": "Luke 3:8–14",
+          "link": "https://www.bibliaonline.com.br/acf/lc/3"
+        },
+        {
+          "referencia": "2 Corinthians 7:9–10",
+          "link": "https://www.bibliaonline.com.br/acf/2co/7"
+        }
+      ]
+    },
+    {
+      "titulo": "Honesty: leaving theft and lies behind",
+      "explicacao": "Paul connects renewed life with truth, honest work and a willingness to share. Change includes what we do and say.",
+      "abandonar": "Theft, fraud, falsehood and excuses for gaining an unfair advantage.",
+      "cultivar": "Truth, responsible work and generosity.",
+      "exemplo": "Return something you borrowed, acknowledge false information you shared and correct it.",
+      "passagens": [
+        {
+          "referencia": "Ephesians 4:22–28",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        },
+        {
+          "referencia": "Colossians 3:9–10",
+          "link": "https://www.bibliaonline.com.br/acf/cl/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Faithfulness and sanctification in relationships",
+      "explicacao": "Jesus addresses adultery also in terms of deliberately cultivated desire. Paul presents sanctification in connection with honour and not wronging others.",
+      "abandonar": "Adultery, deception, sexual immorality and using others for personal gratification.",
+      "cultivar": "Faithfulness, respect, self-control and responsibility in relationships.",
+      "exemplo": "Reject a relationship based on betrayal and establish boundaries that respect your commitments.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:27–30",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        },
+        {
+          "referencia": "1 Thessalonians 4:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/1ts/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Caring for our words and seeking reconciliation",
+      "explicacao": "Jesus deepens the commandment against murder by addressing anger and insults. James teaches readiness to listen and restraint in speaking.",
+      "abandonar": "Humiliation, slander, threats and words used to hurt.",
+      "cultivar": "Gentleness, listening, truth and the pursuit of peace.",
+      "exemplo": "During an argument, stop the insults and try to speak respectfully when it is safe to do so.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:21–24",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        },
+        {
+          "referencia": "Ephesians 4:29–32",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        },
+        {
+          "referencia": "James 1:19–20",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        }
+      ]
+    },
+    {
+      "titulo": "Helping those in need: faith expressed through care",
+      "explicacao": "James connects faith with works and shows the inadequacy of words that leave someone without food or clothing. This includes welcoming people without favouring them for their wealth.",
+      "abandonar": "Contempt for people in poverty, favouritism and promises of help without a willingness to act.",
+      "cultivar": "Sharing, welcome and service that preserves dignity.",
+      "exemplo": "Set aside food or clothing in usable condition and help without exposing the person receiving support.",
+      "passagens": [
+        {
+          "referencia": "James 1:22–27",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        },
+        {
+          "referencia": "James 2:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/tg/2"
+        },
+        {
+          "referencia": "Matthew 25:31–46",
+          "link": "https://www.bibliaonline.com.br/acf/mt/25"
+        }
+      ]
+    },
+    {
+      "titulo": "Leaving the works of the flesh and cultivating the fruit of the Spirit",
+      "explicacao": "Paul contrasts destructive practices with the fruit of the Spirit. Transformation involves love, joy, peace, patience, kindness, goodness, faith, gentleness and self-control.",
+      "abandonar": "Envy, rivalry, hostility, drunkenness and attitudes that fuel division.",
+      "cultivar": "A life led by the Spirit and directed towards love.",
+      "exemplo": "When you feel envy, avoid belittling someone and choose to recognize what is good in their life.",
+      "passagens": [
+        {
+          "referencia": "Galatians 5:13–26",
+          "link": "https://www.bibliaonline.com.br/acf/gl/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Renewing the mind with humility",
+      "explicacao": "Life’s transformation includes discernment, humility, hospitality and responding to evil with good. James connects wisdom with gentleness and promoting peace.",
+      "abandonar": "Pride, revenge, destructive competition and wanting to appear superior.",
+      "cultivar": "Discernment, humility, hospitality and peacemaking.",
+      "exemplo": "Before responding to a provocation, ask how to act justly without repeating the aggression.",
+      "passagens": [
+        {
+          "referencia": "Romans 12:1–21",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        },
+        {
+          "referencia": "James 3:13–18",
+          "link": "https://www.bibliaonline.com.br/acf/tg/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Remaining in Christ and learning through grace",
+      "explicacao": "Jesus connects bearing fruit with remaining in him. In Titus, God’s grace also teaches us to leave ungodliness behind and live with sound judgement, justice and devotion.",
+      "abandonar": "Religious practice detached from Christ or used to display personal merit.",
+      "cultivar": "Communion with Christ, prayer, obedience and a willingness to do good works.",
+      "exemplo": "Read a passage carefully and choose a concrete action to put it into practice.",
+      "passagens": [
+        {
+          "referencia": "John 15:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        },
+        {
+          "referencia": "Titus 2:11–14",
+          "link": "https://www.bibliaonline.com.br/acf/tt/2"
+        },
+        {
+          "referencia": "Ephesians 2:8–10",
+          "link": "https://www.bibliaonline.com.br/acf/ef/2"
+        }
+      ]
+    },
+    {
+      "titulo": "Justice, mercy and faithfulness",
+      "explicacao": "Jesus criticizes religious practice that neglects the weightier matters of the law: justice, mercy and faith. Attention to outward appearances does not replace inward change.",
+      "abandonar": "Hypocrisy, exploitation and using religion to conceal injustice.",
+      "cultivar": "Integrity, compassion and consistency between words and actions.",
+      "exemplo": "Treat people with the same dignity whether or not they can offer you something in return.",
+      "passagens": [
+        {
+          "referencia": "Matthew 23:23–28",
+          "link": "https://www.bibliaonline.com.br/acf/mt/23"
+        },
+        {
+          "referencia": "Micah 6:8",
+          "link": "https://www.bibliaonline.com.br/acf/mq/6"
+        }
+      ]
+    }
+  ],
+  "mandamentos": [
+    {
+      "resumo": "Offering worship to God",
+      "referencia": "Exodus 20:3"
+    },
+    {
+      "resumo": "Not making or serving idols",
+      "referencia": "Exodus 20:4–6"
+    },
+    {
+      "resumo": "Honouring God’s name",
+      "referencia": "Exodus 20:7"
+    },
+    {
+      "resumo": "Remembering the Sabbath and keeping it holy",
+      "referencia": "Exodus 20:8–11"
+    },
+    {
+      "resumo": "Honouring father and mother",
+      "referencia": "Exodus 20:12"
+    },
+    {
+      "resumo": "Not killing",
+      "referencia": "Exodus 20:13"
+    },
+    {
+      "resumo": "Not committing adultery",
+      "referencia": "Exodus 20:14"
+    },
+    {
+      "resumo": "Not stealing",
+      "referencia": "Exodus 20:15"
+    },
+    {
+      "resumo": "Not bearing false witness against our neighbour",
+      "referencia": "Exodus 20:16"
+    },
+    {
+      "resumo": "Not coveting what belongs to our neighbour",
+      "referencia": "Exodus 20:17"
+    }
+  ],
+  "contexto_paulo": "Romans 1:24,26,28 describes God giving people over to the consequences of rejecting his truth; the list in Romans 1:29–32 includes injustice, envy, murder, deceit and lack of mercy. Read Romans 2:1–4 as well: it challenges those who judge others and points to God’s kindness leading to repentance. The futility of the mind appears in Ephesians 4:17–24; creation subjected to futility in Romans 8:20–21 has a different context: suffering and the hope of creation’s liberation.",
+  "passagens_contexto": [
+    {
+      "referencia": "Romans 1:18–32",
+      "link": "https://www.bibliaonline.com.br/acf/rm/1"
+    },
+    {
+      "referencia": "Romans 2:1–4",
+      "link": "https://www.bibliaonline.com.br/acf/rm/2"
+    },
+    {
+      "referencia": "Ephesians 4:17–24",
+      "link": "https://www.bibliaonline.com.br/acf/ef/4"
+    },
+    {
+      "referencia": "Romans 8:18–25",
+      "link": "https://www.bibliaonline.com.br/acf/rm/8"
+    }
+  ],
+  "praticas": [
+    {
+      "convite": "Listen attentively to someone and offer concrete help within your means.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Matthew 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        }
+      ]
+    },
+    {
+      "convite": "If you overcharged someone dishonestly, correct the amount and explain the mistake honestly.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Mark 1:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mc/1"
+        }
+      ]
+    },
+    {
+      "convite": "Return something you borrowed, acknowledge false information you shared and correct it.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Ephesians 4:22–28",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        }
+      ]
+    },
+    {
+      "convite": "Reject a relationship based on betrayal and establish boundaries that respect your commitments.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:27–30",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "convite": "During an argument, stop the insults and try to speak respectfully when it is safe to do so.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:21–24",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "convite": "Set aside food or clothing in usable condition and help without exposing the person receiving support.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "James 1:22–27",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        }
+      ]
+    },
+    {
+      "convite": "When you feel envy, avoid belittling someone and choose to recognize what is good in their life.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Galatians 5:13–26",
+          "link": "https://www.bibliaonline.com.br/acf/gl/5"
+        }
+      ]
+    },
+    {
+      "convite": "Before responding to a provocation, ask how to act justly without repeating the aggression.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Romans 12:1–21",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        }
+      ]
+    },
+    {
+      "convite": "Read a passage carefully and choose a concrete action to put it into practice.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "John 15:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        }
+      ]
+    },
+    {
+      "convite": "Treat people with the same dignity whether or not they can offer you something in return.",
+      "pergunta": "Which attitude do I need to leave behind or cultivate today?",
+      "oracao": "Lord, help me recognize my mistakes, receive your Word and practise love sincerely. In Jesus’ name, amen.",
+      "passagens": [
+        {
+          "referencia": "Matthew 23:23–28",
+          "link": "https://www.bibliaonline.com.br/acf/mt/23"
+        }
+      ]
+    }
+  ],
+  "ensinamentos_jesus": [
+    {
+      "titulo": "Loving God and our neighbour",
+      "explicacao": "Dedicating our lives to God and treating our neighbour with love.",
+      "passagens": [
+        {
+          "referencia": "Matthew 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        }
+      ]
+    },
+    {
+      "titulo": "Loving as Jesus loved",
+      "explicacao": "Serving and caring, expressing love through actions.",
+      "passagens": [
+        {
+          "referencia": "John 13:34–35; 15:12–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        }
+      ]
+    },
+    {
+      "titulo": "Loving enemies and praying for those who persecute us",
+      "explicacao": "Not feeding revenge; seeking good without confusing forgiveness with accepting violence.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:43–48",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Seeking reconciliation and practising mercy",
+      "explicacao": "Recognizing the harm caused, seeking to make amends and treating others with compassion.",
+      "passagens": [
+        {
+          "referencia": "Matthew 5:21–24; 6:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Treating others with the care we hope to receive",
+      "explicacao": "Acting with respect, truth and consideration in relationships.",
+      "passagens": [
+        {
+          "referencia": "Matthew 7:12",
+          "link": "https://www.bibliaonline.com.br/acf/mt/7"
+        }
+      ]
+    },
+    {
+      "titulo": "Serving instead of competing for superiority",
+      "explicacao": "Using responsibility to care rather than to dominate and humiliate.",
+      "passagens": [
+        {
+          "referencia": "Mark 10:42–45",
+          "link": "https://www.bibliaonline.com.br/acf/mc/10"
+        }
+      ]
+    },
+    {
+      "titulo": "Hearing and practising the Word",
+      "explicacao": "Bringing Jesus’ teachings into daily decisions.",
+      "passagens": [
+        {
+          "referencia": "Matthew 7:24–27",
+          "link": "https://www.bibliaonline.com.br/acf/mt/7"
+        }
+      ]
+    }
+  ],
+  "pai_nosso": {
+    "referencia": "Matthew 6:9–13",
+    "traducao": "Editorial English translation of BLIVRE (Textus Receptus edition), not a quotation from a published English Bible",
+    "texto": "Our Father in heaven, hallowed be your name.\nMay your Kingdom come.\nMay your will be done, on earth as it is in heaven.\nGive us today our daily bread.\nAnd forgive us our debts, as we also forgive our debtors.\nAnd do not lead us into temptation, but deliver us from evil; for yours is the Kingdom, the power and the glory, forever, Amen.",
+    "fonte": "https://ebible.org/study/content/texts/porbr2018/MT6.html",
+    "creditos": "Based on Bíblia Livre, © Diego Santos, Mario Sérgio and Marco Teles, 2018. Source: eBible.org, CC BY 4.0, https://ebible.org/details.php?id=porbr2018. Translated into English by the platform; line breaks added. The Portuguese original remains available.",
+    "estudo": [
+      {
+        "titulo": "God and his will",
+        "texto": "The first requests direct prayer towards God, his name, his Kingdom and his will."
+      },
+      {
+        "titulo": "Bread and everyday care",
+        "texto": "The request for bread recalls our needs and shared life: the prayer is spoken in the plural."
+      },
+      {
+        "titulo": "Forgiveness received and offered",
+        "texto": "The request for forgiveness is connected with how we treat those who wrong us. Read Matthew 6:14–15 as well."
+      },
+      {
+        "titulo": "Help in the face of temptation and evil",
+        "texto": "The prayer expresses dependence on God. Its wording varies between translations; some editions and liturgical uses present the doxology differently."
+      }
+    ]
+  },
+  "vicios_nota": "In Catholic tradition, the seven capital sins are so called because they give rise to other vices; they are not automatically synonymous with mortal sin. For mortal sin, the Catechism sets out grave matter, full knowledge and deliberate consent (1857–1859). The traditional list is a catechetical arrangement; it does not appear as one list of seven items in a single Bible passage. The references below help explore related conduct and virtues.",
+  "vicios": [
+    {
+      "titulo": "Pride and vanity",
+      "abandonar": "Seeking superiority, looking down on others and doing good only to be seen.",
+      "cultivar": "Humility, listening and quiet service.",
+      "ambiente_risco": "Constant comparison, praise without correction and competition over appearances.",
+      "ambiente_cuidado": "Accepting correction, expressing gratitude for help and serving without posting for applause.",
+      "passagens": [
+        {
+          "referencia": "Philippians 2:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/fp/2"
+        }
+      ]
+    },
+    {
+      "titulo": "Avarice, greed and covetousness",
+      "abandonar": "Placing accumulation above justice and wanting to take what belongs to others.",
+      "cultivar": "Generosity, contentment and responsible use of resources.",
+      "ambiente_risco": "Consumption for show, promises of easy profit and deals that depend on deception.",
+      "ambiente_cuidado": "Planning expenses, refusing unfair advantages and setting something aside to share.",
+      "passagens": [
+        {
+          "referencia": "Luke 12:13–21",
+          "link": "https://www.bibliaonline.com.br/acf/lc/12"
+        }
+      ]
+    },
+    {
+      "titulo": "Envy",
+      "abandonar": "Belittling others out of resentment of their achievements.",
+      "cultivar": "Gratitude, kindness and joy in our neighbour’s good.",
+      "ambiente_risco": "Repeated comparisons and conversations that disparage those who prosper.",
+      "ambiente_cuidado": "Reducing comparisons and recognizing someone’s qualities without competing.",
+      "passagens": [
+        {
+          "referencia": "James 3:13–18",
+          "link": "https://www.bibliaonline.com.br/acf/tg/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Destructive anger",
+      "abandonar": "Nurturing hatred, threatening and using indignation to hurt.",
+      "cultivar": "Gentleness, patience and self-control.",
+      "ambiente_risco": "Provocative arguments, insults and immediately reacting to every provocation.",
+      "ambiente_cuidado": "Pausing, not sending the offensive message and returning to the conversation respectfully.",
+      "passagens": [
+        {
+          "referencia": "Ephesians 4:26–32",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Lust and using others",
+      "abandonar": "Cultivating desires and conduct that reduce someone to an object and betray commitments.",
+      "cultivar": "Faithfulness, respect and self-control.",
+      "ambiente_risco": "Content and situations you recognize as encouraging exploitation or betrayal.",
+      "ambiente_cuidado": "Setting boundaries and choosing respectful, responsible relationships.",
+      "passagens": [
+        {
+          "referencia": "1 Thessalonians 4:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/1ts/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Gluttony and lack of temperance",
+      "abandonar": "Letting excess govern choices and ignoring care for the body and sharing.",
+      "cultivar": "Temperance, gratitude and balance.",
+      "ambiente_risco": "Wasteful habits, repeated excess and consumption without attention to needs.",
+      "ambiente_cuidado": "Adopting a balanced routine and avoiding waste; eating is not in itself a sin.",
+      "passagens": [
+        {
+          "referencia": "1 Corinthians 10:23–31",
+          "link": "https://www.bibliaonline.com.br/acf/1co/10"
+        }
+      ]
+    },
+    {
+      "titulo": "Sloth or spiritual neglect",
+      "abandonar": "Deliberately abandoning good actions and responsibilities that are within reach.",
+      "cultivar": "Diligence, consistency and a willingness to serve.",
+      "ambiente_risco": "A routine without room for study, persistent postponement and lack of support.",
+      "ambiente_cuidado": "Choosing a small, possible task for today. Rest, ADHD, suffering and health limitations must not automatically be confused with moral neglect.",
+      "passagens": [
+        {
+          "referencia": "Romans 12:9–13",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        }
+      ]
+    }
+  ],
+  "ambiente_nota": "The situations described are examples for self-examination, not a way to label people or places as impure. Set boundaries around harmful habits without despising those who think differently. Seeking support and rest can be part of change.",
+  "integridade": {
+    "titulo": "Corruption and complicity",
+    "texto": "Corruption is not limited to politics: it can appear in fraud, bribery and everyday exploitation. Refuse advantages that depend on harming another person, keep honest records and seek responsible guidance to make amends.",
+    "passagens": [
+      {
+        "referencia": "Exodus 23:6–8",
+        "link": "https://www.bibliaonline.com.br/acf/ex/23"
+      },
+      {
+        "referencia": "Luke 3:12–14",
+        "link": "https://www.bibliaonline.com.br/acf/lc/3"
+      }
+    ]
+  }
+}

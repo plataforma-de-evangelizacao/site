@@ -1,0 +1,566 @@
+{
+  "introducao": "Você deseja uma vida mais próxima de Deus, mais santa e coerente com os ensinamentos de Jesus? Comece pelas Escrituras e examine como a fé pode transformar suas escolhas, suas relações e seu cuidado com o próximo.",
+  "temas": [
+    {
+      "titulo": "Amar a Deus e ao próximo",
+      "explicacao": "Jesus reúne o amor a Deus e ao próximo no centro dos mandamentos. O amor entre seus discípulos deve refletir seu próprio amor.",
+      "abandonar": "A indiferença às necessidades dos outros e uma fé reduzida à aparência.",
+      "cultivar": "Amor a Deus, respeito por cada pessoa e disposição para servir.",
+      "exemplo": "Ouça alguém com atenção e ofereça uma ajuda concreta que esteja ao seu alcance.",
+      "passagens": [
+        {
+          "referencia": "Mateus 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        },
+        {
+          "referencia": "João 13:34–35",
+          "link": "https://www.bibliaonline.com.br/acf/jo/13"
+        }
+      ]
+    },
+    {
+      "titulo": "Arrepender-se e mudar de direção",
+      "explicacao": "Arrependimento envolve reconhecer o pecado e voltar-se para Deus, produzindo frutos na maneira de viver. Em Lucas 3, João Batista dá exemplos de partilha e de abandono da exploração.",
+      "abandonar": "Justificar o próprio erro e continuar prejudicando alguém.",
+      "cultivar": "Confissão sincera, mudança de atitude e reparação possível.",
+      "exemplo": "Se enganou alguém numa cobrança, corrija o valor e explique o erro com honestidade.",
+      "passagens": [
+        {
+          "referencia": "Marcos 1:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mc/1"
+        },
+        {
+          "referencia": "Lucas 3:8–14",
+          "link": "https://www.bibliaonline.com.br/acf/lc/3"
+        },
+        {
+          "referencia": "2 Coríntios 7:9–10",
+          "link": "https://www.bibliaonline.com.br/acf/2co/7"
+        }
+      ]
+    },
+    {
+      "titulo": "Honestidade: deixar de roubar e de mentir",
+      "explicacao": "Paulo liga a renovação da vida à verdade, ao trabalho honesto e à disposição de repartir. A mudança inclui aquilo que fazemos e falamos.",
+      "abandonar": "Furto, fraude, falsidade e justificativas para obter vantagem injusta.",
+      "cultivar": "Verdade, trabalho responsável e generosidade.",
+      "exemplo": "Devolva um objeto emprestado, reconheça uma informação falsa que compartilhou e corrija-a.",
+      "passagens": [
+        {
+          "referencia": "Efésios 4:22–28",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        },
+        {
+          "referencia": "Colossenses 3:9–10",
+          "link": "https://www.bibliaonline.com.br/acf/cl/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Fidelidade e santificação nas relações",
+      "explicacao": "Jesus trata do adultério também no âmbito do desejo cultivado. Paulo apresenta a santificação em ligação com honra e com não prejudicar o próximo.",
+      "abandonar": "Adultério, engano, imoralidade sexual e uso de outras pessoas para satisfação própria.",
+      "cultivar": "Fidelidade, respeito, domínio próprio e responsabilidade nas relações.",
+      "exemplo": "Rejeite uma relação baseada em traição e estabeleça limites que respeitem os compromissos assumidos.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:27–30",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        },
+        {
+          "referencia": "1 Tessalonicenses 4:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/1ts/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidar das palavras e buscar reconciliação",
+      "explicacao": "Jesus aprofunda o mandamento contra o homicídio ao tratar da ira e das ofensas. Tiago ensina a ouvir com prontidão e a falar sem precipitação.",
+      "abandonar": "Humilhação, calúnia, ameaças e palavras usadas para ferir.",
+      "cultivar": "Mansidão, escuta, verdade e busca da paz.",
+      "exemplo": "Em uma discussão, interrompa os insultos e procure conversar com respeito quando houver condições seguras.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:21–24",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        },
+        {
+          "referencia": "Efésios 4:29–32",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        },
+        {
+          "referencia": "Tiago 1:19–20",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        }
+      ]
+    },
+    {
+      "titulo": "Ajudar quem precisa: fé que se torna cuidado",
+      "explicacao": "Tiago relaciona a fé às obras e mostra a insuficiência de palavras que deixam alguém sem alimento ou roupa. A prática inclui acolher sem favorecer pessoas pela riqueza.",
+      "abandonar": "Desprezo pelo pobre, favoritismo e promessas de ajuda sem disposição para agir.",
+      "cultivar": "Partilha, acolhimento e serviço que preserva a dignidade.",
+      "exemplo": "Separe alimentos ou roupas em condições de uso e ajude sem expor a pessoa atendida.",
+      "passagens": [
+        {
+          "referencia": "Tiago 1:22–27",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        },
+        {
+          "referencia": "Tiago 2:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/tg/2"
+        },
+        {
+          "referencia": "Mateus 25:31–46",
+          "link": "https://www.bibliaonline.com.br/acf/mt/25"
+        }
+      ]
+    },
+    {
+      "titulo": "Abandonar as obras da carne e cultivar o fruto do Espírito",
+      "explicacao": "Paulo contrapõe práticas destrutivas ao fruto do Espírito. A transformação envolve amor, alegria, paz, paciência, benignidade, bondade, fé, mansidão e domínio próprio.",
+      "abandonar": "Inveja, rivalidades, hostilidade, embriaguez e atitudes que alimentam divisões.",
+      "cultivar": "Uma vida conduzida pelo Espírito e orientada ao amor.",
+      "exemplo": "Ao sentir inveja, evite diminuir alguém e escolha reconhecer o bem na vida dessa pessoa.",
+      "passagens": [
+        {
+          "referencia": "Gálatas 5:13–26",
+          "link": "https://www.bibliaonline.com.br/acf/gl/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Renovar a mente com humildade",
+      "explicacao": "A transformação da vida inclui discernimento, humildade, hospitalidade e resposta ao mal por meio do bem. Tiago relaciona sabedoria à mansidão e à promoção da paz.",
+      "abandonar": "Orgulho, vingança, competição destrutiva e desejo de aparentar superioridade.",
+      "cultivar": "Discernimento, humildade, hospitalidade e pacificação.",
+      "exemplo": "Antes de responder a uma provocação, pergunte como agir com justiça sem repetir a agressão.",
+      "passagens": [
+        {
+          "referencia": "Romanos 12:1–21",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        },
+        {
+          "referencia": "Tiago 3:13–18",
+          "link": "https://www.bibliaonline.com.br/acf/tg/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Permanecer em Cristo e aprender pela graça",
+      "explicacao": "Jesus relaciona o fruto à permanência nele. Em Tito, a graça de Deus também educa para abandonar a impiedade e viver com sensatez, justiça e devoção.",
+      "abandonar": "Uma prática religiosa desligada de Cristo ou usada para exibir mérito próprio.",
+      "cultivar": "Comunhão com Cristo, oração, obediência e disposição para boas obras.",
+      "exemplo": "Leia uma passagem com atenção e escolha uma atitude concreta para praticar a partir dela.",
+      "passagens": [
+        {
+          "referencia": "João 15:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        },
+        {
+          "referencia": "Tito 2:11–14",
+          "link": "https://www.bibliaonline.com.br/acf/tt/2"
+        },
+        {
+          "referencia": "Efésios 2:8–10",
+          "link": "https://www.bibliaonline.com.br/acf/ef/2"
+        }
+      ]
+    },
+    {
+      "titulo": "Justiça, misericórdia e fidelidade",
+      "explicacao": "Jesus critica a religiosidade que negligencia os aspectos mais importantes da lei: justiça, misericórdia e fé. O cuidado com o exterior não dispensa a mudança interior.",
+      "abandonar": "Hipocrisia, exploração e uso da religião para encobrir injustiças.",
+      "cultivar": "Integridade, compaixão e coerência entre palavras e atitudes.",
+      "exemplo": "Trate com a mesma dignidade quem pode ou não oferecer algo em troca.",
+      "passagens": [
+        {
+          "referencia": "Mateus 23:23–28",
+          "link": "https://www.bibliaonline.com.br/acf/mt/23"
+        },
+        {
+          "referencia": "Miqueias 6:8",
+          "link": "https://www.bibliaonline.com.br/acf/mq/6"
+        }
+      ]
+    }
+  ],
+  "mandamentos": [
+    {
+      "resumo": "Dedicar a Deus a adoração",
+      "referencia": "Êxodo 20:3"
+    },
+    {
+      "resumo": "Não fazer nem servir ídolos",
+      "referencia": "Êxodo 20:4–6"
+    },
+    {
+      "resumo": "Honrar o nome de Deus",
+      "referencia": "Êxodo 20:7"
+    },
+    {
+      "resumo": "Lembrar o sábado e santificá-lo",
+      "referencia": "Êxodo 20:8–11"
+    },
+    {
+      "resumo": "Honrar pai e mãe",
+      "referencia": "Êxodo 20:12"
+    },
+    {
+      "resumo": "Não matar",
+      "referencia": "Êxodo 20:13"
+    },
+    {
+      "resumo": "Não cometer adultério",
+      "referencia": "Êxodo 20:14"
+    },
+    {
+      "resumo": "Não furtar",
+      "referencia": "Êxodo 20:15"
+    },
+    {
+      "resumo": "Não dar falso testemunho contra o próximo",
+      "referencia": "Êxodo 20:16"
+    },
+    {
+      "resumo": "Não cobiçar o que pertence ao próximo",
+      "referencia": "Êxodo 20:17"
+    }
+  ],
+  "contexto_paulo": "Romanos 1:24,26,28 descreve Deus entregando as pessoas às consequências da rejeição de sua verdade; a lista de Romanos 1:29–32 inclui injustiça, inveja, homicídio, engano e falta de misericórdia. Leia também Romanos 2:1–4, que confronta quem julga os outros e aponta a bondade de Deus que conduz ao arrependimento. A vaidade da mente aparece em Efésios 4:17–24; a criação sujeita à vaidade, em Romanos 8:20–21, tem outro contexto: sofrimento e esperança de libertação da criação.",
+  "passagens_contexto": [
+    {
+      "referencia": "Romanos 1:18–32",
+      "link": "https://www.bibliaonline.com.br/acf/rm/1"
+    },
+    {
+      "referencia": "Romanos 2:1–4",
+      "link": "https://www.bibliaonline.com.br/acf/rm/2"
+    },
+    {
+      "referencia": "Efésios 4:17–24",
+      "link": "https://www.bibliaonline.com.br/acf/ef/4"
+    },
+    {
+      "referencia": "Romanos 8:18–25",
+      "link": "https://www.bibliaonline.com.br/acf/rm/8"
+    }
+  ],
+  "praticas": [
+    {
+      "convite": "Ouça alguém com atenção e ofereça uma ajuda concreta que esteja ao seu alcance.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Mateus 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        }
+      ]
+    },
+    {
+      "convite": "Se enganou alguém numa cobrança, corrija o valor e explique o erro com honestidade.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Marcos 1:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mc/1"
+        }
+      ]
+    },
+    {
+      "convite": "Devolva um objeto emprestado, reconheça uma informação falsa que compartilhou e corrija-a.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Efésios 4:22–28",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        }
+      ]
+    },
+    {
+      "convite": "Rejeite uma relação baseada em traição e estabeleça limites que respeitem os compromissos assumidos.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:27–30",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "convite": "Em uma discussão, interrompa os insultos e procure conversar com respeito quando houver condições seguras.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:21–24",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "convite": "Separe alimentos ou roupas em condições de uso e ajude sem expor a pessoa atendida.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Tiago 1:22–27",
+          "link": "https://www.bibliaonline.com.br/acf/tg/1"
+        }
+      ]
+    },
+    {
+      "convite": "Ao sentir inveja, evite diminuir alguém e escolha reconhecer o bem na vida dessa pessoa.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Gálatas 5:13–26",
+          "link": "https://www.bibliaonline.com.br/acf/gl/5"
+        }
+      ]
+    },
+    {
+      "convite": "Antes de responder a uma provocação, pergunte como agir com justiça sem repetir a agressão.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Romanos 12:1–21",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        }
+      ]
+    },
+    {
+      "convite": "Leia uma passagem com atenção e escolha uma atitude concreta para praticar a partir dela.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "João 15:1–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        }
+      ]
+    },
+    {
+      "convite": "Trate com a mesma dignidade quem pode ou não oferecer algo em troca.",
+      "pergunta": "Que atitude preciso abandonar ou cultivar hoje?",
+      "oracao": "Senhor, ajuda-me a reconhecer meus erros, acolher tua Palavra e praticar o amor com sinceridade. Em nome de Jesus, amém.",
+      "passagens": [
+        {
+          "referencia": "Mateus 23:23–28",
+          "link": "https://www.bibliaonline.com.br/acf/mt/23"
+        }
+      ]
+    }
+  ],
+  "ensinamentos_jesus": [
+    {
+      "titulo": "Amar a Deus e ao próximo",
+      "explicacao": "Dedicar a vida a Deus e tratar o próximo com amor.",
+      "passagens": [
+        {
+          "referencia": "Mateus 22:34–40",
+          "link": "https://www.bibliaonline.com.br/acf/mt/22"
+        }
+      ]
+    },
+    {
+      "titulo": "Amar como Jesus amou",
+      "explicacao": "Servir e cuidar, expressando o amor em atitudes.",
+      "passagens": [
+        {
+          "referencia": "João 13:34–35; 15:12–17",
+          "link": "https://www.bibliaonline.com.br/acf/jo/15"
+        }
+      ]
+    },
+    {
+      "titulo": "Amar os inimigos e orar por quem persegue",
+      "explicacao": "Não alimentar a vingança; buscar o bem sem confundir perdão com aceitar violência.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:43–48",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Buscar reconciliação e praticar a misericórdia",
+      "explicacao": "Reconhecer o dano causado, buscar reparação e tratar o outro com compaixão.",
+      "passagens": [
+        {
+          "referencia": "Mateus 5:21–24; 6:14–15",
+          "link": "https://www.bibliaonline.com.br/acf/mt/5"
+        }
+      ]
+    },
+    {
+      "titulo": "Tratar os outros com o cuidado que desejamos receber",
+      "explicacao": "Agir com respeito, verdade e consideração nas relações.",
+      "passagens": [
+        {
+          "referencia": "Mateus 7:12",
+          "link": "https://www.bibliaonline.com.br/acf/mt/7"
+        }
+      ]
+    },
+    {
+      "titulo": "Servir em vez de disputar superioridade",
+      "explicacao": "Usar a responsabilidade para cuidar, em vez de dominar e humilhar.",
+      "passagens": [
+        {
+          "referencia": "Marcos 10:42–45",
+          "link": "https://www.bibliaonline.com.br/acf/mc/10"
+        }
+      ]
+    },
+    {
+      "titulo": "Ouvir e praticar a Palavra",
+      "explicacao": "Levar os ensinamentos de Jesus às decisões de cada dia.",
+      "passagens": [
+        {
+          "referencia": "Mateus 7:24–27",
+          "link": "https://www.bibliaonline.com.br/acf/mt/7"
+        }
+      ]
+    }
+  ],
+  "pai_nosso": {
+    "referencia": "Mateus 6:9–13",
+    "traducao": "Bíblia Livre (BLIVRE), edição Textus Receptus",
+    "texto": "Pai nosso, que estás nos céus, santificado seja o teu nome.\nVenha o teu Reino.\nSeja feita a tua vontade, tanto na terra, assim como no céu.\nO pão nosso de cada dia nos dá hoje.\nE perdoa-nos nossas dívidas, assim como nós também perdoamos aos nossos devedores.\nE não nos conduzas à tentação, mas livra-nos do mal; porque teu é o Reino, o poder, e a glória, para sempre, Amém.",
+    "fonte": "https://ebible.org/study/content/texts/porbr2018/MT6.html",
+    "creditos": "Bíblia Livre, © Diego Santos, Mario Sérgio e Marco Teles, edição de 2018. Fonte eBible.org; licença CC BY 4.0 conforme https://ebible.org/details.php?id=porbr2018. Quebras de linha adicionadas para leitura.",
+    "estudo": [
+      {
+        "titulo": "Deus e sua vontade",
+        "texto": "Os primeiros pedidos orientam a oração para Deus, seu nome, seu Reino e sua vontade."
+      },
+      {
+        "titulo": "Pão e cuidado cotidiano",
+        "texto": "O pedido pelo pão lembra nossas necessidades e a vida partilhada: a oração é feita no plural."
+      },
+      {
+        "titulo": "Perdão recebido e oferecido",
+        "texto": "O pedido de perdão se liga à maneira como tratamos quem nos ofende. Leia também Mateus 6:14–15."
+      },
+      {
+        "titulo": "Auxílio diante da tentação e do mal",
+        "texto": "A oração expressa dependência de Deus. Sua formulação varia entre traduções; algumas edições e usos litúrgicos apresentam a doxologia de forma diferente."
+      }
+    ]
+  },
+  "vicios_nota": "Na tradição católica, os sete pecados capitais são chamados assim porque geram outros vícios; não são sinônimos automáticos de pecado mortal. Para a classificação de pecado mortal, o Catecismo apresenta matéria grave, pleno conhecimento e consentimento deliberado (1857–1859). A lista tradicional é uma organização catequética; não aparece como uma lista única de sete itens em uma passagem bíblica. As referências abaixo ajudam a estudar as condutas e virtudes relacionadas.",
+  "vicios": [
+    {
+      "titulo": "Soberba e vaidade",
+      "abandonar": "Buscar superioridade, desprezar os outros e fazer o bem só para ser visto.",
+      "cultivar": "Humildade, escuta e serviço discreto.",
+      "ambiente_risco": "Comparação constante, elogios sem correção e competição por aparência.",
+      "ambiente_cuidado": "Aceitar uma correção, agradecer uma ajuda e servir sem publicar para receber aplausos.",
+      "passagens": [
+        {
+          "referencia": "Filipenses 2:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/fp/2"
+        }
+      ]
+    },
+    {
+      "titulo": "Avareza, ganância e cobiça",
+      "abandonar": "Colocar o acúmulo acima da justiça e desejar tomar o que é do outro.",
+      "cultivar": "Generosidade, contentamento e responsabilidade com recursos.",
+      "ambiente_risco": "Consumo por ostentação, promessas de ganho fácil e acordos que dependem de enganar.",
+      "ambiente_cuidado": "Planejar as despesas, recusar uma vantagem injusta e reservar algo para partilhar.",
+      "passagens": [
+        {
+          "referencia": "Lucas 12:13–21",
+          "link": "https://www.bibliaonline.com.br/acf/lc/12"
+        }
+      ]
+    },
+    {
+      "titulo": "Inveja",
+      "abandonar": "Diminuir o outro por ressentimento diante de suas conquistas.",
+      "cultivar": "Gratidão, bondade e alegria pelo bem do próximo.",
+      "ambiente_risco": "Comparações repetidas e conversas que depreciam quem prospera.",
+      "ambiente_cuidado": "Reduzir comparações e reconhecer uma qualidade de alguém sem competir.",
+      "passagens": [
+        {
+          "referencia": "Tiago 3:13–18",
+          "link": "https://www.bibliaonline.com.br/acf/tg/3"
+        }
+      ]
+    },
+    {
+      "titulo": "Ira destrutiva",
+      "abandonar": "Alimentar ódio, ameaçar e usar a indignação para ferir.",
+      "cultivar": "Mansidão, paciência e domínio próprio.",
+      "ambiente_risco": "Discussões provocativas, insultos e resposta imediata a toda provocação.",
+      "ambiente_cuidado": "Fazer uma pausa, não enviar a mensagem ofensiva e retomar a conversa com respeito.",
+      "passagens": [
+        {
+          "referencia": "Efésios 4:26–32",
+          "link": "https://www.bibliaonline.com.br/acf/ef/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Luxúria e uso do outro",
+      "abandonar": "Cultivar desejos e condutas que reduzem alguém a objeto e traem compromissos.",
+      "cultivar": "Fidelidade, respeito e domínio próprio.",
+      "ambiente_risco": "Conteúdos e situações que você reconhece que alimentam exploração ou traição.",
+      "ambiente_cuidado": "Estabelecer limites e escolher relações de respeito e responsabilidade.",
+      "passagens": [
+        {
+          "referencia": "1 Tessalonicenses 4:3–8",
+          "link": "https://www.bibliaonline.com.br/acf/1ts/4"
+        }
+      ]
+    },
+    {
+      "titulo": "Gula e falta de temperança",
+      "abandonar": "Deixar o excesso governar as escolhas e ignorar o cuidado com o corpo e a partilha.",
+      "cultivar": "Temperança, gratidão e equilíbrio.",
+      "ambiente_risco": "Hábitos de desperdício, excesso repetido e consumo sem atenção às necessidades.",
+      "ambiente_cuidado": "Adotar uma rotina equilibrada e evitar desperdício; comer não é, por si, pecado.",
+      "passagens": [
+        {
+          "referencia": "1 Coríntios 10:23–31",
+          "link": "https://www.bibliaonline.com.br/acf/1co/10"
+        }
+      ]
+    },
+    {
+      "titulo": "Preguiça ou negligência espiritual",
+      "abandonar": "Abandonar deliberadamente o bem e responsabilidades que estão ao alcance.",
+      "cultivar": "Diligência, constância e disposição para servir.",
+      "ambiente_risco": "Rotina sem espaço para o estudo, adiamento persistente e ausência de apoio.",
+      "ambiente_cuidado": "Escolher uma tarefa pequena e possível para hoje. Descanso, TDAH, sofrimento e limitações de saúde não devem ser confundidos automaticamente com negligência moral.",
+      "passagens": [
+        {
+          "referencia": "Romanos 12:9–13",
+          "link": "https://www.bibliaonline.com.br/acf/rm/12"
+        }
+      ]
+    }
+  ],
+  "ambiente_nota": "As situações descritas são exemplos para autoexame, não uma forma de rotular pessoas ou lugares como impuros. Crie limites para hábitos prejudiciais sem desprezar quem pensa diferente. Buscar apoio e descanso pode fazer parte da mudança.",
+  "integridade": {
+    "titulo": "Corrupção e cumplicidade",
+    "texto": "A corrupção não se limita à política: pode aparecer na fraude, no suborno e na exploração cotidiana. Recuse vantagens que dependam de prejudicar outra pessoa, mantenha registros honestos e procure orientação responsável para reparar erros.",
+    "passagens": [
+      {
+        "referencia": "Êxodo 23:6–8",
+        "link": "https://www.bibliaonline.com.br/acf/ex/23"
+      },
+      {
+        "referencia": "Lucas 3:12–14",
+        "link": "https://www.bibliaonline.com.br/acf/lc/3"
+      }
+    ]
+  }
+}

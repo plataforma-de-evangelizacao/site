@@ -1,0 +1,65 @@
+{
+  "principio": "Estudiar el mundo a la luz de la fe cristiana, poniendo a Dios en primer plano y relacionando el conocimiento con el cuidado de la creación y del prójimo.",
+  "disciplinas": [
+    {
+      "titulo": "Ciencia",
+      "fundamento": "Investigación del mundo natural mediante observaciones, modelos y pruebas. Las explicaciones científicas se evalúan a partir de evidencias y pueden revisarse.",
+      "pergunta": "¿Cómo estudiar la creación con curiosidad y rigor sin usar a Dios para llenar lo que todavía no sabemos?",
+      "pratica": "Observa una cuestión cotidiana y distingue observación, hipótesis y conclusión."
+    },
+    {
+      "titulo": "Matemáticas",
+      "fundamento": "Estudia cantidades, estructuras, relaciones y formas mediante definiciones y razonamiento lógico. Las demostraciones matemáticas tienen criterios distintos de las pruebas empíricas.",
+      "pergunta": "¿Cómo inspiran el orden y las relaciones matemáticas nuestra reflexión cristiana sin convertirla en una demostración de la existencia de Dios?",
+      "pratica": "Usa las medidas y las cuentas con honestidad al planear una compra o un reparto de recursos."
+    },
+    {
+      "titulo": "Historia",
+      "fundamento": "Investiga sociedades y acontecimientos a lo largo del tiempo mediante fuentes, análisis crítico e interpretación contextual.",
+      "pergunta": "¿Cómo conocer el contexto bíblico y la historia de las comunidades cristianas, reconociendo logros, conflictos y errores?",
+      "pratica": "Compara fuentes y distingue el registro histórico de la interpretación religiosa del acontecimiento."
+    },
+    {
+      "titulo": "Geografía",
+      "fundamento": "Estudia el espacio geográfico y las relaciones entre la sociedad y la naturaleza en diferentes escalas.",
+      "pergunta": "¿Cómo orienta el cuidado de la creación y del prójimo nuestra responsabilidad por el lugar donde vivimos?",
+      "pratica": "Observa una necesidad de acceso al agua, movilidad o cuidado ambiental en tu comunidad."
+    },
+    {
+      "titulo": "Lenguaje y semántica",
+      "fundamento": "El lenguaje permite la comunicación; la semántica estudia el significado, en diálogo con otros campos que investigan el contexto y el uso.",
+      "pergunta": "¿Cómo hablar de la fe con claridad e interpretar un texto respetando el significado de sus palabras y su contexto?",
+      "pratica": "Explica un término religioso con palabras sencillas y comprueba si la otra persona lo entendió."
+    },
+    {
+      "titulo": "Filosofía",
+      "fundamento": "Examina problemas de conocimiento, existencia, ética y sentido mediante conceptos y argumentos. Existen distintas tradiciones y posturas.",
+      "pergunta": "¿Qué preguntas sobre Dios, la libertad y la vida buena podemos investigar, distinguiendo argumentos, supuestos y creencias?",
+      "pratica": "Presenta una razón para tu postura y escucha una objeción sin descalificar a quien pregunta."
+    },
+    {
+      "titulo": "Sociología",
+      "fundamento": "Investiga relaciones, grupos, instituciones y procesos sociales mediante distintos métodos de investigación.",
+      "pergunta": "¿Cómo pueden nuestras comunidades reconocer las desigualdades y practicar la dignidad y la solidaridad sin reducir a las personas a etiquetas?",
+      "pratica": "Escucha a quien vive una dificultad antes de formular una explicación o proponer una acción."
+    },
+    {
+      "titulo": "Arquitectura e ingeniería",
+      "fundamento": "La arquitectura trabaja con los espacios y sus usos; las ingenierías aplican conocimientos para diseñar y resolver problemas técnicos. La seguridad y las normas requieren profesionales habilitados.",
+      "pergunta": "¿Cómo pueden los espacios y proyectos expresar cuidado, accesibilidad y responsabilidad con la vida?",
+      "pratica": "Observa si una entrada permite el acceso de personas con movilidad reducida. Las modificaciones técnicas deben ser evaluadas por un profesional."
+    },
+    {
+      "titulo": "Carpintería y oficios",
+      "fundamento": "Implican conocimiento de materiales, herramientas, medidas y técnicas de construcción y acabado, con prácticas de seguridad.",
+      "pergunta": "¿Cómo puede el trabajo bien hecho servir al prójimo y respetar la dignidad de quienes trabajan?",
+      "pratica": "Valora al trabajador, acuerda condiciones justas y no improvises el uso de herramientas sin preparación."
+    },
+    {
+      "titulo": "Música y artes",
+      "fundamento": "Estudian y crean formas de expresión mediante sonidos, imágenes, movimientos y otros lenguajes en distintos contextos culturales.",
+      "pergunta": "¿Cómo pueden la belleza y la expresión artística alimentar la gratitud, la reflexión y el cuidado sin clasificar un género entero como bueno o malo?",
+      "pratica": "Escucha con atención la letra, el contexto y tu experiencia. Elige lo que favorezca una relación saludable con la música."
+    }
+  ]
+}

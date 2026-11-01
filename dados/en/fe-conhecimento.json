@@ -1,0 +1,65 @@
+{
+  "principio": "Studying the world in the light of Christian faith, bringing God into focus and connecting knowledge with care for creation and our neighbour.",
+  "disciplinas": [
+    {
+      "titulo": "Science",
+      "fundamento": "Investigation of the natural world through observations, models and tests. Scientific explanations are assessed against evidence and may be revised.",
+      "pergunta": "How can we study creation with curiosity and rigour without using God to fill what we do not yet know?",
+      "pratica": "Observe an everyday question and distinguish observation, hypothesis and conclusion."
+    },
+    {
+      "titulo": "Mathematics",
+      "fundamento": "It studies quantities, structures, relations and forms through definitions and logical reasoning. Mathematical proofs have different criteria from empirical tests.",
+      "pergunta": "How do mathematical order and relationships inspire Christian reflection without turning that reflection into a proof of God’s existence?",
+      "pratica": "Use measurements and calculations honestly when planning a purchase or sharing resources."
+    },
+    {
+      "titulo": "History",
+      "fundamento": "It investigates societies and events over time through sources, critical examination and interpretation in context.",
+      "pergunta": "How can we learn about the biblical context and the history of Christian communities, recognizing achievements, conflicts and mistakes?",
+      "pratica": "Compare sources and distinguish the historical record from a religious interpretation of the event."
+    },
+    {
+      "titulo": "Geography",
+      "fundamento": "It studies geographical space and relationships between society and nature at different scales.",
+      "pergunta": "How does care for creation and our neighbour guide our responsibility for the place where we live?",
+      "pratica": "Notice a need involving access to water, mobility or environmental care in your community."
+    },
+    {
+      "titulo": "Language and semantics",
+      "fundamento": "Language makes communication possible; semantics studies meaning, in dialogue with other fields investigating context and use.",
+      "pergunta": "How can we speak clearly about faith and interpret a text while respecting the meaning of its words and its context?",
+      "pratica": "Explain a religious term in simple words and check whether the other person understood."
+    },
+    {
+      "titulo": "Philosophy",
+      "fundamento": "It examines questions of knowledge, existence, ethics and meaning through concepts and arguments. There are different traditions and positions.",
+      "pergunta": "Which questions about God, freedom and a good life can we investigate while distinguishing arguments, assumptions and beliefs?",
+      "pratica": "Give a reason for your position and listen to an objection without dismissing the person asking."
+    },
+    {
+      "titulo": "Sociology",
+      "fundamento": "It investigates relationships, groups, institutions and social processes through different research methods.",
+      "pergunta": "How can our communities recognize inequalities and practise dignity and solidarity without reducing people to labels?",
+      "pratica": "Listen to the person experiencing a difficulty before offering an explanation or proposing action."
+    },
+    {
+      "titulo": "Architecture and engineering",
+      "fundamento": "Architecture addresses spaces and their uses; engineering applies knowledge to design and solve technical problems. Safety and regulatory requirements call for qualified professionals.",
+      "pergunta": "How can spaces and projects express care, accessibility and responsibility for life?",
+      "pratica": "Notice whether an entrance is accessible to people with reduced mobility. Technical alterations should be assessed by a professional."
+    },
+    {
+      "titulo": "Carpentry and trades",
+      "fundamento": "They involve knowledge of materials, tools, measurements and building and finishing techniques, with safe working practices.",
+      "pergunta": "How can work done well serve our neighbour and respect the dignity of workers?",
+      "pratica": "Value workers, agree on fair conditions and do not improvise with tools without preparation."
+    },
+    {
+      "titulo": "Music and the arts",
+      "fundamento": "They study and create forms of expression through sounds, images, movement and other languages in different cultural contexts.",
+      "pergunta": "How can beauty and artistic expression nurture gratitude, reflection and care without classifying an entire genre as good or bad?",
+      "pratica": "Listen attentively to the lyrics, context and your experience. Choose what supports a healthy relationship with music."
+    }
+  ]
+}

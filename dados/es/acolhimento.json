@@ -1,0 +1,72 @@
+{
+  "nav": "Necesito ayuda",
+  "short": "Ayuda",
+  "eyebrow": "ACOGIDA Y APOYO",
+  "title": "No tienes que atravesar esto sin apoyo.",
+  "intro": "Si estás sufriendo, sientes angustia o tristeza intensa, o piensas en hacerte daño, mereces que te escuchen y te tomen en serio. Este espacio te ayuda a encontrar un siguiente paso y apoyo humano.",
+  "now": "Necesito ayuda ahora",
+  "later": "Quiero apoyo para los próximos días",
+  "urgentTitle": "Si piensas en suicidarte o hacerte daño ahora",
+  "urgentText": "Si crees que puedes actuar, ya te has lesionado o has tomado algo para hacerte daño, busca atención de emergencia ahora. En Brasil, llama al 192 (SAMU) o acude a urgencias con alguien. No esperes una respuesta del proyecto.",
+  "emergency": "Llamar al 192 · SAMU (Brasil)",
+  "country": "Los servicios siguientes son de Brasil, independientemente del idioma elegido. Fuera de Brasil, busca el servicio de emergencia y los recursos oficiales de crisis del país donde estés.",
+  "safeTitle": "Un siguiente paso seguro",
+  "safeSteps": [
+    "Procura estar con alguien de confianza. Dile de forma directa que necesitas compañía y ayuda.",
+    "Aléjate de objetos o situaciones que puedan ponerte en riesgo. Si es posible, pide ayuda a alguien para hacer más seguro el entorno.",
+    "Si eres niño o adolescente, busca a un adulto seguro: familiar, docente, cuidador o profesional de salud.",
+    "Si hay peligro inmediato, prioriza la atención de emergencia. El chat y el correo no sustituyen esa atención."
+  ],
+  "listenTitle": "Hablar con alguien",
+  "listenText": "El CVV ofrece escucha acogedora, gratuita y confidencial por teléfono y chat. El teléfono funciona las 24 horas; consulta la disponibilidad del chat al abrir el servicio.",
+  "call": "Llamar al 188 · CVV (Brasil)",
+  "chat": "Abrir chat del CVV",
+  "connectTitle": "Puede ser difícil encontrar las palabras.",
+  "connectText": "Puedes copiar este mensaje y enviarlo a alguien de confianza. El sitio no lo envía por ti.",
+  "message": "No estoy bien y necesito compañía. ¿Puedes quedarte conmigo o ayudarme a buscar atención?",
+  "copy": "Copiar un mensaje para pedir compañía",
+  "copied": "Mensaje copiado. Elige a alguien de confianza y envíalo por el medio que prefieras.",
+  "copyFailed": "Selecciona el mensaje de arriba y cópialo con el menú de tu dispositivo.",
+  "nextTitle": "Cuidado más allá de este momento",
+  "nextText": "La fe puede acompañar el cuidado. La depresión y el sufrimiento emocional no demuestran falta de fe. La psicoterapia, la evaluación médica, el apoyo social y el acompañamiento espiritual pueden formar parte de una red de cuidado.",
+  "cards": [
+    {
+      "title": "Depresión, angustia y crisis existencial",
+      "text": "Si la tristeza o la angustia persisten o afectan tu vida, busca una unidad básica de salud (UBS), un CAPS o un profesional de salud. No necesitas esperar a llegar al límite para pedir ayuda.",
+      "action": "Conocer la red CAPS del SUS en Brasil",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps/caps/"
+    },
+    {
+      "title": "Alcohol y otras sustancias",
+      "text": "Busca una UBS o un CAPS para conversar sobre el cuidado adecuado. En personas con dependencia del alcohol, dejarlo de repente puede causar abstinencia grave; busca orientación médica para hacerlo con seguridad. No cambies la medicación por tu cuenta.",
+      "action": "Orientaciones del Ministerio de Salud de Brasil sobre alcohol",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/transtornos-por-uso-de-alcool-no-adulto/servico-de-atendimento-movel/manejo-inicial/"
+    },
+    {
+      "title": "Quiero dejar de fumar",
+      "text": "El SUS de Brasil ofrece atención para quienes desean dejar de fumar. Pregunta en una unidad básica de salud cercana por los servicios disponibles en tu región. Puedes buscar apoyo para planear el cambio y afrontar las dificultades sin condenarte por necesitar ayuda.",
+      "action": "Orientación del SUS de Brasil para dejar de fumar",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/tabagismo/sou-paciente/"
+    },
+    {
+      "title": "Si hay riesgo de herir a alguien",
+      "text": "Aléjate de la discusión y de situaciones de confrontación. Busca una persona segura o atención de emergencia si no puedes mantener tu seguridad y la de los demás. Puedes pedir ayuda antes de actuar.",
+      "action": "Conocer el servicio SAMU en Brasil",
+      "url": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192"
+    }
+  ],
+  "pauseTitle": "Una pausa opcional, sin exigencias",
+  "pauseText": "Si te resulta cómodo, nota los pies o el cuerpo apoyados y observa algunos elementos a tu alrededor. No necesitas resolverlo todo en este minuto. Si aumenta el malestar, detente y busca compañía. La pausa no sustituye la ayuda en una emergencia.",
+  "faithTitle": "Si la oración tiene sentido para ti",
+  "prayer": "Dios de misericordia, acoge mi dolor y ayúdame a dar un siguiente paso seguro. Dame valor para pedir compañía y aceptar cuidado. Que encuentre personas que escuchen con respeto. En el nombre de Jesús, amén.",
+  "faithNote": "Oración original de la plataforma. No es una promesa de curación ni sustituye el tratamiento. Pedir ayuda no disminuye tu fe.",
+  "contactTitle": "Contacto con la plataforma",
+  "contactText": "Para conversar sobre el proyecto o pedir una oración, puedes escribir a Marcos. El correo no se supervisa las 24 horas, no tiene un plazo garantizado de respuesta y no es un canal de crisis.",
+  "contactAction": "Escribir un correo al proyecto",
+  "careAction": "Continuar en Cuidar de ti →",
+  "privacy": "Este espacio no pide diagnósticos, no recopila relatos de crisis ni envía mensajes automáticamente. Los sitios externos tienen sus propias políticas.",
+  "sourcesTitle": "Fuentes y límites",
+  "sourcesText": "Este es un espacio educativo y de orientación hacia servicios. No sustituye una evaluación profesional. Los colores, la música y los textos pueden resultar más o menos cómodos para cada persona; no curan la depresión ni garantizan evitar una crisis.",
+  "home": "¿Está siendo difícil ahora? Encuentra apoyo humano y formas de pedir ayuda.",
+  "homeAction": "Abrir acogida y apoyo →"
+}

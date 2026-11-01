@@ -1,0 +1,33 @@
+{
+  "titulo": "Become a partner",
+  "convite": "Join a community that wants to unite the Gospel message with care for people. Together we can build initiatives for food, clothing, education and welcome, respecting each person’s dignity.",
+  "email": "marcoslucaspereira1@gmail.com",
+  "whatsapp": "",
+  "cidade": "Nova Bandeirantes",
+  "estado": "Mato Grosso",
+  "endereco": "",
+  "frentes": [
+    {
+      "titulo": "Food and essential needs",
+      "descricao": "Building initiatives so that more people can access food, clothing, footwear and everyday essentials."
+    },
+    {
+      "titulo": "Education and learning",
+      "descricao": "Bringing together resources and people willing to support learning, reflection and character formation for children, young people, adults and older people."
+    },
+    {
+      "titulo": "Welcome and dignity",
+      "descricao": "Working with institutions and professionals to develop support for people in vulnerable situations, including those experiencing homelessness."
+    },
+    {
+      "titulo": "Gatherings and the message",
+      "descricao": "Receiving invitations for talks, visits and gatherings in other cities, planning each participation together."
+    }
+  ],
+  "partilha": "Sharing means recognizing someone with the same dignity as our own. We want to turn faith and resources into care: food that is missing, needed clothing, an opportunity to learn and a welcoming presence. Each partnership can begin with one possible gesture, made with responsibility, respect and transparency.",
+  "etapas": [
+    "Tell us who you are and which community or institution you represent.",
+    "Describe the idea, the need and the city where you would like the activity to take place.",
+    "Let us discuss possibilities, responsibilities and next steps."
+  ]
+}

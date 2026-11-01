@@ -1,0 +1,44 @@
+[
+  {
+    "id": "abraao",
+    "titulo": "Abraão",
+    "testamento": "Antigo Testamento",
+    "ordem": 1,
+    "descricao": "Chamado, caminhada e aliança. Leitura geral de contexto: Gênesis 12–25; cada vídeo terá suas referências específicas após revisão.",
+    "passagens": [
+      {
+        "referencia": "Gênesis 12 — início da leitura de contexto",
+        "protestante": "https://www.bibliaonline.com.br/acf/gn/12",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/genesis/12/"
+      }
+    ]
+  },
+  {
+    "id": "moises",
+    "titulo": "Moisés",
+    "testamento": "Antigo Testamento",
+    "ordem": 2,
+    "descricao": "Nascimento, saída do Egito e caminhada no deserto. A vida de Moisés é narrada principalmente de Êxodo a Deuteronômio; Gênesis integra o Pentateuco, mas não narra sua vida.",
+    "passagens": [
+      {
+        "referencia": "Êxodo 1 — início do contexto narrativo",
+        "protestante": "https://www.bibliaonline.com.br/acf/ex/1",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/exodo/1/"
+      }
+    ]
+  },
+  {
+    "id": "jonas",
+    "titulo": "Jonas",
+    "testamento": "Antigo Testamento",
+    "ordem": 3,
+    "descricao": "A história de Jonas é narrada nos quatro capítulos do livro. Comece pelo capítulo 1 e prossiga até o 4.",
+    "passagens": [
+      {
+        "referencia": "Jonas 1 — início do livro",
+        "protestante": "https://www.bibliaonline.com.br/acf/jn/1",
+        "catolica": "https://www.bibliacatolica.com.br/biblia-ave-maria/jonas/1/"
+      }
+    ]
+  }
+]
