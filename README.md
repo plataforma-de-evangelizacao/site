@@ -1129,3 +1129,8 @@ O catálogo atual permanece com propostas, sem horários inventados. Integraçõ
 ## Correção de espaçamento e revisão móvel
 
 Consulte `CHECKLIST-RESPONSIVO.md` para os resultados e as verificações em aparelhos reais ainda necessárias. Foram corrigidos os espaços em títulos com quebras de linha ocultas no celular, o cabeçalho em telas estreitas e o nome acessível do menu. A revisão usa larguras de 320 a 1920 pixels CSS no navegador; não representa certificação em Android, Safari ou TV reais. Os três arquivos de código alterados são `index.html`, `assets/platform.js` e `assets/platform.css`.
+
+
+### Apresentação de projetos na página inicial
+
+O bloco inicial chama-se **Projetos em desenvolvimento** e apresenta as categorias de propostas. Há uma única chamada: **Clique para ver todos os nossos projetos**, que abre `#projetos`. O link isolado de Ideias para o bem comum foi removido da página inicial. O grupo editorial e seus dados permanecem dentro de Projeto. Edite `projectsIntro`, `projectsUnderway` e `allProjects` em `pagina-inicial.json` nos três idiomas para alterar essa apresentação.
