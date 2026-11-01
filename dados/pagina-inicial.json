@@ -13,7 +13,7 @@
   "schoolNote": "Introduções já disponíveis; cursos e materiais aprofundados em preparação. A reflexão teológica é identificada e respeita os métodos de cada disciplina.",
   "openSchool": "Conhecer a escola →",
   "fundamentals": "Ler os fundamentos e as introduções →",
-  "projects": "Projetos: tecnologia para servir",
+  "projects": "Projeto: tecnologia para servir",
   "projectsIntro": "Ferramentas gratuitas que queremos desenvolver com apoio de inteligência artificial, começando por necessidades de Nova Bandeirantes. Escolas, igrejas e serviços da comunidade são nossos primeiros focos.",
   "projectsNote": "Desenvolvimento · etapa de planejamento. Os nomes abaixo são propostas: ainda não há software entregue, vínculo com a prefeitura ou implantação em instituições. Cada ficha terá acesso ao código e à documentação quando disponíveis.",
   "allProjects": "Ver todos os projetos →",
@@ -108,7 +108,7 @@
     },
     {
       "id": "projetos",
-      "titulo": "Projetos de software",
+      "titulo": "Projeto: ferramentas e ideias",
       "descricao": "Ferramentas para escolas, igrejas e comunidade."
     }
   ],
@@ -157,5 +157,13 @@
   "faithCenterIntro": "Deus é o centro desta caminhada. Partimos da fé cristã para compreender a criação, buscar sentido no que estudamos e transformar conhecimento em amor e cuidado. Ciência, matemática, história, linguagem, filosofia, artes e ofícios são espaços para essa busca.",
   "faithCenterPrinciple": "Nossa orientação é buscar em Deus o fundamento para compreender todas as coisas. Estudamos as Escrituras, investigamos cada disciplina e desenvolvemos reflexões sobre criação, existência de Deus e propósito. Identificamos as referências, os argumentos e as interpretações apresentados, com responsabilidade pelo que ensinamos.",
   "faithCenterMethod": "Cada material deve unir estudo, fé e serviço: conhecer o assunto, refletir sobre Deus como Criador e perguntar como esse aprendizado pode servir à vida e ao próximo. Questões em aberto são acolhidas como parte da busca, com humildade para estudar, ouvir e revisar.",
-  "faithCenterScripture": "Gênesis apresenta a criação como boa; Colossenses expressa a centralidade de Cristo na criação. Essas passagens orientam nossa convicção cristã de colocar Deus no centro do conhecimento e da vida. A leitura das Escrituras acompanha o estudo e a reflexão de cada disciplina."
+  "faithCenterScripture": "Gênesis apresenta a criação como boa; Colossenses expressa a centralidade de Cristo na criação. Essas passagens orientam nossa convicção cristã de colocar Deus no centro do conhecimento e da vida. A leitura das Escrituras acompanha o estudo e a reflexão de cada disciplina.",
+  "projectsHubTitle": "Projeto",
+  "technologyGroup": "Tecnologia para servir",
+  "projectsUnderway": "Projetos em desenvolvimento",
+  "projectHubIntro": "Conheça as ferramentas e ideias que queremos transformar em benefício para a comunidade. Abra um grupo para explorar suas propostas e acompanhar o andamento.",
+  "communityAgenda": "Celebrações, encontros e atividades",
+  "communityIntro": "Conheça os espaços das comunidades de Nova Bandeirantes. Aqui serão apresentados os horários de celebrações, encontros de oração, formação e ações, após confirmação com cada instituição.",
+  "communityPending": "Agenda aguardando informações confirmadas. As parcerias ainda serão propostas.",
+  "openCommunity": "Conhecer a comunidade e sua agenda →"
 }

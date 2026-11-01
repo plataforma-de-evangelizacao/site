@@ -51,3 +51,15 @@ html{scroll-behavior:auto;scroll-padding-top:110px}body{font-family:Arial,Helvet
 .material-cover{width:100%;height:145px;object-fit:contain;background:var(--soft);border:1px solid var(--line);border-radius:5px;display:grid;place-items:center;font:3rem Georgia;color:var(--accent);margin-bottom:18px}
 
 #faith-subjects{align-items:start}#faith-subjects>details{align-self:start;min-height:0;height:auto}#faith-subjects>details:not([open]){padding-bottom:25px}.faith-resource-group{margin-top:18px;border-top:1px solid var(--line);padding-top:12px}.faith-resource-group h5{font-size:.9rem;margin:10px 0}.faith-resource{display:flex;flex-direction:column;align-items:start;gap:10px;margin:15px 0}.faith-resource strong{font-size:.95rem}.faith-resource p{margin:0}.faith-resource a{margin-top:8px}
+
+/* Centralized project groups and institutional schedules. */
+.label-prefix{font-weight:750;color:var(--accent,#94723e)}
+.project-group{margin:1.5rem 0;padding:1.4rem;border:1px solid var(--line,#85958f);border-radius:14px;align-self:start}
+.project-group>summary{cursor:pointer;font-size:1.45rem;font-weight:700;line-height:1.5}.project-group[open]>summary{margin-bottom:1.2rem}
+.community-page{max-width:1100px;margin:auto;padding:3rem 1.5rem}.community-page h2{margin-top:2rem}.community-event{border-bottom:1px solid var(--line,#85958f);padding:1rem 0}.community-page a{display:inline-block;margin:.5rem 1rem .5rem 0}
+
+/* Small screens: keep controls readable instead of squeezing the header. */
+@media(max-width:480px){
+html{scroll-padding-top:160px}.platform-nav{flex-wrap:wrap;gap:10px;padding:10px 14px}.platform-nav .brand{max-width:none;font-size:10px;min-width:0}.platform-nav .brand small{font-size:8px}.platform-nav .brand .mark{display:flex}.preferences{width:100%;justify-content:space-between;gap:8px;min-width:0}.platform-header .support-nav{max-width:none;font-size:.75rem;min-height:44px;padding:6px 10px;box-sizing:border-box;white-space:normal;flex:1}.language-label select{max-width:100px;font-size:.75rem;padding:8px 5px}.icon-control,.menu-control{width:44px;min-width:44px;min-height:44px;flex-shrink:0}.platform-menu{max-height:calc(100dvh - 135px)}
+}
+.path-choice,.vitrine-card,.project-group,.community-event{min-width:0;overflow-wrap:break-word}

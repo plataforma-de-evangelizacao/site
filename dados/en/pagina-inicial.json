@@ -13,7 +13,7 @@
   "schoolNote": "Introductions are available; courses and in-depth resources are in preparation. Theological reflection is identified and respects each discipline’s methods.",
   "openSchool": "Explore the school →",
   "fundamentals": "Read the foundations and introductions →",
-  "projects": "Projects: technology that serves",
+  "projects": "Project: technology that serves",
   "projectsIntro": "Free tools we aim to develop with AI assistance, starting with needs in Nova Bandeirantes. Schools, churches and community services are our first focus.",
   "projectsNote": "Development · planning stage. The names below are proposals: no software has been delivered, and no municipal affiliation or institutional deployment is claimed. Each entry will link to code and documentation when available.",
   "allProjects": "View all projects →",
@@ -108,7 +108,7 @@
     },
     {
       "id": "projetos",
-      "titulo": "Software projects",
+      "titulo": "Project: tools and ideas",
       "descricao": "Tools for schools, churches and the community."
     }
   ],
@@ -157,5 +157,13 @@
   "faithCenterIntro": "God is at the centre of this journey. We begin from Christian faith to understand creation, seek meaning in what we study and turn knowledge into love and care. Science, mathematics, history, language, philosophy, arts and crafts are places for this search.",
   "faithCenterPrinciple": "Our guiding commitment is to look to God as the foundation for understanding all things. We study Scripture, investigate each discipline and develop reflections on creation, God’s existence and purpose. We identify the sources, arguments and interpretations we present, taking responsibility for what we teach.",
   "faithCenterMethod": "Each resource should unite study, faith and service: learn the subject, reflect on God as Creator and ask how this learning can serve life and others. Open questions are part of the search, with humility to study, listen and revise.",
-  "faithCenterScripture": "Genesis presents creation as good; Colossians expresses Christ’s centrality in creation. These passages guide our Christian conviction to place God at the centre of knowledge and life. Reading Scripture accompanies the study and reflection of each discipline."
+  "faithCenterScripture": "Genesis presents creation as good; Colossians expresses Christ’s centrality in creation. These passages guide our Christian conviction to place God at the centre of knowledge and life. Reading Scripture accompanies the study and reflection of each discipline.",
+  "projectsHubTitle": "Project",
+  "technologyGroup": "Technology that serves",
+  "projectsUnderway": "Projects in development",
+  "projectHubIntro": "Explore the tools and ideas we aim to turn into community benefit. Open a group to explore proposals and follow progress.",
+  "communityAgenda": "Celebrations, gatherings and activities",
+  "communityIntro": "Explore the spaces for communities in Nova Bandeirantes. Celebration times, prayer gatherings, formation and outreach will be presented after confirmation with each institution.",
+  "communityPending": "The schedule awaits confirmed information. Partnerships have yet to be proposed.",
+  "openCommunity": "Explore the community and schedule →"
 }

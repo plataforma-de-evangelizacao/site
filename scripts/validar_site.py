@@ -29,7 +29,7 @@ try:
     for h in set(p.hashes):check(unquote(h) in p.ids,'Âncora inexistente: #'+h)
     for f in p.files:check((ROOT/urlsplit(f).path).is_file(),'Arquivo local ausente: '+f)
 except OSError as exc:errors.append(str(exc))
-shared=['planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json']
+shared=['planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json','comunidades.json']
 for lang in ['en','es']:
     for path in (ROOT/'dados').glob('*.json'):
         if path.name not in shared:check((ROOT/'dados'/lang/path.name).is_file(),'Tradução ausente: '+lang+'/'+path.name)

@@ -318,7 +318,7 @@ Os módulos mantêm conteúdo inicial para a prévia independente e para falhas 
 | Contato e canais | participar | `#conecte` |
 | Escola: fé e conhecimento | conhecer | `#escola` |
 | Projetos: tecnologia para servir | participar | `#projetos` |
-| Ideias para o bem comum | conhecer | `#ideias-sociais` |
+| Ideias para o bem comum (dentro de Projeto) | participar | `#ideias-sociais` |
 
 ### Sequência da entrada nesta revisão
 
@@ -571,7 +571,7 @@ Evite cadastrar o mesmo material no catálogo comum e no catálogo anterior da m
 
 ### Ideias sociais
 
-`dados/ideias-sociais.json` recebe propostas de artigos e palestras sobre fome, educação, IA e outros temas de bem comum. Ele usa a mesma estrutura geral e regra de disponibilidade. É uma área editorial, separada dos softwares. As ideias são pontos de investigação; não são soluções já demonstradas ou ações em execução.
+`dados/ideias-sociais.json` recebe propostas de artigos e palestras sobre fome, educação, IA e outros temas de bem comum. Ele usa a mesma estrutura geral e regra de disponibilidade. É um grupo editorial dentro da página Projeto, ao lado do grupo Tecnologia para servir. As ideias são pontos de investigação; não são soluções já demonstradas ou ações em execução.
 
 ### Planejamento editorial anterior
 
@@ -1062,3 +1062,70 @@ O layout dos detalhes foi corrigido: cartões fechados não se esticam à altura
 ## Princípio central reafirmado por Marcos
 
 Deus é o centro e o fundamento da plataforma para compreender a criação, o conhecimento e a vida. Marcos definiu como inegociável: “Preciso de Deus para explicar todas as coisas.” As perguntas das disciplinas e as apresentações foram revisadas nessa direção, com busca de sentido e propósito em Deus. As referências bíblicas, interpretações e argumentos são identificados. Leia PRINCIPIOS-EDITORIAIS.md antes de produzir ou revisar qualquer material futuro.
+
+
+## Atualização final: navegação centralizada e comunidades
+
+### Projeto: tecnologia e ideias no mesmo lugar
+
+A página `#projetos` chama-se **Projeto**. Possui dois grupos expansíveis: **Tecnologia para servir**, com os seis softwares propostos; e **Ideias para o bem comum**, com as três propostas editoriais já existentes. A página independente de ideias foi incorporada, sem apagar propostas. O endereço antigo `#ideias-sociais` continua funcionando: abre Projeto e expande o grupo correto. A página inicial destaca os três softwares principais e permite abrir todas as propostas.
+
+Continue editando `dados/projetos.json` para softwares e `dados/ideias-sociais.json` para propostas editoriais. Não mova os dados para o HTML. As regras de status e link documentadas acima continuam funcionando nos dois grupos. Não é necessário criar uma página nova para cada ideia. Agrupe conteúdos relacionados antes de multiplicar páginas; preserve os links antigos quando reorganizar.
+
+### Destaques de leitura
+
+O início de frases com rótulos, como **Conhecer e estudar:**, recebe negrito e cor de destaque acessível nos dois temas. `assets/organization.js` aplica isso também aos textos carregados dos catálogos. O restante da frase preserva o estilo normal. Não escreva HTML nos campos JSON: use texto simples. URLs e horários não são transformados em rótulos.
+
+### Filmes e desenhos: fim automático do aviso de preparação
+
+A descrição da biblioteca na página inicial é reavaliada quando os catálogos carregam. Enquanto não houver um filme ou desenho acessível, aparece a mensagem de preparação. Após publicar o primeiro item com URL HTTPS válida, aparece a descrição normal do acervo. Não existe aviso permanente de atualização. Registros pausados, gravados ou apenas propostos não ativam essa mudança. Os catálogos existentes continuam sendo usados; não há necessidade de editar o HTML.
+
+### Agendas das instituições
+
+Há três páginas: `#comunidade-catolica`, `#comunidade-batista` e `#comunidade-vicentinos`. Elas aparecem no menu Explorar, no mapa e no resumo da página inicial. O arquivo único é **dados/comunidades.json**, compartilhado entre os idiomas. As páginas apresentam descrição, situação da parceria, agenda, formação, local e contatos. Horários e contatos estão vazios até serem confirmados; a presença da instituição não comprova parceria.
+
+Passo a passo:
+
+1. Obtenha e confirme os dados com a instituição. Se receber um PDF, envie-o para extrair e revisar os horários; o site não lê PDFs sozinho.
+2. Abra `dados/comunidades.json` no VS Code.
+3. Em `instituicoes`, encontre o `id`: `catolica`, `batista` ou `vicentinos`. Não altere esses IDs.
+4. Preencha `titulo`, `descricao`, `endereco` e `contatos` quando houver informação confirmada. Em `parceria`, mantenha `a-propor` enquanto não houver acordo; use `confirmada` somente após confirmação.
+5. Em `agenda`, acrescente um objeto para cada celebração, encontro ou atividade. O exemplo abaixo é apenas um MODELO e não representa um evento existente.
+6. Em `formacao`, cadastre catequese, estudos e campanhas como objetos com `titulo`, `descricao` e `link` HTTPS.
+7. Em `traducoes.en` e `traducoes.es`, revise título e descrição da instituição. Cada evento também pode ter `traducoes.en` e `traducoes.es` com título e descrição; os horários permanecem iguais.
+8. Salve, execute `python3 scripts/validar_site.py`, faça Commit e Push para a branch de publicação.
+9. Aguarde a publicação do GitHub Pages, abra as três páginas e confira texto, dia, horário e links. Os dados são carregados ao abrir a página e revistos a cada cinco minutos e ao retornar à aba. Recarregue para conferir imediatamente.
+
+Modelo de evento para inserir em `agenda` (substitua tudo pelos dados confirmados):
+
+```json
+{
+  "titulo": "NOME CONFIRMADO DA ATIVIDADE",
+  "tipo": "celebracao",
+  "dias_semana": [0],
+  "horario": "09:00",
+  "local": "LOCAL CONFIRMADO",
+  "descricao": "DESCRIÇÃO CONFIRMADA",
+  "link": "https://exemplo.org/evento"
+}
+```
+
+`dias_semana` usa 0=domingo, 1=segunda, 2=terça, 3=quarta, 4=quinta, 5=sexta, 6=sábado. Para evento único, retire `dias_semana` e use `data` no formato `AAAA-MM-DD`. O site apresenta as datas informadas, inclusive passadas: remova eventos vencidos ou identifique-os como histórico na descrição. Não há inscrição automática, envio de alertas ou sincronização com calendários externos.
+
+`contatos` possui `email`, `whatsapp` e `site`. WhatsApp: somente dígitos com código do país; site: HTTPS; email: endereço completo. Deixe vazio o que não foi informado. Não use o telefone pessoal de Marcos como se fosse o telefone de uma igreja.
+
+### Arquivos desta atualização
+
+- `assets/organization.js`: comunidades, agenda, destaque de rótulos e aviso dinâmico de filmes.
+- `dados/comunidades.json`: dados compartilhados das três instituições.
+- `assets/platform.js`: navegação centralizada, compatibilidade de links antigos e novas rotas.
+- `assets/vitrine.js` e `dados/pagina-inicial.json`, `dados/en/pagina-inicial.json`, `dados/es/pagina-inicial.json`: textos da apresentação.
+- `assets/localization.js`: mantém comunidades como arquivo compartilhado.
+- `assets/platform.css`: aparência dos grupos e destaques.
+
+O catálogo atual permanece com propostas, sem horários inventados. Integrações externas, parcerias, materiais ainda não enviados e o cronograma bíblico da igreja continuam dependendo de configuração e conteúdo reais.
+
+
+## Correção de espaçamento e revisão móvel
+
+Consulte `CHECKLIST-RESPONSIVO.md` para os resultados e as verificações em aparelhos reais ainda necessárias. Foram corrigidos os espaços em títulos com quebras de linha ocultas no celular, o cabeçalho em telas estreitas e o nome acessível do menu. A revisão usa larguras de 320 a 1920 pixels CSS no navegador; não representa certificação em Android, Safari ou TV reais. Os três arquivos de código alterados são `index.html`, `assets/platform.js` e `assets/platform.css`.
