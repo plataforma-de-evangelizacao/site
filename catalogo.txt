@@ -1,8 +1,0 @@
-# Catálogo da Plataforma Global de Evangelização
-# Uma linha por conteúdo, com quatro campos separados por |.
-# Título | Categoria | Link HTTPS | Descrição opcional
-# Categorias: Filmes bíblicos; Filmes cristãos; Desenhos bíblicos; Superação; Canais e sites; Outros
-# Envie somente conteúdos que você escolheu e links de fontes autorizadas.
-# Não inclua dados pessoais, senhas nem links privados: este arquivo será público.
-# Para começar, apague o # de uma linha real que você preencher abaixo.
-# TÍTULO A PREENCHER | Desenhos bíblicos | LINK HTTPS A PREENCHER | SUA DESCRIÇÃO

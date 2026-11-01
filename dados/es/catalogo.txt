@@ -1,1 +1,0 @@
-# Título / Categoría / URL HTTPS / Descripción; separados por |. Conserva los identificadores de categoría en portugués.
