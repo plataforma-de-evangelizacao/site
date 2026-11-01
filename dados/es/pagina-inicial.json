@@ -1,0 +1,111 @@
+{
+  "how": "Conoce la plataforma",
+  "howIntro": "Un punto de encuentro entre fe cristiana, aprendizaje y cuidado. Elige un tema, encuentra el formato que prefieres y sigue a tu ritmo.",
+  "howSteps": [
+    "Descubre: tres caminos organizan todos los espacios.",
+    "Elige: la biblioteca reúne estudios, vídeos, música y materiales.",
+    "Participa: comparte conocimiento, propone una alianza o apoya una acción."
+  ],
+  "library": "Una biblioteca. Muchas formas de aprender.",
+  "libraryIntro": "Descubre lo que puedes encontrar aquí. Los espacios en preparación lo indican claramente.",
+  "school": "Escuela: fe y conocimiento",
+  "schoolIntro": "Filosofía, sociología, historia, artes y otras disciplinas en diálogo con la fe cristiana. Aprender con rigor para comprender el mundo y servir mejor al prójimo.",
+  "schoolNote": "Introducciones disponibles; cursos y materiales profundos en preparación. La reflexión teológica se identifica y respeta los métodos de cada disciplina.",
+  "openSchool": "Conocer la escuela →",
+  "fundamentals": "Leer los fundamentos y las introducciones →",
+  "projects": "Proyectos: tecnología para servir",
+  "projectsIntro": "Herramientas gratuitas que queremos desarrollar con apoyo de inteligencia artificial, comenzando por necesidades de Nova Bandeirantes. Escuelas, iglesias y servicios comunitarios son nuestros primeros enfoques.",
+  "projectsNote": "Desarrollo · etapa de planificación. Los nombres siguientes son propuestas: aún no hay software entregado, vínculo municipal ni implementación institucional. Cada ficha tendrá enlaces al código y la documentación cuando estén disponibles.",
+  "allProjects": "Ver todos los proyectos →",
+  "ideas": "Ideas para el bien común",
+  "ideasIntro": "Artículos y charlas para investigar desafíos sociales como el hambre, la educación y el uso responsable de la IA. Son propuestas de estudio y debate; las soluciones requieren datos, escucha y evaluación.",
+  "partners": "Alianzas que queremos construir",
+  "partnersIntro": "Personas, comunidades e instituciones pueden aportar cuidado, enseñanza y tecnología. Conoce las comunidades presentadas y habla con nosotros para construir una alianza.",
+  "partnersNote": "Las comunidades citadas son referencias de fe. Las alianzas institucionales formales se identificarán cuando se confirmen.",
+  "partnerAction": "Sé nuestro aliado →",
+  "communities": "Conocer las comunidades →",
+  "donate": "Una contribución voluntaria puede apoyar el cuidado.",
+  "donateIntro": "Alimentos, ropa y dignidad orientan nuestra misión. Consulta la información de Pix, el código QR y el canal para comprobantes. También puedes aportar tiempo, conocimiento y alianzas.",
+  "donateAction": "Conocer las donaciones y acceder a Pix →",
+  "contact": "Hablar con la plataforma →",
+  "dayTitle": "Tu momento de hoy",
+  "dayIntro": "Elige un día del calendario para encontrar una oración, una reflexión, una alabanza y la lectura registrada.",
+  "prev": "Mes anterior",
+  "next": "Mes siguiente",
+  "today": "Hoy",
+  "week": [
+    "Dom",
+    "Lun",
+    "Mar",
+    "Mié",
+    "Jue",
+    "Vie",
+    "Sáb"
+  ],
+  "reading": "Lectura bíblica del día",
+  "pendingReading": "El cronograma de la iglesia se añadirá después. Mientras tanto, el pasaje sugerido abajo es una elección editorial de la plataforma.",
+  "scheduled": "Lectura según el cronograma registrado.",
+  "prayer": "Comienza con una oración",
+  "prayerNote": "Oración original de la plataforma, elegida por fecha entre 2.000 variaciones. Puedes orar con tus propias palabras.",
+  "reflection": "Reflexión del día",
+  "song": "Una alabanza para acompañarte",
+  "listen": "Escuchar o buscar en YouTube ↗",
+  "openPassage": "Abrir el pasaje · ACF en portugués ↗",
+  "developed": "Disponible",
+  "developing": "En desarrollo",
+  "proposal": "Propuesta",
+  "paused": "Pausado",
+  "waitingLink": "Terminado · enlace pendiente",
+  "access": "Acceder al proyecto ↗",
+  "open": "Abrir contenido ↗",
+  "docs": "Documentación ↗",
+  "priority": "PRIMER PROYECTO",
+  "noResults": "Ningún elemento coincide con la búsqueda.",
+  "projectSearch": "Buscar proyectos",
+  "all": "Todos los estados",
+  "projectHelp": "¿Tienes una necesidad o quieres colaborar?",
+  "sharedNote": "El contenido externo puede estar en portugués. Cada ficha indica el destino disponible; traducir la interfaz no traduce vídeos ni programas.",
+  "libraryItems": [
+    {
+      "id": "estudo-diario",
+      "titulo": "Estudio diario",
+      "descricao": "Calendario, oración, reflexión y lecturas por fecha."
+    },
+    {
+      "id": "artigos-estudos",
+      "titulo": "Artículos y estudios",
+      "descricao": "Textos y publicaciones. Primeros materiales en preparación."
+    },
+    {
+      "id": "filmes-desenhos",
+      "titulo": "Películas y dibujos",
+      "descricao": "Catálogo por títulos e historias; selección en preparación."
+    },
+    {
+      "id": "musicas",
+      "titulo": "Música y alabanza",
+      "descricao": "Sugerencias para escuchar y espacio para listas."
+    },
+    {
+      "id": "palestras",
+      "titulo": "Charlas y transmisiones",
+      "descricao": "Grabaciones, encuentros y próximos temas. Programación en preparación."
+    },
+    {
+      "id": "baixar-biblia",
+      "titulo": "Biblias para leer y descargar",
+      "descricao": "Ediciones, fuentes externas, PDF y aplicaciones."
+    },
+    {
+      "id": "escola",
+      "titulo": "Escuela y disciplinas",
+      "descricao": "Conocimiento, fe cristiana y aplicaciones cotidianas."
+    },
+    {
+      "id": "projetos",
+      "titulo": "Proyectos de software",
+      "descricao": "Herramientas para escuelas, iglesias y la comunidad."
+    }
+  ],
+  "libraryLabel": "BIBLIOTECA"
+}

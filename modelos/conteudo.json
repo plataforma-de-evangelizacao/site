@@ -1,0 +1,18 @@
+{
+  "id": "novo-conteudo",
+  "tipo": "artigo",
+  "titulo": "Título do conteúdo",
+  "descricao": "Descrição do material que será produzido.",
+  "status": "em-desenvolvimento",
+  "link": "",
+  "traducoes": {
+    "en": {
+      "titulo": "Content title",
+      "descricao": "Description of the resource to produce."
+    },
+    "es": {
+      "titulo": "Título del contenido",
+      "descricao": "Descripción del material por producir."
+    }
+  }
+}

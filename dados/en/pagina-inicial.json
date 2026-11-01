@@ -1,0 +1,111 @@
+{
+  "how": "Discover the platform",
+  "howIntro": "A meeting place for Christian faith, learning and care. Choose a subject, find your preferred format and continue at your own pace.",
+  "howSteps": [
+    "Discover: three paths organize all the spaces.",
+    "Choose: the library brings together studies, videos, music and resources.",
+    "Participate: share knowledge, propose a partnership or support an activity."
+  ],
+  "library": "One library. Many ways to learn.",
+  "libraryIntro": "See what you can find here. Spaces under preparation are clearly marked.",
+  "school": "School: faith and knowledge",
+  "schoolIntro": "Philosophy, sociology, history, arts and other subjects in dialogue with Christian faith. Learn carefully to understand the world and better serve others.",
+  "schoolNote": "Introductions are available; courses and in-depth resources are in preparation. Theological reflection is identified and respects each discipline’s methods.",
+  "openSchool": "Explore the school →",
+  "fundamentals": "Read the foundations and introductions →",
+  "projects": "Projects: technology that serves",
+  "projectsIntro": "Free tools we aim to develop with AI assistance, starting with needs in Nova Bandeirantes. Schools, churches and community services are our first focus.",
+  "projectsNote": "Development · planning stage. The names below are proposals: no software has been delivered, and no municipal affiliation or institutional deployment is claimed. Each entry will link to code and documentation when available.",
+  "allProjects": "View all projects →",
+  "ideas": "Ideas for the common good",
+  "ideasIntro": "Articles and talks to investigate social challenges such as hunger, education and responsible AI. These are proposals for study and discussion; solutions require data, listening and evaluation.",
+  "partners": "Partnerships we want to build",
+  "partnersIntro": "People, communities and institutions can contribute care, education and technology. Explore the communities presented and contact us to build a partnership.",
+  "partnersNote": "The communities mentioned are faith references. Formal institutional partnerships will be identified when confirmed.",
+  "partnerAction": "Become a partner →",
+  "communities": "Explore the communities →",
+  "donate": "A voluntary contribution can support care.",
+  "donateIntro": "Food, clothing and dignity guide our mission. View Pix information, the QR code and the channel for receipts. You can also contribute time, knowledge and partnerships.",
+  "donateAction": "View donations and Pix details →",
+  "contact": "Contact the platform →",
+  "dayTitle": "Your moment today",
+  "dayIntro": "Choose a calendar day to find a prayer, a reflection, a worship song and the scheduled reading.",
+  "prev": "Previous month",
+  "next": "Next month",
+  "today": "Today",
+  "week": [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+  ],
+  "reading": "Bible reading for the day",
+  "pendingReading": "The church’s reading schedule will be added later. Meanwhile, the passage suggested below is an editorial choice by the platform.",
+  "scheduled": "Reading from the registered schedule.",
+  "prayer": "Begin with a prayer",
+  "prayerNote": "An original platform prayer, selected by date from 2,000 variations. You can pray in your own words.",
+  "reflection": "Reflection of the day",
+  "song": "A worship song to accompany you",
+  "listen": "Listen or search on YouTube ↗",
+  "openPassage": "Open the passage · ACF in Portuguese ↗",
+  "developed": "Available",
+  "developing": "In development",
+  "proposal": "Proposal",
+  "paused": "Paused",
+  "waitingLink": "Completed · link pending",
+  "access": "Open project ↗",
+  "open": "Open content ↗",
+  "docs": "Documentation ↗",
+  "priority": "FIRST PROJECT",
+  "noResults": "No items match your search.",
+  "projectSearch": "Search projects",
+  "all": "All statuses",
+  "projectHelp": "Have a need or want to collaborate?",
+  "sharedNote": "External content may be in Portuguese. Each entry shows its available destination; translating the interface does not translate videos or software.",
+  "libraryItems": [
+    {
+      "id": "estudo-diario",
+      "titulo": "Daily study",
+      "descricao": "Calendar, prayer, reflection and readings by date."
+    },
+    {
+      "id": "artigos-estudos",
+      "titulo": "Articles and studies",
+      "descricao": "Texts and publications. First resources in preparation."
+    },
+    {
+      "id": "filmes-desenhos",
+      "titulo": "Films and animation",
+      "descricao": "Catalogue by title and story; selection in preparation."
+    },
+    {
+      "id": "musicas",
+      "titulo": "Music and worship",
+      "descricao": "Listening suggestions and a space for playlists."
+    },
+    {
+      "id": "palestras",
+      "titulo": "Talks and live streams",
+      "descricao": "Recordings, gatherings and upcoming themes. Schedule in preparation."
+    },
+    {
+      "id": "baixar-biblia",
+      "titulo": "Bibles to read and download",
+      "descricao": "Editions, external sources, PDFs and apps."
+    },
+    {
+      "id": "escola",
+      "titulo": "School and subjects",
+      "descricao": "Knowledge, Christian faith and everyday applications."
+    },
+    {
+      "id": "projetos",
+      "titulo": "Software projects",
+      "descricao": "Tools for schools, churches and the community."
+    }
+  ],
+  "libraryLabel": "LIBRARY"
+}

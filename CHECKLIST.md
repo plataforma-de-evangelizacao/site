@@ -3,7 +3,7 @@
 ## Implementado
 
 - [x] Página inicial redesenhada com três caminhos: conhecer/estudar, acompanhar conteúdos, ajudar/participar.
-- [x] As 26 seções anteriores preservadas; seções Fé e conhecimento e Acolhimento e apoio, totalizando 32 espaços de conteúdo.
+- [x] As 26 seções anteriores preservadas; seções Fé e conhecimento e Acolhimento e apoio, totalizando 35 espaços de conteúdo.
 - [x] Menu Explorar com busca, mapa do site, indicação do caminho atual, links diretos e próximos passos.
 - [x] Tema claro/escuro, preferência do aparelho inicialmente e escolha local persistida.
 - [x] Navegação, textos internos, orações, reflexões e acervo atual de autoria da plataforma em português, inglês e espanhol; carregamento por idioma.
@@ -87,3 +87,16 @@ A revisão foi verificada em navegador de desktop. O CSS tem regras responsivas,
 - [x] Vontade como capacidade cultivada com apoio e limites humanos.
 - [x] Aprender, criar e compartilhar para servir; três novas propostas editoriais.
 - [ ] Revisar os estudos com responsáveis pastorais e leitores dos três idiomas.
+
+## Vitrine, Escola e projetos
+
+- [x] Cabeçalho e opções de idiomas com cores e fundos explícitos nos dois temas.
+- [x] Página inicial com apresentação, calendário, oração diária, biblioteca, Escola, projetos, doações e comunidades.
+- [x] Seis propostas de software com gestão escolar como prioridade.
+- [x] Três ideias de artigos e palestras sociais em área própria.
+- [x] Catálogo compartilhado com estados e destinos para novos conteúdos de vários formatos.
+- [x] README da plataforma e guia de edição no VS Code.
+- [ ] Receber o cronograma da igreja.
+- [ ] Desenvolver o primeiro software, definir licença e validar com interessados.
+- [ ] Configurar integrações e GitHub Actions após inspeção do repositório real.
+- [ ] Conferir aparência do menu nativo no computador do Marcos; variações de sistema operacional podem afetar o seletor.

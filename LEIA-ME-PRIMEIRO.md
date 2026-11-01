@@ -39,10 +39,14 @@ Veja REVISAO-DA-PLATAFORMA.md para decisões, fontes e limites dos testes. Não 
 
 ## Novos estudos e próximos conteúdos
 
-A plataforma agora reúne 32 espaços. Conhecer e estudar inclui Entender o pecado e Espírito Santo e santidade. Acompanhar inclui Próximos conteúdos. O estudo sobre pecado ganhou exemplos cotidianos e conexão com autocuidado e jejum.
+A plataforma agora reúne 35 espaços. Conhecer e estudar inclui Entender o pecado e Espírito Santo e santidade. Acompanhar inclui Próximos conteúdos. O estudo sobre pecado ganhou exemplos cotidianos e conexão com autocuidado e jejum.
 
 Para atualizar propostas e andamento, edite somente dados/planejamento.json. Esse arquivo é compartilhado entre os idiomas; os estudos novos têm versões em dados/, dados/en/ e dados/es/. Consulte COMO-ATUALIZAR-PLANEJAMENTO.md.
 
 ## Corpo, vontade e escolhas
 
 Na página inicial, abra Corpo, vontade e escolhas. O estudo reúne atenção, sentidos, palavras, afetos, alimentação e sexualidade em sete campos didáticos, além de emoções e aprendizagem compartilhada. A correlação é autoral e apresentada com limites claros. O acervo atual tem 16 propostas de conteúdos futuros: oito palestras, sete artigos e um livro.
+
+## Página inicial ampliada e projetos
+
+Abra a nova prévia. O início mostra como a plataforma funciona, momento diário com calendário, biblioteca, Escola, projetos e participação. O primeiro software proposto é Escola Aberta. Os seis projetos ainda estão em planejamento. Para atualizar estados e links, leia COMO-ATUALIZAR-PROJETOS-E-ACERVO.md. README.md apresenta o repositório.

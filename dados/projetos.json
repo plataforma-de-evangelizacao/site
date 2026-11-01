@@ -1,0 +1,137 @@
+{
+  "versao": 1,
+  "itens": [
+    {
+      "id": "escola-aberta",
+      "titulo": "Escola Aberta — gestão escolar",
+      "descricao": "Primeira frente de desenvolvimento. Proposta para organizar calendário, tarefas administrativas, materiais e comunicação de uma escola. O escopo será definido com educadores antes da programação.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": true,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Open School — school management",
+          "descricao": "First development priority. A proposal to organize a school’s calendar, administrative tasks, resources and communication. Scope will be defined with educators before coding."
+        },
+        "es": {
+          "titulo": "Escuela Abierta — gestión escolar",
+          "descricao": "Primera prioridad de desarrollo. Propuesta para organizar calendario, tareas administrativas, materiales y comunicación de una escuela. El alcance se definirá con educadores antes de programar."
+        }
+      }
+    },
+    {
+      "id": "comunidade-organizada",
+      "titulo": "Comunidade Organizada — gestão para igrejas",
+      "descricao": "Agenda de atividades, organização de voluntários e acompanhamento de recursos comunitários. Planejar com as comunidades e proteger os dados das pessoas.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Organized Community — church management",
+          "descricao": "Activity calendars, volunteer coordination and community resource tracking. Plan with communities and protect people’s data."
+        },
+        "es": {
+          "titulo": "Comunidad Organizada — gestión para iglesias",
+          "descricao": "Agenda de actividades, coordinación de voluntarios y seguimiento de recursos comunitarios. Planificar con las comunidades y proteger los datos personales."
+        }
+      }
+    },
+    {
+      "id": "caminho-escola",
+      "titulo": "Caminho da Escola — apoio ao transporte escolar",
+      "descricao": "Proposta para organizar rotas, horários e ocorrências do transporte escolar. Ainda exige levantamento local e avaliação dos responsáveis; sem rastreamento de alunos nesta plataforma.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "School Route — school transport support",
+          "descricao": "A proposal to organize school transport routes, schedules and incidents. Local assessment and review by responsible staff are still needed; this platform does not track students."
+        },
+        "es": {
+          "titulo": "Camino a la Escuela — apoyo al transporte escolar",
+          "descricao": "Propuesta para organizar rutas, horarios e incidencias del transporte escolar. Requiere evaluación local y de los responsables; esta plataforma no rastrea estudiantes."
+        }
+      }
+    },
+    {
+      "id": "partilha-solidaria",
+      "titulo": "Partilha Solidária — organização de doações",
+      "descricao": "Ferramenta proposta para registrar entradas, estoque e entregas de alimentos e roupas, com prestação de contas e cuidado com a privacidade de quem recebe.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Shared Care — donation organization",
+          "descricao": "A proposed tool to record incoming donations, inventory and food and clothing deliveries, with accountability and recipient privacy."
+        },
+        "es": {
+          "titulo": "Compartir Solidario — organización de donaciones",
+          "descricao": "Herramienta propuesta para registrar entradas, existencias y entregas de alimentos y ropa, con rendición de cuentas y privacidad de quienes reciben."
+        }
+      }
+    },
+    {
+      "id": "negocio-simples",
+      "titulo": "Negócio Simples — apoio ao comércio local",
+      "descricao": "Proposta de controle simples de estoque, listas de compras e tarefas para pequenos negócios. A primeira versão dependerá de entrevistas e definição de necessidades.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Simple Business — local commerce support",
+          "descricao": "A proposal for simple inventory, shopping lists and tasks for small businesses. The first version depends on interviews and defining needs."
+        },
+        "es": {
+          "titulo": "Negocio Sencillo — apoyo al comercio local",
+          "descricao": "Propuesta de inventario sencillo, listas de compras y tareas para pequeños negocios. La primera versión depende de entrevistas y definición de necesidades."
+        }
+      }
+    },
+    {
+      "id": "acervo-comunitario",
+      "titulo": "Acervo Comunitário — materiais para ensinar",
+      "descricao": "Organizador de links e materiais autorizados para professores, cuidadores e comunidades, com busca por disciplina e público.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Community Collection — teaching resources",
+          "descricao": "An organizer for authorized links and resources for teachers, caregivers and communities, searchable by subject and audience."
+        },
+        "es": {
+          "titulo": "Acervo Comunitario — materiales para enseñar",
+          "descricao": "Organizador de enlaces y materiales autorizados para docentes, cuidadores y comunidades, con búsqueda por materia y público."
+        }
+      }
+    }
+  ]
+}

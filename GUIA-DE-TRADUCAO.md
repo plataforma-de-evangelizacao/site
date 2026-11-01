@@ -55,3 +55,7 @@ Os novos estudos usam `pecado.json` e `espirito-santidade.json` em cada pasta de
 ## Corpo, vontade e escolhas
 
 corpo-escolhas.json existe nas três pastas de idioma. Os sete campos são uma organização didática autoral. Preservar a distinção entre sensação, pensamento involuntário, consentimento e ação; não traduzir como uma equivalência tradicional entre órgãos e vícios. Cocriação significa aqui aprender, criar e compartilhar para servir, sem promessa de manifestação.
+
+## Novos catálogos compartilhados
+
+projetos.json, ideias-sociais.json e catalogo-conteudos.json ficam somente na raiz dados/, como planejamento.json. Estados e links são compartilhados, títulos e descrições têm traducoes.en/es. pagina-inicial.json possui versões em cada idioma. Preservar essas exceções no roteador de fetch.
