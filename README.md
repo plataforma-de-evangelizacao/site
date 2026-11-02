@@ -1,3 +1,33 @@
+# Painel administrativo — atualização de 2 de novembro de 2026
+
+Foi criada a página `admin/`, com autenticação preparada por e-mail/senha via Supabase Auth, políticas RLS, revisão de vídeos, histórico e editor JSON por área da plataforma. Há link Administração no rodapé. Leia **PAINEL-ADMINISTRATIVO.md** antes de ativar.
+
+O login permanece bloqueado até configurar o projeto gratuito, executar o SQL de permissões, cadastrar e autorizar o administrador e preencher as chaves públicas/Secrets corretos. Nenhuma senha padrão foi criada; a integração real não foi testada em uma conta Supabase nesta entrega.
+
+O Actions administrativo processa solicitações aproximadamente a cada 15 minutos; valida usuário, versão e conteúdo, grava por commit sem força e solicita a publicação. As credenciais privadas não entram no frontend. A gestão dos outros conteúdos começa por editor JSON; não são anunciados formulários visuais ou uploads que ainda não existem.
+
+Validação: 22 testes administrativos + 42 da biblioteca passaram; interface testada com dados e sessão simulados, removidos do pacote; largura mobile de 320px sem rolagem horizontal; conferidos aprovação com confirmação, fila, histórico, JSON inválido e encerramento de sessão. Políticas SQL e credenciais reais ainda dependem da configuração e verificação na sua conta.
+
+---
+
+# Aprovação automática ativada na configuração desta atualização
+
+A execução real enviada por Marcos confirmou a API e a descoberta: 272 vídeos novos, 273 pendentes (incluindo o teste), sem erros e sem tarefas restantes. O catálogo não mudou porque a aprovação estava desligada.
+
+Esta atualização habilita `autoApprovalEnabled` e uma regra inicial de seleção por metadados. Não basta trocar false por true em uma lista de regras vazia. Copie também os scripts atualizados.
+
+A regra exige título com indicação de produção audiovisual e contexto bíblico explícito, duração mínima de quatro minutos (vinte para filmes), categoria identificável e português declarado no áudio da API ou, quando não houver declaração de áudio, no título. Uma declaração de áudio em outro idioma impede a aprovação por essa regra. Trailers, análises, músicas, pregações, resumos e formatos excluídos continuam pendentes. Rejeições e bloqueios são respeitados.
+
+Essa seleção é automática por informações declaradas na origem: não significa que o vídeo foi assistido, que a idade foi certificada ou que a adaptação foi conferida teologicamente. Nenhuma referência bíblica é inventada. Casos sem informação suficiente continuam em revisão.
+
+Para aplicar: copie `biblioteca-controle/config.json`, `scripts/biblioteca/core.py`, `scripts/biblioteca/run.py` e `tests/biblioteca/test_core.py` para os mesmos caminhos do repositório e faça commit. O ID do vídeo de teste já informado foi preservado. Não altere Secrets nem apague a branch `biblioteca-estado`.
+
+Depois execute **Actions → Biblioteca e GitHub Pages → Run workflow → atualizar**, em `main`. Os metadados recentes dos vídeos encontrados serão reprocessados sem repetir buscas ainda válidas. Confira o último resumo: `approvedPublic` mostra os títulos elegíveis publicados/para publicar e `pendingReview` os restantes. O deploy só está confirmado quando o job `publicar` termina com sucesso.
+
+Validação desta atualização: 42 testes locais passaram, incluindo casos específicos de aprovação, idioma ausente/conflitante, trailer e rejeição preservada. A alteração ainda não foi aplicada ao GitHub por esta conversa; use o pacote ou os arquivos indicados.
+
+---
+
 ## Biblioteca audiovisual V3 — atualização de 2 de novembro de 2026
 
 A biblioteca agora tem processamento automatizado preparado em `.github/workflows/biblioteca.yml`, filas persistentes, cache, orçamento de API, revisão editorial, filtros e player oficial sob demanda. **Ainda não está ativada no GitHub e nenhuma chamada real foi realizada nesta entrega.**
@@ -1312,3 +1342,13 @@ Os cursos deverão ser definidos com educadores, cuidadores, equipes e participa
 A abertura da inicial é **A fé sem obras é morta.**, com a referência **Tiago 2:26**, sem os rótulos “trecho” ou “ACF”. O restante da apresentação foi preservado. Os textos ficam em `welcomeTitle` e `welcomeRef` de `assets/platform.js`, nos três idiomas; o HTML contém o texto inicial de fallback.
 
 Consulte `REVISAO-FINAL.md` para o resumo do que está presente, testes executados e pendências de conteúdo/configuração. Não confundir as estruturas preparadas com integrações externas ativas.
+
+## Painel ampliado: menus, lotes, bloqueios e atualizações
+
+A versão atual organiza a administração por assunto. Vídeos podem ser aprovados/não aprovados em lotes de até 300, ter categorias alteradas e ser excluídos com bloqueio persistente por ID em `biblioteca-controle/editorial.json`. A confirmação editorial continua necessária para aprovar. O bloqueio não depende da permanência de metadados temporários.
+
+Músicas e playlists têm cadastro/edição/exclusão por formulário. Livros, materiais, projetos, cursos, parceiros, solidariedade e momentos diários têm menus que abrem os respectivos arquivos autorais. O editor admite JSON e TXT; não altera credenciais, scripts ou workflows. As integrações externas de música/Spotify/podcasts/lives estão identificadas como pendentes, enquanto os links manuais já podem ser mantidos.
+
+**Instalação na versão existente:** extraia `atualizacao-painel-completo.zip`, mantendo o seu `admin/config.json`. Execute uma vez `scripts/admin/atualizacao-painel.sql` no SQL Editor do Supabase. Publique o código e rode manualmente o workflow administrativo para sincronizar a lista ampliada de conteúdos. Os Secrets existentes são preservados.
+
+A guia **Atualizações e integrações** distingue recarregar a tela, sincronizar o banco administrativo, descobrir vídeos pelo YouTube e publicar o site. Solicitações usam `run_sync`; o runner despacha apenas destinos permitidos e o workflow informa etapas reais e erros. A fila é processada aproximadamente a cada 15 minutos. Confira o caminho completo de uso, instalação e recuperação em **PAINEL-ADMINISTRATIVO.md**, que é a referência atual para o painel e substitui instruções anteriores sobre suas funções.

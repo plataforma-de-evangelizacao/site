@@ -1,133 +1,106 @@
-# Painel administrativo da Plataforma Global de Evangelização
+# Painel administrativo — Plataforma Global de Evangelização
 
-## O que foi entregue
+O painel usa o login Supabase já configurado. Nesta atualização, ele ganha menus por assunto, gestão em lote de vídeos, bloqueios persistentes e uma central para solicitar atualizações pelo GitHub Actions. Tema claro/escuro e português, inglês e espanhol continuam disponíveis.
 
-Uma página própria em `admin/`, com login por e-mail e senha, revisão de vídeos, histórico de solicitações e editor dos JSON da plataforma. O rodapé do site tem o link **Administração**. Não existe senha padrão e não há comparação de senha dentro do HTML ou JavaScript.
+## Instalar esta atualização no site existente
 
-O código foi implementado e testado localmente. **A autenticação e a comunicação real com o Supabase ainda precisam ser configuradas.** O painel entregue bloqueia o login enquanto `admin/config.json` estiver vazio. A proteção efetiva dos dados depende de executar o SQL de permissões e autorizar apenas seu usuário. Não foi criada uma conta Supabase nem definido um acesso em seu nome nesta entrega.
+1. Baixe `atualizacao-painel-completo.zip` e extraia na pasta local do repositório `site`. Substitua os arquivos correspondentes, mantendo as pastas `admin`, `scripts`, `tests` e `.github` nos lugares indicados no ZIP. O ZIP de atualização **não contém `admin/config.json`**, nem altera seus Secrets, usuários ou decisões editoriais atuais. Não use uma instalação antiga do painel para sobrescrever a configuração já preenchida.
+2. No mesmo projeto Supabase do painel, abra **SQL Editor**, cole o conteúdo de **`scripts/admin/atualizacao-painel.sql`** e execute uma vez. A resposta esperada é `Success`. O script mantém dados, usuários e políticas RLS. Acrescenta a ação `run_sync` e impede duplicação de uma mesma atualização enquanto ela estiver em andamento. Pode ser executado novamente com segurança. Para uma instalação nova, o `schema.sql` completo já inclui isso.
+3. Salve os arquivos no Git, faça commit e envie para `main`, como já faz pelo VS Code. Confirme que a pasta `.github/workflows` foi atualizada; é uma pasta oculta em alguns gerenciadores de arquivos.
+4. Aguarde **Biblioteca e GitHub Pages** concluir a publicação. Depois execute **Actions → Painel administrativo → Run workflow → main** uma vez para sincronizar a lista ampliada de conteúdos do painel. Não use a opção de repetir um workflow antigo, que pode usar código antigo.
+5. Abra `/site/admin/`, recarregue a página e faça login. Confira a visão geral, as listas de conteúdo e os botões de atualização. As rotinas enfileiradas no painel são processadas pelo workflow administrativo aproximadamente a cada 15 minutos; executar esse workflow manualmente antecipa o processamento.
 
-O GitHub Pages continua hospedando o site. Supabase Auth confere e-mail/senha; o banco aplica RLS; o GitHub Actions valida e grava os arquivos permitidos no repositório. O painel não recebe token de escrita do GitHub nem a chave da YouTube API. Não é necessário contratar um servidor tradicional.
+A configuração existente usa os Secrets `YOUTUBE_API_KEY`, `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Não há uma nova senha a cadastrar nem chave privada para colocar no frontend.
 
-## O que você pode fazer nesta versão
+## O que cada menu faz
 
-- Ver e pesquisar vídeos pendentes, aprovados, rejeitados e arquivados.
-- Abrir um vídeo no YouTube, escolher sua categoria, confirmar o português e solicitar aprovação.
-- Rejeitar ou arquivar um título, preservando o histórico da decisão.
-- Editar projetos/cursos, parceiros, agenda solidária, prestação de contas, contato, louvores, leituras, lives, Spotify, artigos, estudos, livros, materiais, celebrações, atividades e coleções por seus JSON.
-- Conferir a sintaxe do JSON antes de enviar e acompanhar se a solicitação foi gravada, entrou em conflito ou falhou.
+| Menu | Utilidade |
+| --- | --- |
+| Visão geral | Quantidades de vídeos aguardando revisão, aprovados, bloqueados e solicitações em fila; atalhos para os conteúdos. |
+| Acervo de vídeos | Busca por título, canal ou ID; filtros por situação/categoria; aprovação, exclusão e mudança de categoria individual ou em lote. |
+| Vídeos bloqueados | Lista dos IDs rejeitados e possibilidade de remover o bloqueio, devolvendo o vídeo à revisão. |
+| Músicas e playlists | Formulário para adicionar, editar e remover títulos/links nas listas de louvores, Spotify e YouTube. |
+| Livros, podcasts e materiais | Atalhos para livros, artigos, estudos, materiais, lives, catálogo e listas de links. Podcasts podem ser cadastrados nas listas Spotify/YouTube. |
+| Projetos e cursos | Projetos, formações, palestras e propostas sociais. |
+| Parceiros e comunidades | Cidades, contatos, instituições, celebrações e atividades. |
+| Solidariedade e contas | Ações, agenda de doações e prestação de contas. |
+| Leituras e orações | Leituras bíblicas, orações, reflexões, louvores e versículos. |
+| Todos os conteúdos | Editor dos arquivos autorais JSON e TXT permitidos, inclusive arquivos em inglês/espanhol. |
+| Atualizações e integrações | Recarregar tela, sincronizar banco administrativo, buscar vídeos e publicar o site; acompanha andamento/erros. |
+| Solicitações e histórico | Decisões, lotes, mudanças de conteúdo e resultado de cada solicitação. |
 
-A gestão dos demais conteúdos começa com um editor JSON organizado por área. Não há ainda formulário visual específico para cada tipo de conteúdo, upload de comprovantes, criação de novos administradores pelo painel ou editor de código/workflows. Isso evita apresentar ferramentas que ainda não existem.
+Os menus organizam os dados editáveis. O painel não é um editor visual de HTML/CSS, de credenciais ou de permissões. Alterações de layout estrutural ainda precisam ser feitas no código. Um arquivo de conteúdo só muda o site nas partes que já consomem esse arquivo; o painel não cria automaticamente páginas/integrações novas ao cadastrar um campo desconhecido.
 
-## Como as alterações chegam ao site
+## Selecionar e aprovar os vídeos de uma vez
 
-Login → leitura dos dados autorizados → solicitação na fila privada → Actions valida o usuário e o conteúdo → commit no GitHub → execução explícita do workflow de publicação → site atualizado.
+1. Entre em **Acervo de vídeos** e escolha **Aguardando revisão**. Use busca ou categoria se quiser restringir o lote.
+2. Marque **Selecionar todos os resultados deste filtro**. Isso inclui resultados ainda não exibidos nos primeiros 24 cartões. O painel mostra a quantidade selecionada. Alterar filtros limpa a seleção. Você também pode marcar ou desmarcar cartões individualmente.
+3. Para aprovar, mantenha a categoria de cada vídeo ou escolha uma categoria para o lote. Se houver vídeos sem categoria, atribua uma antes de aprovar. O painel não inventa a categoria para completar um lote.
+4. Marque a confirmação de revisão e de conteúdo em português. Clique **Aprovar selecionados** e confirme a quantidade no aviso. Cada envio aceita até **300 vídeos**; os 273 citados cabem em uma solicitação.
+5. Acompanhe no histórico. O lote é validado por inteiro e gravado em um commit. Se um registro estiver desatualizado, o lote entra em conflito e nenhum item daquele lote é gravado; recarregue e revise a seleção.
 
-O workflow `admin.yml` verifica a fila aproximadamente a cada 15 minutos. O GitHub pode atrasar ou desativar agendas. É possível executar **Actions → Painel administrativo → Run workflow** para processar uma solicitação sem esperar o próximo horário. O painel não promete publicação instantânea.
+**Não aprovar / bloquear selecionados** usa a mesma seleção e exige confirmação, mas não exige confirmar idioma. Entra no bloqueio persistente descrito abaixo.
 
-O estado **Gravado no GitHub** confirma a alteração no código/dados, não o deploy. Confirme o job `publicar` em **Biblioteca e GitHub Pages** para saber se a mudança chegou ao site. Uma falha de deploy mantém a versão anterior no ar.
+**Alterar categoria dos selecionados** salva a categoria escolhida, conservando a situação editorial. Alterar categoria não equivale a aprovar um vídeo pendente nem a desbloquear um rejeitado. Cada cartão também oferece **Salvar categoria**.
 
-## Configurar gratuitamente
+A aprovação editorial não elimina exigências técnicas: vídeo indisponível, metadados vencidos ou restrição regional podem impedir a exibição pública.
 
-1. Faça backup do repositório atual. Copie a atualização recebida para os mesmos caminhos e faça commit. Inclua a pasta `admin/`, os scripts/testes administrativos, os dois workflows atualizados e a alteração de empacotamento em `scripts/biblioteca/run.py`. A versão completa atualizada também inclui o link no rodapé.
-2. Crie uma conta/projeto no [Supabase](https://supabase.com/) e escolha uma organização no plano **Free**. Não selecione Pro, adicionais pagos, SMS, runner pago ou serviços pagos para seguir este guia. Confirme as condições da sua conta antes de cadastrar qualquer meio de pagamento; esta implementação não habilita cobrança.
-3. No **SQL Editor** do projeto, abra uma consulta, copie o conteúdo de `scripts/admin/schema.sql` e execute. O script cria tabelas específicas `pge_*`, ativa RLS e limita as permissões. Use um projeto seu, destinado a esta plataforma; não execute em banco de outra aplicação sem revisar os nomes e permissões.
-4. Em **Authentication → Users**, crie seu usuário de acesso com e-mail e uma senha forte, confirmando o usuário pelo fluxo oferecido no painel do Supabase. Esse é o acesso do aplicativo, distinto da conta usada para administrar o próprio Supabase. Não envie a senha pelo chat.
-5. Copie o **UUID** do usuário criado. No SQL Editor, execute, trocando apenas o exemplo pelo UUID real:
+## Excluir um vídeo e impedir que volte
 
-   ```sql
-   insert into public.pge_admins(user_id)
-   values ('UUID_REAL_DO_SEU_USUARIO')
-   on conflict do nothing;
-   ```
+1. Em **Acervo de vídeos**, selecione **Aprovados** ou **Todos** e procure o título, canal ou ID.
+2. Clique **Excluir e bloquear** e confirme o título.
+3. O Actions registra `aprovacao: rejected`, `revisado: true` e `reabrir: false` para esse ID em `biblioteca-controle/editorial.json`. Depois da publicação, o vídeo sai do catálogo.
+4. A descoberta consulta esse registro antes de pedir os detalhes do vídeo. O bloqueio vence a aprovação automática e continua ativo depois que os metadados temporários são removidos. Não é apenas uma mudança visual na tela.
 
-   Essa autorização é feita apenas pelo administrador do projeto. O aplicativo não oferece cadastro público de administradores. Desative novos cadastros públicos de usuários nas configurações de Auth; mesmo que uma conta comum exista, ela não tem acesso sem estar na lista `pge_admins`.
-6. Nas configurações de API/Connect do projeto, obtenha a **Project URL** e a chave **publishable** (`sb_publishable_...`). Se o projeto mostrar uma chave legada `anon`, ela também pode ser usada como chave pública. Preencha `admin/config.json`:
+O bloqueio é pelo **ID do vídeo**, não por palavras do título. Se outro canal publicar o mesmo filme, o novo envio terá outro ID e poderá aparecer para revisão. O bloqueio permanece mesmo que o título original mude.
 
-   ```json
-   {
-     "supabaseUrl": "https://SEU-PROJETO.supabase.co",
-     "publishableKey": "SUA_CHAVE_PUBLICAVEL",
-     "siteUrl": "../"
-   }
-   ```
+Em **Vídeos bloqueados**, procure o ID ou o título disponível e escolha **Remover bloqueio e revisar**. A remoção usa a versão do registro editorial para evitar conflito e devolve o item a `pending_review`; a aprovação automática não atropela essa revisão explícita. Se os metadados já venceram, ele só voltará à lista de revisão com título após uma descoberta/verificação que recupere seus dados. A lista de bloqueios mantém o ID mesmo sem título.
 
-   A URL deve ser a real do projeto. A publishable/anon é pública por definição; o controle de acesso é feito pelas políticas RLS e pelo token do usuário autenticado. **Nunca coloque `service_role`, `sb_secret_...`, senha ou `YOUTUBE_API_KEY` nesse arquivo.** O painel recusa chaves reconhecidas como privadas.
-7. No GitHub, em **Settings → Secrets and variables → Actions**, crie dois Secrets novos:
+## Músicas, playlists e podcasts
 
-   | Nome | Valor |
-   | --- | --- |
-   | `SUPABASE_URL` | URL do seu projeto Supabase |
-   | `SUPABASE_SERVICE_ROLE_KEY` | Chave secreta do projeto (`sb_secret_...`) ou a legada `service_role`, obtida nas configurações do Supabase |
+Em **Músicas e playlists**, selecione a lista:
 
-   Essa chave é privilegiada, passa pelas permissões administrativas do serviço e fica somente no runner. Proteja a conta GitHub e limite colaboradores que podem alterar workflows. Não cole a chave em arquivos, prints, URLs ou no chat. O Secret `YOUTUBE_API_KEY` existente continua no lugar.
-8. Confira que o workflow **Painel administrativo** tem permissão de escrita de conteúdo e de disparo de Actions, conforme o YAML. A organização pode limitar essas permissões. Não remova proteção de `main` para fazer o painel funcionar; caso a política exija PR, a gravação direta será bloqueada e precisaremos adaptar para PR.
-9. Execute **Actions → Painel administrativo → Run workflow**. Sem solicitações, ele apenas sincroniza os dados atuais da branch `biblioteca-estado` e os documentos. É preciso já existir essa branch da biblioteca, que suas execuções anteriores criaram.
-10. Depois da publicação da atualização, abra `https://plataforma-de-evangelizacao.github.io/site/admin/`. Entre com o e-mail/senha do usuário que você criou. Você também encontra o acesso pelo rodapé do site.
-11. Confira um vídeo real, envie uma decisão e execute o workflow administrativo. Confira a solicitação no histórico e o job de publicação. Só esse teste real confirma que a autenticação, as políticas, a fila e o deploy estão conectados na sua conta.
+- **Louvores do dia** → `dados/louvores.json`.
+- **Spotify: playlists e podcasts** → `dados/spotify.json`.
+- **Playlists do YouTube** → `dados/youtube.json`.
 
-Se uma etapa pedir faturamento obrigatório para algo além do plano Free, pare antes de contratar. O plano gratuito tem limites: a documentação consultada informa 500 MB de banco, 50 mil usuários ativos mensais e possibilidade de pausa após uma semana de inatividade. Não há garantia de disponibilidade contínua ou backups gerenciados gratuitos. Confirme os limites atuais na sua conta.
+Use o formulário para adicionar título/link, **Editar** para carregar um item no formulário ou **Excluir da lista** para removê-lo. A edição preserva campos adicionais existentes no item. Links devem usar HTTP/HTTPS. Um louvor pode ter só título; Spotify e playlists precisam de link. Cada alteração entra na mesma fila de validação e publicação. Se houver uma alteração nessa lista na fila, aguarde sua aplicação e recarregue antes de enviar outra, para evitar sobrescrever uma edição anterior.
 
-## Proteção do painel
+O cadastro de links funciona agora. **A descoberta automática de músicas, playlists externas, Spotify, podcasts e lives ainda exige implementar/configurar suas rotinas e APIs.** Os botões externos correspondentes aparecem como integração a configurar. Eles não simulam uma conexão ativa. Excluir uma música hoje remove o item do arquivo; não afirma bloquear uma descoberta musical que ainda não está implementada.
 
-A página de login pode ser vista publicamente, como qualquer página do Pages. As tabelas de gestão só podem ser lidas após autenticação **e** autorização como administrador. A segurança não depende de esconder a URL nem de desabilitar botões.
+## Central de atualizações
 
-- Anônimos não têm permissões sobre as tabelas `pge_*`.
-- Uma conta autenticada sem autorização não pode ver vídeos, documentos ou solicitações administrativas.
-- Usuários do aplicativo não podem inserir a si mesmos em `pge_admins`.
-- O navegador só insere solicitações com o próprio UUID; não pode marcar uma solicitação como aplicada nem editar os dados diretamente.
-- O Actions consulta novamente a lista de administradores antes de aplicar cada comando. Remover alguém da lista bloqueia suas solicitações ainda pendentes.
-- Somente arquivos de uma lista permitida podem ser editados. Senhas, Secrets, configuração de login, SQL e workflows ficam fora do editor.
-- Há comparação de versão antes de gravar, validação de JSON/estrutura e push sem força para `main`.
-- Tokens de acesso ficam apenas na memória da aba, não em `localStorage`. Recarregar a página exige novo login. O encerramento de sessão limpa os dados da tela.
-- Títulos e descrições de terceiros são exibidos como texto; o painel não interpreta HTML recebido dos vídeos.
-- A página recusa execução dentro de iframe, e links de vídeos externos não recebem acesso à janela do painel.
+| Botão | Efeito real |
+| --- | --- |
+| Recarregar painel | Busca novamente vídeos, documentos e solicitações do Supabase, sem cache HTTP e sem nova busca no YouTube. A barra mede as três fontes carregadas. |
+| Atualizar banco do painel | Enfileira a sincronização dos arquivos atuais e do estado existente da biblioteca para o Supabase. Não busca vídeos novos. |
+| Buscar novos vídeos no YouTube | Enfileira o workflow `biblioteca.yml`, modo `buscar-agora`, com o UUID da solicitação. Antecipa uma rodada de descoberta e renova resultados de busca completos em cache, preservando tarefas pendentes e limites de quota. |
+| Atualizar informações no site | Enfileira `biblioteca.yml`, modo `publicar-site`. Reconstrói/publica o conteúdo atual, sem pesquisa global nova. |
 
-As políticas de login, recuperação de senha e limites contra tentativas repetidas são fornecidas pelo Supabase Auth. Não há gerador de senha padrão nem senha da plataforma armazenada no repositório. Para recuperar o acesso, use os mecanismos do projeto no Supabase; redefinição por e-mail depende da configuração de entrega de e-mails do serviço. SMS e configuração de SMTP pago não fazem parte desta implementação.
+Os percentuais são **marcos de execução**, não tempo decorrido: fila 0%, despacho 10%, testes 20%, processamento 40%, aguardando publicação 80%, conclusão 100%. Não há uma animação que promete progresso enquanto o GitHub está parado. Se o workflow falhar, a solicitação fica com erro e um link para os detalhes da execução quando disponível. O painel consulta o andamento a cada 10 segundos enquanto estiver aberto e visível. Não há notificação por e-mail/WhatsApp nesta atualização.
 
-## Aprovar vídeos e preservar suas escolhas
+O workflow administrativo continua sendo o executor privilegiado: o navegador não recebe token do GitHub nem a chave do YouTube. Usuário autorizado envia apenas um destino permitido: `video-discovery`, `panel-sync` ou `site-publication`. Não é possível escolher um comando shell ou workflow arbitrário pelo formulário.
 
-Use **Revisar vídeos → Aguardando revisão**. Abra o material no YouTube e confira. Para aprovar, escolha desenho/filme/série e marque que confirmou o conteúdo em português. A decisão fica em `biblioteca-controle/editorial.json`. O processamento existente reaproveita metadados recentes; não depende de uma nova pesquisa global para aplicar uma aprovação.
+A fila pode levar aproximadamente 15 minutos para começar, além do tempo do GitHub e da API. Quotas, rede, concorrência, falha de implantação ou pausa do Supabase podem atrasar ou interromper uma atualização. O workflow administrativo reconcilia execuções já despachadas e não as dispara novamente só porque o painel foi recarregado. Se não houver confirmação de início após uma hora, ele registra a falha para que você confira o Actions antes de tentar novamente.
 
-Uma rejeição explícita tem precedência sobre a regra automática. Um aprovado pode continuar fora da lista pública se estiver indisponível, com bloqueio regional ou com metadados vencidos. Aprovação editorial e elegibilidade técnica são estados diferentes.
+**Gravado no GitHub** significa que a decisão de conteúdo foi salva; a publicação é uma etapa posterior. Na central de atualização, **Site publicado e processamento concluído** só é informado depois do job de publicação e da confirmação de implantação. Uma busca sem mudança pública pode concluir sem novo deploy.
 
-Não aprove em lote conteúdos que você não conseguiu identificar. Classificação e fidelidade bíblica não são verificadas por assistir automaticamente aos vídeos. A autorização final do administrador é uma decisão editorial, não um certificado externo.
+## Editor de conteúdos
 
-## Edição dos arquivos de gestão
+Cada menu aponta os arquivos correspondentes. **Todos os conteúdos** permite localizar uma seção por nome ou caminho e editar arquivos autorais em `dados/`. JSONs preservam sua estrutura e TXT preservam o formato de texto usado na plataforma. O catálogo gerado da API, configuração de acesso, scripts, SQL e workflows ficam fora da edição.
 
-Em **Conteúdos e gestão**, escolha a área e edite o JSON. O painel conserva os nomes técnicos dos campos e IDs, pois eles já alimentam o site. Você pode acrescentar links para materiais no Drive, vídeos, músicas e outros conteúdos conforme o formato atual de cada arquivo.
+O botão **Conferir JSON** verifica sintaxe para JSON e conteúdo não vazio para TXT. O servidor repete a validação antes de gravar, confere a versão e executa o validador do site. Conflitos não são resolvidos sobrescrevendo versões alheias. As versões efetivas permanecem no GitHub. Arquivos de idiomas diferentes devem ser editados explicitamente; esta atualização não traduz automaticamente o conteúdo de um artigo ou projeto.
 
-**Conferir JSON** verifica a sintaxe no navegador. **Solicitar publicação** envia à fila. O Actions repete a validação no runner, verifica se a versão ainda é atual e executa o validador do site antes de gravar. Um conflito exige atualizar os dados e revisar a edição; não é resolvido sobrescrevendo alterações alheias.
+## Acesso, proteção e recuperação
 
-O editor é para conteúdos destinados ao site público. Não coloque comprovantes bancários, dados privados de beneficiários/crianças, senhas ou informações confidenciais nos JSON. Esta versão não é um sistema privado de atendimento a beneficiários ou contabilidade bancária.
+Login e políticas RLS anteriores continuam valendo: anônimos não leem a gestão; uma conta autenticada precisa estar em `pge_admins`; o cliente só pode criar solicitações próprias pendentes. A nova migração não amplia as permissões dessas contas. A chave privilegiada fica apenas no runner. Tokens do login ficam na memória da aba e são apagados ao sair. Recarregar a página exige entrar novamente.
 
-Os arquivos em inglês/espanhol continuam com seu fluxo atual: esta primeira versão lista os arquivos compartilhados e os principais de português, sem tradução automática de uma edição. O texto original e os IDs não são alterados para simular traduções.
+Os workflows continuam compartilhando a mesma fila de concorrência, com push sem força para `main`. Arquivos de conteúdo são verificados por versão. Os IDs de comandos no commit permitem recuperar falhas após gravação. Não coloque dados privados de beneficiários, comprovantes, senhas ou chaves nos conteúdos públicos.
 
-## Filas, concorrência e recuperação
+Para recuperar uma publicação que falhou, confira o erro no Actions, resolva-o e solicite **Atualizar informações no site**. Não apague os bloqueios editoriais ou a branch `biblioteca-estado`. Se uma conta deixar de ser administradora, seus comandos pendentes são recusados antes de gravação/despacho.
 
-A fila `pge_commands` registra UUID, usuário, ação, dados, estado, resultado e datas. O comando entra como `pending`, pode passar a `processing` e termina como `applied`, `conflict` ou `failed`. Ao finalizar, o conteúdo completo da edição é removido da fila, preservando identificadores, caminho e resultado no histórico; a versão efetiva continua no GitHub. O UUID vai no assunto do commit; se o runner cair após um push, a execução seguinte reconhece o commit e não reaplica a edição. A publicação pode ser solicitada novamente com segurança.
+## Verificação desta entrega
 
-Os workflows administrativo e da biblioteca compartilham o mesmo grupo de concorrência, sem cancelar uma gravação em andamento. Isso impede que ambos alterem a mesma base simultaneamente pelo fluxo fornecido. Uma alteração externa concorrente continua protegida pelo push sem força e pela checagem de versão.
+Testes locais cobrem aprovação em lote, conflito atômico, confirmação de idioma, categorias, bloqueios persistentes, restauração sem metadados, proteção de caminhos, arquivos autorais, destinos permitidos de atualização e preservação de permissões. A interface foi exercitada com dados simulados locais; nenhuma conta real foi usada nesses testes.
 
-O campo `applied` significa gravado no GitHub. Se o job de publicação falhar, execute **Biblioteca e GitHub Pages → publicar-site** após resolver o erro; não apague a branch de estado. Em caso de falha entre commit e atualização do histórico, execute novamente o workflow administrativo para reconciliar pelo UUID.
-
-Para reduzir tráfego no plano gratuito, uma rodada administrativa agendada sem solicitações aplicadas não reexporta todo o acervo; a sincronização ocorre nas publicações da biblioteca, em execução administrativa manual ou após alterações aplicadas.
-
-A lista de vídeos do painel é uma cópia temporária, com validade máxima de 29 dias desde a verificação. O frontend oculta registros vencidos e as sincronizações removem entradas vencidas do banco. É necessário manter os jobs e acompanhar falhas; pausar o projeto ou deixar a sincronização parada não é uma política de retenção. Não guarde exportações de metadados de terceiros indefinidamente. As decisões editoriais autorais e os commits no GitHub preservam a recuperação do conteúdo.
-
-Backups gerenciados do banco não estão incluídos nesta solução gratuita. Os documentos efetivos e decisões ficam versionados no GitHub; o banco contém os snapshots de trabalho, a lista de administradores e a fila. Antes de mudanças no SQL, exporte as configurações autorais e faça backup dos arquivos do repositório. Não exporte chaves ou senhas.
-
-## Testes realizados e o que falta verificar
-
-22 testes administrativos locais passaram: aprovação/rejeição, confirmação de idioma, IDs e categorias inválidas, conflitos, tamanho e sintaxe de documentos, caminhos proibidos, metadados vencidos, ausência de persistência de tokens no navegador, separação do artefato público, administrador revogado, commit sem força e retomada após falha de push.
-
-Os 42 testes da biblioteca também passaram. As políticas SQL foram inspecionadas e as interações REST foram preparadas, mas **não foram executadas contra um projeto Supabase real**. A inspeção/testes locais não comprovam que as políticas estão ativas na sua conta.
-
-Após configurar, confira com uma janela anônima que os dados administrativos não aparecem; confirme também que um usuário autenticado fora de `pge_admins` não tem acesso. Depois teste a aprovação de um vídeo, um JSON válido, um JSON inválido, uma sessão encerrada e a publicação no Pages. Não declare o painel ativado antes dessas verificações.
-
-## Referências oficiais
-
-- Hospedagem estática do Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
-- Segurança/RLS e chaves públicas/privadas: https://supabase.com/docs/guides/database/secure-data
-- Políticas por linha: https://supabase.com/docs/guides/database/postgres/row-level-security
-- Autenticação e usuários: https://supabase.com/docs/guides/auth/users
-- Preços e limites do plano Free: https://supabase.com/pricing
+A execução completa na sua conta depende de publicar os arquivos, aplicar a migração e testar uma solicitação real. Não foi executada a migração ou acionado o seu GitHub a partir desta entrega.

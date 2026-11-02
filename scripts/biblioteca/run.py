@@ -48,7 +48,7 @@ def build_site(root,out):
     (out/'.nojekyll').touch()
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--persist',action='store_true');p.add_argument('--smoke',action='store_true');p.add_argument('--build-only',action='store_true');p.add_argument('--ack-deploy',action='store_true');p.add_argument('--output',default='_site');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--discover-now',action='store_true');p.add_argument('--persist',action='store_true');p.add_argument('--smoke',action='store_true');p.add_argument('--build-only',action='store_true');p.add_argument('--ack-deploy',action='store_true');p.add_argument('--output',default='_site');args=p.parse_args()
     store=Store(args.persist);engine=Engine(ROOT,store.path)
     if args.ack_deploy:
         engine.s['deployedHash']=engine.s.get('lastPublishedHash','');engine.save();store.checkpoint();return 0
@@ -58,6 +58,10 @@ def main():
     previous=store.dir/'catalogo.json'
     if previous.exists():
         c=json.loads(previous.read_text());validate_catalog(c,engine.tax);atomic(ROOT/'dados/biblioteca/catalogo.json',c)
+    if args.discover_now:
+        engine.s['rounds'].setdefault('discovery',{})['nextDue']=engine.now.isoformat()
+        engine.s['cache']={k:v for k,v in engine.s['cache'].items() if v.get('state')!='completed'}
+        engine.save()
     report={};code=0
     try:
         if not args.build_only:report=engine.run(args.smoke)

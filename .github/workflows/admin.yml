@@ -27,6 +27,7 @@ jobs:
       - name: Aplicar solicitações autorizadas
         id: admin
         env:
+          GH_TOKEN: ${{ github.token }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: python scripts/admin/sync.py

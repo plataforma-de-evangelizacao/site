@@ -21,7 +21,7 @@ create table if not exists public.pge_documents (
 create table if not exists public.pge_commands (
   id uuid primary key,
   user_id uuid not null references auth.users(id),
-  action text not null check (action in ('review_video','save_json')),
+  action text not null check (action in ('review_video','save_json','run_sync')),
   payload jsonb not null check (jsonb_typeof(payload)='object' and octet_length(payload::text)<=1100000),
   status text not null default 'pending' check(status in ('pending','processing','applied','conflict','failed')),
   result text,
@@ -50,6 +50,10 @@ drop policy if exists pge_commands_read on public.pge_commands;
 create policy pge_commands_read on public.pge_commands for select to authenticated using(user_id=(select auth.uid()) and exists(select 1 from public.pge_admins where user_id=(select auth.uid())));
 drop policy if exists pge_commands_insert on public.pge_commands;
 create policy pge_commands_insert on public.pge_commands for insert to authenticated with check(user_id=(select auth.uid()) and status='pending' and result is null and exists(select 1 from public.pge_admins where user_id=(select auth.uid())));
+
+alter table public.pge_commands drop constraint if exists pge_commands_action_check;
+alter table public.pge_commands add constraint pge_commands_action_check check(action in ('review_video','save_json','run_sync'));
+create unique index if not exists pge_sync_request_open on public.pge_commands(user_id,(payload->>'target')) where action='run_sync' and status in ('pending','processing');
 commit;
 -- DEPOIS de criar seu usuário em Authentication → Users, autorize o UUID real:
 -- insert into public.pge_admins(user_id) values ('UUID_REAL_DO_SEU_USUARIO');

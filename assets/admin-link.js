@@ -1,0 +1,1 @@
+(()=>{const a=document.getElementById('footer-admin');if(!a)return;const lang=document.documentElement.lang.slice(0,2);a.textContent=({en:'Administration',es:'Administración'})[lang]||'Administração';a.href='admin/?lang='+(['pt','en','es'].includes(lang)?lang:'pt');})();

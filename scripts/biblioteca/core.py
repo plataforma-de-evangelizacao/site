@@ -110,13 +110,27 @@ def classify(v,editorial,cfg):
     # Metadata is evidence for discovery, never a theological or age certificate.
     r=dict(id=v['id'],titulo=title,descricao=ed.get('descricao',body),testamento=ed.get('testamento'),livros=ed.get('livros',[]),referencias=ed.get('referencias',[]),personagens=ed.get('personagens',[]),temas=ed.get('temas',[]),categoria=ed.get('categoria',categoria),formato=ed.get('formato'),publico=ed.get('publico'),idioma=ed.get('idioma',sn.get('defaultAudioLanguage') or sn.get('defaultLanguage')),idiomaVerificado=bool(verified and ed.get('idiomaVerificado')),duracao=seconds(v.get('contentDetails',{}).get('duration')),canalId=sn.get('channelId'),canalNome=sn.get('channelTitle'),playlistId=ed.get('playlistId'),serieId=ed.get('serieId'),temporada=ed.get('temporada'),episodio=ed.get('episodio'),url='https://www.youtube.com/watch?v='+v['id'],thumbnail=next((x['url'] for k in ['high','medium','default'] if isinstance((x:=sn.get('thumbnails',{}).get(k)),dict) and str(x.get('url','')).startswith('https://i.ytimg.com/')),None),disponibilidade=technical(v,cfg['region']),aprovacao='pending_review',fonteClassificacao='metadados: sugestão automática; aguardando revisão')
     if ed.get('aprovacao') in ['rejected','archived']:r['aprovacao']=ed['aprovacao']
-    elif verified and ed.get('aprovacao')=='approved' and not blocked and r['categoria'] in ['desenho','filme','serie']:
+    elif verified and ed.get('aprovacao')=='pending_review':pass
+    elif verified and ed.get('aprovacao')=='approved' and r['categoria'] in ['desenho','filme','serie']:
         r['aprovacao']='approved';r['fonteClassificacao']='revisão editorial por vídeo'
     elif cfg['autoApprovalEnabled'] and not blocked:
         for rule in cfg.get('approvedRules',[]):
-            if rule.get('approved') and sn.get('channelId')==rule.get('channelId') and re.search(rule['titlePattern'],title,re.I):
-                r.update({k:rule[k] for k in ['categoria','idioma','idiomaVerificado','publico'] if k in rule})
-                r['aprovacao']='approved';r['fonteClassificacao']='regra editorial '+rule['id'];break
+            source_matches=rule.get('anyChannel') is True or sn.get('channelId')==rule.get('channelId')
+            if not (rule.get('approved') and source_matches and re.search(rule['titlePattern'],title,re.I)):continue
+            if rule.get('requireBiblicalTitle') and not re.search(rule['biblicalTitlePattern'],title,re.I):continue
+            audio=sn.get('defaultAudioLanguage','')
+            # Prefer explicit audio language; a conflicting audio declaration cannot be overridden by a title.
+            pt_title=bool(re.search(r'portugu[eê]s|pt[ -]?br|dublad[oa].*portugu[eê]s',title,re.I))
+            portuguese=audio.startswith('pt') or (not audio and pt_title)
+            if rule.get('requirePortugueseMetadata') and not portuguese:continue
+            if r['duracao'] is None or r['duracao']<rule.get('minDurationSeconds',0):continue
+            if r['categoria'] not in ['desenho','filme','serie']:continue
+            if r['categoria']=='filme' and r['duracao']<1200:continue
+            r.update({k:rule[k] for k in ['categoria','idioma','idiomaVerificado','publico'] if k in rule})
+            if rule.get('requirePortugueseMetadata'):
+                r['idioma']=audio or 'pt';r['idiomaVerificado']=True
+                r['verificacaoIdioma']='declaração de áudio da API' if audio else 'declaração explícita no título; não auditada por escuta'
+            r['aprovacao']='approved';r['fonteClassificacao']='seleção automática por metadados: '+rule['id']+'; sem análise de fidelidade bíblica';break
     if blocked and r['aprovacao']=='pending_review':r['motivoRevisao']='Formato possivelmente excluído (trailer, análise, música ou pregação).'
     return copy.deepcopy(r)
 
@@ -199,7 +213,7 @@ class Engine:
         original_count=len(ids)
         ids=list(dict.fromkeys(x for x in ids if VIDEO.fullmatch(x)))
         self.metrics['duplicatesAvoided']+=original_count-len(ids)
-        ids=[x for x in ids if x not in self.sources['blockedVideos'] and (force or self.s['records'].get(x,{}).get('aprovacao') not in ['rejected','archived'])]
+        ids=[x for x in ids if x not in self.sources['blockedVideos'] and self.editorial.get(x,{}).get('aprovacao') not in ['rejected','archived'] and (force or self.editorial.get(x,{}).get('reabrir') is True or self.s['records'].get(x,{}).get('aprovacao') not in ['rejected','archived'])]
         needed=[x for x in ids if force or age(self.s['videos'].get(x,{}).get('at'),self.now)>=self.cfg['videoCacheDays']]
         self.metrics['duplicatesAvoided']+=len(ids)-len(needed)
         if not needed:return
@@ -290,6 +304,10 @@ class Engine:
         for q in self.s['queues'].values():q[:]=[t for t in q if t['state'] not in ['completed','cancelled'] or age(t['created'],self.now)<25]
         public_catalog(self.s,self.tax,self.now,self.cfg)
     def apply_editorial(self):
+        # Editorial tombstones survive metadata expiry and apply even without cached API data.
+        for id,decision in self.editorial.items():
+            if decision.get('aprovacao') in ['rejected','archived'] and id in self.s['records']:
+                self.s['records'][id]['aprovacao']=decision['aprovacao']
         for id,entry in self.s['videos'].items():
             blocked_channels={c['id'] for c in self.sources['canais'] if c.get('blocked')}
             if id in self.sources['blockedVideos'] or entry['data'].get('snippet',{}).get('channelId') in blocked_channels:
