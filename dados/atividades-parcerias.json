@@ -1,0 +1,224 @@
+{
+  "versao": 1,
+  "instituicoes": [
+    {
+      "id": "catolica",
+      "titulo": "Igreja Católica",
+      "contribuicoes_possiveis": [
+        "Mobilizar voluntários e compartilhar tempo.",
+        "Avaliar campanhas de alimentos, roupas e calçados.",
+        "Compartilhar conhecimento e espaços, se houver autorização."
+      ],
+      "atividades_propostas": [
+        {
+          "titulo": "Campanhas e cuidado comunitário",
+          "descricao": "Planejar campanhas e mutirões com responsáveis, necessidades, locais e horários confirmados antes da divulgação.",
+          "projeto": ""
+        },
+        {
+          "titulo": "Materiais de ensino com revisão da comunidade",
+          "descricao": "Oferecer apoio à organização de materiais; cada instituição escolhe e revisa o conteúdo de ensino conforme sua própria doutrina.",
+          "projeto": ""
+        },
+        {
+          "titulo": "Agenda e organização de voluntários",
+          "descricao": "Propor ferramentas para organizar encontros e voluntários. O projeto Comunidade Organizada ainda está em desenvolvimento; a IA pode apoiar a preparação de textos e organização, sempre com revisão humana.",
+          "projeto": "Comunidade Organizada"
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Catholic Church",
+          "contribuicoes_possiveis": [
+            "Mobilize volunteers and offer time.",
+            "Consider food, clothing and footwear campaigns.",
+            "Share knowledge and spaces when authorized."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campaigns and community care",
+              "descricao": "Plan campaigns and volunteer activities with confirmed coordinators, needs, locations and times before announcing them.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Teaching materials reviewed by the community",
+              "descricao": "Support organization of materials; each institution selects and reviews teaching content according to its own doctrine.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Scheduling and volunteer organization",
+              "descricao": "Propose tools to organize gatherings and volunteers. Comunidade Organizada remains in development; AI may support draft texts and organization, always with human review.",
+              "projeto": "Comunidade Organizada"
+            }
+          ]
+        },
+        "es": {
+          "titulo": "Iglesia Católica",
+          "contribuicoes_possiveis": [
+            "Movilizar voluntarios y ofrecer tiempo.",
+            "Evaluar campañas de alimentos, ropa y calzado.",
+            "Compartir conocimiento y espacios con autorización."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campañas y cuidado comunitario",
+              "descricao": "Planificar campañas y jornadas con responsables, necesidades, lugares y horarios confirmados antes de anunciarlas.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Materiales de enseñanza revisados por la comunidad",
+              "descricao": "Apoyar la organización de materiales; cada institución elige y revisa la enseñanza conforme a su propia doctrina.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Agenda y organización del voluntariado",
+              "descricao": "Proponer herramientas para organizar encuentros y voluntarios. Comunidade Organizada sigue en desarrollo; la IA puede apoyar borradores y organización, siempre con revisión humana.",
+              "projeto": "Comunidade Organizada"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "batista",
+      "titulo": "Igreja Batista Nacional",
+      "contribuicoes_possiveis": [
+        "Mobilizar voluntários para ações comunitárias.",
+        "Avaliar coleta de alimentos, roupas e materiais.",
+        "Compartilhar conhecimento e apoio à organização."
+      ],
+      "atividades_propostas": [
+        {
+          "titulo": "Campanhas e cuidado comunitário",
+          "descricao": "Planejar campanhas e mutirões com responsáveis, necessidades, locais e horários confirmados antes da divulgação.",
+          "projeto": ""
+        },
+        {
+          "titulo": "Materiais de ensino com revisão da comunidade",
+          "descricao": "Oferecer apoio à organização de materiais; cada instituição escolhe e revisa o conteúdo de ensino conforme sua própria doutrina.",
+          "projeto": ""
+        },
+        {
+          "titulo": "Agenda e organização de voluntários",
+          "descricao": "Propor ferramentas para organizar encontros e voluntários. O projeto Comunidade Organizada ainda está em desenvolvimento; a IA pode apoiar a preparação de textos e organização, sempre com revisão humana.",
+          "projeto": "Comunidade Organizada"
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Igreja Batista Nacional",
+          "contribuicoes_possiveis": [
+            "Mobilize volunteers for community activities.",
+            "Consider collecting food, clothing and materials.",
+            "Share knowledge and organizational support."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campaigns and community care",
+              "descricao": "Plan campaigns and volunteer activities with confirmed coordinators, needs, locations and times before announcing them.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Teaching materials reviewed by the community",
+              "descricao": "Support organization of materials; each institution selects and reviews teaching content according to its own doctrine.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Scheduling and volunteer organization",
+              "descricao": "Propose tools to organize gatherings and volunteers. Comunidade Organizada remains in development; AI may support draft texts and organization, always with human review.",
+              "projeto": "Comunidade Organizada"
+            }
+          ]
+        },
+        "es": {
+          "titulo": "Igreja Batista Nacional",
+          "contribuicoes_possiveis": [
+            "Movilizar voluntarios para acciones comunitarias.",
+            "Evaluar la recogida de alimentos, ropa y materiales.",
+            "Compartir conocimiento y apoyo organizativo."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campañas y cuidado comunitario",
+              "descricao": "Planificar campañas y jornadas con responsables, necesidades, lugares y horarios confirmados antes de anunciarlas.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Materiales de enseñanza revisados por la comunidad",
+              "descricao": "Apoyar la organización de materiales; cada institución elige y revisa la enseñanza conforme a su propia doctrina.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Agenda y organización del voluntariado",
+              "descricao": "Proponer herramientas para organizar encuentros y voluntarios. Comunidade Organizada sigue en desarrollo; la IA puede apoyar borradores y organización, siempre con revisión humana.",
+              "projeto": "Comunidade Organizada"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vicentinos",
+      "titulo": "Vicentinos",
+      "contribuicoes_possiveis": [
+        "Dialogar sobre recebimento e encaminhamento de roupas e alimentos.",
+        "Compartilhar experiência em ações solidárias.",
+        "Avaliar colaboração de voluntários e distribuição conforme necessidades."
+      ],
+      "atividades_propostas": [
+        {
+          "titulo": "Campanhas e cuidado comunitário",
+          "descricao": "Planejar campanhas e mutirões com responsáveis, necessidades, locais e horários confirmados antes da divulgação.",
+          "projeto": ""
+        },
+        {
+          "titulo": "Organização de doações e distribuição",
+          "descricao": "Propor apoio ao registro de entradas, estoque e entregas. Partilha Solidária é uma proposta de software, ainda sem implantação confirmada.",
+          "projeto": "Partilha Solidária"
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Vincentian volunteers",
+          "contribuicoes_possiveis": [
+            "Discuss receiving and distributing clothing and food.",
+            "Share experience in solidarity activities.",
+            "Consider volunteer support and distribution according to needs."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campaigns and community care",
+              "descricao": "Plan campaigns and volunteer activities with confirmed coordinators, needs, locations and times before announcing them.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Donation and distribution organization",
+              "descricao": "Propose support for recording incoming donations, inventory and deliveries. Partilha Solidária is a software proposal with no confirmed deployment.",
+              "projeto": "Partilha Solidária"
+            }
+          ]
+        },
+        "es": {
+          "titulo": "Vicentinos",
+          "contribuicoes_possiveis": [
+            "Dialogar sobre la recepción y entrega de ropa y alimentos.",
+            "Compartir experiencia en acciones solidarias.",
+            "Evaluar apoyo voluntario y distribución según las necesidades."
+          ],
+          "atividades_propostas": [
+            {
+              "titulo": "Campañas y cuidado comunitario",
+              "descricao": "Planificar campañas y jornadas con responsables, necesidades, lugares y horarios confirmados antes de anunciarlas.",
+              "projeto": ""
+            },
+            {
+              "titulo": "Organización de donaciones y distribución",
+              "descricao": "Proponer apoyo al registro de donaciones, existencias y entregas. Partilha Solidária es una propuesta de software sin implantación confirmada.",
+              "projeto": "Partilha Solidária"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

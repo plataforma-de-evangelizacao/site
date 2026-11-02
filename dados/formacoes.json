@@ -1,0 +1,12 @@
+{
+  "versao": 1,
+  "cursos_gratuitos": true,
+  "palestras_gratuitas": true,
+  "doacao_obrigatoria": false,
+  "encerramento": {
+    "pt": "Este encontro é gratuito. Se você desejar e puder, contribua voluntariamente com a Plataforma Global de Evangelização para manter os materiais, ferramentas e ações de cuidado. Sua participação é bem-vinda com ou sem doação.",
+    "en": "This session is free. If you wish and are able, contribute voluntarily to the Global Evangelization Platform to sustain resources, tools and care activities. You are welcome with or without a donation.",
+    "es": "Este encuentro es gratuito. Si lo deseas y puedes, colabora voluntariamente con la Plataforma Global de Evangelización para mantener materiales, herramientas y acciones de cuidado. Tu participación es bienvenida con o sin donación."
+  },
+  "link_apoio": "#solidariedade"
+}

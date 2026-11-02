@@ -75,7 +75,7 @@ A rotação depende da data escolhida, não de recarregar aleatoriamente o site.
 
 ## Destaque bíblico
 
-Tiago 1:27 ganhou destaque na página inicial, com trecho da ACF e link ao capítulo: https://www.bibliaonline.com.br/acf/tg/1. Inglês e espanhol apresentam traduções editoriais do trecho, identificadas; não se apresentam como citações de uma edição bíblica publicada nesses idiomas.
+Tiago 1:27 ganhou destaque na página inicial, com o versículo completo na ACF e link ao capítulo: https://www.bibliaonline.com.br/acf/tg/1. Inglês e espanhol apresentam traduções editoriais da passagem, identificadas; não se apresentam como citações de uma edição bíblica publicada nesses idiomas.
 
 ## Especificação audiovisual anexada
 
@@ -93,3 +93,6 @@ Os links antigos `#doacoes` e `#agenda-solidaria` continuam válidos, mas são t
 O cartão de agenda continua sendo alimentado por `dados/agenda-solidaria.json` e pelo importador CSV já documentado. Use `pontos_coleta`, `distribuicao` e `contato` para informar locais e responsáveis confirmados. Vicentinos e igrejas são apresentados como possibilidades de cooperação; não foram cadastrados como pontos de recebimento oficiais. A área de parcerias da página inicial permaneceu exatamente como estava. A prestação de contas financeira continua em sua página própria.
 
 Validação: IDs e destinos locais; conteúdo das parcerias e imagem do Pix preservados; seis projetos renderizados; links antigos abrem a página única; página de ajuda em 320 px sem rolagem horizontal.
+
+
+Atualização: a página Ajudar o próximo mantém o texto explicativo sobre IA e um link para **Projetos em desenvolvimento**. A lista completa de softwares e propostas editoriais fica somente nessa página de projetos; a página inicial mantém três exemplos.

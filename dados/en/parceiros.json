@@ -3,18 +3,21 @@
     "titulo": "Catholic Church",
     "descricao": "Faith, communion and care for our neighbour.",
     "link": "",
-    "status": "a-propor"
+    "status": "a-propor",
+    "id": "catolica"
   },
   {
     "titulo": "Igreja Batista Nacional (National Baptist Church)",
     "descricao": "Faith, Bible teaching and fellowship.",
     "link": "",
-    "status": "a-propor"
+    "status": "a-propor",
+    "id": "batista"
   },
   {
     "titulo": "Vincentian volunteers",
     "descricao": "Solidarity activities in Nova Bandeirantes.",
     "link": "",
-    "status": "a-propor"
+    "status": "a-propor",
+    "id": "vicentinos"
   }
 ]

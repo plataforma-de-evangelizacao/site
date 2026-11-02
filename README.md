@@ -1,3 +1,33 @@
+# Estado atual desta entrega — 2 de novembro de 2026
+
+A plataforma está preparada para publicação manual no GitHub Pages. Esta visão atual substitui contagens e organizações descritas nas revisões históricas abaixo.
+
+- Abertura: **A fé sem obras é morta. — Tiago 2:26**, sem os rótulos “trecho” ou “ACF”. O restante da apresentação foi preservado.
+- Projetos: **58 cartões**, em oito categorias abertas, com busca, filtro de categoria e estado. São 25 cursos propostos, 20 palestras propostas e 13 outras ferramentas/iniciativas. Nada foi anunciado como curso já produzido.
+- Formações: gratuitas, com encerramento que convida à doação voluntária. Veja **GUIA-FORMACOES-GRATUITAS.md**; a orientação também está em **AGENTS.md** e `dados/formacoes.json`.
+- Parceiros: página própria por cidade, unidade e comunidades, com contatos independentes. Veja **PARCEIROS-POR-CIDADE.md**; fonte principal: `dados/rede-parceiros.json`.
+- Atividades: página própria de propostas para as comunidades, respeitando organização e doutrina; não confundir com agenda confirmada.
+- Ícone do navegador: `assets/favicon.svg`, PNG de 16/32 px, `favicon.ico` e ícone de 180 px para atalhos de celular. Os caminhos são relativos e funcionam em `/site/`.
+- Revisão e pendências: **REVISAO-FINAL.md**. O PDF do cronograma, materiais reais, contatos oficiais e automações externas ainda dependem de envio/configuração.
+
+## Manutenção das propostas de formação
+
+As frentes em `dados/projetos.json` usam `cursos_propostos` ou `formacoes_propostas`. A página expande esses registros em cartões. Cada formação possui público, objetivo, três conteúdos iniciais, materiais a produzir, status, links e traduções. As sete frentes são acolhimento, casas de apoio, centros de idosos, formação comunitária, escolas, serviço público e campo. As ferramentas sem lista de formações aparecem no grupo geral de tecnologia e iniciativas comunitárias. As propostas editoriais continuam em `dados/ideias-sociais.json`.
+
+Para cadastrar uma formação, adicione um objeto à lista da frente correspondente. Preserve IDs únicos, indique `tipo: curso` ou `tipo: palestra`, mantenha `gratuito: true` e revise os textos em português, inglês e espanhol. Use `status: em-desenvolvimento`, `etapa: planejamento` e links vazios até ter material real. Quando houver conteúdo publicado, preencha um link HTTPS e revise a descrição dos materiais; o cartão disponibiliza o acesso e troca a nota de planejamento por formação disponível. Pausar continua removendo o acesso ativo.
+
+Para cadastrar uma nova frente, acrescente um objeto com ID, título, descrição, status e `formacoes_propostas`. A categoria é criada automaticamente pelo título da frente; traduza o título em `traducoes.en` e `traducoes.es`. Não é necessário alterar o HTML para isso.
+
+## Rede de parceiros e contatos
+
+Use `dados/rede-parceiros.json` para a página de parceiros por cidade. Não reutilize Instagram ou telefone de outra unidade. Os campos atuais não informados continuam vazios. As três instituições iniciais permanecem a propor, com identificação local pendente. A estrutura permite acrescentar outras cidades, bairros e comunidades rurais apenas alimentando o JSON. O manual **PARCEIROS-POR-CIDADE.md** detalha cada campo e as agendas locais.
+
+## Ícone da plataforma
+
+O favicon usa uma cruz dentro do arco, nas cores da plataforma. O SVG é o arquivo vetorial principal; os PNG e ICO servem como alternativas para navegadores e atalhos. Todos estão referenciados no `<head>` de `index.html` e no ZIP. A prévia independente incorpora os ícones para não depender de arquivos externos. Se o navegador ainda mostrar o ícone antigo depois da publicação, recarregue sem cache ou feche e abra a aba.
+
+---
+
 # Plataforma Global de Evangelização — manual completo do site
 
 Versão de documentação: 1 de novembro de 2026. Responsável: Marcos Lucas Pereira, Nova Bandeirantes, Mato Grosso, Brasil.
@@ -1182,3 +1212,91 @@ Os links antigos `#doacoes` e `#agenda-solidaria` continuam válidos, mas são t
 O cartão de agenda continua sendo alimentado por `dados/agenda-solidaria.json` e pelo importador CSV já documentado. Use `pontos_coleta`, `distribuicao` e `contato` para informar locais e responsáveis confirmados. Vicentinos e igrejas são apresentados como possibilidades de cooperação; não foram cadastrados como pontos de recebimento oficiais. A área de parcerias da página inicial permaneceu exatamente como estava. A prestação de contas financeira continua em sua página própria.
 
 Validação: IDs e destinos locais; conteúdo das parcerias e imagem do Pix preservados; seis projetos renderizados; links antigos abrem a página única; página de ajuda em 320 px sem rolagem horizontal.
+
+
+## Organização atual: Projetos em desenvolvimento
+
+A página `#projetos` agora se chama **Projetos em desenvolvimento**. Esta organização substitui as descrições anteriores de grupos expansíveis: não existem mais os títulos intermediários “Tecnologia para servir” e “Ideias para o bem comum” nessa página. As seis propostas de software e as três propostas editoriais aparecem juntas em nove cartões, com descrição e estado de andamento. Busca e filtro atuam sobre todos os nove registros. O convite “Tem uma necessidade ou quer colaborar?” foi preservado.
+
+A página inicial mantém os três exemplos e a chamada “Clique para ver todos os nossos projetos”. A página Ajudar o próximo explica o uso da tecnologia e aponta para os projetos, sem repetir a listagem completa. Os endereços antigos `#tecnologia-servir` e `#ideias-sociais` continuam levando à mesma página de projetos.
+
+Os arquivos de dados são preservados: `dados/projetos.json` para softwares e `dados/ideias-sociais.json` para artigos e palestras propostos. Eles alimentam uma única listagem, sem divisões visuais. Continue seguindo as regras de status e link já documentadas. No filtro “Em desenvolvimento”, entram também propostas, produção e gravações ainda não publicadas; materiais pausados continuam pausados. Nenhuma proposta foi excluída ou marcada como pronta indevidamente.
+
+Textos do título e da introdução: `projectsHubTitle` e `projectHubIntro`, nos três arquivos de `pagina-inicial.json`. Verificado no navegador: nove cartões, nenhum grupo expansível e pesquisa por “fome” encontra o projeto correspondente.
+
+
+## Parceiros nas ações humanitárias e Tiago 1:27
+
+O espaço `#parceiros` foi incorporado à página **Seja nosso parceiro** (`#seja-parceiro`) como categoria **Parceiros nas ações humanitárias**. Igreja Católica, Igreja Batista Nacional e Vicentinos aparecem juntos nessa categoria. As três páginas institucionais continuam disponíveis com agendas, formação e contatos, acessadas pelos cartões das instituições. Elas não são mais três opções soltas no menu ou na frente de Ajudar e participar. A navegação de retorno identifica a categoria de parceria.
+
+O resumo da página inicial aponta para essa categoria e não repete as três instituições em uma lista de celebrações. O propósito apresentado é cooperação humanitária; a presença de uma instituição não significa adoção de sua doutrina nem confirmação de parceria formal. Os status existentes foram preservados.
+
+Edite `dados/parceiros.json` e suas versões em inglês/espanhol para os cartões; preserve os IDs `catolica`, `batista` e `vicentinos`. As agendas e contatos continuam em `dados/comunidades.json`. Títulos e explicações: `humanitarianPartners`, `humanitarianIntro`, `humanitarianOpen` e `openCommunity` nos três arquivos `pagina-inicial.json`.
+
+O título do acesso aos projetos permanece **Projetos em desenvolvimento**, com os nove cartões numa lista única, sem grupos expansíveis.
+
+O destaque de Tiago 1:27 agora contém o versículo completo em português ACF, incluindo o início “A religião pura e imaculada para com Deus e Pai, é esta”. Inglês e espanhol continuam identificados como traduções editoriais, também com o início da passagem. O link para ler o capítulo foi preservado.
+
+Verificações: três instituições agrupadas dentro de Seja nosso parceiro, links para as páginas e retorno à categoria, ausência de instituições soltas no diretório principal, título dos projetos, JSONs e traduções. Não houve confirmação de parceiros ou cadastro de horários reais nesta atualização.
+
+
+## Parceiros e atividades: caminhos distintos na página inicial
+
+O cartão de projetos em “Uma biblioteca. Muitas formas de aprender” chama-se **Projetos: cursos e ferramentas** e leva à página `#projetos`, que continua mostrando os nove projetos/propostas em lista única. Essa apresentação serve para propostas em desenvolvimento e para projetos com acesso publicado no futuro.
+
+A inicial apresenta **Celebrações, encontros e atividades**, com acesso à nova página `#atividades`; abaixo há acessos menores a Parceiros e Seja nosso parceiro. O resumo anterior de parcerias chama-se simplesmente **Parceiros** e explica as formas de colaboração. Ele abre a categoria `#parceiros`, dentro da página Seja nosso parceiro. Não foi criada uma segunda página de parceiros.
+
+- **Parceiros:** o que cada instituição pode contribuir, como tempo, voluntariado, alimentos, roupas, conhecimento e organização. As contribuições são possibilidades a combinar, não acordos já firmados.
+- **Atividades:** o que a plataforma pode propor a cada comunidade: campanhas, mutirões, organização de materiais, agenda, voluntariado e ferramentas de software. Há oito propostas distribuídas pelas três instituições.
+- **Agendas reais:** horários de celebrações e eventos continuam em `dados/comunidades.json`, nas páginas institucionais. As propostas de atividades não criam eventos confirmados.
+
+### Atualizar as contribuições e atividades
+
+O arquivo **dados/atividades-parcerias.json** é compartilhado pelos idiomas. O controlador `assets/activities.js` apresenta a página e acrescenta as contribuições aos cartões dos parceiros. Os nomes/descrições dos cartões continuam em `dados/parceiros.json` nos três idiomas; contatos e agendas continuam em `dados/comunidades.json`.
+
+Em `instituicoes`, localize o registro por `id`: `catolica`, `batista` ou `vicentinos`. Preserve o ID. Os campos são:
+
+| Campo | Uso |
+|---|---|
+| `titulo` | Nome da instituição |
+| `contribuicoes_possiveis` | Lista de textos sobre como a instituição pode colaborar; aparece em Parceiros |
+| `atividades_propostas` | Lista de propostas mostradas na página Atividades |
+| `atividades_propostas[].titulo` | Nome da proposta |
+| `atividades_propostas[].descricao` | O que se pretende oferecer e em que condições |
+| `atividades_propostas[].projeto` | Nome opcional de software relacionado; cria acesso à página de projetos |
+| `traducoes.en` / `traducoes.es` | Título, contribuições e propostas traduzidos editorialmente |
+
+Para acrescentar uma atividade, adicione um objeto com `titulo`, `descricao` e, se houver, `projeto`, dentro de `atividades_propostas`. Para acrescentar uma forma de colaboração, adicione um texto à lista `contribuicoes_possiveis`. Revise as versões em inglês e espanhol; não há tradução remota automática. O campo `projeto` deve ser o nome de um projeto existente, sem indicar software pronto se ele ainda for proposta.
+
+Execute `python3 scripts/validar_site.py`, salve e faça Commit/Push. Após a publicação do GitHub Pages, a página lê o arquivo ao abrir; verifica de novo a cada cinco minutos e ao retornar à aba. Recarregue para conferir imediatamente. O site não grava alterações no GitHub pelo navegador.
+
+Respeito institucional: materiais de ensino são escolhidos/revisados pela própria comunidade conforme sua doutrina. Apoio de IA é apresentado como auxílio à organização e aos rascunhos, com revisão humana. Não foram inventadas celebrações, datas ou parcerias. O recebimento de doações e uso de espaços também precisam de confirmação.
+
+Validação desta atualização: três idiomas, três instituições, oito propostas, contribuições sem duplicação após recarregar catálogos, links para agendas e projetos, JSONs e idiomas consistentes. Inicial, Parceiros e Atividades medidos em 320 pixels CSS sem rolagem horizontal. Testes em Android/TV reais continuam pendentes.
+
+
+## Cursos e ferramentas para instituições e comunidades
+
+A biblioteca da página inicial mantém “Uma biblioteca. Muitas formas de aprender” e apresenta também projetos de cursos e ferramentas. O cartão agora se chama **Projetos: cursos e ferramentas**, com descrição que inclui escolas, igrejas, comunidades e instituições de cuidado. Não anuncia cursos disponíveis: encaminha às propostas em desenvolvimento.
+
+Foram acrescentados quatro registros a `dados/projetos.json`, preservando todos os projetos anteriores:
+
+| ID | Projeto | Público/objetivo |
+|---|---|---|
+| `aprender-juntos` | Aprender Juntos | Cursos e materiais para instituições de acolhimento de crianças e adolescentes, incluindo orfanatos |
+| `cuidado-em-rede` | Cuidado em Rede | Organização de voluntários, materiais e doações para casas de apoio |
+| `viver-e-aprender` | Viver e Aprender | Oficinas e materiais para centros de idosos |
+| `formacao-comunitaria` | Formação Comunitária | Cursos e ferramentas para escolas, igrejas e comunidades |
+
+A listagem reúne agora **13 cartões**: dez propostas de ferramentas/cursos em `dados/projetos.json` e três propostas editoriais em `dados/ideias-sociais.json`. Os novos itens usam `status: em-desenvolvimento`, `etapa: planejamento` e links vazios. Não há curso, software ou implantação concluídos anunciados nesses quatro registros.
+
+Para desenvolver uma proposta, mantenha seu ID, revise descrição e etapa e preencha o link somente quando houver um destino real. As regras de status/link continuam funcionando; nenhum estado dos projetos anteriores foi alterado. Preserve as traduções em `traducoes.en` e `traducoes.es`. O acervo da inicial continua destacando os três primeiros projetos, com acesso à página completa.
+
+Os cursos deverão ser definidos com educadores, cuidadores, equipes e participantes; a proposta respeita idade, necessidades, acessibilidade, organização e doutrina de cada instituição quando aplicável. As parcerias e ofertas de atividades permanecem propostas a combinar.
+
+
+## Frase de abertura e revisão desta versão
+
+A abertura da inicial é **A fé sem obras é morta.**, com a referência **Tiago 2:26**, sem os rótulos “trecho” ou “ACF”. O restante da apresentação foi preservado. Os textos ficam em `welcomeTitle` e `welcomeRef` de `assets/platform.js`, nos três idiomas; o HTML contém o texto inicial de fallback.
+
+Consulte `REVISAO-FINAL.md` para o resumo do que está presente, testes executados e pendências de conteúdo/configuração. Não confundir as estruturas preparadas com integrações externas ativas.

@@ -132,6 +132,2864 @@
           "descricao": "Organizador de enlaces y materiales autorizados para docentes, cuidadores y comunidades, con búsqueda por materia y público."
         }
       }
+    },
+    {
+      "id": "aprender-juntos",
+      "titulo": "Aprender Juntos — cursos e materiais para acolhimento",
+      "descricao": "Proposta de cursos e materiais de leitura, matemática, artes e valores de convivência para instituições de acolhimento de crianças e adolescentes, incluindo orfanatos. Será planejada com educadores e cuidadores, conforme a idade e as necessidades de cada grupo. Ainda não há cursos publicados.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Learning Together — courses and resources for care institutions",
+          "descricao": "A proposal for reading, mathematics, arts and community-values courses and resources for institutions caring for children and adolescents. It will be planned with educators and carers according to age and needs. No courses are published yet."
+        },
+        "es": {
+          "titulo": "Aprender Juntos — cursos y materiales para centros de acogida",
+          "descricao": "Propuesta de cursos y materiales de lectura, matemáticas, arte y convivencia para instituciones de acogida de niños y adolescentes, incluidos orfanatos. Se planificará con educadores y cuidadores según la edad y las necesidades. Todavía no hay cursos publicados."
+        }
+      },
+      "cursos_propostos": [
+        {
+          "id": "curso-historias-imagens",
+          "tipo": "curso",
+          "titulo": "Histórias que viram imagens — criatividade com IA",
+          "descricao": "Explorar narrativas e criação visual com demonstrações de IA mediadas por educadores, valorizando a autoria e a imaginação.",
+          "publico": "Crianças e adolescentes em acolhimento, com mediação de educadores.",
+          "objetivo": "Explorar narrativas e criação visual com demonstrações de IA mediadas por educadores, valorizando a autoria e a imaginação.",
+          "conteudos": [
+            "Criar personagens e desenhar uma história.",
+            "Observar como um educador descreve uma imagem à IA.",
+            "Comparar resultados, revisar e montar um pequeno livro ilustrado."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Stories into images — creativity with AI",
+              "descricao": "Explore storytelling and visual creation through educator-led AI demonstrations, valuing authorship and imagination.",
+              "publico": "Children and adolescents in care, with educator guidance.",
+              "objetivo": "Explore storytelling and visual creation through educator-led AI demonstrations, valuing authorship and imagination.",
+              "conteudos": [
+                "Create characters and draw a story.",
+                "Observe an educator describing an image to AI.",
+                "Compare results, review and assemble a small illustrated book."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Historias en imágenes — creatividad con IA",
+              "descricao": "Explorar relatos y creación visual con demostraciones de IA mediadas por educadores, valorando la autoría y la imaginación.",
+              "publico": "Niños y adolescentes en acogida, con mediación de educadores.",
+              "objetivo": "Explorar relatos y creación visual con demostraciones de IA mediadas por educadores, valorando la autoría y la imaginación.",
+              "conteudos": [
+                "Crear personajes y dibujar una historia.",
+                "Observar cómo un educador describe una imagen a la IA.",
+                "Comparar resultados, revisar y montar un pequeño libro ilustrado."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-primeiros-passos-digitais",
+          "tipo": "curso",
+          "titulo": "Primeiros passos no mundo digital",
+          "descricao": "Desenvolver noções de uso de dispositivos e navegação, com cuidado com dados pessoais e apoio de adultos de confiança.",
+          "publico": "Crianças e adolescentes em acolhimento, com mediação de educadores.",
+          "objetivo": "Desenvolver noções de uso de dispositivos e navegação, com cuidado com dados pessoais e apoio de adultos de confiança.",
+          "conteudos": [
+            "Conhecer teclado, arquivos e recursos de acessibilidade.",
+            "Praticar busca de informações e leitura de telas.",
+            "Aprender a pedir ajuda e proteger informações pessoais."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "First steps in the digital world",
+              "descricao": "Develop basic device and browsing skills, with care for personal information and support from trusted adults.",
+              "publico": "Children and adolescents in care, with educator guidance.",
+              "objetivo": "Develop basic device and browsing skills, with care for personal information and support from trusted adults.",
+              "conteudos": [
+                "Explore keyboards, files and accessibility features.",
+                "Practise finding information and reading screens.",
+                "Learn to ask for help and protect personal information."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Primeros pasos en el mundo digital",
+              "descricao": "Desarrollar nociones de uso de dispositivos y navegación, cuidando los datos personales y con apoyo de adultos de confianza.",
+              "publico": "Niños y adolescentes en acogida, con mediación de educadores.",
+              "objetivo": "Desarrollar nociones de uso de dispositivos y navegación, cuidando los datos personales y con apoyo de adultos de confianza.",
+              "conteudos": [
+                "Conocer teclado, archivos y accesibilidad.",
+                "Practicar la búsqueda de información y lectura de pantallas.",
+                "Aprender a pedir ayuda y proteger datos personales."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-ler-contar-criar",
+          "tipo": "curso",
+          "titulo": "Ler, contar e criar histórias",
+          "descricao": "Incentivar leitura, expressão e convivência por meio de histórias e atividades adequadas à idade.",
+          "publico": "Crianças e adolescentes em acolhimento, com mediação de educadores.",
+          "objetivo": "Incentivar leitura, expressão e convivência por meio de histórias e atividades adequadas à idade.",
+          "conteudos": [
+            "Leitura compartilhada e interpretação.",
+            "Criação de histórias sobre amizade, respeito e cuidado.",
+            "Produção de desenhos, textos ou pequenas apresentações."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Read, tell and create stories",
+              "descricao": "Encourage reading, expression and social connection through age-appropriate stories and activities.",
+              "publico": "Children and adolescents in care, with educator guidance.",
+              "objetivo": "Encourage reading, expression and social connection through age-appropriate stories and activities.",
+              "conteudos": [
+                "Shared reading and interpretation.",
+                "Create stories about friendship, respect and care.",
+                "Produce drawings, texts or short presentations."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Leer, contar y crear historias",
+              "descricao": "Fomentar lectura, expresión y convivencia mediante historias y actividades adecuadas a la edad.",
+              "publico": "Niños y adolescentes en acogida, con mediación de educadores.",
+              "objetivo": "Fomentar lectura, expresión y convivencia mediante historias y actividades adecuadas a la edad.",
+              "conteudos": [
+                "Lectura compartida e interpretación.",
+                "Crear historias sobre amistad, respeto y cuidado.",
+                "Producir dibujos, textos o pequeñas presentaciones."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-matematica-cotidiano",
+          "tipo": "curso",
+          "titulo": "Matemática para a vida e pequenos projetos",
+          "descricao": "Relacionar matemática a situações concretas de compras, medidas, organização e partilha.",
+          "publico": "Crianças e adolescentes em acolhimento, com mediação de educadores.",
+          "objetivo": "Relacionar matemática a situações concretas de compras, medidas, organização e partilha.",
+          "conteudos": [
+            "Quantidades, medidas e comparação de preços.",
+            "Organização de uma pequena atividade em grupo.",
+            "Jogos de raciocínio e divisão de recursos."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Mathematics for everyday life and small projects",
+              "descricao": "Connect mathematics to practical situations involving shopping, measurement, organization and sharing.",
+              "publico": "Children and adolescents in care, with educator guidance.",
+              "objetivo": "Connect mathematics to practical situations involving shopping, measurement, organization and sharing.",
+              "conteudos": [
+                "Quantities, measurements and price comparisons.",
+                "Organize a small group activity.",
+                "Reasoning games and sharing resources."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Matemáticas para la vida y pequeños proyectos",
+              "descricao": "Relacionar las matemáticas con compras, medidas, organización y reparto.",
+              "publico": "Niños y adolescentes en acogida, con mediación de educadores.",
+              "objetivo": "Relacionar las matemáticas con compras, medidas, organización y reparto.",
+              "conteudos": [
+                "Cantidades, medidas y comparación de precios.",
+                "Organizar una pequeña actividad grupal.",
+                "Juegos de razonamiento y reparto de recursos."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-ia-para-estudar",
+          "tipo": "curso",
+          "titulo": "IA para estudar com responsabilidade",
+          "descricao": "Aprender a usar explicações e perguntas como apoio ao estudo, sem substituir o próprio raciocínio nem confiar em respostas sem conferir.",
+          "publico": "Adolescentes em acolhimento, com acompanhamento educativo.",
+          "objetivo": "Aprender a usar explicações e perguntas como apoio ao estudo, sem substituir o próprio raciocínio nem confiar em respostas sem conferir.",
+          "conteudos": [
+            "O que a IA faz e onde pode errar.",
+            "Criar perguntas e comparar explicações com fontes.",
+            "Planejar estudos e apresentar o que foi aprendido."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI for responsible learning",
+              "descricao": "Learn to use explanations and questions to support study without replacing independent thinking or trusting unchecked answers.",
+              "publico": "Adolescents in care, with educational guidance.",
+              "objetivo": "Learn to use explanations and questions to support study without replacing independent thinking or trusting unchecked answers.",
+              "conteudos": [
+                "What AI does and where it can fail.",
+                "Write questions and compare explanations with sources.",
+                "Plan study and present what was learned."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA para estudiar con responsabilidad",
+              "descricao": "Aprender a usar explicaciones y preguntas para estudiar sin sustituir el razonamiento propio ni confiar en respuestas sin verificar.",
+              "publico": "Adolescentes en acogida, con acompañamiento educativo.",
+              "objetivo": "Aprender a usar explicaciones y preguntas para estudiar sin sustituir el razonamiento propio ni confiar en respuestas sin verificar.",
+              "conteudos": [
+                "Qué hace la IA y en qué puede fallar.",
+                "Crear preguntas y comparar explicaciones con fuentes.",
+                "Planificar estudios y presentar lo aprendido."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        }
+      ]
+    },
+    {
+      "id": "cuidado-em-rede",
+      "titulo": "Cuidado em Rede — ferramentas para casas de apoio",
+      "descricao": "Proposta de ferramentas para organizar voluntários, materiais, doações e atividades de casas de apoio. O desenvolvimento partirá da escuta dos responsáveis e buscará facilitar o trabalho cotidiano sem expor dados pessoais de quem recebe ajuda.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Care Network — tools for support centres",
+          "descricao": "A proposal for tools to organize volunteers, materials, donations and activities in support centres. Development will begin by listening to coordinators and aim to ease daily work without exposing recipients’ personal data."
+        },
+        "es": {
+          "titulo": "Cuidado en Red — herramientas para casas de apoyo",
+          "descricao": "Propuesta de herramientas para organizar voluntarios, materiales, donaciones y actividades en casas de apoyo. El desarrollo partirá de escuchar a los responsables y buscará facilitar el trabajo cotidiano sin exponer datos personales de quienes reciben ayuda."
+        }
+      },
+      "cursos_propostos": [
+        {
+          "id": "curso-ia-curriculo-trabalho",
+          "tipo": "curso",
+          "titulo": "IA, currículo e preparação para o trabalho",
+          "descricao": "Preparar apresentação profissional e buscar oportunidades com apoio de IA, preservando a veracidade das experiências.",
+          "publico": "Jovens e adultos atendidos por casas de apoio.",
+          "objetivo": "Preparar apresentação profissional e buscar oportunidades com apoio de IA, preservando a veracidade das experiências.",
+          "conteudos": [
+            "Reconhecer habilidades e experiências reais.",
+            "Elaborar currículo e mensagens de candidatura.",
+            "Simular entrevistas e organizar próximos passos."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI, CVs and preparation for work",
+              "descricao": "Prepare a professional profile and explore opportunities with AI support while describing experience truthfully.",
+              "publico": "Young people and adults supported by community centres.",
+              "objetivo": "Prepare a professional profile and explore opportunities with AI support while describing experience truthfully.",
+              "conteudos": [
+                "Identify real skills and experience.",
+                "Draft a CV and application messages.",
+                "Practise interviews and organize next steps."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA, currículum y preparación laboral",
+              "descricao": "Preparar una presentación profesional y explorar oportunidades con IA, manteniendo experiencias veraces.",
+              "publico": "Jóvenes y adultos atendidos por casas de apoyo.",
+              "objetivo": "Preparar una presentación profesional y explorar oportunidades con IA, manteniendo experiencias veraces.",
+              "conteudos": [
+                "Reconocer habilidades y experiencias reales.",
+                "Elaborar currículum y mensajes de candidatura.",
+                "Simular entrevistas y organizar próximos pasos."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-imagens-pequenos-negocios",
+          "tipo": "curso",
+          "titulo": "Criação de imagens para pequenos negócios",
+          "descricao": "Planejar peças visuais simples para divulgar um produto ou serviço, com apoio de IA e revisão do resultado.",
+          "publico": "Jovens e adultos atendidos por casas de apoio.",
+          "objetivo": "Planejar peças visuais simples para divulgar um produto ou serviço, com apoio de IA e revisão do resultado.",
+          "conteudos": [
+            "Definir público, mensagem e formato.",
+            "Escrever descrições para criar imagens e revisar erros.",
+            "Montar uma peça com texto legível e verificar permissões de uso."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Image creation for small businesses",
+              "descricao": "Plan simple visuals to promote a product or service with AI support and review of the result.",
+              "publico": "Young people and adults supported by community centres.",
+              "objetivo": "Plan simple visuals to promote a product or service with AI support and review of the result.",
+              "conteudos": [
+                "Define audience, message and format.",
+                "Write image prompts and review errors.",
+                "Build a readable design and check usage permissions."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Creación de imágenes para pequeños negocios",
+              "descricao": "Planificar piezas visuales sencillas para un producto o servicio, con IA y revisión del resultado.",
+              "publico": "Jóvenes y adultos atendidos por casas de apoyo.",
+              "objetivo": "Planificar piezas visuales sencillas para un producto o servicio, con IA y revisión del resultado.",
+              "conteudos": [
+                "Definir público, mensaje y formato.",
+                "Describir imágenes para IA y revisar errores.",
+                "Montar una pieza legible y comprobar permisos de uso."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-planilhas-casas-apoio",
+          "tipo": "curso",
+          "titulo": "Planilhas para doações, estoque e rotina",
+          "descricao": "Organizar registros de recursos e atividades com planilhas simples, mantendo entradas, saídas e informações consistentes.",
+          "publico": "Equipes, cuidadores e voluntários de casas de apoio.",
+          "objetivo": "Organizar registros de recursos e atividades com planilhas simples, mantendo entradas, saídas e informações consistentes.",
+          "conteudos": [
+            "Criar tabelas e padronizar campos.",
+            "Registrar doações, estoque e entregas.",
+            "Conferir totais e produzir um resumo."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Spreadsheets for donations, inventory and routines",
+              "descricao": "Organize resources and activities using simple spreadsheets with consistent incoming and outgoing records.",
+              "publico": "Staff, carers and volunteers in support centres.",
+              "objetivo": "Organize resources and activities using simple spreadsheets with consistent incoming and outgoing records.",
+              "conteudos": [
+                "Create tables and standardize fields.",
+                "Record donations, inventory and deliveries.",
+                "Check totals and prepare a summary."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Hojas de cálculo para donaciones, existencias y rutinas",
+              "descricao": "Organizar recursos y actividades mediante hojas sencillas, con registros consistentes de entradas y salidas.",
+              "publico": "Equipos, cuidadores y voluntarios de casas de apoyo.",
+              "objetivo": "Organizar recursos y actividades mediante hojas sencillas, con registros consistentes de entradas y salidas.",
+              "conteudos": [
+                "Crear tablas y normalizar campos.",
+                "Registrar donaciones, existencias y entregas.",
+                "Verificar totales y preparar un resumen."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-organizacao-apoio-ia",
+          "tipo": "curso",
+          "titulo": "Organização de equipes com apoio de IA",
+          "descricao": "Usar IA como auxílio para redigir avisos, organizar tarefas e preparar materiais de rotina, com revisão humana.",
+          "publico": "Equipes, cuidadores e voluntários de casas de apoio.",
+          "objetivo": "Usar IA como auxílio para redigir avisos, organizar tarefas e preparar materiais de rotina, com revisão humana.",
+          "conteudos": [
+            "Mapear tarefas e responsáveis.",
+            "Produzir rascunhos de avisos e listas.",
+            "Revisar os textos e evitar inserir dados pessoais desnecessários."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Team organization with AI support",
+              "descricao": "Use AI to help draft notices, organize tasks and prepare routine resources, with human review.",
+              "publico": "Staff, carers and volunteers in support centres.",
+              "objetivo": "Use AI to help draft notices, organize tasks and prepare routine resources, with human review.",
+              "conteudos": [
+                "Map tasks and responsibilities.",
+                "Draft notices and lists.",
+                "Review texts and avoid unnecessary personal information."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Organización de equipos con apoyo de IA",
+              "descricao": "Usar IA para redactar avisos, organizar tareas y preparar materiales de rutina, con revisión humana.",
+              "publico": "Equipos, cuidadores y voluntarios de casas de apoyo.",
+              "objetivo": "Usar IA para redactar avisos, organizar tareas y preparar materiales de rutina, con revisión humana.",
+              "conteudos": [
+                "Identificar tareas y responsables.",
+                "Producir borradores de avisos y listas.",
+                "Revisar textos y evitar datos personales innecesarios."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-escuta-convivencia",
+          "tipo": "curso",
+          "titulo": "Escuta, convivência e comunicação no acolhimento",
+          "descricao": "Fortalecer comunicação respeitosa entre equipes, voluntários e pessoas atendidas, com limites e encaminhamentos adequados.",
+          "publico": "Equipes, cuidadores e voluntários de casas de apoio.",
+          "objetivo": "Fortalecer comunicação respeitosa entre equipes, voluntários e pessoas atendidas, com limites e encaminhamentos adequados.",
+          "conteudos": [
+            "Escutar sem interromper ou expor relatos.",
+            "Combinar responsabilidades e lidar com divergências.",
+            "Reconhecer limites do voluntariado e procurar a equipe responsável."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Listening, social connection and communication in care",
+              "descricao": "Strengthen respectful communication among staff, volunteers and people receiving support, with appropriate boundaries and referrals.",
+              "publico": "Staff, carers and volunteers in support centres.",
+              "objetivo": "Strengthen respectful communication among staff, volunteers and people receiving support, with appropriate boundaries and referrals.",
+              "conteudos": [
+                "Listen without interrupting or exposing personal stories.",
+                "Agree responsibilities and handle disagreements.",
+                "Recognize volunteer boundaries and consult responsible staff."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Escucha, convivencia y comunicación en la acogida",
+              "descricao": "Fortalecer la comunicación respetuosa entre equipos, voluntarios y personas atendidas, con límites y derivaciones adecuados.",
+              "publico": "Equipos, cuidadores y voluntarios de casas de apoyo.",
+              "objetivo": "Fortalecer la comunicación respetuosa entre equipos, voluntarios y personas atendidas, con límites y derivaciones adecuados.",
+              "conteudos": [
+                "Escuchar sin interrumpir ni exponer relatos.",
+                "Acordar responsabilidades y tratar desacuerdos.",
+                "Reconocer límites del voluntariado y acudir al equipo responsable."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        }
+      ]
+    },
+    {
+      "id": "viver-e-aprender",
+      "titulo": "Viver e Aprender — cursos para centros de idosos",
+      "descricao": "Proposta de oficinas e materiais de inclusão digital, leitura, memória cultural, música e convivência para centros de idosos. Os conteúdos serão construídos com as equipes e participantes, respeitando interesses, acessibilidade e ritmo de aprendizagem.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Living and Learning — courses for older-adult centres",
+          "descricao": "A proposal for workshops and resources on digital inclusion, reading, cultural memory, music and social connection for older-adult centres. Content will be developed with staff and participants, respecting interests, accessibility and learning pace."
+        },
+        "es": {
+          "titulo": "Vivir y Aprender — cursos para centros de personas mayores",
+          "descricao": "Propuesta de talleres y materiales de inclusión digital, lectura, memoria cultural, música y convivencia para centros de personas mayores. Se crearán con los equipos y participantes, respetando intereses, accesibilidad y ritmos de aprendizaje."
+        }
+      },
+      "cursos_propostos": [
+        {
+          "id": "curso-celular-autonomia",
+          "tipo": "curso",
+          "titulo": "Celular com autonomia e tranquilidade",
+          "descricao": "Praticar funções úteis do celular com demonstrações passo a passo e recursos de acessibilidade.",
+          "publico": "Pessoas idosas, com apoio das equipes e respeito ao ritmo de aprendizagem.",
+          "objetivo": "Praticar funções úteis do celular com demonstrações passo a passo e recursos de acessibilidade.",
+          "conteudos": [
+            "Ajustar tamanho de texto, som e acessibilidade.",
+            "Organizar contatos, mensagens e chamadas.",
+            "Usar mapas e compartilhar informações com cuidado."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Using a phone with confidence and autonomy",
+              "descricao": "Practise useful phone functions through step-by-step demonstrations and accessibility features.",
+              "publico": "Older adults, supported by staff and at their own learning pace.",
+              "objetivo": "Practise useful phone functions through step-by-step demonstrations and accessibility features.",
+              "conteudos": [
+                "Adjust text size, sound and accessibility.",
+                "Organize contacts, messages and calls.",
+                "Use maps and share information carefully."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "El móvil con autonomía y tranquilidad",
+              "descricao": "Practicar funciones útiles del móvil mediante demostraciones paso a paso y accesibilidad.",
+              "publico": "Personas mayores, con apoyo de los equipos y respeto a su ritmo de aprendizaje.",
+              "objetivo": "Practicar funciones útiles del móvil mediante demostraciones paso a paso y accesibilidad.",
+              "conteudos": [
+                "Ajustar texto, sonido y accesibilidad.",
+                "Organizar contactos, mensajes y llamadas.",
+                "Usar mapas y compartir información con cuidado."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-golpes-imagens-falsas",
+          "tipo": "curso",
+          "titulo": "Reconhecer golpes, mensagens e imagens fabricadas",
+          "descricao": "Desenvolver hábitos de conferência antes de acreditar, compartilhar ou responder a mensagens e imagens.",
+          "publico": "Pessoas idosas, com apoio das equipes e respeito ao ritmo de aprendizagem.",
+          "objetivo": "Desenvolver hábitos de conferência antes de acreditar, compartilhar ou responder a mensagens e imagens.",
+          "conteudos": [
+            "Reconhecer urgência, promessas e pedidos suspeitos.",
+            "Conferir remetentes e buscar confirmação por outro canal.",
+            "Entender que imagens e vozes podem ser produzidas por IA."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Recognizing scams, messages and fabricated images",
+              "descricao": "Build checking habits before believing, sharing or responding to messages and images.",
+              "publico": "Older adults, supported by staff and at their own learning pace.",
+              "objetivo": "Build checking habits before believing, sharing or responding to messages and images.",
+              "conteudos": [
+                "Recognize suspicious urgency, promises and requests.",
+                "Check senders and confirm through another channel.",
+                "Understand that images and voices can be AI-generated."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Reconocer fraudes, mensajes e imágenes fabricadas",
+              "descricao": "Desarrollar hábitos de verificación antes de creer, compartir o responder a mensajes e imágenes.",
+              "publico": "Personas mayores, con apoyo de los equipos y respeto a su ritmo de aprendizaje.",
+              "objetivo": "Desarrollar hábitos de verificación antes de creer, compartir o responder a mensajes e imágenes.",
+              "conteudos": [
+                "Reconocer urgencia, promesas y solicitudes sospechosas.",
+                "Comprobar remitentes y confirmar por otro canal.",
+                "Entender que imágenes y voces pueden generarse con IA."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-memorias-historias",
+          "tipo": "curso",
+          "titulo": "Memórias e histórias em palavras e imagens",
+          "descricao": "Valorizar histórias de vida e cultura local por meio de relatos, fotografias autorizadas e produções coletivas.",
+          "publico": "Pessoas idosas, com apoio das equipes e respeito ao ritmo de aprendizagem.",
+          "objetivo": "Valorizar histórias de vida e cultura local por meio de relatos, fotografias autorizadas e produções coletivas.",
+          "conteudos": [
+            "Escolher uma história que se deseja compartilhar.",
+            "Organizar texto, áudio ou imagens com consentimento.",
+            "Preparar uma pequena exposição ou caderno de histórias."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Memories and stories in words and images",
+              "descricao": "Value life stories and local culture through storytelling, authorized photographs and shared creations.",
+              "publico": "Older adults, supported by staff and at their own learning pace.",
+              "objetivo": "Value life stories and local culture through storytelling, authorized photographs and shared creations.",
+              "conteudos": [
+                "Choose a story to share.",
+                "Organize text, audio or images with consent.",
+                "Prepare a small exhibition or storybook."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Memorias e historias en palabras e imágenes",
+              "descricao": "Valorar historias de vida y cultura local mediante relatos, fotografías autorizadas y creaciones colectivas.",
+              "publico": "Personas mayores, con apoyo de los equipos y respeto a su ritmo de aprendizaje.",
+              "objetivo": "Valorar historias de vida y cultura local mediante relatos, fotografías autorizadas y creaciones colectivas.",
+              "conteudos": [
+                "Elegir una historia para compartir.",
+                "Organizar texto, audio o imágenes con consentimiento.",
+                "Preparar una exposición o cuaderno de historias."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-ia-cotidiano-idosos",
+          "tipo": "curso",
+          "titulo": "Conhecendo a IA no cotidiano",
+          "descricao": "Compreender usos e limites da IA por meio de exemplos simples, sem exigir experiência prévia.",
+          "publico": "Pessoas idosas, com apoio das equipes e respeito ao ritmo de aprendizagem.",
+          "objetivo": "Compreender usos e limites da IA por meio de exemplos simples, sem exigir experiência prévia.",
+          "conteudos": [
+            "Observar exemplos de perguntas e respostas.",
+            "Comparar respostas e reconhecer erros.",
+            "Preparar lembretes, textos e ideias com apoio da equipe."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Getting to know AI in everyday life",
+              "descricao": "Understand AI uses and limits through simple examples, without requiring prior experience.",
+              "publico": "Older adults, supported by staff and at their own learning pace.",
+              "objetivo": "Understand AI uses and limits through simple examples, without requiring prior experience.",
+              "conteudos": [
+                "Observe question-and-answer examples.",
+                "Compare answers and recognize mistakes.",
+                "Prepare reminders, texts and ideas with staff support."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Conocer la IA en la vida cotidiana",
+              "descricao": "Comprender usos y límites de la IA mediante ejemplos sencillos, sin exigir experiencia previa.",
+              "publico": "Personas mayores, con apoyo de los equipos y respeto a su ritmo de aprendizaje.",
+              "objetivo": "Comprender usos y límites de la IA mediante ejemplos sencillos, sin exigir experiencia previa.",
+              "conteudos": [
+                "Observar ejemplos de preguntas y respuestas.",
+                "Comparar respuestas y reconocer errores.",
+                "Preparar recordatorios, textos e ideas con apoyo del equipo."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-arte-musica-encontros",
+          "tipo": "curso",
+          "titulo": "Arte, música e encontros para compartilhar",
+          "descricao": "Propor atividades culturais escolhidas pelos participantes, favorecendo expressão e convivência sem prometer efeitos terapêuticos.",
+          "publico": "Pessoas idosas, com apoio das equipes e respeito ao ritmo de aprendizagem.",
+          "objetivo": "Propor atividades culturais escolhidas pelos participantes, favorecendo expressão e convivência sem prometer efeitos terapêuticos.",
+          "conteudos": [
+            "Escolher músicas, textos e temas de interesse.",
+            "Criar desenhos, relatos ou apresentações em grupo.",
+            "Organizar um encontro respeitando preferências e limites."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Art, music and gatherings for sharing",
+              "descricao": "Offer cultural activities chosen by participants, supporting expression and social connection without promising therapeutic effects.",
+              "publico": "Older adults, supported by staff and at their own learning pace.",
+              "objetivo": "Offer cultural activities chosen by participants, supporting expression and social connection without promising therapeutic effects.",
+              "conteudos": [
+                "Choose music, texts and topics of interest.",
+                "Create drawings, stories or group presentations.",
+                "Organize a gathering respecting preferences and limits."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Arte, música y encuentros para compartir",
+              "descricao": "Proponer actividades culturales elegidas por los participantes, favoreciendo expresión y convivencia sin prometer efectos terapéuticos.",
+              "publico": "Personas mayores, con apoyo de los equipos y respeto a su ritmo de aprendizaje.",
+              "objetivo": "Proponer actividades culturales elegidas por los participantes, favoreciendo expresión y convivencia sin prometer efectos terapéuticos.",
+              "conteudos": [
+                "Elegir músicas, textos y temas de interés.",
+                "Crear dibujos, relatos o presentaciones grupales.",
+                "Organizar un encuentro respetando preferencias y límites."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        }
+      ]
+    },
+    {
+      "id": "formacao-comunitaria",
+      "titulo": "Formação Comunitária — cursos e ferramentas para servir",
+      "descricao": "Proposta de cursos introdutórios e ferramentas de organização para escolas, igrejas e comunidades: voluntariado, uso responsável de IA, tecnologia e produção de materiais educativos. Cada instituição participará da definição do conteúdo, respeitando sua organização e doutrina quando houver.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {
+        "en": {
+          "titulo": "Community Learning — courses and tools for service",
+          "descricao": "A proposal for introductory courses and organizational tools for schools, churches and communities: volunteering, responsible AI, technology and educational resources. Each institution will help define content, respecting its organization and doctrine where applicable."
+        },
+        "es": {
+          "titulo": "Formación Comunitaria — cursos y herramientas para servir",
+          "descricao": "Propuesta de cursos introductorios y herramientas de organización para escuelas, iglesias y comunidades: voluntariado, uso responsable de IA, tecnología y materiales educativos. Cada institución participará en definir los contenidos, respetando su organización y doctrina cuando corresponda."
+        }
+      },
+      "cursos_propostos": [
+        {
+          "id": "curso-ia-imagens-comunidades",
+          "tipo": "curso",
+          "titulo": "IA para criar imagens e materiais de comunicação",
+          "descricao": "Planejar imagens e materiais para escolas, igrejas e ações comunitárias, com linguagem adequada ao público e revisão institucional.",
+          "publico": "Educadores, voluntários e participantes de escolas, igrejas e comunidades.",
+          "objetivo": "Planejar imagens e materiais para escolas, igrejas e ações comunitárias, com linguagem adequada ao público e revisão institucional.",
+          "conteudos": [
+            "Definir objetivo, público e identidade visual.",
+            "Criar e revisar descrições para geração de imagens.",
+            "Conferir texto, representação das pessoas e permissões de uso."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI for images and communication materials",
+              "descricao": "Plan images and materials for schools, churches and community initiatives with audience-appropriate language and institutional review.",
+              "publico": "Educators, volunteers and participants in schools, churches and communities.",
+              "objetivo": "Plan images and materials for schools, churches and community initiatives with audience-appropriate language and institutional review.",
+              "conteudos": [
+                "Define objectives, audience and visual identity.",
+                "Create and review image-generation prompts.",
+                "Check text, representation of people and usage permissions."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA para imágenes y materiales de comunicación",
+              "descricao": "Planificar imágenes y materiales para escuelas, iglesias y acciones comunitarias, con lenguaje adecuado y revisión institucional.",
+              "publico": "Educadores, voluntarios y participantes de escuelas, iglesias y comunidades.",
+              "objetivo": "Planificar imágenes y materiales para escuelas, iglesias y acciones comunitarias, con lenguaje adecuado y revisión institucional.",
+              "conteudos": [
+                "Definir objetivo, público e identidad visual.",
+                "Crear y revisar instrucciones para generar imágenes.",
+                "Verificar texto, representación de personas y permisos de uso."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-ia-mercado-trabalho",
+          "tipo": "curso",
+          "titulo": "IA para o mercado de trabalho e projetos pessoais",
+          "descricao": "Conhecer usos práticos de IA para pesquisa, escrita e organização profissional, com verificação e responsabilidade.",
+          "publico": "Educadores, voluntários e participantes de escolas, igrejas e comunidades.",
+          "objetivo": "Conhecer usos práticos de IA para pesquisa, escrita e organização profissional, com verificação e responsabilidade.",
+          "conteudos": [
+            "Mapear tarefas que podem receber apoio.",
+            "Preparar rascunhos, resumos e planos de trabalho.",
+            "Conferir resultados e documentar o próprio processo."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI for work and personal projects",
+              "descricao": "Explore practical AI uses for research, writing and professional organization with verification and responsibility.",
+              "publico": "Educators, volunteers and participants in schools, churches and communities.",
+              "objetivo": "Explore practical AI uses for research, writing and professional organization with verification and responsibility.",
+              "conteudos": [
+                "Map tasks that could benefit from support.",
+                "Prepare drafts, summaries and work plans.",
+                "Check results and document the process."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA para el trabajo y proyectos personales",
+              "descricao": "Conocer usos prácticos de IA para investigar, escribir y organizar el trabajo, con verificación y responsabilidad.",
+              "publico": "Educadores, voluntarios y participantes de escuelas, iglesias y comunidades.",
+              "objetivo": "Conocer usos prácticos de IA para investigar, escribir y organizar el trabajo, con verificación y responsabilidad.",
+              "conteudos": [
+                "Identificar tareas que pueden recibir apoyo.",
+                "Preparar borradores, resúmenes y planes.",
+                "Verificar resultados y documentar el proceso."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-ia-educadores",
+          "tipo": "curso",
+          "titulo": "IA para educadores e cuidadores — atividades para crianças",
+          "descricao": "Preparar atividades educativas com mediação adulta, adequadas à idade e revisadas antes de serem apresentadas às crianças.",
+          "publico": "Educadores, voluntários e participantes de escolas, igrejas e comunidades.",
+          "objetivo": "Preparar atividades educativas com mediação adulta, adequadas à idade e revisadas antes de serem apresentadas às crianças.",
+          "conteudos": [
+            "Definir objetivo pedagógico e faixa etária.",
+            "Criar histórias, exercícios e imagens demonstradas por um adulto.",
+            "Revisar erros, adequação e formas de participação sem exigir contas das crianças."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI for educators and carers — activities for children",
+              "descricao": "Prepare adult-guided educational activities appropriate to age and reviewed before presentation to children.",
+              "publico": "Educators, volunteers and participants in schools, churches and communities.",
+              "objetivo": "Prepare adult-guided educational activities appropriate to age and reviewed before presentation to children.",
+              "conteudos": [
+                "Define learning objectives and age groups.",
+                "Create stories, exercises and adult-demonstrated images.",
+                "Review mistakes, suitability and participation without requiring children’s accounts."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA para educadores y cuidadores — actividades para niños",
+              "descricao": "Preparar actividades educativas mediadas por adultos, adecuadas a la edad y revisadas antes de presentarlas a los niños.",
+              "publico": "Educadores, voluntarios y participantes de escuelas, iglesias y comunidades.",
+              "objetivo": "Preparar actividades educativas mediadas por adultos, adecuadas a la edad y revisadas antes de presentarlas a los niños.",
+              "conteudos": [
+                "Definir objetivos pedagógicos y edades.",
+                "Crear historias, ejercicios e imágenes demostradas por un adulto.",
+                "Revisar errores, adecuación y participación sin exigir cuentas a los niños."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-slides-aulas",
+          "tipo": "curso",
+          "titulo": "Slides, aulas e apresentações com clareza",
+          "descricao": "Organizar uma aula ou palestra acessível, usando IA como apoio ao planejamento e preservando a revisão do conteúdo.",
+          "publico": "Educadores, voluntários e participantes de escolas, igrejas e comunidades.",
+          "objetivo": "Organizar uma aula ou palestra acessível, usando IA como apoio ao planejamento e preservando a revisão do conteúdo.",
+          "conteudos": [
+            "Definir mensagem, roteiro e fontes.",
+            "Criar slides legíveis e atividades participativas.",
+            "Ensaiar, revisar referências e adaptar à comunidade."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Clear slides, lessons and presentations",
+              "descricao": "Organize an accessible lesson or talk using AI to support planning while retaining content review.",
+              "publico": "Educators, volunteers and participants in schools, churches and communities.",
+              "objetivo": "Organize an accessible lesson or talk using AI to support planning while retaining content review.",
+              "conteudos": [
+                "Define messages, outlines and sources.",
+                "Create readable slides and participatory activities.",
+                "Rehearse, check references and adapt to the community."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Diapositivas, clases y presentaciones claras",
+              "descricao": "Organizar una clase o charla accesible usando IA para planificar y manteniendo la revisión del contenido.",
+              "publico": "Educadores, voluntarios y participantes de escuelas, iglesias y comunidades.",
+              "objetivo": "Organizar una clase o charla accesible usando IA para planificar y manteniendo la revisión del contenido.",
+              "conteudos": [
+                "Definir mensaje, guion y fuentes.",
+                "Crear diapositivas legibles y actividades participativas.",
+                "Ensayar, revisar referencias y adaptar a la comunidad."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        },
+        {
+          "id": "curso-voluntariado-organizado",
+          "tipo": "curso",
+          "titulo": "Voluntariado, doações e prestação de contas",
+          "descricao": "Planejar uma ação solidária com tarefas, recebimento de materiais, distribuição e registros claros.",
+          "publico": "Educadores, voluntários e participantes de escolas, igrejas e comunidades.",
+          "objetivo": "Planejar uma ação solidária com tarefas, recebimento de materiais, distribuição e registros claros.",
+          "conteudos": [
+            "Definir necessidades, responsáveis e pontos de coleta confirmados.",
+            "Registrar entradas e saídas de materiais e recursos.",
+            "Preparar um relatório simples de resultados e aprendizados."
+          ],
+          "materiais": [
+            "Slides a preparar",
+            "Roteiro para o instrutor a preparar",
+            "Atividade prática e material de apoio a preparar",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Volunteering, donations and accountability",
+              "descricao": "Plan a solidarity activity with tasks, collection, distribution and clear records.",
+              "publico": "Educators, volunteers and participants in schools, churches and communities.",
+              "objetivo": "Plan a solidarity activity with tasks, collection, distribution and clear records.",
+              "conteudos": [
+                "Define needs, coordinators and confirmed collection points.",
+                "Record incoming and outgoing materials and resources.",
+                "Prepare a simple report of results and lessons learned."
+              ],
+              "materiais": [
+                "Slides to prepare",
+                "Instructor guide to prepare",
+                "Practical activity and supporting resources to prepare",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Voluntariado, donaciones y rendición de cuentas",
+              "descricao": "Planificar una acción solidaria con tareas, recepción de materiales, distribución y registros claros.",
+              "publico": "Educadores, voluntarios y participantes de escuelas, iglesias y comunidades.",
+              "objetivo": "Planificar una acción solidaria con tareas, recepción de materiales, distribución y registros claros.",
+              "conteudos": [
+                "Definir necesidades, responsables y puntos de entrega confirmados.",
+                "Registrar entradas y salidas de materiales y recursos.",
+                "Preparar un informe sencillo de resultados y aprendizajes."
+              ],
+              "materiais": [
+                "Diapositivas por preparar",
+                "Guía para el instructor por preparar",
+                "Actividad práctica y material de apoyo por preparar",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          },
+          "gratuito": true
+        }
+      ]
+    },
+    {
+      "id": "formacao-escolas",
+      "titulo": "Palestras para escolas, professores e alunos",
+      "descricao": "Frente de formação gratuita em planejamento.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "documentacao": "",
+      "formacoes_propostas": [
+        {
+          "id": "escola-ia-aprendizagem",
+          "tipo": "palestra",
+          "titulo": "IA na escola: aprender mais sem terceirizar o pensamento",
+          "descricao": "Discutir como usar IA para perguntar, investigar e aprender, preservando compreensão, autoria e participação dos alunos.",
+          "objetivo": "Discutir como usar IA para perguntar, investigar e aprender, preservando compreensão, autoria e participação dos alunos.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Como reconhecer respostas convincentes, mas erradas",
+            "Perguntas que estimulam raciocínio e comparação de fontes",
+            "Atividade de explicar e defender uma conclusão com evidências"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI at school: learn more without outsourcing thinking",
+              "descricao": "Discuss using AI for questions, inquiry and learning while preserving understanding, authorship and student participation.",
+              "objetivo": "Discuss using AI for questions, inquiry and learning while preserving understanding, authorship and student participation.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Recognizing convincing but wrong answers",
+                "Questions that prompt reasoning and source comparison",
+                "Explaining and defending an evidence-based conclusion"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA en la escuela: aprender sin delegar el pensamiento",
+              "descricao": "Debatir el uso de IA para preguntar, investigar y aprender, preservando comprensión, autoría y participación.",
+              "objetivo": "Debatir el uso de IA para preguntar, investigar y aprender, preservando comprensión, autoría y participación.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Reconocer respuestas convincentes pero erróneas",
+                "Preguntas que fomentan razonamiento y comparación de fuentes",
+                "Explicar y defender una conclusión con evidencias"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-planejamento-professor",
+          "tipo": "palestra",
+          "titulo": "O professor e a IA: planejamento, tempo e qualidade da aula",
+          "descricao": "Explorar formas de preparar aulas e materiais com IA, mantendo o julgamento pedagógico com o professor.",
+          "objetivo": "Explorar formas de preparar aulas e materiais com IA, mantendo o julgamento pedagógico com o professor.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Transformar um objetivo de aprendizagem em roteiro",
+            "Criar exemplos e atividades em diferentes níveis",
+            "Revisar conteúdo, fontes e adequação à turma"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Teachers and AI: planning, time and lesson quality",
+              "descricao": "Explore preparing lessons and resources with AI while keeping pedagogical judgment with the teacher.",
+              "objetivo": "Explore preparing lessons and resources with AI while keeping pedagogical judgment with the teacher.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Turning a learning goal into an outline",
+                "Creating examples and activities at different levels",
+                "Reviewing content, sources and class suitability"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Docentes e IA: planificación, tiempo y calidad de clase",
+              "descricao": "Explorar la preparación de clases y materiales con IA, manteniendo el criterio pedagógico del docente.",
+              "objetivo": "Explorar la preparación de clases y materiales con IA, manteniendo el criterio pedagógico del docente.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Convertir un objetivo de aprendizaje en guion",
+                "Crear ejemplos y actividades de distintos niveles",
+                "Revisar contenidos, fuentes y adecuación al grupo"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-avaliacao-autoria",
+          "tipo": "palestra",
+          "titulo": "Avaliação na era da IA: autoria, processo e aprendizagem real",
+          "descricao": "Propor avaliações que tornem visíveis o raciocínio e o percurso do aluno, sem depender de detectores como prova definitiva.",
+          "objetivo": "Propor avaliações que tornem visíveis o raciocínio e o percurso do aluno, sem depender de detectores como prova definitiva.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Avaliar processo, versões e explicação oral",
+            "Combinar regras claras de uso de IA",
+            "Construir uma atividade avaliativa com devolutiva"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Assessment in the AI era: authorship, process and real learning",
+              "descricao": "Propose assessments that reveal student reasoning and process without treating detectors as definitive proof.",
+              "objetivo": "Propose assessments that reveal student reasoning and process without treating detectors as definitive proof.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Assessing process, versions and oral explanation",
+                "Agreeing clear AI-use rules",
+                "Building an assessment activity with feedback"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Evaluación en la era de la IA: autoría, proceso y aprendizaje real",
+              "descricao": "Proponer evaluaciones que muestren el razonamiento y proceso del alumno sin tratar detectores como prueba definitiva.",
+              "objetivo": "Proponer evaluaciones que muestren el razonamiento y proceso del alumno sin tratar detectores como prueba definitiva.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Evaluar proceso, versiones y explicación oral",
+                "Acordar reglas claras de uso de IA",
+                "Diseñar una actividad evaluativa con retroalimentación"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-acessibilidade",
+          "tipo": "palestra",
+          "titulo": "Tecnologia e acessibilidade: materiais que mais pessoas conseguem usar",
+          "descricao": "Planejar materiais mais legíveis e acessíveis, ouvindo as necessidades reais dos estudantes.",
+          "objetivo": "Planejar materiais mais legíveis e acessíveis, ouvindo as necessidades reais dos estudantes.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Texto claro, contraste e organização visual",
+            "Alternativas em áudio, imagem e texto",
+            "Revisão com usuários e adaptação pedagógica"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Technology and accessibility: resources more people can use",
+              "descricao": "Plan more readable and accessible resources by listening to students’ actual needs.",
+              "objetivo": "Plan more readable and accessible resources by listening to students’ actual needs.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Clear text, contrast and visual organization",
+                "Audio, image and text alternatives",
+                "User review and pedagogical adaptation"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Tecnología y accesibilidad: materiales para más personas",
+              "descricao": "Planificar materiales más legibles y accesibles escuchando necesidades reales del alumnado.",
+              "objetivo": "Planificar materiales más legibles y accesibles escuchando necesidades reales del alumnado.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Texto claro, contraste y organización visual",
+                "Alternativas de audio, imagen y texto",
+                "Revisión con usuarios y adaptación pedagógica"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-desinformacao",
+          "tipo": "palestra",
+          "titulo": "Imagens, vozes e notícias fabricadas: educação para verificar",
+          "descricao": "Construir hábitos de checagem e leitura crítica diante de conteúdos produzidos ou alterados por IA.",
+          "objetivo": "Construir hábitos de checagem e leitura crítica diante de conteúdos produzidos ou alterados por IA.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Separar aparência, fonte e evidência",
+            "Conferir contexto por canais independentes",
+            "Oficina de investigação de uma mensagem fictícia"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Fabricated images, voices and news: learning to verify",
+              "descricao": "Build verification habits and critical reading for AI-generated or modified content.",
+              "objetivo": "Build verification habits and critical reading for AI-generated or modified content.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Separating appearance, source and evidence",
+                "Checking context through independent channels",
+                "Investigating a fictional message"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Imágenes, voces y noticias fabricadas: aprender a verificar",
+              "descricao": "Construir hábitos de verificación y lectura crítica ante contenidos generados o modificados por IA.",
+              "objetivo": "Construir hábitos de verificación y lectura crítica ante contenidos generados o modificados por IA.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Separar apariencia, fuente y evidencia",
+                "Verificar contexto por canales independientes",
+                "Investigar un mensaje ficticio"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-dados-criancas",
+          "tipo": "palestra",
+          "titulo": "Dados pessoais na escola: cuidado desde o primeiro clique",
+          "descricao": "Refletir sobre quais dados são realmente necessários em atividades digitais e como envolver os responsáveis institucionais.",
+          "objetivo": "Refletir sobre quais dados são realmente necessários em atividades digitais e como envolver os responsáveis institucionais.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Identificar dados pessoais em exemplos fictícios",
+            "Evitar exposição de imagens e relatos dos alunos",
+            "Planejar atividades mediadas por adultos e revisão institucional"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Personal information at school: care from the first click",
+              "descricao": "Reflect on what information digital activities actually need and how to involve responsible staff.",
+              "objetivo": "Reflect on what information digital activities actually need and how to involve responsible staff.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Identifying personal information in fictional examples",
+                "Avoiding exposure of student images and stories",
+                "Planning adult-guided activities and institutional review"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Datos personales en la escuela: cuidado desde el primer clic",
+              "descricao": "Reflexionar sobre qué datos necesitan las actividades digitales y cómo involucrar a los responsables.",
+              "objetivo": "Reflexionar sobre qué datos necesitan las actividades digitales y cómo involucrar a los responsables.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Identificar datos personales en ejemplos ficticios",
+                "Evitar exposición de imágenes y relatos del alumnado",
+                "Planificar actividades mediadas y revisión institucional"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-imagens-criacao",
+          "tipo": "palestra",
+          "titulo": "Criar com IA: arte, histórias e pensamento visual",
+          "descricao": "Usar criação visual como ponto de partida para aprender, comparar interpretações e discutir autoria.",
+          "objetivo": "Usar criação visual como ponto de partida para aprender, comparar interpretações e discutir autoria.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Descrever uma ideia antes de gerar uma imagem",
+            "Revisar erros e representações inadequadas",
+            "Criar exposição com processo e fontes identificados"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Creating with AI: art, stories and visual thinking",
+              "descricao": "Use visual creation to support learning, compare interpretations and discuss authorship.",
+              "objetivo": "Use visual creation to support learning, compare interpretations and discuss authorship.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Describing an idea before generating an image",
+                "Reviewing errors and inappropriate representation",
+                "Creating an exhibition that identifies process and sources"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Crear con IA: arte, historias y pensamiento visual",
+              "descricao": "Usar la creación visual para aprender, comparar interpretaciones y debatir la autoría.",
+              "objetivo": "Usar la creación visual para aprender, comparar interpretaciones y debatir la autoría.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Describir una idea antes de generar imágenes",
+                "Revisar errores y representaciones inadecuadas",
+                "Crear una exposición con proceso y fuentes identificados"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-trabalho-futuro",
+          "tipo": "palestra",
+          "titulo": "Estudar hoje, trabalhar amanhã: habilidades humanas e IA",
+          "descricao": "Relacionar formação escolar a comunicação, colaboração, tecnologia e escolhas profissionais, sem promessas de emprego.",
+          "objetivo": "Relacionar formação escolar a comunicação, colaboração, tecnologia e escolhas profissionais, sem promessas de emprego.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Reconhecer habilidades e interesses",
+            "Conhecer tarefas em que IA pode apoiar",
+            "Montar um pequeno projeto ou portfólio autoral"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Study today, work tomorrow: human skills and AI",
+              "descricao": "Connect schooling with communication, collaboration, technology and career choices without promising employment.",
+              "objetivo": "Connect schooling with communication, collaboration, technology and career choices without promising employment.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Recognizing skills and interests",
+                "Exploring tasks AI can support",
+                "Building a small original project or portfolio"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Estudiar hoy, trabajar mañana: habilidades humanas e IA",
+              "descricao": "Relacionar la formación con comunicación, colaboración, tecnología y decisiones profesionales sin prometer empleo.",
+              "objetivo": "Relacionar la formación con comunicación, colaboración, tecnología y decisiones profesionales sin prometer empleo.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Reconocer habilidades e intereses",
+                "Conocer tareas que la IA puede apoyar",
+                "Crear un proyecto o portafolio propio"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-projetos-interdisciplinares",
+          "tipo": "palestra",
+          "titulo": "Projetos que resolvem problemas reais da escola e do bairro",
+          "descricao": "Planejar investigações interdisciplinares com dados e escuta da comunidade, usando IA como apoio, não como fonte única.",
+          "objetivo": "Planejar investigações interdisciplinares com dados e escuta da comunidade, usando IA como apoio, não como fonte única.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Escolher um problema e formular perguntas",
+            "Coletar dados com autorização e conferir resultados",
+            "Apresentar proposta com limites e próximos passos"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Projects addressing real school and neighbourhood problems",
+              "descricao": "Plan interdisciplinary inquiry using data and community listening, with AI as support rather than the only source.",
+              "objetivo": "Plan interdisciplinary inquiry using data and community listening, with AI as support rather than the only source.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Choosing a problem and asking questions",
+                "Collecting authorized data and checking results",
+                "Presenting a proposal with limits and next steps"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Proyectos para problemas reales de la escuela y el barrio",
+              "descricao": "Planificar investigaciones con datos y escucha comunitaria, usando IA como apoyo y no como fuente única.",
+              "objetivo": "Planificar investigaciones con datos y escucha comunitaria, usando IA como apoyo y no como fuente única.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Elegir un problema y formular preguntas",
+                "Recoger datos autorizados y verificar resultados",
+                "Presentar una propuesta con límites y próximos pasos"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "escola-convivencia-digital",
+          "tipo": "palestra",
+          "titulo": "Convivência digital: respeito, responsabilidade e participação",
+          "descricao": "Discutir como a tecnologia afeta relações e construir práticas de comunicação respeitosa e ajuda mútua.",
+          "objetivo": "Discutir como a tecnologia afeta relações e construir práticas de comunicação respeitosa e ajuda mútua.",
+          "publico": "Professores, equipes escolares e alunos, com adaptação à faixa etária.",
+          "conteudos": [
+            "Compartilhar sem humilhar ou expor pessoas",
+            "Reconhecer conflitos e procurar apoio adequado",
+            "Criar acordos de convivência e uso de tecnologia"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Digital citizenship: respect, responsibility and participation",
+              "descricao": "Discuss how technology affects relationships and build respectful communication and mutual support.",
+              "objetivo": "Discuss how technology affects relationships and build respectful communication and mutual support.",
+              "publico": "Teachers, school staff and students, adapted to age.",
+              "conteudos": [
+                "Sharing without humiliating or exposing people",
+                "Recognizing conflicts and finding appropriate support",
+                "Creating agreements for coexistence and technology use"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Convivencia digital: respeto, responsabilidad y participación",
+              "descricao": "Debatir cómo la tecnología afecta relaciones y construir comunicación respetuosa y apoyo mutuo.",
+              "objetivo": "Debatir cómo la tecnología afecta relaciones y construir comunicación respetuosa y apoyo mutuo.",
+              "publico": "Docentes, equipos escolares y estudiantes, con adaptación a la edad.",
+              "conteudos": [
+                "Compartir sin humillar ni exponer personas",
+                "Reconocer conflictos y buscar apoyo adecuado",
+                "Crear acuerdos de convivencia y uso tecnológico"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Talks for schools, teachers and students"
+        },
+        "es": {
+          "titulo": "Charlas para escuelas, docentes y estudiantes"
+        }
+      }
+    },
+    {
+      "id": "formacao-servico-publico",
+      "titulo": "Palestras para servidores públicos e gestão municipal",
+      "descricao": "Frente de formação gratuita em planejamento.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "documentacao": "",
+      "formacoes_propostas": [
+        {
+          "id": "publico-rotinas-ia",
+          "tipo": "palestra",
+          "titulo": "IA no serviço público: automatizar tarefas sem automatizar responsabilidades",
+          "descricao": "Mapear rotinas administrativas que podem receber apoio de IA, com revisão, rastreabilidade e responsabilidade humana.",
+          "objetivo": "Mapear rotinas administrativas que podem receber apoio de IA, com revisão, rastreabilidade e responsabilidade humana.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Mapear tarefas repetitivas e riscos",
+            "Criar rascunhos e checklists operacionais",
+            "Validar resultados antes de uso institucional"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI in public service: automate tasks, not responsibility",
+              "descricao": "Map administrative routines that AI could support, with review, traceability and human responsibility.",
+              "objetivo": "Map administrative routines that AI could support, with review, traceability and human responsibility.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Mapping repetitive tasks and risks",
+                "Drafting operational guides and checklists",
+                "Validating results before institutional use"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA en el servicio público: automatizar tareas, no responsabilidades",
+              "descricao": "Identificar rutinas administrativas que la IA puede apoyar, con revisión, trazabilidad y responsabilidad humana.",
+              "objetivo": "Identificar rutinas administrativas que la IA puede apoyar, con revisión, trazabilidad y responsabilidad humana.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Identificar tareas repetitivas y riesgos",
+                "Crear borradores y listas operativas",
+                "Validar resultados antes del uso institucional"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-documentos",
+          "tipo": "palestra",
+          "titulo": "Documentos e conhecimento institucional: encontrar, resumir e conferir",
+          "descricao": "Organizar documentos e explorar busca e resumos com referência à fonte, evitando conclusões sem conferência.",
+          "objetivo": "Organizar documentos e explorar busca e resumos com referência à fonte, evitando conclusões sem conferência.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Classificar documentos e versões",
+            "Preparar resumos com origem identificada",
+            "Conferir trechos, prazos e limitações com responsáveis"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Documents and institutional knowledge: find, summarize and verify",
+              "descricao": "Organize documents and explore search and summaries tied to sources, avoiding unchecked conclusions.",
+              "objetivo": "Organize documents and explore search and summaries tied to sources, avoiding unchecked conclusions.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Classifying documents and versions",
+                "Preparing source-linked summaries",
+                "Checking passages, deadlines and limitations with responsible staff"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Documentos y conocimiento institucional: encontrar, resumir y verificar",
+              "descricao": "Organizar documentos y explorar búsquedas y resúmenes con fuentes, evitando conclusiones sin verificar.",
+              "objetivo": "Organizar documentos y explorar búsquedas y resúmenes con fuentes, evitando conclusiones sin verificar.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Clasificar documentos y versiones",
+                "Preparar resúmenes con origen identificado",
+                "Verificar pasajes, plazos y límites con responsables"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-indicadores",
+          "tipo": "palestra",
+          "titulo": "Dados do município: de planilhas a perguntas melhores",
+          "descricao": "Transformar registros em indicadores compreensíveis, com definições claras e análise de qualidade dos dados.",
+          "objetivo": "Transformar registros em indicadores compreensíveis, com definições claras e análise de qualidade dos dados.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Definir o que um indicador mede",
+            "Conferir unidades, períodos e dados ausentes",
+            "Construir um painel e explicar seus limites"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Municipal data: from spreadsheets to better questions",
+              "descricao": "Turn records into understandable indicators with clear definitions and data-quality analysis.",
+              "objetivo": "Turn records into understandable indicators with clear definitions and data-quality analysis.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Defining what an indicator measures",
+                "Checking units, periods and missing data",
+                "Building a dashboard and explaining limits"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Datos municipales: de hojas de cálculo a mejores preguntas",
+              "descricao": "Convertir registros en indicadores comprensibles, con definiciones claras y análisis de calidad.",
+              "objetivo": "Convertir registros en indicadores comprensibles, con definiciones claras y análisis de calidad.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Definir qué mide un indicador",
+                "Revisar unidades, periodos y datos ausentes",
+                "Construir un panel y explicar sus límites"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-atendimento",
+          "tipo": "palestra",
+          "titulo": "Atendimento público com linguagem clara e apoio de IA",
+          "descricao": "Melhorar orientações e respostas institucionais sem substituir a escuta e a decisão dos responsáveis.",
+          "objetivo": "Melhorar orientações e respostas institucionais sem substituir a escuta e a decisão dos responsáveis.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Reescrever orientações em linguagem acessível",
+            "Criar respostas revisadas para dúvidas frequentes",
+            "Identificar quando encaminhar a uma pessoa"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Clear public communication with AI support",
+              "descricao": "Improve institutional guidance and responses without replacing listening or responsible decision-making.",
+              "objetivo": "Improve institutional guidance and responses without replacing listening or responsible decision-making.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Rewriting guidance in accessible language",
+                "Creating reviewed answers to common questions",
+                "Identifying when to refer to a person"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Atención pública con lenguaje claro y apoyo de IA",
+              "descricao": "Mejorar orientaciones y respuestas institucionales sin sustituir la escucha ni la decisión responsable.",
+              "objetivo": "Mejorar orientaciones y respuestas institucionales sin sustituir la escucha ni la decisión responsable.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Reescribir orientaciones en lenguaje accesible",
+                "Crear respuestas revisadas a preguntas frecuentes",
+                "Identificar cuándo derivar a una persona"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-sustentabilidade",
+          "tipo": "palestra",
+          "titulo": "IA e sustentabilidade municipal: medir antes de prometer",
+          "descricao": "Investigar como dados e ferramentas podem apoiar ações de água, resíduos e uso de recursos, com acompanhamento técnico.",
+          "objetivo": "Investigar como dados e ferramentas podem apoiar ações de água, resíduos e uso de recursos, com acompanhamento técnico.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Definir problemas e dados locais disponíveis",
+            "Comparar cenários e explicitar premissas",
+            "Planejar um piloto com indicadores de acompanhamento"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI and municipal sustainability: measure before promising",
+              "descricao": "Explore how data and tools can support water, waste and resource-use initiatives with technical supervision.",
+              "objetivo": "Explore how data and tools can support water, waste and resource-use initiatives with technical supervision.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Defining problems and available local data",
+                "Comparing scenarios and stating assumptions",
+                "Planning a pilot with monitoring indicators"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA y sostenibilidad municipal: medir antes de prometer",
+              "descricao": "Investigar cómo los datos y herramientas apoyan acciones de agua, residuos y recursos, con supervisión técnica.",
+              "objetivo": "Investigar cómo los datos y herramientas apoyan acciones de agua, residuos y recursos, con supervisión técnica.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Definir problemas y datos locales disponibles",
+                "Comparar escenarios y explicitar supuestos",
+                "Planificar un piloto con indicadores de seguimiento"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-transparencia",
+          "tipo": "palestra",
+          "titulo": "Transparência e prestação de contas: explicar números com clareza",
+          "descricao": "Preparar registros e apresentações compreensíveis de recursos e resultados, com revisão pelos setores responsáveis.",
+          "objetivo": "Preparar registros e apresentações compreensíveis de recursos e resultados, com revisão pelos setores responsáveis.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Conferir totais e bases de comparação",
+            "Separar previsão, execução e resultado",
+            "Produzir relatórios com fontes e gráficos legíveis"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Transparency and accountability: explaining numbers clearly",
+              "descricao": "Prepare understandable resource and outcome records and presentations, reviewed by responsible departments.",
+              "objetivo": "Prepare understandable resource and outcome records and presentations, reviewed by responsible departments.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Checking totals and comparison bases",
+                "Separating forecasts, execution and outcomes",
+                "Producing sourced reports and readable charts"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Transparencia y rendición de cuentas: explicar cifras con claridad",
+              "descricao": "Preparar registros y presentaciones comprensibles de recursos y resultados, revisados por los sectores responsables.",
+              "objetivo": "Preparar registros y presentaciones comprensibles de recursos y resultados, revisados por los sectores responsables.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Verificar totales y bases de comparación",
+                "Separar previsión, ejecución y resultados",
+                "Producir informes con fuentes y gráficos legibles"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-acessibilidade",
+          "tipo": "palestra",
+          "titulo": "Serviços digitais que mais cidadãos conseguem utilizar",
+          "descricao": "Revisar formulários, páginas e orientações a partir das necessidades das pessoas e de testes de uso.",
+          "objetivo": "Revisar formulários, páginas e orientações a partir das necessidades das pessoas e de testes de uso.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Identificar barreiras de leitura e navegação",
+            "Testar fluxos com diferentes perfis",
+            "Planejar melhorias sem excluir canais humanos"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Digital services more citizens can use",
+              "descricao": "Review forms, pages and guidance based on people’s needs and usability testing.",
+              "objetivo": "Review forms, pages and guidance based on people’s needs and usability testing.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Identifying reading and navigation barriers",
+                "Testing flows with different users",
+                "Planning improvements without removing human channels"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Servicios digitales para más ciudadanos",
+              "descricao": "Revisar formularios, páginas y orientaciones a partir de necesidades ciudadanas y pruebas de uso.",
+              "objetivo": "Revisar formularios, páginas y orientaciones a partir de necesidades ciudadanas y pruebas de uso.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Identificar barreras de lectura y navegación",
+                "Probar recorridos con distintos perfiles",
+                "Planificar mejoras sin excluir canales humanos"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-camara",
+          "tipo": "palestra",
+          "titulo": "IA na Câmara Municipal: pesquisa, leitura e apoio à organização",
+          "descricao": "Explorar apoio à leitura e organização de materiais legislativos, mantendo análise, decisões e revisão com as equipes competentes.",
+          "objetivo": "Explorar apoio à leitura e organização de materiais legislativos, mantendo análise, decisões e revisão com as equipes competentes.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Organizar pautas e materiais públicos",
+            "Resumir com referência ao documento original",
+            "Conferir informações e registrar limitações"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI in the municipal council: research, reading and organization",
+              "descricao": "Explore support for reading and organizing legislative materials while leaving analysis, decisions and review to competent teams.",
+              "objetivo": "Explore support for reading and organizing legislative materials while leaving analysis, decisions and review to competent teams.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Organizing agendas and public materials",
+                "Summarizing with links to original documents",
+                "Checking information and recording limitations"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA en el concejo municipal: investigación, lectura y organización",
+              "descricao": "Explorar apoyo a la lectura y organización de materiales legislativos, manteniendo análisis, decisiones y revisión en equipos competentes.",
+              "objetivo": "Explorar apoyo a la lectura y organización de materiales legislativos, manteniendo análisis, decisiones y revisión en equipos competentes.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Organizar agendas y materiales públicos",
+                "Resumir con referencia al documento original",
+                "Verificar información y registrar limitaciones"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-estoque",
+          "tipo": "palestra",
+          "titulo": "Planejamento de materiais, estoque e manutenção com dados",
+          "descricao": "Estudar como registros consistentes ajudam a organizar necessidades e rotinas, sem delegar decisões de contratação a uma IA.",
+          "objetivo": "Estudar como registros consistentes ajudam a organizar necessidades e rotinas, sem delegar decisões de contratação a uma IA.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Padronizar cadastro e movimentações",
+            "Acompanhar consumo e manutenção",
+            "Criar alertas de revisão e testar um fluxo piloto"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Data-informed materials, inventory and maintenance planning",
+              "descricao": "Study how consistent records support needs and routines without delegating procurement decisions to AI.",
+              "objetivo": "Study how consistent records support needs and routines without delegating procurement decisions to AI.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Standardizing records and movements",
+                "Monitoring use and maintenance",
+                "Creating review alerts and testing a pilot flow"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Planificación de materiales, existencias y mantenimiento con datos",
+              "descricao": "Estudiar cómo los registros consistentes organizan necesidades y rutinas, sin delegar decisiones de contratación a una IA.",
+              "objetivo": "Estudiar cómo los registros consistentes organizan necesidades y rutinas, sin delegar decisiones de contratación a una IA.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Normalizar registros y movimientos",
+                "Acompañar consumo y mantenimiento",
+                "Crear avisos de revisión y probar un flujo piloto"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "publico-prototipos",
+          "tipo": "palestra",
+          "titulo": "Do problema ao protótipo: ferramentas públicas com apoio de IA",
+          "descricao": "Planejar pequenos protótipos para necessidades reais, com participação dos usuários, testes e revisão técnica antes de qualquer implantação.",
+          "objetivo": "Planejar pequenos protótipos para necessidades reais, com participação dos usuários, testes e revisão técnica antes de qualquer implantação.",
+          "publico": "Servidores públicos, gestores municipais, equipes de prefeitura e Câmara Municipal.",
+          "conteudos": [
+            "Definir problema, usuários e escopo",
+            "Desenhar fluxo e preparar protótipo com dados fictícios",
+            "Testar, documentar e decidir próximos passos"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "From problem to prototype: public tools with AI support",
+              "descricao": "Plan small prototypes for real needs with user participation, testing and technical review before deployment.",
+              "objetivo": "Plan small prototypes for real needs with user participation, testing and technical review before deployment.",
+              "publico": "Public servants, municipal leaders and city administration and council teams.",
+              "conteudos": [
+                "Defining problems, users and scope",
+                "Designing flows and prototypes with fictional data",
+                "Testing, documenting and deciding next steps"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Del problema al prototipo: herramientas públicas con IA",
+              "descricao": "Planificar prototipos para necesidades reales, con usuarios, pruebas y revisión técnica antes de implantar.",
+              "objetivo": "Planificar prototipos para necesidades reales, con usuarios, pruebas y revisión técnica antes de implantar.",
+              "publico": "Servidores públicos, gestores municipales y equipos de ayuntamiento y concejo municipal.",
+              "conteudos": [
+                "Definir problema, usuarios y alcance",
+                "Diseñar recorridos y prototipos con datos ficticios",
+                "Probar, documentar y decidir próximos pasos"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Talks for public servants and municipal management"
+        },
+        "es": {
+          "titulo": "Charlas para servidores públicos y gestión municipal"
+        }
+      }
+    },
+    {
+      "id": "formacao-campo",
+      "titulo": "Cursos para o campo, fazendas e cooperativas",
+      "descricao": "Frente de formação gratuita em planejamento.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "documentacao": "",
+      "formacoes_propostas": [
+        {
+          "id": "agro-colheita",
+          "tipo": "curso",
+          "titulo": "Gestão da colheita: planejamento, registros e indicadores",
+          "descricao": "Organizar um projeto de acompanhamento da colheita com dados consistentes e indicadores úteis à equipe.",
+          "objetivo": "Organizar um projeto de acompanhamento da colheita com dados consistentes e indicadores úteis à equipe.",
+          "publico": "Produtores, trabalhadores rurais, cooperativas e equipes técnicas.",
+          "conteudos": [
+            "Mapear etapas, equipes e registros",
+            "Relacionar talhões, datas, volumes e unidades",
+            "Preparar painel de acompanhamento e revisar com responsáveis"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Harvest management: planning, records and indicators",
+              "descricao": "Organize harvest monitoring with consistent data and useful team indicators.",
+              "objetivo": "Organize harvest monitoring with consistent data and useful team indicators.",
+              "publico": "Farmers, rural workers, cooperatives and technical teams.",
+              "conteudos": [
+                "Mapping stages, teams and records",
+                "Relating fields, dates, volumes and units",
+                "Preparing a dashboard and reviewing with coordinators"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Gestión de cosecha: planificación, registros e indicadores",
+              "descricao": "Organizar el seguimiento de cosecha con datos consistentes e indicadores útiles.",
+              "objetivo": "Organizar el seguimiento de cosecha con datos consistentes e indicadores útiles.",
+              "publico": "Productores, trabajadores rurales, cooperativas y equipos técnicos.",
+              "conteudos": [
+                "Identificar etapas, equipos y registros",
+                "Relacionar parcelas, fechas, volúmenes y unidades",
+                "Preparar un panel y revisar con responsables"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "agro-ia-propriedade",
+          "tipo": "curso",
+          "titulo": "IA na propriedade rural: começar pelas tarefas certas",
+          "descricao": "Identificar tarefas administrativas e de organização que podem receber apoio de IA e distinguir apoio de recomendação técnica especializada.",
+          "objetivo": "Identificar tarefas administrativas e de organização que podem receber apoio de IA e distinguir apoio de recomendação técnica especializada.",
+          "publico": "Produtores, trabalhadores rurais, cooperativas e equipes técnicas.",
+          "conteudos": [
+            "Mapear tarefas e dados existentes",
+            "Criar rascunhos e organizar registros",
+            "Verificar resultados e consultar a equipe técnica"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "AI on the farm: starting with the right tasks",
+              "descricao": "Identify administrative and organizational tasks AI can support and distinguish assistance from specialist technical advice.",
+              "objetivo": "Identify administrative and organizational tasks AI can support and distinguish assistance from specialist technical advice.",
+              "publico": "Farmers, rural workers, cooperatives and technical teams.",
+              "conteudos": [
+                "Mapping tasks and existing data",
+                "Drafting texts and organizing records",
+                "Checking results and consulting technical staff"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "IA en la propiedad rural: comenzar por las tareas adecuadas",
+              "descricao": "Identificar tareas administrativas que la IA puede apoyar y distinguir apoyo de recomendaciones técnicas especializadas.",
+              "objetivo": "Identificar tareas administrativas que la IA puede apoyar y distinguir apoyo de recomendaciones técnicas especializadas.",
+              "publico": "Productores, trabajadores rurales, cooperativas y equipos técnicos.",
+              "conteudos": [
+                "Identificar tareas y datos existentes",
+                "Crear borradores y organizar registros",
+                "Verificar resultados y consultar al equipo técnico"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "agro-sustentabilidade",
+          "tipo": "curso",
+          "titulo": "Dados para água, resíduos e uso responsável de recursos no campo",
+          "descricao": "Planejar o registro de recursos e comparar cenários de sustentabilidade sem substituir avaliação técnica de campo.",
+          "objetivo": "Planejar o registro de recursos e comparar cenários de sustentabilidade sem substituir avaliação técnica de campo.",
+          "publico": "Produtores, trabalhadores rurais, cooperativas e equipes técnicas.",
+          "conteudos": [
+            "Escolher indicadores e pontos de medição",
+            "Conferir qualidade e limites dos dados",
+            "Desenhar um piloto e acompanhar resultados com técnicos"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Data for water, waste and responsible resource use on farms",
+              "descricao": "Plan resource records and compare sustainability scenarios without replacing field-based technical assessment.",
+              "objetivo": "Plan resource records and compare sustainability scenarios without replacing field-based technical assessment.",
+              "publico": "Farmers, rural workers, cooperatives and technical teams.",
+              "conteudos": [
+                "Selecting indicators and measurement points",
+                "Checking data quality and limits",
+                "Designing a pilot and monitoring with technicians"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Datos para agua, residuos y uso responsable de recursos en el campo",
+              "descricao": "Planificar registros de recursos y comparar escenarios de sostenibilidad sin sustituir evaluación técnica de campo.",
+              "objetivo": "Planificar registros de recursos y comparar escenarios de sostenibilidad sin sustituir evaluación técnica de campo.",
+              "publico": "Productores, trabajadores rurales, cooperativas y equipos técnicos.",
+              "conteudos": [
+                "Elegir indicadores y puntos de medición",
+                "Verificar calidad y límites de datos",
+                "Diseñar un piloto y acompañar resultados con técnicos"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "agro-rastreabilidade",
+          "tipo": "curso",
+          "titulo": "Rastreabilidade e comunicação: organizar a história da produção",
+          "descricao": "Organizar registros de produção e comunicação com cooperativas, compradores e equipes de forma compreensível.",
+          "objetivo": "Organizar registros de produção e comunicação com cooperativas, compradores e equipes de forma compreensível.",
+          "publico": "Produtores, trabalhadores rurais, cooperativas e equipes técnicas.",
+          "conteudos": [
+            "Definir identificadores e registros de etapas",
+            "Relacionar origem, movimentações e entregas",
+            "Preparar relatórios claros e conferir informações"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Traceability and communication: organizing the production story",
+              "descricao": "Organize production records and clear communication with cooperatives, buyers and teams.",
+              "objetivo": "Organize production records and clear communication with cooperatives, buyers and teams.",
+              "publico": "Farmers, rural workers, cooperatives and technical teams.",
+              "conteudos": [
+                "Defining identifiers and stage records",
+                "Linking origin, movements and deliveries",
+                "Preparing clear reports and checking information"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Trazabilidad y comunicación: organizar la historia de la producción",
+              "descricao": "Organizar registros productivos y comunicación clara con cooperativas, compradores y equipos.",
+              "objetivo": "Organizar registros productivos y comunicación clara con cooperativas, compradores y equipos.",
+              "publico": "Productores, trabajadores rurales, cooperativas y equipos técnicos.",
+              "conteudos": [
+                "Definir identificadores y registros por etapa",
+                "Relacionar origen, movimientos y entregas",
+                "Preparar informes claros y verificar información"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        },
+        {
+          "id": "agro-sensores",
+          "tipo": "curso",
+          "titulo": "Sensores, planilhas e protótipos para a lavoura",
+          "descricao": "Introduzir projetos de coleta e visualização de dados para apoiar a equipe rural, começando por demonstrações e protótipos revisados.",
+          "objetivo": "Introduzir projetos de coleta e visualização de dados para apoiar a equipe rural, começando por demonstrações e protótipos revisados.",
+          "publico": "Produtores, trabalhadores rurais, cooperativas e equipes técnicas.",
+          "conteudos": [
+            "Entender sensores e limitações de medição",
+            "Organizar dados de demonstração em planilhas",
+            "Planejar manutenção, validação e próximos passos"
+          ],
+          "materiais": [
+            "Slides a produzir",
+            "Roteiro, demonstração e atividade prática a produzir",
+            "Encerramento com convite à contribuição voluntária"
+          ],
+          "status": "em-desenvolvimento",
+          "etapa": "planejamento",
+          "gratuito": true,
+          "link": "",
+          "documentacao": "",
+          "traducoes": {
+            "en": {
+              "titulo": "Sensors, spreadsheets and prototypes for crops",
+              "descricao": "Introduce data collection and visualization projects for rural teams, starting with reviewed demonstrations and prototypes.",
+              "objetivo": "Introduce data collection and visualization projects for rural teams, starting with reviewed demonstrations and prototypes.",
+              "publico": "Farmers, rural workers, cooperatives and technical teams.",
+              "conteudos": [
+                "Understanding sensors and measurement limits",
+                "Organizing demonstration data in spreadsheets",
+                "Planning maintenance, validation and next steps"
+              ],
+              "materiais": [
+                "Slides to produce",
+                "Guide, demonstration and practical activity to produce",
+                "Closing with an invitation to contribute voluntarily"
+              ]
+            },
+            "es": {
+              "titulo": "Sensores, hojas de cálculo y prototipos para cultivos",
+              "descricao": "Introducir proyectos de recogida y visualización de datos para equipos rurales, empezando por demostraciones y prototipos revisados.",
+              "objetivo": "Introducir proyectos de recogida y visualización de datos para equipos rurales, empezando por demostraciones y prototipos revisados.",
+              "publico": "Productores, trabajadores rurales, cooperativas y equipos técnicos.",
+              "conteudos": [
+                "Entender sensores y límites de medición",
+                "Organizar datos de demostración en hojas",
+                "Planificar mantenimiento, validación y próximos pasos"
+              ],
+              "materiais": [
+                "Diapositivas por producir",
+                "Guía, demostración y actividad práctica por producir",
+                "Cierre con invitación a colaborar voluntariamente"
+              ]
+            }
+          }
+        }
+      ],
+      "traducoes": {
+        "en": {
+          "titulo": "Courses for farms and cooperatives"
+        },
+        "es": {
+          "titulo": "Cursos para el campo, fincas y cooperativas"
+        }
+      }
+    },
+    {
+      "id": "colheita-organizada",
+      "titulo": "Colheita Organizada — gestão e acompanhamento da produção",
+      "descricao": "Proposta de ferramenta para organizar etapas, equipes, volumes e registros da colheita. O escopo será definido com produtores e equipes técnicas; ainda não há implantação.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Organized Harvest — production management and monitoring",
+          "descricao": "A tool proposal for harvest stages, teams, volumes and records. Scope will be defined with farmers and technical teams; no deployment exists yet."
+        },
+        "es": {
+          "titulo": "Cosecha Organizada — gestión y seguimiento productivo",
+          "descricao": "Propuesta de herramienta para etapas, equipos, volúmenes y registros de cosecha. Se definirá con productores y equipos técnicos; todavía no está implantada."
+        }
+      }
+    },
+    {
+      "id": "campo-conectado",
+      "titulo": "Campo Conectado — rotinas e manutenção da propriedade",
+      "descricao": "Proposta de ferramenta para organizar tarefas, manutenção de equipamentos e registros rurais, com planejamento e testes antes do uso real.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Connected Farm — property routines and maintenance",
+          "descricao": "A tool proposal for tasks, equipment maintenance and farm records, with planning and testing before real use."
+        },
+        "es": {
+          "titulo": "Campo Conectado — rutinas y mantenimiento",
+          "descricao": "Propuesta de herramienta para tareas, mantenimiento de equipos y registros rurales, con planificación y pruebas antes del uso real."
+        }
+      }
+    },
+    {
+      "id": "municipio-sustentavel",
+      "titulo": "Município Sustentável — indicadores e acompanhamento de ações",
+      "descricao": "Proposta de painel para acompanhar dados locais de resíduos, água e ações de sustentabilidade, com fontes, definições e revisão técnica.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Sustainable Municipality — indicators and activity monitoring",
+          "descricao": "A dashboard proposal for local waste, water and sustainability activity data, with sources, definitions and technical review."
+        },
+        "es": {
+          "titulo": "Municipio Sostenible — indicadores y seguimiento",
+          "descricao": "Propuesta de panel para datos locales de residuos, agua y sostenibilidad, con fuentes, definiciones y revisión técnica."
+        }
+      }
+    },
+    {
+      "id": "servico-publico-simples",
+      "titulo": "Serviço Público Simples — organização de rotinas administrativas",
+      "descricao": "Proposta de ferramentas para organizar solicitações, tarefas e documentos, com protótipos de dados fictícios e validação institucional antes da implantação.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "traducoes": {
+        "en": {
+          "titulo": "Simple Public Service — administrative routine organization",
+          "descricao": "A tool proposal for requests, tasks and documents, using fictional-data prototypes and institutional validation before deployment."
+        },
+        "es": {
+          "titulo": "Servicio Público Sencillo — organización administrativa",
+          "descricao": "Propuesta de herramientas para solicitudes, tareas y documentos, con prototipos de datos ficticios y validación institucional antes de implantar."
+        }
+      }
     }
   ]
 }
