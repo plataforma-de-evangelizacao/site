@@ -133,8 +133,8 @@
       "Ofereça tempo para preparar refeições, organizar doações ou apoiar melhorias e moradia. Atividades de construção dependem de planejamento e responsáveis qualificados."
     ]
   ],
-  "volunteer": "Quero oferecer ajuda →",
-  "whatsapp": "Conversar pelo WhatsApp ↗",
+  "volunteer": "Quero ajudar: conversar pelo WhatsApp →",
+  "whatsapp": "Iniciar uma conversa pelo WhatsApp ↗",
   "partnersTitle": "Comunidades e possíveis parcerias.",
   "partnerPending": "Parceria a propor",
   "qrAlt": "QR Code Pix para contribuição voluntária",
@@ -165,5 +165,6 @@
   "communityAgenda": "Celebrações, encontros e atividades",
   "communityIntro": "Conheça os espaços das comunidades de Nova Bandeirantes. Aqui serão apresentados os horários de celebrações, encontros de oração, formação e ações, após confirmação com cada instituição.",
   "communityPending": "Agenda aguardando informações confirmadas. As parcerias ainda serão propostas.",
-  "openCommunity": "Conhecer a comunidade e sua agenda →"
+  "openCommunity": "Conhecer a comunidade e sua agenda →",
+  "whatsappResponsible": "Fale com o responsável pela plataforma"
 }

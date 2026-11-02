@@ -133,8 +133,8 @@
       "Offer time to prepare meals, organize donations or support improvements and housing. Construction work requires planning and qualified supervision."
     ]
   ],
-  "volunteer": "I want to help →",
-  "whatsapp": "Talk on WhatsApp ↗",
+  "volunteer": "I want to help: chat on WhatsApp →",
+  "whatsapp": "Start a conversation on WhatsApp ↗",
   "partnersTitle": "Communities and potential partnerships.",
   "partnerPending": "Partnership to propose",
   "qrAlt": "Pix QR code for voluntary contributions",
@@ -165,5 +165,6 @@
   "communityAgenda": "Celebrations, gatherings and activities",
   "communityIntro": "Explore the spaces for communities in Nova Bandeirantes. Celebration times, prayer gatherings, formation and outreach will be presented after confirmation with each institution.",
   "communityPending": "The schedule awaits confirmed information. Partnerships have yet to be proposed.",
-  "openCommunity": "Explore the community and schedule →"
+  "openCommunity": "Explore the community and schedule →",
+  "whatsappResponsible": "Talk to the person responsible for the platform"
 }

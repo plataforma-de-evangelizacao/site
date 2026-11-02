@@ -1134,3 +1134,24 @@ Consulte `CHECKLIST-RESPONSIVO.md` para os resultados e as verificações em apa
 ### Apresentação de projetos na página inicial
 
 O bloco inicial chama-se **Projetos em desenvolvimento** e apresenta as categorias de propostas. Há uma única chamada: **Clique para ver todos os nossos projetos**, que abre `#projetos`. O link isolado de Ideias para o bem comum foi removido da página inicial. O grupo editorial e seus dados permanecem dentro de Projeto. Edite `projectsIntro`, `projectsUnderway` e `allProjects` em `pagina-inicial.json` nos três idiomas para alterar essa apresentação.
+
+
+### WhatsApp em Contato e canais
+
+A página `#conecte` apresenta um cartão de WhatsApp junto ao e-mail, YouTube, Instagram e Facebook. O cartão apresenta um convite para falar com o responsável, sem mostrar o número, e abre a conversa pelo endereço `wa.me` ao clicar. O envio da mensagem é feito pelo visitante no WhatsApp; o site não envia mensagens sozinho. O destino também aparece nos outros botões já existentes. Ao trocar o telefone no futuro, procure `data-contact-whatsapp` no HTML e revise `dados/parcerias.json` e suas versões de idioma para manter todos os contatos consistentes.
+
+
+## Busca na página inicial
+
+A seção **O que você procura?**, no começo da página inicial, permite buscar por assunto ou palavra-chave. Exemplos: WhatsApp, Pix, playlist e estudo diário. Digite ao menos duas letras; os resultados aparecem enquanto digita ou ao pressionar Buscar/Enter. Cada resultado contém um título clicável e um trecho do conteúdo. A busca ignora acentos e diferença entre maiúsculas e minúsculas e aceita vários termos. Os termos precisam aparecer na mesma página.
+
+O controlador é `assets/search.js`; estilos ficam em `assets/platform.css` e a estrutura em `index.html`. A interface acompanha português, inglês e espanhol. `aliases` no controlador acrescenta palavras-chave a seções importantes, como doações/Pix e Contato/WhatsApp. Para mudar títulos específicos nos resultados, revise o mapa `titles`.
+
+A busca usa os textos das páginas e dos catálogos que estão carregados/renderizados no navegador, inclusive as páginas internas fora da tela inicial. Ela refaz a leitura ao pesquisar e após os eventos de carregamento de conteúdo. Não utiliza serviço pago, não envia o texto pesquisado para um servidor e não salva histórico. Não lê internamente PDFs, vídeos, arquivos no Drive, páginas externas ou materiais ainda não carregados/renderizados. Catálogos filtrados podem limitar os itens presentes na página. Isso não é uma busca da internet.
+
+Verificado: WhatsApp, Pix, playlist, santidade, busca sem resultado, clique que abre Contato e canais, normalização de acentos/caixa, vários termos e interface em três idiomas. Busca móvel medida em 320 px sem rolagem horizontal. Os testes de aparelhos reais indicados no checklist responsivo continuam necessários.
+
+
+### Convites para conversar e ajudar
+
+Os botões de WhatsApp usam a chamada “Iniciar uma conversa pelo WhatsApp” e, no cartão de Contato e canais, “Fale com o responsável pela plataforma”. O número não é exibido nesse cartão; permanece no destino do link para permitir abrir a conversa. Isso é uma escolha de apresentação, não um mecanismo de sigilo. O botão de voluntariado informa explicitamente que abre o WhatsApp. Edite `whatsapp`, `whatsappResponsible` e `volunteer` em `pagina-inicial.json` nos três idiomas para alterar os textos.
