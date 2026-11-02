@@ -43,7 +43,7 @@ def build_site(root,out):
     # Explicit allowlist prevents control data, scripts, logs, prompts and credentials leaking into Pages.
     for name in ['index.html','favicon.ico','catalogo.txt','links-biblias-pdf.txt','CNAME']:
         if (root/name).is_file():shutil.copy2(root/name,out/name)
-    for name in ['assets','dados','modelos']:
+    for name in ['assets','dados','modelos','admin']:
         if (root/name).exists():shutil.copytree(root/name,out/name,ignore=shutil.ignore_patterns('*.tmp','*.bak','__pycache__'))
     (out/'.nojekyll').touch()
 
@@ -72,6 +72,8 @@ def main():
             engine.s['lastPublishedHash']=hashlib.sha256(json.dumps(catalog,sort_keys=True).encode()).hexdigest();engine.save()
             build_site(ROOT,ROOT/args.output)
             report['publicChanged']=changed or engine.s.get('deployedHash')!=engine.s['lastPublishedHash']
+            report['approvedPublic']=len(catalog['itens'])
+            report['pendingReview']=sum(r['aprovacao']=='pending_review' for r in engine.s['records'].values())
         if report.get('errors'):code=1
     except Exception as ex:
         # Never emit raw URL/exceptions from transport: these may contain credentials.

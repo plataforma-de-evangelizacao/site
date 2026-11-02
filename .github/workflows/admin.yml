@@ -1,0 +1,43 @@
+name: Painel administrativo
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: plataforma-pages-biblioteca
+  cancel-in-progress: false
+jobs:
+  gerir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 100
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testar permissões e validações locais
+        run: python -m unittest discover -s tests/admin -v
+      - name: Aplicar solicitações autorizadas
+        id: admin
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/admin/sync.py
+      - name: Atualizar dados do painel
+        if: success() && (github.event_name == 'workflow_dispatch' || (steps.admin.outputs.applied != '' && steps.admin.outputs.applied != '0'))
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/admin/sync.py --export-only
+      - name: Solicitar publicação das alterações
+        if: steps.admin.outputs.applied != '' && steps.admin.outputs.applied != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run biblioteca.yml --ref main -f modo=publicar-site
