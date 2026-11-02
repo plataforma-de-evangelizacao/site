@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "intervalDays": {
+    "discovery": 10,
+    "verification": 15,
+    "maintenance": 25
+  },
+  "maxVideoIdsPerBatch": 50,
+  "maxSearchResultsPerPage": 50,
+  "maxSearchCallsPerRun": 20,
+  "maxOtherCallsPerRun": 100,
+  "dailySearchCalls": 100,
+  "dailyOtherUnits": 10000,
+  "maxSearchPagesPerQuery": 2,
+  "maxRetries": 3,
+  "quotaSafetyMarginPercent": 20,
+  "allowPaidServices": false,
+  "allowAutomaticQuotaIncrease": false,
+  "region": "BR",
+  "autoApprovalEnabled": false,
+  "approvedRules": [],
+  "excludedTitleTerms": [
+    "trailer",
+    "teaser",
+    "análise",
+    "analise",
+    "review",
+    "pregação",
+    "pregacao",
+    "louvor",
+    "música",
+    "musica",
+    "resumo"
+  ],
+  "maxRunSeconds": 300,
+  "leaseSeconds": 900,
+  "discoveryCacheDays": 10,
+  "videoCacheDays": 14,
+  "maxMetadataAgeDays": 29,
+  "massUnavailablePercent": 10,
+  "backlogDailyPercent": 10,
+  "smokeVideoId": ""
+}

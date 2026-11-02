@@ -1,0 +1,98 @@
+name: Biblioteca e GitHub Pages
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'Modo (teste real usa apenas videos.list e não publica)'
+        type: choice
+        options: [atualizar, teste-api, publicar-site]
+        default: atualizar
+permissions:
+  contents: read
+concurrency:
+  group: plataforma-pages-biblioteca
+  cancel-in-progress: false
+jobs:
+  processar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    outputs:
+      publicar: ${{ steps.processar.outputs.publicar }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testes sem consumir quota
+        run: python -m unittest discover -s tests/biblioteca -v
+      - name: Processar e persistir filas
+        id: processar
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          EVENTO: ${{ github.event_name }}
+          MODO: ${{ inputs.modo }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--persist)
+          if [[ "$MODO" == "teste-api" ]]; then
+            args+=(--smoke)
+          elif [[ "$EVENTO" == "push" || "$MODO" == "publicar-site" ]]; then
+            args+=(--build-only)
+          fi
+          python scripts/biblioteca/run.py "${args[@]}"
+          # Source commits made while this job ran must never be overwritten by a stale deploy.
+          remote=$(git ls-remote origin refs/heads/main | cut -f1)
+          test "$remote" = "$GITHUB_SHA"
+          python - <<'PY'
+          import json,os
+          report=json.load(open('.biblioteca-runtime/relatorio.json'))
+          publish=os.environ['MODO']!='teste-api' and (os.environ['EVENTO']=='push' or os.environ['MODO']=='publicar-site' or report.get('publicChanged',False))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('publicar='+str(publish).lower()+'\n')
+          PY
+      - name: Backup recuperável (retenção curta)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: biblioteca-backup-${{ github.run_id }}
+          path: |
+            .biblioteca-runtime/estado.json
+            .biblioteca-runtime/catalogo.json
+            .biblioteca-runtime/relatorio.json
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Preparar Pages
+        if: steps.processar.outputs.publicar == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+          retention-days: 1
+  publicar:
+    if: needs.processar.outputs.publicar == 'true'
+    needs: processar
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar no GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Confirmar publicação recuperável
+        run: python3 scripts/biblioteca/run.py --persist --ack-deploy
