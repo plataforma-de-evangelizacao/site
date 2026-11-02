@@ -1,0 +1,468 @@
+{
+  "versao": 3,
+  "nota": "Base inicial de 66 livros; extensível editorialmente. Não é uma declaração de exclusão de outras tradições.",
+  "livros": [
+    {
+      "id": "gn",
+      "nome": "Gênesis",
+      "capitulos": 50,
+      "testamento": "antigo",
+      "bibliaOnline": "gn"
+    },
+    {
+      "id": "ex",
+      "nome": "Êxodo",
+      "capitulos": 40,
+      "testamento": "antigo",
+      "bibliaOnline": "ex"
+    },
+    {
+      "id": "lv",
+      "nome": "Levítico",
+      "capitulos": 27,
+      "testamento": "antigo",
+      "bibliaOnline": "lv"
+    },
+    {
+      "id": "nm",
+      "nome": "Números",
+      "capitulos": 36,
+      "testamento": "antigo",
+      "bibliaOnline": "nm"
+    },
+    {
+      "id": "dt",
+      "nome": "Deuteronômio",
+      "capitulos": 34,
+      "testamento": "antigo",
+      "bibliaOnline": "dt"
+    },
+    {
+      "id": "js",
+      "nome": "Josué",
+      "capitulos": 24,
+      "testamento": "antigo",
+      "bibliaOnline": "js"
+    },
+    {
+      "id": "jz",
+      "nome": "Juízes",
+      "capitulos": 21,
+      "testamento": "antigo",
+      "bibliaOnline": "jz"
+    },
+    {
+      "id": "rt",
+      "nome": "Rute",
+      "capitulos": 4,
+      "testamento": "antigo",
+      "bibliaOnline": "rt"
+    },
+    {
+      "id": "1sm",
+      "nome": "1 Samuel",
+      "capitulos": 31,
+      "testamento": "antigo",
+      "bibliaOnline": "1sm"
+    },
+    {
+      "id": "2sm",
+      "nome": "2 Samuel",
+      "capitulos": 24,
+      "testamento": "antigo",
+      "bibliaOnline": "2sm"
+    },
+    {
+      "id": "1rs",
+      "nome": "1 Reis",
+      "capitulos": 22,
+      "testamento": "antigo",
+      "bibliaOnline": "1rs"
+    },
+    {
+      "id": "2rs",
+      "nome": "2 Reis",
+      "capitulos": 25,
+      "testamento": "antigo",
+      "bibliaOnline": "2rs"
+    },
+    {
+      "id": "1cr",
+      "nome": "1 Crônicas",
+      "capitulos": 29,
+      "testamento": "antigo",
+      "bibliaOnline": "1cr"
+    },
+    {
+      "id": "2cr",
+      "nome": "2 Crônicas",
+      "capitulos": 36,
+      "testamento": "antigo",
+      "bibliaOnline": "2cr"
+    },
+    {
+      "id": "ed",
+      "nome": "Esdras",
+      "capitulos": 10,
+      "testamento": "antigo",
+      "bibliaOnline": "ed"
+    },
+    {
+      "id": "ne",
+      "nome": "Neemias",
+      "capitulos": 13,
+      "testamento": "antigo",
+      "bibliaOnline": "ne"
+    },
+    {
+      "id": "et",
+      "nome": "Ester",
+      "capitulos": 10,
+      "testamento": "antigo",
+      "bibliaOnline": "et"
+    },
+    {
+      "id": "jo",
+      "nome": "Jó",
+      "capitulos": 42,
+      "testamento": "antigo",
+      "bibliaOnline": "jó"
+    },
+    {
+      "id": "sl",
+      "nome": "Salmos",
+      "capitulos": 150,
+      "testamento": "antigo",
+      "bibliaOnline": "sl"
+    },
+    {
+      "id": "pv",
+      "nome": "Provérbios",
+      "capitulos": 31,
+      "testamento": "antigo",
+      "bibliaOnline": "pv"
+    },
+    {
+      "id": "ec",
+      "nome": "Eclesiastes",
+      "capitulos": 12,
+      "testamento": "antigo",
+      "bibliaOnline": "ec"
+    },
+    {
+      "id": "ct",
+      "nome": "Cânticos",
+      "capitulos": 8,
+      "testamento": "antigo",
+      "bibliaOnline": "ct"
+    },
+    {
+      "id": "is",
+      "nome": "Isaías",
+      "capitulos": 66,
+      "testamento": "antigo",
+      "bibliaOnline": "is"
+    },
+    {
+      "id": "jr",
+      "nome": "Jeremias",
+      "capitulos": 52,
+      "testamento": "antigo",
+      "bibliaOnline": "jr"
+    },
+    {
+      "id": "lm",
+      "nome": "Lamentações",
+      "capitulos": 5,
+      "testamento": "antigo",
+      "bibliaOnline": "lm"
+    },
+    {
+      "id": "ez",
+      "nome": "Ezequiel",
+      "capitulos": 48,
+      "testamento": "antigo",
+      "bibliaOnline": "ez"
+    },
+    {
+      "id": "dn",
+      "nome": "Daniel",
+      "capitulos": 12,
+      "testamento": "antigo",
+      "bibliaOnline": "dn"
+    },
+    {
+      "id": "os",
+      "nome": "Oseias",
+      "capitulos": 14,
+      "testamento": "antigo",
+      "bibliaOnline": "os"
+    },
+    {
+      "id": "jl",
+      "nome": "Joel",
+      "capitulos": 3,
+      "testamento": "antigo",
+      "bibliaOnline": "jl"
+    },
+    {
+      "id": "am",
+      "nome": "Amós",
+      "capitulos": 9,
+      "testamento": "antigo",
+      "bibliaOnline": "am"
+    },
+    {
+      "id": "ob",
+      "nome": "Obadias",
+      "capitulos": 1,
+      "testamento": "antigo",
+      "bibliaOnline": "ob"
+    },
+    {
+      "id": "jn",
+      "nome": "Jonas",
+      "capitulos": 4,
+      "testamento": "antigo",
+      "bibliaOnline": "jn"
+    },
+    {
+      "id": "mq",
+      "nome": "Miqueias",
+      "capitulos": 7,
+      "testamento": "antigo",
+      "bibliaOnline": "mq"
+    },
+    {
+      "id": "na",
+      "nome": "Naum",
+      "capitulos": 3,
+      "testamento": "antigo",
+      "bibliaOnline": "na"
+    },
+    {
+      "id": "hc",
+      "nome": "Habacuque",
+      "capitulos": 3,
+      "testamento": "antigo",
+      "bibliaOnline": "hc"
+    },
+    {
+      "id": "sf",
+      "nome": "Sofonias",
+      "capitulos": 3,
+      "testamento": "antigo",
+      "bibliaOnline": "sf"
+    },
+    {
+      "id": "ag",
+      "nome": "Ageu",
+      "capitulos": 2,
+      "testamento": "antigo",
+      "bibliaOnline": "ag"
+    },
+    {
+      "id": "zc",
+      "nome": "Zacarias",
+      "capitulos": 14,
+      "testamento": "antigo",
+      "bibliaOnline": "zc"
+    },
+    {
+      "id": "ml",
+      "nome": "Malaquias",
+      "capitulos": 4,
+      "testamento": "antigo",
+      "bibliaOnline": "ml"
+    },
+    {
+      "id": "mt",
+      "nome": "Mateus",
+      "capitulos": 28,
+      "testamento": "novo",
+      "bibliaOnline": "mt"
+    },
+    {
+      "id": "mc",
+      "nome": "Marcos",
+      "capitulos": 16,
+      "testamento": "novo",
+      "bibliaOnline": "mc"
+    },
+    {
+      "id": "lc",
+      "nome": "Lucas",
+      "capitulos": 24,
+      "testamento": "novo",
+      "bibliaOnline": "lc"
+    },
+    {
+      "id": "joao",
+      "nome": "João",
+      "capitulos": 21,
+      "testamento": "novo",
+      "bibliaOnline": "jo"
+    },
+    {
+      "id": "atos",
+      "nome": "Atos",
+      "capitulos": 28,
+      "testamento": "novo",
+      "bibliaOnline": "at"
+    },
+    {
+      "id": "rm",
+      "nome": "Romanos",
+      "capitulos": 16,
+      "testamento": "novo",
+      "bibliaOnline": "rm"
+    },
+    {
+      "id": "1co",
+      "nome": "1 Coríntios",
+      "capitulos": 16,
+      "testamento": "novo",
+      "bibliaOnline": "1co"
+    },
+    {
+      "id": "2co",
+      "nome": "2 Coríntios",
+      "capitulos": 13,
+      "testamento": "novo",
+      "bibliaOnline": "2co"
+    },
+    {
+      "id": "gl",
+      "nome": "Gálatas",
+      "capitulos": 6,
+      "testamento": "novo",
+      "bibliaOnline": "gl"
+    },
+    {
+      "id": "ef",
+      "nome": "Efésios",
+      "capitulos": 6,
+      "testamento": "novo",
+      "bibliaOnline": "ef"
+    },
+    {
+      "id": "fp",
+      "nome": "Filipenses",
+      "capitulos": 4,
+      "testamento": "novo",
+      "bibliaOnline": "fp"
+    },
+    {
+      "id": "cl",
+      "nome": "Colossenses",
+      "capitulos": 4,
+      "testamento": "novo",
+      "bibliaOnline": "cl"
+    },
+    {
+      "id": "1ts",
+      "nome": "1 Tessalonicenses",
+      "capitulos": 5,
+      "testamento": "novo",
+      "bibliaOnline": "1ts"
+    },
+    {
+      "id": "2ts",
+      "nome": "2 Tessalonicenses",
+      "capitulos": 3,
+      "testamento": "novo",
+      "bibliaOnline": "2ts"
+    },
+    {
+      "id": "1tm",
+      "nome": "1 Timóteo",
+      "capitulos": 6,
+      "testamento": "novo",
+      "bibliaOnline": "1tm"
+    },
+    {
+      "id": "2tm",
+      "nome": "2 Timóteo",
+      "capitulos": 4,
+      "testamento": "novo",
+      "bibliaOnline": "2tm"
+    },
+    {
+      "id": "tt",
+      "nome": "Tito",
+      "capitulos": 3,
+      "testamento": "novo",
+      "bibliaOnline": "tt"
+    },
+    {
+      "id": "fm",
+      "nome": "Filemom",
+      "capitulos": 1,
+      "testamento": "novo",
+      "bibliaOnline": "fm"
+    },
+    {
+      "id": "hb",
+      "nome": "Hebreus",
+      "capitulos": 13,
+      "testamento": "novo",
+      "bibliaOnline": "hb"
+    },
+    {
+      "id": "tg",
+      "nome": "Tiago",
+      "capitulos": 5,
+      "testamento": "novo",
+      "bibliaOnline": "tg"
+    },
+    {
+      "id": "1pe",
+      "nome": "1 Pedro",
+      "capitulos": 5,
+      "testamento": "novo",
+      "bibliaOnline": "1pe"
+    },
+    {
+      "id": "2pe",
+      "nome": "2 Pedro",
+      "capitulos": 3,
+      "testamento": "novo",
+      "bibliaOnline": "2pe"
+    },
+    {
+      "id": "1jo",
+      "nome": "1 João",
+      "capitulos": 5,
+      "testamento": "novo",
+      "bibliaOnline": "1jo"
+    },
+    {
+      "id": "2jo",
+      "nome": "2 João",
+      "capitulos": 1,
+      "testamento": "novo",
+      "bibliaOnline": "2jo"
+    },
+    {
+      "id": "3jo",
+      "nome": "3 João",
+      "capitulos": 1,
+      "testamento": "novo",
+      "bibliaOnline": "3jo"
+    },
+    {
+      "id": "jd",
+      "nome": "Judas",
+      "capitulos": 1,
+      "testamento": "novo",
+      "bibliaOnline": "jd"
+    },
+    {
+      "id": "ap",
+      "nome": "Apocalipse",
+      "capitulos": 22,
+      "testamento": "novo",
+      "bibliaOnline": "ap"
+    }
+  ]
+}

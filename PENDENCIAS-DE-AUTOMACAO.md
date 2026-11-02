@@ -1,3 +1,9 @@
+# Estado atualizado da biblioteca audiovisual
+
+O código V3 foi implementado e testado localmente. Ativação no GitHub, `YOUTUBE_API_KEY`, teste real pequeno, revisão inicial e confirmação do Pages continuam pendentes. O guia completo é BIBLIOTECA-AUTOMATICA.md. As demais integrações listadas abaixo não foram ativadas.
+
+---
+
 # Próxima etapa: integrações
 
 A vitrine e os catálogos funcionam com GitHub Pages estático. As integrações abaixo ainda não estão ativas.

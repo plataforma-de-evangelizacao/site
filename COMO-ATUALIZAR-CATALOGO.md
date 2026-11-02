@@ -1,3 +1,9 @@
+# Atualização importante — Biblioteca audiovisual V3
+
+O catálogo de filmes/desenhos agora usa `dados/biblioteca/` e o processamento preparado no Actions. Siga **BIBLIOTECA-AUTOMATICA.md**. As instruções abaixo descrevem a lista de texto anterior; não substituem a configuração da nova automação.
+
+---
+
 # Como atualizar filmes e desenhos sem editar HTML
 
 Primeira publicação: extraia o ZIP e envie index.html, catalogo.txt e .nojekyll para a raiz do repositório. Não envie só o ZIP.

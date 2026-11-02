@@ -1,3 +1,19 @@
+# Atualização do catálogo audiovisual — V3
+
+Implementação local entregue em 2 de novembro de 2026. Guia completo: BIBLIOTECA-AUTOMATICA.md.
+
+- Biblioteca integrada com desenhos, filmes e séries; filtros combinados, 66 livros como base inicial, busca por histórias/personagens/temas, coleções e carregamento progressivo.
+- Player oficial sob demanda, alternativa externa em erros/restrições e referências bíblicas apenas quando revisadas.
+- Workflow diário preparado para novas rodadas em 10/15/25 dias, continuação diária de pendências, cache, orçamento e checkpoints persistentes separados do Pages.
+- 35 testes automatizados passaram, incluindo 10 mil vídeos e simulação de conflito real de persistência e publicação pendente após falha de deploy.
+- Busca, combinação de filtros, paginação, fallback do player e largura mobile conferidos no navegador com fixtures removidas antes da entrega. Conferido contraste dos selects em tema claro.
+- Regressões de projetos, idiomas e busca geral passaram; os demais conteúdos foram preservados.
+- Nenhuma chave foi recebida ou incorporada ao site. Nenhuma chamada real à YouTube Data API foi realizada. Workflow, Secrets, teste real, aprovação dos primeiros conteúdos e publicação pelo usuário continuam pendentes. A implementação não é anunciada como integração ativa.
+
+O catálogo público entregue começa vazio. Não há vídeos fictícios nem promessas de fidelidade teológica baseadas só em metadados. A aprovação automática começa desligada; pode ser habilitada com regras editoriais específicas e aprovadas, sem inventar referências.
+
+---
+
 # Revisão da versão — Plataforma Global de Evangelização
 
 Data: 2 de novembro de 2026.

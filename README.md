@@ -1,3 +1,15 @@
+## Biblioteca audiovisual V3 — atualização de 2 de novembro de 2026
+
+A biblioteca agora tem processamento automatizado preparado em `.github/workflows/biblioteca.yml`, filas persistentes, cache, orçamento de API, revisão editorial, filtros e player oficial sob demanda. **Ainda não está ativada no GitHub e nenhuma chamada real foi realizada nesta entrega.**
+
+Siga [BIBLIOTECA-AUTOMATICA.md](BIBLIOTECA-AUTOMATICA.md) para configurar Actions + Pages, cadastrar `YOUTUBE_API_KEY` nos Secrets e executar o teste controlado. Esse guia é a referência atual para o catálogo audiovisual e substitui instruções antigas que o descrevam apenas como `catalogo.txt` ou automação futura. Os outros catálogos permanecem com seus arquivos atuais.
+
+As configurações editáveis ficam em `biblioteca-controle/`, as decisões por vídeo em `editorial.json` e os dados públicos em `dados/biblioteca/`. O estado gerado fica na branch operacional `biblioteca-estado`, separada de `main` e do artefato público do Pages. Não é um cofre: nenhuma credencial ou informação confidencial pode entrar nessa branch de repositório público.
+
+Validação local: 35 testes automatizados sem quota, cenário de 10 mil vídeos e conferência de busca, filtros, paginação, fallback do player e celular com fixtures removidas após o teste. Teste real de API, agendamento e deploy continuam pendentes da configuração.
+
+---
+
 # Estado atual desta entrega — 2 de novembro de 2026
 
 A plataforma está preparada para publicação manual no GitHub Pages. Esta visão atual substitui contagens e organizações descritas nas revisões históricas abaixo.

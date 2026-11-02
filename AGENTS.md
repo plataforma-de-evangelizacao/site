@@ -21,3 +21,5 @@ A prestação de contas mensal fica em prestacao-contas.json compartilhado e com
 
 Formações: ler GUIA-FORMACOES-GRATUITAS.md antes de criar/revisar cursos, palestras, slides e roteiros. Cursos e palestras da plataforma são gratuitos; prever no encerramento um convite à doação voluntária, sem condicionar participação ou materiais. Configuração editorial: dados/formacoes.json. Não apresentar propostas como já produzidas.
 Rede de parceiros: ler PARCEIROS-POR-CIDADE.md. A página #parceiros usa dados/rede-parceiros.json, com cidade, unidade e comunidades distintas. Nunca copiar automaticamente Instagram, telefone ou endereço de uma cidade/unidade para outra.
+
+Biblioteca audiovisual V3: ler BIBLIOTECA-AUTOMATICA.md. Os dados de controle ficam fora do artefato Pages. Nunca inserir a chave da API em HTML/JS/JSON. O estado persistente usa a branch biblioteca-estado, com checkpoint por force-with-lease; main continua preservada. Não declarar a API/deploy ativados sem teste real. Não inventar referências, idioma verificado ou conteúdo para preencher o catálogo.
