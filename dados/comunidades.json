@@ -52,7 +52,7 @@
     {
       "id": "vicentinos",
       "titulo": "Vicentinos",
-      "descricao": "Espaço para encontros, ações solidárias, campanhas e formas de participar junto aos Vicentinos.",
+      "descricao": "Ações de solidariedade em Nova Bandeirantes.",
       "parceria": "a-propor",
       "endereco": "",
       "contatos": {
@@ -65,11 +65,11 @@
       "traducoes": {
         "en": {
           "titulo": "Vincentian volunteers",
-          "descricao": "A space for gatherings, solidarity activities, campaigns and ways to participate with Vincentian volunteers."
+          "descricao": "Solidarity activities in Nova Bandeirantes."
         },
         "es": {
           "titulo": "Vicentinos",
-          "descricao": "Espacio para encuentros, acciones solidarias, campañas y formas de participar con los Vicentinos."
+          "descricao": "Acciones de solidaridad en Nova Bandeirantes."
         }
       }
     }

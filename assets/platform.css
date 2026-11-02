@@ -65,3 +65,17 @@ html{scroll-padding-top:160px}.platform-nav{flex-wrap:wrap;gap:10px;padding:10px
 .path-choice,.vitrine-card,.project-group,.community-event{min-width:0;overflow-wrap:break-word}
 
 .home-search{background:var(--soft)}.home-search form{max-width:850px}.home-search label{display:block;margin:18px 0 8px;font-weight:700}.home-search-controls{display:flex;gap:10px}.home-search input{flex:1;min-width:0;min-height:48px;padding:12px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px}.home-search button{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 18px;background:var(--ink);color:var(--paper);border:0;border-radius:6px;cursor:pointer}.search-result{max-width:950px;padding:20px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.home-search .search-result h3{font-size:1.4rem;margin:0 0 10px}.search-result p{margin:0;color:var(--muted)}#home-search-status:empty{display:none}@media(max-width:390px){.home-search-controls{flex-wrap:wrap}.home-search input{flex-basis:100%}.home-search button{width:100%}}
+
+.home-james{background:var(--deep);color:var(--on-deep)}.home-james blockquote{font:clamp(1.5rem,3vw,2.3rem)/1.5 Georgia;margin:1.5rem 0;max-width:1000px}.home-james .overline,.home-james .small-note{color:var(--on-deep-muted)}.home-james .btn{background:var(--gold);color:var(--deep)}.solidarity-action{border-top:1px solid var(--line);margin:2rem 0;padding:1.5rem 0;overflow-wrap:anywhere}.solidarity-action h2{font-size:2rem}.solidarity-action h3{font-size:1.4rem;margin-top:1.5rem}.solidarity-action a{margin-right:1rem}.solidarity-collection{background:var(--soft);padding:1rem;margin:1rem 0}
+
+/* Solidarity CTA: explicit colors in all link states and both themes. */
+.home-solidarity a.btn[data-contact-whatsapp],
+.home-solidarity a.btn[data-contact-whatsapp]:link,
+.home-solidarity a.btn[data-contact-whatsapp]:visited,
+.home-solidarity a.btn[data-contact-whatsapp]:hover,
+.home-solidarity a.btn[data-contact-whatsapp]:active,
+.home-solidarity a.btn[data-contact-whatsapp]:focus-visible{
+background:#e3c48e;border-color:#e3c48e;color:#193b39!important;-webkit-text-fill-color:#193b39!important;opacity:1;text-decoration:none;
+}
+
+.home-giving-contribution{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);gap:32px;margin-top:30px;align-items:center}.home-giving-contribution .home-qr{max-width:100%;min-width:0}.giving-jumps{display:flex;flex-wrap:wrap;gap:14px;margin:1.5rem 0 2.5rem}.giving-jumps a{font-size:.95rem}.giving-page h2{font-size:clamp(1.7rem,3vw,2.4rem)}.giving-page>div{margin-bottom:2rem}.giving-pix{margin-top:2rem;border:1px solid var(--line);padding:20px;border-radius:12px}.giving-pix>summary{font-size:1.3rem;font-weight:700;cursor:pointer}.giving-pix .donation-inner{padding:24px 0 0;max-width:100%;gap:24px}.giving-agenda{padding:0;margin-top:2rem}.giving-page a{overflow-wrap:anywhere}@media(max-width:760px){.home-giving-contribution{grid-template-columns:1fr}.giving-pix .donation-inner{grid-template-columns:1fr}.giving-pix{padding:16px}.giving-pix .pix-panel{padding:14px}}

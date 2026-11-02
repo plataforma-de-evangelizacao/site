@@ -1155,3 +1155,30 @@ Verificado: WhatsApp, Pix, playlist, santidade, busca sem resultado, clique que 
 ### Convites para conversar e ajudar
 
 Os botões de WhatsApp usam a chamada “Iniciar uma conversa pelo WhatsApp” e, no cartão de Contato e canais, “Fale com o responsável pela plataforma”. O número não é exibido nesse cartão; permanece no destino do link para permitir abrir a conversa. Isso é uma escolha de apresentação, não um mecanismo de sigilo. O botão de voluntariado informa explicitamente que abre o WhatsApp. Edite `whatsapp`, `whatsappResponsible` e `volunteer` em `pagina-inicial.json` nos três idiomas para alterar os textos.
+
+
+## Agenda solidária, Tiago 1:27 e calendário dinâmico
+
+Consulte **AGENDA-SOLIDARIA.md** para o caminho completo de edição dos dados, modelo JSON, importação de CSV, publicação e funcionamento do momento diário. A agenda está em `dados/agenda-solidaria.json`; o modelo de planilha em `modelos/agenda-solidaria.csv`; o importador em `scripts/importar_agenda.py`. A página é `#agenda-solidaria`, acessível pelo menu e pela inicial.
+
+Tiago 1:27 aparece em destaque com trecho ACF e link ao contexto. A descrição dos Vicentinos foi simplificada. A vitrine diária varia por data e agora acompanha a mudança de mês; leituras do cronograma permanecem vinculadas às datas. Bancos finitos podem repetir conteúdos; a mesma data mantém a seleção. O PDF do cronograma não foi recebido nem convertido nesta entrega.
+
+O anexo de automação audiovisual foi preservado como especificação pendente em `docs/ESPECIFICACAO-BIBLIOTECA-AUDIOVISUAL-V3.md`. Essa automação ainda não está implementada ou ativa.
+
+
+### Cor do botão de ajuda
+
+O botão de WhatsApp em “Ajudar o próximo começa com um gesto” usa fundo dourado e texto verde escuro em ambos os temas, inclusive nos estados de link visitado, foco, hover e ativação. As cores calculadas foram conferidas no navegador nos dois temas. A agenda solidária vazia foi medida em 320 px, sem overflow da página.
+
+
+## Página única Ajudar o próximo
+
+A página inicial mescla o antigo bloco de solidariedade com o bloco de contribuição, mantendo o título “Ajudar o próximo começa com um gesto”, opções de alimentos, roupas e mutirão, resumo do destino das contribuições, WhatsApp e Pix. A chamada de detalhes abre `#solidariedade`, agora a página **Ajudar o próximo**.
+
+Essa página reúne o que doar, ajuda que pretendemos organizar, como combinar entrega ou pedido de ajuda, destino dos recursos, as seis propostas de software, uso da IA, agenda de ações/coleta/distribuição e Pix. Os projetos continuam sendo lidos de `dados/projetos.json`; alterar o catálogo atualiza também essa apresentação. Os textos estão em `pagina-inicial.json` nos três idiomas, com chaves `giveTitle`, `giveIntro`, `giveWays`, `giveNeedsText`, `giveWhereText`, `giveMoneyText` e `giveTechnologyText`.
+
+Os links antigos `#doacoes` e `#agenda-solidaria` continuam válidos, mas são trechos internos dessa página, e não páginas separadas no menu. `#doacoes` abre o grupo de Pix automaticamente. O QR Code e seus dados foram preservados. O resumo da inicial também mantém um acesso a esse trecho.
+
+O cartão de agenda continua sendo alimentado por `dados/agenda-solidaria.json` e pelo importador CSV já documentado. Use `pontos_coleta`, `distribuicao` e `contato` para informar locais e responsáveis confirmados. Vicentinos e igrejas são apresentados como possibilidades de cooperação; não foram cadastrados como pontos de recebimento oficiais. A área de parcerias da página inicial permaneceu exatamente como estava. A prestação de contas financeira continua em sua página própria.
+
+Validação: IDs e destinos locais; conteúdo das parcerias e imagem do Pix preservados; seis projetos renderizados; links antigos abrem a página única; página de ajuda em 320 px sem rolagem horizontal.

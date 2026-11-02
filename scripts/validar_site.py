@@ -29,7 +29,20 @@ try:
     for h in set(p.hashes):check(unquote(h) in p.ids,'Âncora inexistente: #'+h)
     for f in p.files:check((ROOT/urlsplit(f).path).is_file(),'Arquivo local ausente: '+f)
 except OSError as exc:errors.append(str(exc))
-shared=['planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json','comunidades.json']
+shared=['planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json','comunidades.json','agenda-solidaria.json']
+agenda=data.get('dados/agenda-solidaria.json',{})
+check(isinstance(agenda,dict) and isinstance(agenda.get('acoes'),list),'Agenda: esperado objeto com lista acoes')
+seen=set()
+for action in agenda.get('acoes',[]) if isinstance(agenda,dict) else []:
+    check(isinstance(action,dict),'Agenda: registro inválido')
+    if not isinstance(action,dict):continue
+    ident=action.get('id');check(isinstance(ident,str) and bool(ident) and ident not in seen,'Agenda: id ausente/duplicado');seen.add(str(ident))
+    check(isinstance(action.get('titulo'),str) and bool(action.get('titulo')),'Agenda: título ausente')
+    check(action.get('status') in ['rascunho','planejada','confirmada','concluida','cancelada'],'Agenda: status inválido')
+    if action.get('data'):
+        try:date.fromisoformat(action['data'])
+        except (ValueError,TypeError):errors.append('Agenda: data inválida')
+    for field in ['itens_solicitados','itens_recebidos','pontos_coleta']:check(isinstance(action.get(field,[]),list),'Agenda: '+field+' deve ser lista')
 for lang in ['en','es']:
     for path in (ROOT/'dados').glob('*.json'):
         if path.name not in shared:check((ROOT/'dados'/lang/path.name).is_file(),'Tradução ausente: '+lang+'/'+path.name)
