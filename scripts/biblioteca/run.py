@@ -49,7 +49,11 @@ def build_site(root,out):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--discover-now',action='store_true');p.add_argument('--persist',action='store_true');p.add_argument('--smoke',action='store_true');p.add_argument('--build-only',action='store_true');p.add_argument('--ack-deploy',action='store_true');p.add_argument('--output',default='_site');args=p.parse_args()
-    store=Store(args.persist);engine=Engine(ROOT,store.path)
+    store=Store(args.persist)
+    sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'admin'))
+    from sync import hydrate_live
+    hydrate_live(ROOT)
+    engine=Engine(ROOT,store.path)
     if args.ack_deploy:
         engine.s['deployedHash']=engine.s.get('lastPublishedHash','');engine.save();store.checkpoint();return 0
     original_save=engine.save

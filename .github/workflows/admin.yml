@@ -24,6 +24,15 @@ jobs:
           python-version: '3.12'
       - name: Testar permissões e validações locais
         run: python -m unittest discover -s tests/admin -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar adaptador público
+        run: node tests/admin/test_live_content.cjs
+      - name: Instalar PostgreSQL local de teste
+        run: npm ci --prefix tests/admin/sql-test --ignore-scripts --no-audit --no-fund
+      - name: Testar funções e permissões no PostgreSQL
+        run: node tests/admin/sql-test/test.cjs
       - name: Aplicar solicitações autorizadas
         id: admin
         env:

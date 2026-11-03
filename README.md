@@ -1,3 +1,22 @@
+# Atualização atual — publicação direta e formulários
+
+**Versão:** `2026.11.02-publicacao-direta`  
+**Data:** 2 de novembro de 2026, horário de Mato Grosso.
+
+**Fechamento:** pacote recuperado e reconstruído; ativação remota ainda depende da execução do SQL e dos testes de aceitação.
+
+A referência atual de instalação está em **COMECE-AQUI-PUBLICACAO-DIRETA.md**. Execute **ATIVAR-PUBLICACAO-DIRETA.sql** no mesmo Supabase antes de publicar o código novo. O roteiro de aceitação de vídeos e projetos está em **ROTEIRO-TESTES-VIDEOS-E-PROJETOS.md**. A documentação técnica e funcional atual está em **PAINEL-ADMINISTRATIVO.md**.
+
+Nesta versão, aprovar/remover vídeos e publicar conteúdos deixa de depender da fila do Actions. As mudanças são salvas diretamente no Supabase e lidas pelo site ao recarregar; páginas abertas verificam revisões aproximadamente a cada dez segundos. O GitHub recebe uma cópia em segundo plano. A descoberta de novos conteúdos externos continua sendo uma rotina separada, com fila e quotas.
+
+O painel tem formulários para editar/criar registros, indicadores organizados, tela de vídeos efetivamente publicados, arquivamento/restauração, bloqueio persistente e projetos com descrição, objetivo, roteiro, ações e parceiros. Parceiros/projetos também possuem registros e vínculos normalizados no banco. Não há contratação ou integração de tradução automática: textos novos sem tradução usam português como alternativa, conforme indicado nos formulários.
+
+Foram acrescentadas cinco propostas sociais, sem atendimento ou parcerias presumidos. Os testes locais e o que falta confirmar no banco real estão documentados no guia. **Não foi executada uma migração no seu Supabase nesta entrega.**
+
+Os capítulos abaixo preservam a documentação acumulada. Quando descreverem a fila antiga para edição de conteúdo, considere o fluxo direto deste bloco e do guia atual como a referência mais recente.
+
+---
+
 # Painel administrativo — atualização de 2 de novembro de 2026
 
 Foi criada a página `admin/`, com autenticação preparada por e-mail/senha via Supabase Auth, políticas RLS, revisão de vídeos, histórico e editor JSON por área da plataforma. Há link Administração no rodapé. Leia **PAINEL-ADMINISTRATIVO.md** antes de ativar.

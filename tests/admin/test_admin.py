@@ -89,6 +89,7 @@ class QueueTests(unittest.TestCase):
     if method=='PATCH':self.patches.append(data);return []
     return [outer.command] if table=='pge_commands' else [{'user_id':'owner'}] if table=='pge_admins' else [{'id':ID,'sha':'v1'}]
   self.client=Fake()
+  old_hydrate=bridge.hydrate_live;self.addCleanup(setattr,bridge,'hydrate_live',old_hydrate);bridge.hydrate_live=lambda *a,**k:[]
  def test_revoked_admin_cannot_change_git(self):
   self.command['user_id']='revoked';result=bridge.process(self.client);self.assertEqual(result['applied'],0);self.assertFalse(any(c[0]=='push' for c in self.calls));self.assertEqual(self.client.patches[-1]['result'],'administrator_revoked')
  def test_valid_command_commits_without_force(self):

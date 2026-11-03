@@ -1,0 +1,835 @@
+{
+  "templates": {
+    "dados/oracoes.txt": "",
+    "dados/biblias-pdf.json": {
+      "titulo": "",
+      "tradicao": "",
+      "versao": "BLIVRE · edição 2018",
+      "conteudo": "",
+      "descricao": "",
+      "link": "",
+      "fonte": "",
+      "creditos": ""
+    },
+    "dados/comunidades.json.instituicoes": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "parceria": "",
+      "endereco": "",
+      "contatos": {
+        "email": "",
+        "whatsapp": "",
+        "site": ""
+      },
+      "agenda": [],
+      "formacao": []
+    },
+    "dados/atividades-parcerias.json.instituicoes": {
+      "id": "",
+      "titulo": "",
+      "contribuicoes_possiveis": [],
+      "atividades_propostas": []
+    },
+    "dados/atividades-parcerias.json.instituicoes[].contribuicoes_possiveis": "",
+    "dados/atividades-parcerias.json.instituicoes[].atividades_propostas": {
+      "titulo": "",
+      "descricao": "",
+      "projeto": ""
+    },
+    "dados/atividades-parcerias.json.instituicoes[].traducoes.en.contribuicoes_possiveis": "",
+    "dados/atividades-parcerias.json.instituicoes[].traducoes.en.atividades_propostas": {
+      "titulo": "",
+      "descricao": "",
+      "projeto": ""
+    },
+    "dados/atividades-parcerias.json.instituicoes[].traducoes.es.contribuicoes_possiveis": "",
+    "dados/atividades-parcerias.json.instituicoes[].traducoes.es.atividades_propostas": {
+      "titulo": "",
+      "descricao": "",
+      "projeto": ""
+    },
+    "dados/youtube.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/buscando.json.temas": {
+      "titulo": "",
+      "explicacao": "",
+      "abandonar": "",
+      "cultivar": "",
+      "exemplo": "",
+      "passagens": []
+    },
+    "dados/buscando.json.temas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/buscando.json.mandamentos": {
+      "resumo": "",
+      "referencia": ""
+    },
+    "dados/buscando.json.passagens_contexto": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/buscando.json.praticas": {
+      "convite": "",
+      "pergunta": "",
+      "oracao": "",
+      "passagens": []
+    },
+    "dados/buscando.json.praticas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/buscando.json.ensinamentos_jesus": {
+      "titulo": "",
+      "explicacao": "",
+      "passagens": []
+    },
+    "dados/buscando.json.ensinamentos_jesus[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/buscando.json.pai_nosso.estudo": {
+      "titulo": "",
+      "texto": ""
+    },
+    "dados/buscando.json.vicios": {
+      "titulo": "",
+      "abandonar": "",
+      "cultivar": "",
+      "ambiente_risco": "",
+      "ambiente_cuidado": "",
+      "passagens": []
+    },
+    "dados/buscando.json.vicios[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/buscando.json.integridade.passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/espirito-santidade.json.spiritRefs": [],
+    "dados/espirito-santidade.json.spiritRefs[]": "",
+    "dados/espirito-santidade.json.fruitRefs": [],
+    "dados/espirito-santidade.json.fruitRefs[]": "",
+    "dados/espirito-santidade.json.holyRefs": [],
+    "dados/espirito-santidade.json.holyRefs[]": "",
+    "dados/espirito-santidade.json.giftsRefs": [],
+    "dados/espirito-santidade.json.giftsRefs[]": "",
+    "dados/espirito-santidade.json.path": [],
+    "dados/espirito-santidade.json.path[]": "",
+    "dados/espirito-santidade.json.examples": [],
+    "dados/espirito-santidade.json.examples[]": "",
+    "dados/espirito-santidade.json.starsRefs": [],
+    "dados/espirito-santidade.json.starsRefs[]": "",
+    "dados/corpo-escolhas.json.areas": [],
+    "dados/corpo-escolhas.json.areas[]": "",
+    "dados/corpo-escolhas.json.willRefs": [],
+    "dados/corpo-escolhas.json.willRefs[]": "",
+    "dados/corpo-escolhas.json.steps": "",
+    "dados/corpo-escolhas.json.createSteps": "",
+    "dados/corpo-escolhas.json.createRefs": [],
+    "dados/corpo-escolhas.json.createRefs[]": "",
+    "dados/corpo-escolhas.json.sources": [],
+    "dados/corpo-escolhas.json.sources[]": "",
+    "dados/pecado.json.definitionRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/pecado.json.idolatryRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/pecado.json.examples": [],
+    "dados/pecado.json.examples[]": "",
+    "dados/pecado.json.causes": "",
+    "dados/pecado.json.causesRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/pecado.json.capital": [],
+    "dados/pecado.json.capital[]": "",
+    "dados/pecado.json.fastingRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/pecado.json.changeSteps": "",
+    "dados/pecado.json.changeRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/pecado.json.everyday": [],
+    "dados/pecado.json.everyday[]": "",
+    "dados/louvores.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/acolhimento.json.safeSteps": "",
+    "dados/acolhimento.json.cards": {
+      "title": "",
+      "text": "",
+      "action": "",
+      "url": ""
+    },
+    "dados/pagina-inicial.json.howSteps": "",
+    "dados/pagina-inicial.json.week": "",
+    "dados/pagina-inicial.json.libraryItems": {
+      "id": "",
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/pagina-inicial.json.solidarityItems": [],
+    "dados/pagina-inicial.json.solidarityItems[]": "",
+    "dados/pagina-inicial.json.careHighlights": "",
+    "dados/temas-biblicos.json": {
+      "id": "",
+      "titulo": "",
+      "testamento": "",
+      "ordem": 0,
+      "descricao": "",
+      "passagens": []
+    },
+    "dados/temas-biblicos.json[].passagens": {
+      "referencia": "",
+      "protestante": "",
+      "catolica": ""
+    },
+    "dados/pausa-diaria.json": {
+      "title": [],
+      "text": [],
+      "step": [],
+      "ref": "",
+      "url": "",
+      "song": ""
+    },
+    "dados/pausa-diaria.json[].title": "",
+    "dados/pausa-diaria.json[].text": "",
+    "dados/pausa-diaria.json[].step": "",
+    "dados/parceiros.json": {
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "status": "a-propor",
+      "id": ""
+    },
+    "dados/biblias-e-apps.json": {
+      "titulo": "",
+      "tipo": "",
+      "descricao": "",
+      "link": ""
+    },
+    "dados/reflexoes.txt": "",
+    "dados/planejamento.json.itens": {
+      "id": "",
+      "formato": "",
+      "status": "proposta",
+      "prioridade": "",
+      "titulo": "",
+      "descricao": "",
+      "idioma": "",
+      "distribuicao": "",
+      "link": ""
+    },
+    "dados/parcerias.json.frentes": {
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/parcerias.json.etapas": "",
+    "dados/projetos.json.itens": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "objetivo": "",
+      "publico": "",
+      "roteiro": [],
+      "principais_pontos": [],
+      "participacao": "",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "traducoes": {},
+      "parcerias": []
+    },
+    "dados/rede-parceiros.json.unidades": {
+      "id": "",
+      "nome": "",
+      "instituicao": "",
+      "cidade": "",
+      "uf": "",
+      "bairro": "",
+      "zona": "",
+      "comunidade": "",
+      "endereco": "",
+      "instagram": "",
+      "telefone": "",
+      "whatsapp": "",
+      "email": "",
+      "site": "",
+      "mapa": "",
+      "status": "a-propor",
+      "identificacao_local_pendente": false,
+      "descricao": "",
+      "contribuicoes_possiveis": [],
+      "agenda_link": "",
+      "comunidades": [],
+      "agenda": []
+    },
+    "dados/rede-parceiros.json.unidades[].contribuicoes_possiveis": "",
+    "dados/rede-parceiros.json.unidades[].traducoes.en.contribuicoes_possiveis": "",
+    "dados/rede-parceiros.json.unidades[].traducoes.es.contribuicoes_possiveis": "",
+    "dados/fe-conhecimento.json.disciplinas": {
+      "titulo": "",
+      "fundamento": "",
+      "pergunta": "",
+      "pratica": "",
+      "recursos": []
+    },
+    "dados/fe-conhecimento.json.disciplinas[].recursos": {
+      "tipo": "curso",
+      "titulo": "",
+      "descricao": "",
+      "status": "proposta",
+      "link": ""
+    },
+    "dados/ideias-sociais.json.itens": {
+      "id": "",
+      "tipo": "",
+      "titulo": "",
+      "descricao": "",
+      "status": "proposta",
+      "link": ""
+    },
+    "dados/recursos-santidade.txt": "",
+    "dados/autocuidado.json.temas": {
+      "titulo": "",
+      "area": "",
+      "explicacao": "",
+      "evitar": "",
+      "pratica": "",
+      "reflexao": "",
+      "fonte": "",
+      "fonte_titulo": ""
+    },
+    "dados/es/catalogo.txt": "",
+    "dados/es/oracoes.txt": "",
+    "dados/es/biblias-pdf.json": {
+      "titulo": "",
+      "tradicao": "",
+      "versao": "BLIVRE · edición 2018 · portugués",
+      "conteudo": "",
+      "descricao": "",
+      "link": "",
+      "fonte": "",
+      "creditos": ""
+    },
+    "dados/es/youtube.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.temas": {
+      "titulo": "",
+      "explicacao": "",
+      "abandonar": "",
+      "cultivar": "",
+      "exemplo": "",
+      "passagens": []
+    },
+    "dados/es/buscando.json.temas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.mandamentos": {
+      "resumo": "",
+      "referencia": ""
+    },
+    "dados/es/buscando.json.passagens_contexto": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.praticas": {
+      "convite": "",
+      "pergunta": "",
+      "oracao": "",
+      "passagens": []
+    },
+    "dados/es/buscando.json.praticas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.ensinamentos_jesus": {
+      "titulo": "",
+      "explicacao": "",
+      "passagens": []
+    },
+    "dados/es/buscando.json.ensinamentos_jesus[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.pai_nosso.estudo": {
+      "titulo": "",
+      "texto": ""
+    },
+    "dados/es/buscando.json.vicios": {
+      "titulo": "",
+      "abandonar": "",
+      "cultivar": "",
+      "ambiente_risco": "",
+      "ambiente_cuidado": "",
+      "passagens": []
+    },
+    "dados/es/buscando.json.vicios[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/buscando.json.integridade.passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/es/espirito-santidade.json.spiritRefs": [],
+    "dados/es/espirito-santidade.json.spiritRefs[]": "",
+    "dados/es/espirito-santidade.json.fruitRefs": [],
+    "dados/es/espirito-santidade.json.fruitRefs[]": "",
+    "dados/es/espirito-santidade.json.holyRefs": [],
+    "dados/es/espirito-santidade.json.holyRefs[]": "",
+    "dados/es/espirito-santidade.json.giftsRefs": [],
+    "dados/es/espirito-santidade.json.giftsRefs[]": "",
+    "dados/es/espirito-santidade.json.path": [],
+    "dados/es/espirito-santidade.json.path[]": "",
+    "dados/es/espirito-santidade.json.examples": [],
+    "dados/es/espirito-santidade.json.examples[]": "",
+    "dados/es/espirito-santidade.json.starsRefs": [],
+    "dados/es/espirito-santidade.json.starsRefs[]": "",
+    "dados/es/corpo-escolhas.json.areas": [],
+    "dados/es/corpo-escolhas.json.areas[]": "",
+    "dados/es/corpo-escolhas.json.willRefs": [],
+    "dados/es/corpo-escolhas.json.willRefs[]": "",
+    "dados/es/corpo-escolhas.json.steps": "",
+    "dados/es/corpo-escolhas.json.createSteps": "",
+    "dados/es/corpo-escolhas.json.createRefs": [],
+    "dados/es/corpo-escolhas.json.createRefs[]": "",
+    "dados/es/corpo-escolhas.json.sources": [],
+    "dados/es/corpo-escolhas.json.sources[]": "",
+    "dados/es/pecado.json.definitionRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/es/pecado.json.idolatryRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/es/pecado.json.examples": [],
+    "dados/es/pecado.json.examples[]": "",
+    "dados/es/pecado.json.causes": "",
+    "dados/es/pecado.json.causesRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/es/pecado.json.capital": [],
+    "dados/es/pecado.json.capital[]": "",
+    "dados/es/pecado.json.fastingRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/es/pecado.json.changeSteps": "",
+    "dados/es/pecado.json.changeRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/es/pecado.json.everyday": [],
+    "dados/es/pecado.json.everyday[]": "",
+    "dados/es/louvores.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/es/acolhimento.json.safeSteps": "",
+    "dados/es/acolhimento.json.cards": {
+      "title": "",
+      "text": "",
+      "action": "",
+      "url": ""
+    },
+    "dados/es/pagina-inicial.json.howSteps": "",
+    "dados/es/pagina-inicial.json.week": "",
+    "dados/es/pagina-inicial.json.libraryItems": {
+      "id": "",
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/es/pagina-inicial.json.solidarityItems": [],
+    "dados/es/pagina-inicial.json.solidarityItems[]": "",
+    "dados/es/pagina-inicial.json.careHighlights": "",
+    "dados/es/temas-biblicos.json": {
+      "id": "",
+      "titulo": "",
+      "testamento": "",
+      "ordem": 0,
+      "descricao": "",
+      "passagens": []
+    },
+    "dados/es/temas-biblicos.json[].passagens": {
+      "referencia": "",
+      "protestante": "",
+      "catolica": ""
+    },
+    "dados/es/pausa-diaria.json": {
+      "title": [],
+      "text": [],
+      "step": [],
+      "ref": "",
+      "url": "",
+      "song": ""
+    },
+    "dados/es/pausa-diaria.json[].title": "",
+    "dados/es/pausa-diaria.json[].text": "",
+    "dados/es/pausa-diaria.json[].step": "",
+    "dados/es/parceiros.json": {
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "status": "a-propor",
+      "id": ""
+    },
+    "dados/es/biblias-e-apps.json": {
+      "titulo": "",
+      "tipo": "",
+      "descricao": "",
+      "link": ""
+    },
+    "dados/es/reflexoes.txt": "",
+    "dados/es/parcerias.json.frentes": {
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/es/parcerias.json.etapas": "",
+    "dados/es/fe-conhecimento.json.disciplinas": {
+      "titulo": "",
+      "fundamento": "",
+      "pergunta": "",
+      "pratica": "",
+      "recursos": []
+    },
+    "dados/es/fe-conhecimento.json.disciplinas[].recursos": {
+      "tipo": "curso",
+      "titulo": "",
+      "descricao": "",
+      "status": "proposta",
+      "link": ""
+    },
+    "dados/es/recursos-santidade.txt": "",
+    "dados/es/autocuidado.json.temas": {
+      "titulo": "",
+      "area": "",
+      "explicacao": "",
+      "evitar": "",
+      "pratica": "",
+      "reflexao": "",
+      "fonte": "",
+      "fonte_titulo": ""
+    },
+    "dados/biblioteca/taxonomia.json.livros": {
+      "id": "",
+      "nome": "",
+      "capitulos": 0,
+      "testamento": "",
+      "bibliaOnline": ""
+    },
+    "dados/en/catalogo.txt": "",
+    "dados/en/oracoes.txt": "",
+    "dados/en/biblias-pdf.json": {
+      "titulo": "",
+      "tradicao": "",
+      "versao": "BLIVRE · 2018 edition · Portuguese",
+      "conteudo": "",
+      "descricao": "",
+      "link": "",
+      "fonte": "",
+      "creditos": ""
+    },
+    "dados/en/youtube.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.temas": {
+      "titulo": "",
+      "explicacao": "",
+      "abandonar": "",
+      "cultivar": "",
+      "exemplo": "",
+      "passagens": []
+    },
+    "dados/en/buscando.json.temas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.mandamentos": {
+      "resumo": "",
+      "referencia": ""
+    },
+    "dados/en/buscando.json.passagens_contexto": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.praticas": {
+      "convite": "",
+      "pergunta": "",
+      "oracao": "",
+      "passagens": []
+    },
+    "dados/en/buscando.json.praticas[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.ensinamentos_jesus": {
+      "titulo": "",
+      "explicacao": "",
+      "passagens": []
+    },
+    "dados/en/buscando.json.ensinamentos_jesus[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.pai_nosso.estudo": {
+      "titulo": "",
+      "texto": ""
+    },
+    "dados/en/buscando.json.vicios": {
+      "titulo": "",
+      "abandonar": "",
+      "cultivar": "",
+      "ambiente_risco": "",
+      "ambiente_cuidado": "",
+      "passagens": []
+    },
+    "dados/en/buscando.json.vicios[].passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/buscando.json.integridade.passagens": {
+      "referencia": "",
+      "link": ""
+    },
+    "dados/en/espirito-santidade.json.spiritRefs": [],
+    "dados/en/espirito-santidade.json.spiritRefs[]": "",
+    "dados/en/espirito-santidade.json.fruitRefs": [],
+    "dados/en/espirito-santidade.json.fruitRefs[]": "",
+    "dados/en/espirito-santidade.json.holyRefs": [],
+    "dados/en/espirito-santidade.json.holyRefs[]": "",
+    "dados/en/espirito-santidade.json.giftsRefs": [],
+    "dados/en/espirito-santidade.json.giftsRefs[]": "",
+    "dados/en/espirito-santidade.json.path": [],
+    "dados/en/espirito-santidade.json.path[]": "",
+    "dados/en/espirito-santidade.json.examples": [],
+    "dados/en/espirito-santidade.json.examples[]": "",
+    "dados/en/espirito-santidade.json.starsRefs": [],
+    "dados/en/espirito-santidade.json.starsRefs[]": "",
+    "dados/en/corpo-escolhas.json.areas": [],
+    "dados/en/corpo-escolhas.json.areas[]": "",
+    "dados/en/corpo-escolhas.json.willRefs": [],
+    "dados/en/corpo-escolhas.json.willRefs[]": "",
+    "dados/en/corpo-escolhas.json.steps": "",
+    "dados/en/corpo-escolhas.json.createSteps": "",
+    "dados/en/corpo-escolhas.json.createRefs": [],
+    "dados/en/corpo-escolhas.json.createRefs[]": "",
+    "dados/en/corpo-escolhas.json.sources": [],
+    "dados/en/corpo-escolhas.json.sources[]": "",
+    "dados/en/pecado.json.definitionRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/en/pecado.json.idolatryRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/en/pecado.json.examples": [],
+    "dados/en/pecado.json.examples[]": "",
+    "dados/en/pecado.json.causes": "",
+    "dados/en/pecado.json.causesRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/en/pecado.json.capital": [],
+    "dados/en/pecado.json.capital[]": "",
+    "dados/en/pecado.json.fastingRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/en/pecado.json.changeSteps": "",
+    "dados/en/pecado.json.changeRefs": {
+      "label": "",
+      "url": ""
+    },
+    "dados/en/pecado.json.everyday": [],
+    "dados/en/pecado.json.everyday[]": "",
+    "dados/en/louvores.json": {
+      "titulo": "",
+      "link": ""
+    },
+    "dados/en/acolhimento.json.safeSteps": "",
+    "dados/en/acolhimento.json.cards": {
+      "title": "",
+      "text": "",
+      "action": "",
+      "url": ""
+    },
+    "dados/en/pagina-inicial.json.howSteps": "",
+    "dados/en/pagina-inicial.json.week": "",
+    "dados/en/pagina-inicial.json.libraryItems": {
+      "id": "",
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/en/pagina-inicial.json.solidarityItems": [],
+    "dados/en/pagina-inicial.json.solidarityItems[]": "",
+    "dados/en/pagina-inicial.json.careHighlights": "",
+    "dados/en/temas-biblicos.json": {
+      "id": "",
+      "titulo": "",
+      "testamento": "",
+      "ordem": 0,
+      "descricao": "",
+      "passagens": []
+    },
+    "dados/en/temas-biblicos.json[].passagens": {
+      "referencia": "",
+      "protestante": "",
+      "catolica": ""
+    },
+    "dados/en/pausa-diaria.json": {
+      "title": [],
+      "text": [],
+      "step": [],
+      "ref": "",
+      "url": "",
+      "song": ""
+    },
+    "dados/en/pausa-diaria.json[].title": "",
+    "dados/en/pausa-diaria.json[].text": "",
+    "dados/en/pausa-diaria.json[].step": "",
+    "dados/en/parceiros.json": {
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "status": "a-propor",
+      "id": ""
+    },
+    "dados/en/biblias-e-apps.json": {
+      "titulo": "",
+      "tipo": "",
+      "descricao": "",
+      "link": ""
+    },
+    "dados/en/reflexoes.txt": "",
+    "dados/en/parcerias.json.frentes": {
+      "titulo": "",
+      "descricao": ""
+    },
+    "dados/en/parcerias.json.etapas": "",
+    "dados/en/fe-conhecimento.json.disciplinas": {
+      "titulo": "",
+      "fundamento": "",
+      "pergunta": "",
+      "pratica": "",
+      "recursos": []
+    },
+    "dados/en/fe-conhecimento.json.disciplinas[].recursos": {
+      "tipo": "curso",
+      "titulo": "",
+      "descricao": "",
+      "status": "proposta",
+      "link": ""
+    },
+    "dados/en/recursos-santidade.txt": "",
+    "dados/en/autocuidado.json.temas": {
+      "titulo": "",
+      "area": "",
+      "explicacao": "",
+      "evitar": "",
+      "pratica": "",
+      "reflexao": "",
+      "fonte": "",
+      "fonte_titulo": ""
+    },
+    "dados/livros.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/artigos.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/estudos.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/materiais-ensino.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/spotify.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/lives.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/acoes.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/palestras.json": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "link": "",
+      "autor": "",
+      "texto": "",
+      "status": "proposta"
+    },
+    "dados/projetos.json.itens[].roteiro": "",
+    "dados/projetos.json.itens[].principais_pontos": ""
+  }
+}

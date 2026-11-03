@@ -21,7 +21,8 @@
           "titulo": "Escuela Abierta — gestión escolar",
           "descricao": "Propuesta para organizar calendario, tareas administrativas, materiales y comunicación de una escuela. El alcance se definirá con educadores antes de programar."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "comunidade-organizada",
@@ -43,7 +44,8 @@
           "titulo": "Comunidad Organizada — gestión para iglesias",
           "descricao": "Agenda de actividades, coordinación de voluntarios y seguimiento de recursos comunitarios. Planificar con las comunidades y proteger los datos personales."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "caminho-escola",
@@ -65,7 +67,8 @@
           "titulo": "Camino a la Escuela — apoyo al transporte escolar",
           "descricao": "Herramienta propuesta para apoyar la salida segura de los niños: registrar si usan transporte escolar o si los recogió un responsable autorizado. Conductores, secretaría y portería podrán consultar la misma actualización en móvil u ordenador. Identificación con foto, confirmación autorizada e historial se planificarán en un área restringida. El sistema aún no está desarrollado."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "partilha-solidaria",
@@ -87,7 +90,8 @@
           "titulo": "Compartir Solidario — organización de donaciones",
           "descricao": "Herramienta propuesta para registrar entradas, existencias y entregas de alimentos y ropa, con rendición de cuentas y privacidad de quienes reciben."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "negocio-simples",
@@ -109,7 +113,8 @@
           "titulo": "Negocio Sencillo — apoyo al comercio local",
           "descricao": "Propuesta de inventario sencillo, listas de compras y tareas para pequeños negocios. La primera versión depende de entrevistas y definición de necesidades."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "acervo-comunitario",
@@ -131,7 +136,8 @@
           "titulo": "Acervo Comunitario — materiales para enseñar",
           "descricao": "Organizador de enlaces y materiales autorizados para docentes, cuidadores y comunidades, con búsqueda por materia y público."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "aprender-juntos",
@@ -455,7 +461,8 @@
           },
           "gratuito": true
         }
-      ]
+      ],
+      "parcerias": []
     },
     {
       "id": "cuidado-em-rede",
@@ -779,7 +786,8 @@
           },
           "gratuito": true
         }
-      ]
+      ],
+      "parcerias": []
     },
     {
       "id": "viver-e-aprender",
@@ -1103,7 +1111,8 @@
           },
           "gratuito": true
         }
-      ]
+      ],
+      "parcerias": []
     },
     {
       "id": "formacao-comunitaria",
@@ -1427,7 +1436,8 @@
           },
           "gratuito": true
         }
-      ]
+      ],
+      "parcerias": []
     },
     {
       "id": "formacao-escolas",
@@ -2016,7 +2026,8 @@
         "es": {
           "titulo": "Charlas para escuelas, docentes y estudiantes"
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "formacao-servico-publico",
@@ -2605,7 +2616,8 @@
         "es": {
           "titulo": "Charlas para servidores públicos y gestión municipal"
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "formacao-campo",
@@ -2909,7 +2921,8 @@
         "es": {
           "titulo": "Cursos para el campo, fincas y cooperativas"
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "colheita-organizada",
@@ -2929,7 +2942,8 @@
           "titulo": "Cosecha Organizada — gestión y seguimiento productivo",
           "descricao": "Propuesta de herramienta para etapas, equipos, volúmenes y registros de cosecha. Se definirá con productores y equipos técnicos; todavía no está implantada."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "campo-conectado",
@@ -2949,7 +2963,8 @@
           "titulo": "Campo Conectado — rutinas y mantenimiento",
           "descricao": "Propuesta de herramienta para tareas, mantenimiento de equipos y registros rurales, con planificación y pruebas antes del uso real."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "municipio-sustentavel",
@@ -2969,7 +2984,8 @@
           "titulo": "Municipio Sostenible — indicadores y seguimiento",
           "descricao": "Propuesta de panel para datos locales de residuos, agua y sostenibilidad, con fuentes, definiciones y revisión técnica."
         }
-      }
+      },
+      "parcerias": []
     },
     {
       "id": "servico-publico-simples",
@@ -2989,7 +3005,348 @@
           "titulo": "Servicio Público Sencillo — organización administrativa",
           "descricao": "Propuesta de herramientas para solicitudes, tareas y documentos, con prototipos de datos ficticios y validación institucional antes de implantar."
         }
-      }
+      },
+      "parcerias": []
+    },
+    {
+      "id": "recomecar-alcool",
+      "titulo": "Recomeçar — apoio diante da dependência de álcool",
+      "descricao": "Proposta de acolhimento comunitário a pessoas e famílias que enfrentam problemas relacionados ao álcool, com escuta, informação e aproximação da rede de cuidado e de grupos de apoio disponíveis.",
+      "objetivo": "Construir uma rede de apoio que favoreça a procura de cuidado, a convivência e a retomada de projetos de vida.",
+      "publico": "Pessoas afetadas pelo uso de álcool e seus familiares.",
+      "roteiro": [
+        "Ouvir necessidades e mapear a rede de cuidado local.",
+        "Conversar com profissionais e grupos de apoio, sem presumir parcerias.",
+        "Preparar encontros educativos e acolhimento com voluntários orientados.",
+        "Avaliar a participação e os encaminhamentos com respeito à privacidade."
+      ],
+      "principais_pontos": [
+        "Acolhimento sem humilhação ou discriminação.",
+        "Apoio às famílias e informação acessível.",
+        "Encaminhamento para serviços de saúde e grupos de apoio.",
+        "Não oferece tratamento clínico nem se apresenta como grupo oficial de Alcoólicos Anônimos."
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "participacao": "Proposta em planejamento. Responsáveis, cronograma e locais serão publicados após confirmação.",
+      "traducoes": {
+        "en": {
+          "titulo": "Starting Again — support with alcohol dependence",
+          "descricao": "A proposed community initiative for people and families affected by alcohol problems, offering listening, information and connections with care services and available support groups.",
+          "objetivo": "Build a support network that encourages access to care, community life and renewed life plans.",
+          "publico": "People affected by alcohol use and their families.",
+          "roteiro": [
+            "Listen to local needs and map care services.",
+            "Talk with professionals and support groups without assuming partnerships.",
+            "Plan educational meetings with prepared volunteers.",
+            "Review participation and referrals while respecting privacy."
+          ],
+          "principais_pontos": [
+            "Welcoming people without humiliation or discrimination.",
+            "Family support and accessible information.",
+            "Connections with health services and support groups.",
+            "Does not provide clinical treatment or claim to be an official Alcoholics Anonymous group."
+          ],
+          "participacao": "Proposal in planning. Responsible people, schedules and locations will be announced after confirmation."
+        },
+        "es": {
+          "titulo": "Volver a empezar — apoyo ante la dependencia del alcohol",
+          "descricao": "Propuesta comunitaria de acogida a personas y familias afectadas por problemas con el alcohol, con escucha, información y conexión con servicios de atención y grupos de apoyo disponibles.",
+          "objetivo": "Construir una red que facilite el acceso a cuidados, la convivencia y nuevos proyectos de vida.",
+          "publico": "Personas afectadas por el consumo de alcohol y sus familiares.",
+          "roteiro": [
+            "Escuchar las necesidades y conocer la red local.",
+            "Conversar con profesionales y grupos sin presumir colaboraciones.",
+            "Planificar encuentros educativos con voluntarios preparados.",
+            "Revisar la participación y las derivaciones respetando la privacidad."
+          ],
+          "principais_pontos": [
+            "Acogida sin humillación ni discriminación.",
+            "Apoyo a las familias e información accesible.",
+            "Conexión con servicios sanitarios y grupos de apoyo.",
+            "No ofrece tratamiento clínico ni se presenta como grupo oficial de Alcohólicos Anónimos."
+          ],
+          "participacao": "Propuesta en planificación. Los responsables, fechas y lugares se anunciarán tras confirmarlos."
+        }
+      },
+      "parcerias": []
+    },
+    {
+      "id": "recomecar-outras-drogas",
+      "titulo": "Recomeçar — caminhos de cuidado diante das drogas",
+      "descricao": "Proposta de apoio comunitário a pessoas e famílias afetadas pelo uso de outras drogas, articulando acolhimento, educação, rede de cuidado e oportunidades de participação social.",
+      "objetivo": "Facilitar o acesso a apoio e cuidado, respeitando a dignidade e a história de cada pessoa.",
+      "publico": "Pessoas afetadas pelo uso de drogas e suas redes de apoio.",
+      "roteiro": [
+        "Mapear serviços públicos e iniciativas de apoio existentes.",
+        "Planejar rodas educativas e acolhimento com pessoas qualificadas.",
+        "Preparar ações de convivência, formação e inclusão.",
+        "Rever a proposta com a comunidade antes da implantação."
+      ],
+      "principais_pontos": [
+        "Escuta e acolhimento sem promessas de cura.",
+        "Informação e conexão com a rede de saúde e assistência.",
+        "Apoio à família e participação comunitária.",
+        "Ações espirituais voluntárias, sem substituir cuidados profissionais."
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "participacao": "Proposta em planejamento. Responsáveis, cronograma e locais serão publicados após confirmação.",
+      "traducoes": {
+        "en": {
+          "titulo": "Starting Again — pathways of care around drug use",
+          "descricao": "A proposed community initiative for people and families affected by other drugs, connecting welcoming support, education, care services and opportunities for community participation.",
+          "objetivo": "Facilitate access to support and care, respecting each person’s dignity and history.",
+          "publico": "People affected by drug use and their support networks.",
+          "roteiro": [
+            "Map public services and existing support initiatives.",
+            "Plan educational discussions with qualified participants.",
+            "Develop community, training and inclusion activities.",
+            "Review the proposal with the community before implementation."
+          ],
+          "principais_pontos": [
+            "Listening without promises of a cure.",
+            "Information and connections with health and social care.",
+            "Family support and community participation.",
+            "Voluntary spiritual activities that do not replace professional care."
+          ],
+          "participacao": "Proposal in planning. Responsible people, schedules and locations will be announced after confirmation."
+        },
+        "es": {
+          "titulo": "Volver a empezar — caminos de cuidado ante las drogas",
+          "descricao": "Propuesta de apoyo a personas y familias afectadas por otras drogas, conectando acogida, educación, servicios de atención y participación comunitaria.",
+          "objetivo": "Facilitar el acceso a apoyo y cuidados respetando la dignidad y la historia de cada persona.",
+          "publico": "Personas afectadas por el consumo de drogas y sus redes de apoyo.",
+          "roteiro": [
+            "Conocer los servicios públicos y apoyos existentes.",
+            "Planificar encuentros educativos con personas cualificadas.",
+            "Preparar actividades de convivencia, formación e inclusión.",
+            "Revisar la propuesta con la comunidad antes de ponerla en marcha."
+          ],
+          "principais_pontos": [
+            "Escucha sin promesas de curación.",
+            "Información y conexión con salud y asistencia social.",
+            "Apoyo a las familias y participación comunitaria.",
+            "Actividades espirituales voluntarias que no sustituyen la atención profesional."
+          ],
+          "participacao": "Propuesta en planificación. Los responsables, fechas y lugares se anunciarán tras confirmarlos."
+        }
+      },
+      "parcerias": []
+    },
+    {
+      "id": "roupas-que-acolhem",
+      "titulo": "Roupas que acolhem — partilha com dignidade",
+      "descricao": "Proposta de arrecadação, triagem e distribuição de roupas e calçados em boas condições para pessoas em situação de necessidade.",
+      "objetivo": "Organizar doações com cuidado, transparência e respeito às necessidades de quem recebe.",
+      "publico": "Pessoas e famílias em situação de vulnerabilidade em Nova Bandeirantes.",
+      "roteiro": [
+        "Levantar necessidades com a comunidade.",
+        "Confirmar parceiros e pontos de entrega antes de divulgá-los.",
+        "Organizar coleta e triagem com voluntários.",
+        "Distribuir e publicar um resumo da ação sem expor beneficiários."
+      ],
+      "principais_pontos": [
+        "Doações limpas e em bom estado.",
+        "Pontos de entrega e responsáveis confirmados.",
+        "Distribuição respeitosa e organizada.",
+        "Registro público de resultados sem dados pessoais."
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "participacao": "Proposta em planejamento. Responsáveis, cronograma e locais serão publicados após confirmação.",
+      "traducoes": {
+        "en": {
+          "titulo": "Clothing with Care — sharing with dignity",
+          "descricao": "A proposal to collect, sort and distribute clothing and shoes in good condition to people in need.",
+          "objetivo": "Organize donations transparently while respecting the needs of recipients.",
+          "publico": "People and families in vulnerable circumstances in Nova Bandeirantes.",
+          "roteiro": [
+            "Identify needs with the community.",
+            "Confirm partners and drop-off points before announcing them.",
+            "Organize collection and sorting with volunteers.",
+            "Distribute donations and share a report without exposing recipients."
+          ],
+          "principais_pontos": [
+            "Clean donations in good condition.",
+            "Confirmed collection points and responsible people.",
+            "Respectful and organized distribution.",
+            "Public reporting without personal data."
+          ],
+          "participacao": "Proposal in planning. Responsible people, schedules and locations will be announced after confirmation."
+        },
+        "es": {
+          "titulo": "Ropa que acoge — compartir con dignidad",
+          "descricao": "Propuesta de recogida, clasificación y distribución de ropa y calzado en buen estado para personas que lo necesitan.",
+          "objetivo": "Organizar donaciones con transparencia y respeto a las necesidades de quienes las reciben.",
+          "publico": "Personas y familias en situación de vulnerabilidad en Nova Bandeirantes.",
+          "roteiro": [
+            "Conocer las necesidades con la comunidad.",
+            "Confirmar socios y puntos de entrega antes de anunciarlos.",
+            "Organizar la recogida y clasificación con voluntarios.",
+            "Distribuir y compartir resultados sin exponer a los beneficiarios."
+          ],
+          "principais_pontos": [
+            "Donaciones limpias y en buen estado.",
+            "Puntos de entrega y responsables confirmados.",
+            "Distribución respetuosa y organizada.",
+            "Resultados públicos sin datos personales."
+          ],
+          "participacao": "Propuesta en planificación. Los responsables, fechas y lugares se anunciarán tras confirmarlos."
+        }
+      },
+      "parcerias": []
+    },
+    {
+      "id": "alimento-e-partilha",
+      "titulo": "Alimento e partilha — cuidado que chega à mesa",
+      "descricao": "Proposta de campanhas de arrecadação de alimentos e apoio a ações de alimentação, com planejamento das necessidades, do armazenamento e da distribuição.",
+      "objetivo": "Aproximar doadores e voluntários de ações alimentares organizadas pela comunidade.",
+      "publico": "Pessoas e famílias em situação de insegurança alimentar.",
+      "roteiro": [
+        "Identificar as necessidades com iniciativas locais.",
+        "Confirmar locais de coleta e responsáveis.",
+        "Organizar arrecadação, armazenamento e separação.",
+        "Realizar a entrega e divulgar resultados da campanha."
+      ],
+      "principais_pontos": [
+        "Alimentos adequados e dentro da validade.",
+        "Critérios de entrega definidos com a comunidade.",
+        "Organização das doações e prestação de contas.",
+        "Parcerias divulgadas apenas depois de confirmadas."
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "participacao": "Proposta em planejamento. Responsáveis, cronograma e locais serão publicados após confirmação.",
+      "traducoes": {
+        "en": {
+          "titulo": "Food and Sharing — care at the table",
+          "descricao": "A proposal for food donation campaigns and support for community meals, with planning for needs, storage and distribution.",
+          "objetivo": "Connect donors and volunteers with organized community food initiatives.",
+          "publico": "People and families experiencing food insecurity.",
+          "roteiro": [
+            "Identify needs with local initiatives.",
+            "Confirm collection points and responsible people.",
+            "Organize collection, storage and sorting.",
+            "Deliver donations and share campaign results."
+          ],
+          "principais_pontos": [
+            "Suitable food within its expiry date.",
+            "Community-defined distribution criteria.",
+            "Donation records and accountability.",
+            "Partnerships announced only after confirmation."
+          ],
+          "participacao": "Proposal in planning. Responsible people, schedules and locations will be announced after confirmation."
+        },
+        "es": {
+          "titulo": "Alimentos y compartir — cuidado que llega a la mesa",
+          "descricao": "Propuesta de campañas de donación de alimentos y apoyo a comidas comunitarias, con planificación de necesidades, almacenamiento y distribución.",
+          "objetivo": "Conectar donantes y voluntarios con acciones alimentarias organizadas por la comunidad.",
+          "publico": "Personas y familias en situación de inseguridad alimentaria.",
+          "roteiro": [
+            "Identificar necesidades con iniciativas locales.",
+            "Confirmar los lugares de recogida y los responsables.",
+            "Organizar recogida, almacenamiento y clasificación.",
+            "Realizar las entregas y compartir los resultados."
+          ],
+          "principais_pontos": [
+            "Alimentos adecuados y dentro de su fecha de caducidad.",
+            "Criterios de entrega definidos con la comunidad.",
+            "Registro de donaciones y rendición de cuentas.",
+            "Colaboraciones anunciadas solo tras confirmarlas."
+          ],
+          "participacao": "Propuesta en planificación. Los responsables, fechas y lugares se anunciarán tras confirmarlos."
+        }
+      },
+      "parcerias": []
+    },
+    {
+      "id": "mutirao-solidario",
+      "titulo": "Mutirão solidário — tempo e trabalho pelo próximo",
+      "descricao": "Proposta de mobilização de voluntários para ações comunitárias, como organização de doações, apoio a espaços coletivos e atividades de cuidado planejadas com a comunidade.",
+      "objetivo": "Transformar tempo, conhecimento e trabalho em ações concretas de cuidado.",
+      "publico": "Voluntários, instituições e comunidades que desejam colaborar.",
+      "roteiro": [
+        "Receber e avaliar as necessidades apresentadas.",
+        "Definir uma ação viável, responsáveis e materiais.",
+        "Confirmar autorizações e profissionais necessários.",
+        "Executar a ação e compartilhar os resultados."
+      ],
+      "principais_pontos": [
+        "Escopo e responsabilidades definidos.",
+        "Atividades compatíveis com a preparação dos voluntários.",
+        "Autorizações e trabalho qualificado quando exigidos.",
+        "Cuidado com pessoas, recursos e espaços."
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "prioridade": false,
+      "link": "",
+      "repositorio": "",
+      "documentacao": "",
+      "licenca": "a-definir",
+      "participacao": "Proposta em planejamento. Responsáveis, cronograma e locais serão publicados após confirmação.",
+      "traducoes": {
+        "en": {
+          "titulo": "Community Work Day — time and teamwork for others",
+          "descricao": "A proposed volunteer initiative for community activities, such as organizing donations, supporting shared spaces and planning care activities with local people.",
+          "objetivo": "Turn time, knowledge and teamwork into practical care.",
+          "publico": "Volunteers, institutions and communities wishing to collaborate.",
+          "roteiro": [
+            "Receive and assess reported needs.",
+            "Define a feasible activity, responsible people and materials.",
+            "Confirm permissions and qualified professionals where needed.",
+            "Carry out the activity and share results."
+          ],
+          "principais_pontos": [
+            "Defined scope and responsibilities.",
+            "Tasks suited to volunteer preparation.",
+            "Authorizations and qualified work when required.",
+            "Care for people, resources and shared spaces."
+          ],
+          "participacao": "Proposal in planning. Responsible people, schedules and locations will be announced after confirmation."
+        },
+        "es": {
+          "titulo": "Jornada solidaria — tiempo y trabajo por el prójimo",
+          "descricao": "Propuesta de voluntariado para organizar donaciones, apoyar espacios colectivos y realizar actividades de cuidado planificadas con la comunidad.",
+          "objetivo": "Convertir tiempo, conocimiento y trabajo en acciones concretas de cuidado.",
+          "publico": "Voluntarios, instituciones y comunidades que desean colaborar.",
+          "roteiro": [
+            "Recibir y evaluar las necesidades.",
+            "Definir una acción viable, responsables y materiales.",
+            "Confirmar autorizaciones y profesionales necesarios.",
+            "Realizar la acción y compartir resultados."
+          ],
+          "principais_pontos": [
+            "Alcance y responsabilidades definidos.",
+            "Actividades adecuadas a la preparación de los voluntarios.",
+            "Autorizaciones y trabajo cualificado cuando corresponda.",
+            "Cuidado de las personas, los recursos y los espacios."
+          ],
+          "participacao": "Propuesta en planificación. Los responsables, fechas y lugares se anunciarán tras confirmarlos."
+        }
+      },
+      "parcerias": []
     }
   ]
 }

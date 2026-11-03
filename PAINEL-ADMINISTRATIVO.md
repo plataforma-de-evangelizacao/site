@@ -1,106 +1,146 @@
-# Painel administrativo — Plataforma Global de Evangelização
+# Administração da Plataforma Global de Evangelização
 
-O painel usa o login Supabase já configurado. Nesta atualização, ele ganha menus por assunto, gestão em lote de vídeos, bloqueios persistentes e uma central para solicitar atualizações pelo GitHub Actions. Tema claro/escuro e português, inglês e espanhol continuam disponíveis.
+**Atualização:** 2 de novembro de 2026, horário de Mato Grosso.  
+**Versão:** `2026.11.02-publicacao-direta`.
 
-## Instalar esta atualização no site existente
+Esta é a referência atual do painel. Substitui o fluxo anterior em que aprovar um vídeo ou salvar um conteúdo precisava aguardar o agendamento do GitHub Actions.
 
-1. Baixe `atualizacao-painel-completo.zip` e extraia na pasta local do repositório `site`. Substitua os arquivos correspondentes, mantendo as pastas `admin`, `scripts`, `tests` e `.github` nos lugares indicados no ZIP. O ZIP de atualização **não contém `admin/config.json`**, nem altera seus Secrets, usuários ou decisões editoriais atuais. Não use uma instalação antiga do painel para sobrescrever a configuração já preenchida.
-2. No mesmo projeto Supabase do painel, abra **SQL Editor**, cole o conteúdo de **`scripts/admin/atualizacao-painel.sql`** e execute uma vez. A resposta esperada é `Success`. O script mantém dados, usuários e políticas RLS. Acrescenta a ação `run_sync` e impede duplicação de uma mesma atualização enquanto ela estiver em andamento. Pode ser executado novamente com segurança. Para uma instalação nova, o `schema.sql` completo já inclui isso.
-3. Salve os arquivos no Git, faça commit e envie para `main`, como já faz pelo VS Code. Confirme que a pasta `.github/workflows` foi atualizada; é uma pasta oculta em alguns gerenciadores de arquivos.
-4. Aguarde **Biblioteca e GitHub Pages** concluir a publicação. Depois execute **Actions → Painel administrativo → Run workflow → main** uma vez para sincronizar a lista ampliada de conteúdos do painel. Não use a opção de repetir um workflow antigo, que pode usar código antigo.
-5. Abra `/site/admin/`, recarregue a página e faça login. Confira a visão geral, as listas de conteúdo e os botões de atualização. As rotinas enfileiradas no painel são processadas pelo workflow administrativo aproximadamente a cada 15 minutos; executar esse workflow manualmente antecipa o processamento.
+## Instalação e aceitação
 
-A configuração existente usa os Secrets `YOUTUBE_API_KEY`, `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Não há uma nova senha a cadastrar nem chave privada para colocar no frontend.
+Siga **COMECE-AQUI-PUBLICACAO-DIRETA.md**. Depois execute **ROTEIRO-TESTES-VIDEOS-E-PROJETOS.md**, que foi preparado para testar primeiro vídeos e projetos em aproximadamente dez minutos após a instalação.
 
-## O que cada menu faz
+A atualização preserva seu `admin/config.json` e os Secrets existentes. O arquivo de ativação é **ATIVAR-PUBLICACAO-DIRETA.sql**, também disponível em `scripts/admin/publicacao-direta.sql`. Ele é para o mesmo projeto Supabase em que você já criou seu usuário e autorizou o UUID em `pge_admins`.
 
-| Menu | Utilidade |
+## Arquitetura atual
+
+- O site continua hospedado no GitHub Pages.
+- Metadados temporários dos vídeos continuam em `pge_videos`, com prazo de validade. A descoberta usa a API do YouTube no runner.
+- Decisões do administrador são gravadas diretamente em `pge_video_decisions`. O catálogo público cruza a decisão atual com a disponibilidade e validade dos metadados.
+- Conteúdos publicados pelos formulários ficam em `pge_live_documents`. O site consulta a versão publicada; quando não existe uma substituição naquele caminho, lê o arquivo original do repositório.
+- A cópia administrativa em `pge_documents` recebe o conteúdo e a versão novos na mesma transação.
+- O workflow administrativo sincroniza alterações autorais e decisões para os arquivos do GitHub em segundo plano. Os comandos antigos ainda são reconciliados, mas uma edição antiga não deve sobrescrever uma publicação direta mais recente.
+- Parceiros e projetos possuem registros normalizados e relacionamentos em tabelas específicas.
+
+**Publicar conteúdo** é diferente de **buscar novos conteúdos externos**. O primeiro não espera o cron. O segundo ainda usa as rotinas, filas, credenciais e quotas das integrações.
+
+## Menus e indicadores
+
+A visão geral coloca os indicadores antes das ações e das orientações. Os atalhos de conteúdo ficam mais abaixo e agrupados por assunto.
+
+| Indicador | Origem e significado |
 | --- | --- |
-| Visão geral | Quantidades de vídeos aguardando revisão, aprovados, bloqueados e solicitações em fila; atalhos para os conteúdos. |
-| Acervo de vídeos | Busca por título, canal ou ID; filtros por situação/categoria; aprovação, exclusão e mudança de categoria individual ou em lote. |
-| Vídeos bloqueados | Lista dos IDs rejeitados e possibilidade de remover o bloqueio, devolvendo o vídeo à revisão. |
-| Músicas e playlists | Formulário para adicionar, editar e remover títulos/links nas listas de louvores, Spotify e YouTube. |
-| Livros, podcasts e materiais | Atalhos para livros, artigos, estudos, materiais, lives, catálogo e listas de links. Podcasts podem ser cadastrados nas listas Spotify/YouTube. |
-| Projetos e cursos | Projetos, formações, palestras e propostas sociais. |
-| Parceiros e comunidades | Cidades, contatos, instituições, celebrações e atividades. |
-| Solidariedade e contas | Ações, agenda de doações e prestação de contas. |
-| Leituras e orações | Leituras bíblicas, orações, reflexões, louvores e versículos. |
-| Todos os conteúdos | Editor dos arquivos autorais JSON e TXT permitidos, inclusive arquivos em inglês/espanhol. |
-| Atualizações e integrações | Recarregar tela, sincronizar banco administrativo, buscar vídeos e publicar o site; acompanha andamento/erros. |
-| Solicitações e histórico | Decisões, lotes, mudanças de conteúdo e resultado de cada solicitação. |
+| Vídeos publicados | Mesmo catálogo público utilizado pelos visitantes. |
+| Aguardando revisão | Metadados válidos com situação editorial pendente. |
+| Arquivados / bloqueados | Decisões persistidas por ID. |
+| Músicas cadastradas | Louvores e conteúdos musicais cadastrados; não representa músicas descobertas por uma API ainda não configurada. |
+| Playlists cadastradas | Listas de links do Spotify e YouTube. |
+| Artigos publicados | Entradas com texto ou link de acesso, sem contar apenas uma proposta vazia como artigo pronto. |
+| Livros cadastrados | Registros ativos de livros. |
+| Projetos cadastrados | Fichas e frentes de projeto cadastradas. |
+| Projetos concluídos | Situação/etapa de conclusão explícita. Apenas acrescentar um link não conta automaticamente como conclusão. |
+| Cursos propostos / disponíveis | Cursos e formações das fichas de projeto; disponibilidade depende do acesso cadastrado. |
 
-Os menus organizam os dados editáveis. O painel não é um editor visual de HTML/CSS, de credenciais ou de permissões. Alterações de layout estrutural ainda precisam ser feitas no código. Um arquivo de conteúdo só muda o site nas partes que já consomem esse arquivo; o painel não cria automaticamente páginas/integrações novas ao cadastrar um campo desconhecido.
+Os contadores usam os dados carregados pelo painel. **Recarregar painel** atualiza esses dados sem disparar uma nova consulta ao YouTube. A barra acompanha cinco fontes carregadas, não simula tempo de uma busca.
 
-## Selecionar e aprovar os vídeos de uma vez
+## Vídeos: publicar, retirar e restaurar
 
-1. Entre em **Acervo de vídeos** e escolha **Aguardando revisão**. Use busca ou categoria se quiser restringir o lote.
-2. Marque **Selecionar todos os resultados deste filtro**. Isso inclui resultados ainda não exibidos nos primeiros 24 cartões. O painel mostra a quantidade selecionada. Alterar filtros limpa a seleção. Você também pode marcar ou desmarcar cartões individualmente.
-3. Para aprovar, mantenha a categoria de cada vídeo ou escolha uma categoria para o lote. Se houver vídeos sem categoria, atribua uma antes de aprovar. O painel não inventa a categoria para completar um lote.
-4. Marque a confirmação de revisão e de conteúdo em português. Clique **Aprovar selecionados** e confirme a quantidade no aviso. Cada envio aceita até **300 vídeos**; os 273 citados cabem em uma solicitação.
-5. Acompanhe no histórico. O lote é validado por inteiro e gravado em um commit. Se um registro estiver desatualizado, o lote entra em conflito e nenhum item daquele lote é gravado; recarregue e revise a seleção.
+Em **Acervo de vídeos**, busque pelo título, canal ou ID. Há filtros por situação/categoria, seleção individual e seleção de todos os resultados filtrados, inclusive além dos primeiros cartões exibidos. Cada aprovação em lote aceita até 300 vídeos.
 
-**Não aprovar / bloquear selecionados** usa a mesma seleção e exige confirmação, mas não exige confirmar idioma. Entra no bloqueio persistente descrito abaixo.
+A aprovação exige categoria e confirmação de revisão do conteúdo em português. Não há análise automática por assistir ao vídeo. O retorno “publicado” só aparece depois de o servidor confirmar a transação.
 
-**Alterar categoria dos selecionados** salva a categoria escolhida, conservando a situação editorial. Alterar categoria não equivale a aprovar um vídeo pendente nem a desbloquear um rejeitado. Cada cartão também oferece **Salvar categoria**.
+**Publicados no site** lê o catálogo real e oferece nome, canal, acesso, categoria, **Arquivar** e **Excluir e bloquear**.
 
-A aprovação editorial não elimina exigências técnicas: vídeo indisponível, metadados vencidos ou restrição regional podem impedir a exibição pública.
+- **Arquivar:** retira do público, preservando a decisão e a confirmação anterior. Um arquivado que estava aprovado e continua tecnicamente elegível pode voltar por **Restaurar publicação**.
+- **Excluir e bloquear:** retira do público e mantém o ID rejeitado, evitando reinclusão pela descoberta. Outro upload do mesmo filme tem outro ID.
+- **Remover bloqueio e revisar:** devolve um rejeitado à revisão. Ele precisa ser aprovado novamente; o desbloqueio não transforma conteúdo rejeitado em publicado automaticamente.
+- **Salvar categoria:** conserva a situação editorial. Não desbloqueia nem aprova um pendente por conta própria.
 
-## Excluir um vídeo e impedir que volte
+O catálogo público exige aprovação, disponibilidade válida, categoria aceita, confirmação de português e metadados não vencidos. Restaurar um registro não contorna esses requisitos.
 
-1. Em **Acervo de vídeos**, selecione **Aprovados** ou **Todos** e procure o título, canal ou ID.
-2. Clique **Excluir e bloquear** e confirme o título.
-3. O Actions registra `aprovacao: rejected`, `revisado: true` e `reabrir: false` para esse ID em `biblioteca-controle/editorial.json`. Depois da publicação, o vídeo sai do catálogo.
-4. A descoberta consulta esse registro antes de pedir os detalhes do vídeo. O bloqueio vence a aprovação automática e continua ativo depois que os metadados temporários são removidos. Não é apenas uma mudança visual na tela.
+## Formulários de conteúdo
 
-O bloqueio é pelo **ID do vídeo**, não por palavras do título. Se outro canal publicar o mesmo filme, o novo envio terá outro ID e poderá aparecer para revisão. O bloqueio permanece mesmo que o título original mude.
+Em cada área, **Administrar conteúdo** abre os campos do arquivo correspondente. Não é necessário editar JSON manualmente. As listas oferecem busca, criação de cartão, edição, arquivamento/restauração de registros e exclusão. Os campos existentes e propriedades adicionais são preservados. IDs já existentes não são alterados quando o título muda; IDs novos são gerados automaticamente a partir do título, com sufixo para evitar colisões.
 
-Em **Vídeos bloqueados**, procure o ID ou o título disponível e escolha **Remover bloqueio e revisar**. A remoção usa a versão do registro editorial para evitar conflito e devolve o item a `pending_review`; a aprovação automática não atropela essa revisão explícita. Se os metadados já venceram, ele só voltará à lista de revisão com título após uma descoberta/verificação que recupere seus dados. A lista de bloqueios mantém o ID mesmo sem título.
+Campos comuns:
 
-## Músicas, playlists e podcasts
+- título, nome, descrição e texto;
+- objetivo, público, roteiro, principais ações e participação;
+- status, etapa e prioridade;
+- link público, repositório, documentação e licença;
+- campos de contato e localização para parceiros;
+- traduções para inglês e espanhol;
+- parceiros envolvidos e situação de cada vínculo.
 
-Em **Músicas e playlists**, selecione a lista:
+Use **Salvar e publicar agora** para confirmar a edição. Arquivar/excluir um cartão tem uma confirmação própria e publica o documento resultante. Se houver outras alterações abertas naquele formulário, elas fazem parte do documento que será publicado: revise os campos antes de confirmar.
 
-- **Louvores do dia** → `dados/louvores.json`.
-- **Spotify: playlists e podcasts** → `dados/spotify.json`.
-- **Playlists do YouTube** → `dados/youtube.json`.
+Arquivos TXT de orações/reflexões usam um conteúdo por linha e são apresentados como cartões de texto. Eles podem ser criados, editados e excluídos; arquivamento por registro só se aplica a registros estruturados em JSON. O PDF das orações ainda depende do material a ser enviado.
 
-Use o formulário para adicionar título/link, **Editar** para carregar um item no formulário ou **Excluir da lista** para removê-lo. A edição preserva campos adicionais existentes no item. Links devem usar HTTP/HTTPS. Um louvor pode ter só título; Spotify e playlists precisam de link. Cada alteração entra na mesma fila de validação e publicação. Se houver uma alteração nessa lista na fila, aguarde sua aplicação e recarregue antes de enviar outra, para evitar sobrescrever uma edição anterior.
+O painel não é um editor de HTML/CSS, credenciais ou permissões. Campos novos podem ser mantidos nos dados, mas só aparecem na parte pública quando o respectivo componente os utiliza. Esta entrega acrescenta a apresentação pública de descrição detalhada, objetivo, roteiro, ações e parceiros dos projetos.
 
-O cadastro de links funciona agora. **A descoberta automática de músicas, playlists externas, Spotify, podcasts e lives ainda exige implementar/configurar suas rotinas e APIs.** Os botões externos correspondentes aparecem como integração a configurar. Eles não simulam uma conexão ativa. Excluir uma música hoje remove o item do arquivo; não afirma bloquear uma descoberta musical que ainda não está implementada.
+## Projetos sociais desta entrega
 
-## Central de atualizações
+Os projetos abaixo foram acrescentados como propostas em planejamento, com descrição, objetivo, roteiro e principais pontos, sem parceiros presumidos:
 
-| Botão | Efeito real |
+- Recomeçar — apoio diante da dependência de álcool.
+- Recomeçar — caminhos de cuidado diante das drogas.
+- Roupas que acolhem — partilha com dignidade.
+- Alimento e partilha — cuidado que chega à mesa.
+- Mutirão solidário — tempo e trabalho pelo próximo.
+
+São propostas comunitárias. As primeiras não anunciam tratamento clínico, grupo oficial de Alcoólicos Anônimos ou resultados terapêuticos. Cronogramas, locais e responsáveis só devem ser divulgados quando confirmados.
+
+## Parceiros como registros e relações
+
+A fonte autoral de instituições continua sendo `dados/rede-parceiros.json`. O banco mantém:
+
+| Tabela | Função |
 | --- | --- |
-| Recarregar painel | Busca novamente vídeos, documentos e solicitações do Supabase, sem cache HTTP e sem nova busca no YouTube. A barra mede as três fontes carregadas. |
-| Atualizar banco do painel | Enfileira a sincronização dos arquivos atuais e do estado existente da biblioteca para o Supabase. Não busca vídeos novos. |
-| Buscar novos vídeos no YouTube | Enfileira o workflow `biblioteca.yml`, modo `buscar-agora`, com o UUID da solicitação. Antecipa uma rodada de descoberta e renova resultados de busca completos em cache, preservando tarefas pendentes e limites de quota. |
-| Atualizar informações no site | Enfileira `biblioteca.yml`, modo `publicar-site`. Reconstrói/publica o conteúdo atual, sem pesquisa global nova. |
+| `pge_partner_entities` | Registros dos parceiros por ID estável. |
+| `pge_project_entities` | Registros dos projetos por ID estável. |
+| `pge_project_partners` | Relação projeto/parceiro, situação e papel. |
 
-Os percentuais são **marcos de execução**, não tempo decorrido: fila 0%, despacho 10%, testes 20%, processamento 40%, aguardando publicação 80%, conclusão 100%. Não há uma animação que promete progresso enquanto o GitHub está parado. Se o workflow falhar, a solicitação fica com erro e um link para os detalhes da execução quando disponível. O painel consulta o andamento a cada 10 segundos enquanto estiver aberto e visível. Não há notificação por e-mail/WhatsApp nesta atualização.
+Ao publicar os documentos, gatilhos atualizam essas tabelas na mesma transação. Um vínculo precisa referenciar um parceiro existente. Renomear o parceiro mantém o vínculo porque o identificador permanece. Remover um vínculo não remove a instituição. Remover a instituição elimina suas relações normalizadas; o site não exibe nomes sem cadastro correspondente. Antes de republicar um projeto com referência antiga, remova ou substitua a referência no formulário.
 
-O workflow administrativo continua sendo o executor privilegiado: o navegador não recebe token do GitHub nem a chave do YouTube. Usuário autorizado envia apenas um destino permitido: `video-discovery`, `panel-sync` ou `site-publication`. Não é possível escolher um comando shell ou workflow arbitrário pelo formulário.
+A seleção mostra nome, cidade e comunidade. Cada vínculo tem `a-propor`, `em-conversa` ou `confirmada`, além do papel. A página pública distingue **Parceiros envolvidos** de **Parcerias em construção**. Não foi criada automaticamente uma parceria com igreja, prefeitura, Vicentinos ou grupo de apoio.
 
-A fila pode levar aproximadamente 15 minutos para começar, além do tempo do GitHub e da API. Quotas, rede, concorrência, falha de implantação ou pausa do Supabase podem atrasar ou interromper uma atualização. O workflow administrativo reconcilia execuções já despachadas e não as dispara novamente só porque o painel foi recarregado. Se não houver confirmação de início após uma hora, ele registra a falha para que você confira o Actions antes de tentar novamente.
+## Idiomas e traduções
 
-**Gravado no GitHub** significa que a decisão de conteúdo foi salva; a publicação é uma etapa posterior. Na central de atualização, **Site publicado e processamento concluído** só é informado depois do job de publicação e da confirmação de implantação. Uma busca sem mudança pública pode concluir sem novo deploy.
+A interface conserva português, inglês e espanhol. Cartões com título/nome oferecem uma seção de traduções para inglês/espanhol. Nos arquivos com variantes separadas, a publicação inclui as versões correspondentes em uma transação de até três documentos. Campos compartilhados, IDs e links são sincronizados; traduções antigas de textos inalterados são reaproveitadas.
 
-## Editor de conteúdos
+**Não foi contratado nem conectado um tradutor automático.** Textos novos sem tradução usam português como alternativa e permanecem pendentes. O formulário informa isso. Não se deve afirmar que um texto foi traduzido apenas porque a estrutura foi sincronizada. Os cinco projetos desta entrega incluem os textos principais em inglês e espanhol.
 
-Cada menu aponta os arquivos correspondentes. **Todos os conteúdos** permite localizar uma seção por nome ou caminho e editar arquivos autorais em `dados/`. JSONs preservam sua estrutura e TXT preservam o formato de texto usado na plataforma. O catálogo gerado da API, configuração de acesso, scripts, SQL e workflows ficam fora da edição.
+## Segurança da publicação direta
 
-O botão **Conferir JSON** verifica sintaxe para JSON e conteúdo não vazio para TXT. O servidor repete a validação antes de gravar, confere a versão e executa o validador do site. Conflitos não são resolvidos sobrescrevendo versões alheias. As versões efetivas permanecem no GitHub. Arquivos de idiomas diferentes devem ser editados explicitamente; esta atualização não traduz automaticamente o conteúdo de um artigo ou projeto.
+As funções de gravação são `pge_publish_documents` e `pge_review_videos`. Ambas verificam `auth.uid()` e a presença em `pge_admins` no servidor. Seus parâmetros não permitem escolher SQL, caminhos de segurança ou um comando shell.
 
-## Acesso, proteção e recuperação
+- Escrita direta nas tabelas novas é revogada para os clientes.
+- RLS está habilitado, com leitura de gestão somente para administradores autorizados.
+- Anônimos recebem acesso apenas às funções públicas de leitura sanitizada, como o catálogo de aprovados e documentos publicados.
+- A lista de caminhos editáveis é explícita; `admin/config.json`, scripts, workflows e Secrets não pertencem à lista.
+- Tamanho, formato básico, versão e relações são conferidos. Uma edição concorrente gera conflito e deve ser recarregada; não sobrescreve silenciosamente outra edição.
+- Lotes de vídeos e conjuntos de até três documentos são transacionais.
+- A chave pública continua no frontend; a chave privilegiada permanece no runner.
+- O token de login continua apenas na memória da aba, sem persistência em armazenamento do navegador.
+- Campos de terceiros são renderizados como texto, não como HTML executável.
 
-Login e políticas RLS anteriores continuam valendo: anônimos não leem a gestão; uma conta autenticada precisa estar em `pge_admins`; o cliente só pode criar solicitações próprias pendentes. A nova migração não amplia as permissões dessas contas. A chave privilegiada fica apenas no runner. Tokens do login ficam na memória da aba e são apagados ao sair. Recarregar a página exige entrar novamente.
+O catálogo público não expõe os pendentes, rejeitados ou arquivados. Metadados vencidos não voltam ao público apenas por uma restauração. Os bloqueios persistem por ID mesmo após a limpeza de metadados.
 
-Os workflows continuam compartilhando a mesma fila de concorrência, com push sem força para `main`. Arquivos de conteúdo são verificados por versão. Os IDs de comandos no commit permitem recuperar falhas após gravação. Não coloque dados privados de beneficiários, comprovantes, senhas ou chaves nos conteúdos públicos.
+O adaptador público usa requisições sem cache HTTP e verifica revisões a cada dez segundos. Em falha do serviço de conteúdo, apresenta indisponibilidade em vez de retornar silenciosamente um documento antigo que poderia republicar um item retirado. A disponibilidade do Supabase passa a ser relevante para a leitura dinâmica.
 
-Para recuperar uma publicação que falhou, confira o erro no Actions, resolva-o e solicite **Atualizar informações no site**. Não apague os bloqueios editoriais ou a branch `biblioteca-estado`. Se uma conta deixar de ser administradora, seus comandos pendentes são recusados antes de gravação/despacho.
+## Sincronização e recuperação
 
-## Verificação desta entrega
+`hydrate_live` lê as versões publicadas antes de o processador da biblioteca classificar itens e antes de o workflow administrativo copiar conteúdo para o GitHub. Assim, a descoberta respeita decisões diretas e a exportação de documentos não sobrescreve uma edição do painel com um arquivo antigo.
 
-Testes locais cobrem aprovação em lote, conflito atômico, confirmação de idioma, categorias, bloqueios persistentes, restauração sem metadados, proteção de caminhos, arquivos autorais, destinos permitidos de atualização e preservação de permissões. A interface foi exercitada com dados simulados locais; nenhuma conta real foi usada nesses testes.
+O backup no GitHub continua sem push forçado para `main`. Caso a organização exija PR, essa cópia poderá falhar até adaptação do fluxo; a publicação direta no banco permanece separada. Não remova uma proteção de branch para contornar uma falha.
 
-A execução completa na sua conta depende de publicar os arquivos, aplicar a migração e testar uma solicitação real. Não foi executada a migração ou acionado o seu GitHub a partir desta entrega.
+Não edite manualmente no GitHub um arquivo que já possui uma versão direta esperando que ele ganhe precedência: a versão publicada no Supabase é a referência atual. Faça a alteração pelo painel ou planeje uma migração explícita de volta aos arquivos. Isso evita duas fontes concorrentes.
+
+Antes de reverter o código para uma versão antiga, sincronize e confira a cópia do conteúdo no GitHub; do contrário, uma versão antiga do frontend pode não conhecer as alterações diretas. Não apague as tabelas ou os bloqueios para tentar corrigir uma falha de interface.
+
+## Validação e limites da entrega
+
+Foram executados testes locais Python de administração/biblioteca, verificações do adaptador público em Node e a validação dos dados/âncoras. A interface foi exercitada com um backend simulado: projeto criado por formulário apareceu no site; arquivar o retirou; restaurar o devolveu; aprovar um vídeo o tornou público e excluir/bloquear o retirou.
+
+**A migração foi executada em PostgreSQL local via PGlite, com 29 verificações aprovadas**, incluindo políticas de acesso, publicação, remoção, conflitos e relações entre projetos e parceiros. A autenticação foi simulada nesses testes. Não alteramos seu Supabase: Auth, PostgREST e a publicação real ainda precisam ser validados pelo roteiro na sua conta.
+
+Músicas, Spotify, podcasts e lives continuam com seus cadastros manuais; suas descobertas externas específicas precisam de configuração futura. Buscas novas pelo YouTube continuam com fila/quotas. Upload de PDF, análise do PDF das orações, notificações e tradução automática não foram ativados nesta atualização.

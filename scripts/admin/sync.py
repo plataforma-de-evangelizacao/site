@@ -45,7 +45,7 @@ def snapshot(state):
   checked=state.get('checks',{}).get(id,{}).get('verified')
   if not checked or (now-instant(checked)).total_seconds()>=29*86400 or not r.get('titulo'):continue
   # Don't export raw provider responses or internal logs to the browser.
-  record={k:r.get(k) for k in ['id','titulo','descricao','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao']}
+  record={k:r.get(k) for k in ['id','titulo','descricao','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao','thumbnail','url','testamento','livros','referencias','personagens','temas','publico','formato','serieId','temporada','episodio','dataInclusao']}
   rows.append(dict(id=id,record=record,sha=sha(canonical(record)),expires_at=(instant(checked)+dt.timedelta(days=29)).isoformat(),updated_at=now.isoformat()))
  return rows
 
@@ -59,12 +59,13 @@ def export(client,state=None):
  for i in range(0,len(rows),100):client.call('pge_videos','on_conflict=id','POST',rows[i:i+100])
  client.call('pge_videos','expires_at=lt.'+parse.quote(dt.datetime.now(dt.timezone.utc).isoformat(),safe=''),'DELETE')
  docs=[]
+ live=live_rows(client,'pge_live_documents');live_by_path={x['path']:x for x in live}
  for path in ALLOWED:
   file=ROOT/path
   if file.exists():
-   content=file.read_text()
+   content=live_by_path[path]['content'] if path in live_by_path else file.read_text()
    if path.endswith('.json'):json.loads(content)
-   docs.append(dict(path=path,content=content,sha=sha(content),updated_at=dt.datetime.now(dt.timezone.utc).isoformat()))
+   docs.append(dict(path=path,content=content,sha=live_by_path[path]['sha'] if path in live_by_path else sha(content),updated_at=dt.datetime.now(dt.timezone.utc).isoformat()))
  if docs:client.call('pge_documents','on_conflict=path','POST',docs)
  return dict(videos=len(rows),documents=len(docs))
 
@@ -188,9 +189,48 @@ def sync_command(client,command):
    if ex.code in [400,401,403,404,422]:raise ValueError('invalid_github_dispatch_permissions') from None
    raise
 
+
+def live_rows(client,table):
+ try:
+  rows=[]
+  for offset in range(0,10000,500):
+   batch=client.call(table,'select=*&limit=500&offset='+str(offset));rows.extend(batch)
+   if len(batch)<500:break
+  return rows
+ except error.HTTPError as ex:
+  if ex.code==404:return [] # Old installations have not installed the direct-publishing migration.
+  raise
+
+def hydrate_live(root,client=None,commit=False):
+ client=client or Client();root=Path(root)
+ if not client.url or not client.key:return []
+ changed=[]
+ for doc in live_rows(client,'pge_live_documents'):
+  path=doc['path']
+  if path not in ALLOWED:raise ValueError('path_not_allowed')
+  text=doc['content']
+  if path.endswith('.json'):json.loads(text)
+  file=root/path
+  if file.exists() and file.read_text()!=text:
+   if commit:validate_change(path,text)
+   file.write_text(text);changed.append(path)
+ file=root/'biblioteca-controle/editorial.json';editorial=json.loads(file.read_text());previous=canonical(editorial)
+ for decision in live_rows(client,'pge_video_decisions'):
+  entry=editorial.setdefault(decision['id'],{});state=decision['decision'];entry.update(aprovacao=state,revisado=True,reabrir=state in ['approved','pending_review'])
+  if decision.get('category'):entry['categoria']=decision['category']
+  if decision.get('portuguese_confirmed'):entry.update(idioma='pt-BR',idiomaVerificado=True)
+ if canonical(editorial)!=previous:
+  text=json.dumps(editorial,ensure_ascii=False,indent=2)+'\n'
+  if commit:validate_change('biblioteca-controle/editorial.json',text)
+  file.write_text(text);changed.append('biblioteca-controle/editorial.json')
+ if commit and changed:
+  git('add','--',*changed);git('-c','user.name=Painel da plataforma','-c','user.email=painel@users.noreply.github.com','commit','-m','Sincronizar publicação direta do painel');git('push','origin','HEAD:main')
+ return changed
+
 def process(client):
  # Replay after uncertain commit: command UUID is embedded in the commit subject.
  git('fetch','--no-tags','origin','main');git('merge','--ff-only','FETCH_HEAD')
+ hydrate_live(ROOT,client,commit=True)
  pending=client.call('pge_commands','status=in.(pending,processing)&order=created_at.asc&limit=20')
  admins={x['user_id'] for x in client.call('pge_admins','select=user_id')}
  videos={x['id']:x for x in current_reviews()}
@@ -199,6 +239,8 @@ def process(client):
   id=command['id'];query='id=eq.'+parse.quote(id,safe='')
   try:
    if command['user_id'] not in admins:raise ValueError('administrator_revoked')
+   if command['action']=='save_json' and any(d['path']==command['payload'].get('path') for d in live_rows(client,'pge_live_documents')):
+    raise ValueError('conflict_direct_publication_enabled')
    if command['action']=='run_sync':
     sync_command(client,command);continue
    history=git('log','origin/main','--format=%s','-100')
