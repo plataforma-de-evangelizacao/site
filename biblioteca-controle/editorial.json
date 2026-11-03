@@ -1,8 +1,8 @@
 {
   "yuv1qRuNib0": {
     "revisado": true,
-    "aprovacao": "approved",
-    "reabrir": true,
+    "aprovacao": "rejected",
+    "reabrir": false,
     "categoria": "filme",
     "idioma": "pt-BR",
     "idiomaVerificado": true
