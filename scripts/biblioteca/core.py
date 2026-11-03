@@ -1,5 +1,6 @@
 """Biblioteca V3: processamento local; chave somente no ambiente do runner."""
 import copy, datetime as dt, hashlib, json, os, random, re, time
+from metadata import enrich
 from pathlib import Path
 from urllib import request, parse, error
 from zoneinfo import ZoneInfo
@@ -44,7 +45,12 @@ class API:
     """Limites locais não conhecem o consumo por outras aplicações do mesmo projeto."""
     def __init__(self,key,cfg,s,save,transport=None,sleep=time.sleep):
         self.key=key;self.cfg=cfg;self.s=s;self.save=save;self.sleep=sleep
-        self.transport=transport or self.http;self.calls={};self.runSearch=0;self.runOther=0
+        self.transport=transport or self.http;self.calls={};self.runSearch=0;self.runOther=0;self.response_seconds=[];self.last_event={};self.on_event=None
+    def notify(self,stage,endpoint,attempt):
+        self.last_event={'stage':stage,'endpoint':endpoint,'attempt':attempt}
+        if self.on_event:
+            try:self.on_event(self.last_event)
+            except Exception:pass
     def http(self,endpoint,params):
         url='https://www.googleapis.com/youtube/v3/'+endpoint+'?'+parse.urlencode(params)
         req=request.Request(url,headers={'X-Goog-Api-Key':self.key})
@@ -65,11 +71,16 @@ class API:
             else:self.runOther+=1
             self.calls[endpoint]=self.calls.get(endpoint,0)+1
             self.save() # reserve before request; crash cannot spend an uncounted call
+            self.notify('api_request',endpoint,attempt+1)
+            started=time.monotonic()
             try:
                 out=self.transport(endpoint,params)
                 if not isinstance(out,dict) or not isinstance(out.get('items'),list):raise Temporary('invalid_api_response')
+                self.response_seconds=(self.response_seconds+[time.monotonic()-started])[-100:]
+                self.notify('api_response',endpoint,attempt+1)
                 return out
             except error.HTTPError as e:
+                self.notify('api_retry',endpoint,attempt+1)
                 reasons=[]
                 try:reasons=[x.get('reason','') for x in json.loads(e.read()).get('error',{}).get('errors',[])]
                 except (ValueError,AttributeError):pass
@@ -84,7 +95,8 @@ class API:
                         wait=max(0,(parsedate_to_datetime(wait)-dt.datetime.now(UTC)).total_seconds())
                     except Exception:wait=0
                 if wait>30:raise Temporary('retry_after_deferred') from None
-            except (error.URLError,TimeoutError,OSError,ValueError):wait=0
+            except (error.URLError,TimeoutError,OSError,ValueError):
+                self.notify('api_retry',endpoint,attempt+1);wait=0
             if attempt==self.cfg['maxRetries']:raise Temporary('temporary_api_failure') from None
             self.sleep(min(30,max(wait,2**attempt+random.random())))
         raise Temporary('temporary_api_failure')
@@ -132,7 +144,9 @@ def classify(v,editorial,cfg):
                 r['verificacaoIdioma']='declaração de áudio da API' if audio else 'declaração explícita no título; não auditada por escuta'
             r['aprovacao']='approved';r['fonteClassificacao']='seleção automática por metadados: '+rule['id']+'; sem análise de fidelidade bíblica';break
     if blocked and r['aprovacao']=='pending_review':r['motivoRevisao']='Formato possivelmente excluído (trailer, análise, música ou pregação).'
-    return copy.deepcopy(r)
+    if v.get('status',{}).get('madeForKids') is True and 'publico' not in ed:r['publico']='infantil'
+    r['tags']=[str(x)[:100] for x in sn.get('tags',[])[:40]] if isinstance(sn.get('tags'),list) else []
+    return enrich(r,sn,protected=ed.keys())
 
 def validate_catalog(c,tax):
     assert c['versao']==3 and isinstance(c['itens'],list)
@@ -181,7 +195,7 @@ class Engine:
         if not 1<=self.cfg['maxVideoIdsPerBatch']<=50 or not 1<=self.cfg['maxSearchResultsPerPage']<=50:raise ValueError('api_batch_limit')
         if not 0<=self.cfg['quotaSafetyMarginPercent']<100:raise ValueError('quota_margin')
         self.s=json.loads(self.path.read_text()) if self.path.exists() else fresh_state();validate_state(self.s)
-        self.metrics=dict(videoIdsRequested=0,newVideos=0,duplicatesAvoided=0)
+        self.metrics=dict(videoIdsRequested=0,newVideos=0,duplicatesAvoided=0,blockedIgnored=0,foundIds=0)
         self.started=time.monotonic();self.api=(api_factory(self) if api_factory else API(os.getenv('YOUTUBE_API_KEY',''),self.cfg,self.s,self.save))
     def save(self):validate_state(self.s);atomic(self.path,self.s)
     def schedule(self):
@@ -213,7 +227,10 @@ class Engine:
         original_count=len(ids)
         ids=list(dict.fromkeys(x for x in ids if VIDEO.fullmatch(x)))
         self.metrics['duplicatesAvoided']+=original_count-len(ids)
+        self.metrics['foundIds']+=len(ids)
+        before=len(ids)
         ids=[x for x in ids if x not in self.sources['blockedVideos'] and self.editorial.get(x,{}).get('aprovacao') not in ['rejected','archived'] and (force or self.editorial.get(x,{}).get('reabrir') is True or self.s['records'].get(x,{}).get('aprovacao') not in ['rejected','archived'])]
+        self.metrics['blockedIgnored']+=before-len(ids)
         needed=[x for x in ids if force or age(self.s['videos'].get(x,{}).get('at'),self.now)>=self.cfg['videoCacheDays']]
         self.metrics['duplicatesAvoided']+=len(ids)-len(needed)
         if not needed:return
@@ -298,7 +315,7 @@ class Engine:
         for id in stale:self.s['videos'].pop(id,None)
         for id,r in self.s['records'].items():
             if age(self.s['checks'].get(id,{}).get('verified'),self.now)>=self.cfg['maxMetadataAgeDays']:
-                for k in ['titulo','descricao','thumbnail','canalNome','idioma','duracao']:r[k]=None
+                for k in ['titulo','descricao','thumbnail','canalNome','idioma','duracao','tags']:r[k]=None
         for key in list(self.s['cache']):
             if age(self.s['cache'][key]['at'],self.now)>=self.cfg['maxMetadataAgeDays']:del self.s['cache'][key]
         for q in self.s['queues'].values():q[:]=[t for t in q if t['state'] not in ['completed','cancelled'] or age(t['created'],self.now)<25]

@@ -1,0 +1,21 @@
+{
+  "version": "2026.11.03.3",
+  "function": "supabase/functions/admin-dispatch/index.ts",
+  "migrations": [
+    {
+      "version": "2026110201",
+      "path": "scripts/admin/publicacao-direta.sql",
+      "sha256": "2bf481b7e74ab30eaae0074496a483cb686c5d03a56fe038d77b7aea48da38b2"
+    },
+    {
+      "version": "2026110301",
+      "path": "ATUALIZAR-ACOMPANHAMENTO.sql",
+      "sha256": "d0fded9372e7b65e39d793c1e3a98ddda68a2a580fac7b42151c5352b0fc00fd"
+    },
+    {
+      "version": "2026110302",
+      "path": "scripts/admin/maintenance.sql",
+      "sha256": "90247f07ab69ad68335e89dad2074953b2bec9b189600c7e9fab205193db0f21"
+    }
+  ]
+}

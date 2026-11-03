@@ -45,6 +45,13 @@ jobs:
         if: env.ADMIN_REQUEST != ''
         run: python scripts/admin/report.py --progress 20 --phase "Testando a biblioteca"
       - name: Testes sem consumir quota
+        env:
+          ADMIN_REQUEST: ''
+          SUPABASE_URL: ''
+          SUPABASE_SERVICE_ROLE_KEY: ''
+          SUPABASE_ACCESS_TOKEN: ''
+          GITHUB_DISPATCH_TOKEN: ''
+          YOUTUBE_API_KEY: ''
         run: python -m unittest discover -s tests/biblioteca -v
       - name: Informar processamento ao painel
         if: env.ADMIN_REQUEST != ''
@@ -79,7 +86,6 @@ jobs:
           PY
       - name: Atualizar painel administrativo (quando configurado)
         if: success()
-        continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

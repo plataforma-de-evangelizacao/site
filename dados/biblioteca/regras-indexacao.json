@@ -1,0 +1,534 @@
+{
+  "versao": 1,
+  "nota": "Sugestões por palavras inteiras em título, descrição e hashtags. Não é análise do vídeo nem classificação etária oficial.",
+  "personagens": [
+    {
+      "nome": "Adão",
+      "aliases": [
+        "Adão",
+        "Adao",
+        "Adam"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Eva",
+      "aliases": [
+        "Eva",
+        "Eve"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Noé",
+      "aliases": [
+        "Noé",
+        "Noe",
+        "Noah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Abraão",
+      "aliases": [
+        "Abraão",
+        "Abraao",
+        "Abraham"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Sara",
+      "aliases": [
+        "Sara",
+        "Sarah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Isaque",
+      "aliases": [
+        "Isaque",
+        "Isaac"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Jacó",
+      "aliases": [
+        "Jacó",
+        "Jaco",
+        "Jacob"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "José do Egito",
+      "aliases": [
+        "José do Egito",
+        "Jose do Egito",
+        "Joseph of Egypt"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Moisés",
+      "aliases": [
+        "Moisés",
+        "Moises",
+        "Moses"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Arão",
+      "aliases": [
+        "Arão",
+        "Arao",
+        "Aaron"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Miriã",
+      "aliases": [
+        "Miriã",
+        "Miria",
+        "Miriam"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Josué",
+      "aliases": [
+        "Josué",
+        "Josue",
+        "Joshua"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Raabe",
+      "aliases": [
+        "Raabe",
+        "Rahab"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Débora",
+      "aliases": [
+        "Débora",
+        "Debora",
+        "Deborah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Gideão",
+      "aliases": [
+        "Gideão",
+        "Gideao",
+        "Gideon"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Sansão",
+      "aliases": [
+        "Sansão",
+        "Sansao",
+        "Samson"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Rute",
+      "aliases": [
+        "Rute",
+        "Ruth"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Samuel",
+      "aliases": [
+        "Samuel"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Saul",
+      "aliases": [
+        "Saul"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Davi",
+      "aliases": [
+        "Davi",
+        "David"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Salomão",
+      "aliases": [
+        "Salomão",
+        "Salomao",
+        "Solomon"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Elias",
+      "aliases": [
+        "Elias",
+        "Elijah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Eliseu",
+      "aliases": [
+        "Eliseu",
+        "Elisha"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Ester",
+      "aliases": [
+        "Ester",
+        "Esther"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Mardoqueu",
+      "aliases": [
+        "Mardoqueu",
+        "Mordecai"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Jó",
+      "aliases": [
+        "Jó",
+        "Job"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Daniel",
+      "aliases": [
+        "Daniel"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Jonas",
+      "aliases": [
+        "Jonas",
+        "Jonah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Isaías",
+      "aliases": [
+        "Isaías",
+        "Isaias",
+        "Isaiah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Jeremias",
+      "aliases": [
+        "Jeremias",
+        "Jeremiah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Neemias",
+      "aliases": [
+        "Neemias",
+        "Nehemiah"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Esdras",
+      "aliases": [
+        "Esdras",
+        "Ezra"
+      ],
+      "testamento": "antigo"
+    },
+    {
+      "nome": "Jesus",
+      "aliases": [
+        "Jesus",
+        "Jesus Cristo",
+        "Jesus Christ"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Maria",
+      "aliases": [
+        "Maria",
+        "Mary"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "José",
+      "aliases": [
+        "José",
+        "Jose",
+        "Joseph"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "João Batista",
+      "aliases": [
+        "João Batista",
+        "Joao Batista",
+        "John the Baptist"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Pedro",
+      "aliases": [
+        "Pedro",
+        "Peter"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "João",
+      "aliases": [
+        "João",
+        "Joao",
+        "John"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Paulo",
+      "aliases": [
+        "Paulo",
+        "Paul",
+        "Saulo"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Tiago",
+      "aliases": [
+        "Tiago",
+        "James"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "André",
+      "aliases": [
+        "André",
+        "Andre",
+        "Andrew"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Mateus",
+      "aliases": [
+        "Mateus",
+        "Matthew"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Tomé",
+      "aliases": [
+        "Tomé",
+        "Tome",
+        "Thomas"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Marta",
+      "aliases": [
+        "Marta",
+        "Martha"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Lázaro",
+      "aliases": [
+        "Lázaro",
+        "Lazaro",
+        "Lazarus"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Maria Madalena",
+      "aliases": [
+        "Maria Madalena",
+        "Mary Magdalene"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Estêvão",
+      "aliases": [
+        "Estêvão",
+        "Estevao",
+        "Stephen"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Barnabé",
+      "aliases": [
+        "Barnabé",
+        "Barnabe",
+        "Barnabas"
+      ],
+      "testamento": "novo"
+    },
+    {
+      "nome": "Timóteo",
+      "aliases": [
+        "Timóteo",
+        "Timoteo",
+        "Timothy"
+      ],
+      "testamento": "novo"
+    }
+  ],
+  "temas": [
+    {
+      "nome": "Fé",
+      "aliases": [
+        "fe",
+        "faith",
+        "fidelidade"
+      ]
+    },
+    {
+      "nome": "Esperança",
+      "aliases": [
+        "esperanca",
+        "hope"
+      ]
+    },
+    {
+      "nome": "Perdão",
+      "aliases": [
+        "perdao",
+        "perdoar",
+        "forgiveness"
+      ]
+    },
+    {
+      "nome": "Adoração",
+      "aliases": [
+        "adoracao",
+        "worship"
+      ]
+    },
+    {
+      "nome": "Amor ao próximo",
+      "aliases": [
+        "amor ao proximo",
+        "love your neighbor",
+        "solidariedade"
+      ]
+    },
+    {
+      "nome": "Coragem",
+      "aliases": [
+        "coragem",
+        "courage"
+      ]
+    },
+    {
+      "nome": "Justiça",
+      "aliases": [
+        "justica",
+        "justice"
+      ]
+    },
+    {
+      "nome": "Obediência",
+      "aliases": [
+        "obediencia",
+        "obedecer",
+        "obedience"
+      ]
+    },
+    {
+      "nome": "Oração",
+      "aliases": [
+        "oracao",
+        "orar",
+        "prayer"
+      ]
+    },
+    {
+      "nome": "Libertação",
+      "aliases": [
+        "libertacao",
+        "deliverance"
+      ]
+    },
+    {
+      "nome": "Superação",
+      "aliases": [
+        "superacao",
+        "overcoming"
+      ]
+    },
+    {
+      "nome": "Partilha",
+      "aliases": [
+        "partilha",
+        "doacao",
+        "generosidade"
+      ]
+    },
+    {
+      "nome": "Criação",
+      "aliases": [
+        "criacao do mundo",
+        "creation of the world"
+      ]
+    },
+    {
+      "nome": "Ressurreição",
+      "aliases": [
+        "ressurreicao",
+        "resurrection"
+      ]
+    },
+    {
+      "nome": "Nascimento de Jesus",
+      "aliases": [
+        "nascimento de jesus",
+        "natividade",
+        "nativity"
+      ]
+    }
+  ]
+}

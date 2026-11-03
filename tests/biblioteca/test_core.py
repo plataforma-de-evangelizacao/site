@@ -15,6 +15,7 @@ class Tests(unittest.TestCase):
         for name in ['biblioteca-controle','dados/biblioteca']:
             import shutil;shutil.copytree(ROOT/name,self.root/name)
         self.e=Engine(self.root,self.root/'state.json',now=NOW)
+        self.e.cfg['autoApprovalEnabled']=False
         self.e.api.transport=lambda ep,p:{'items':[video(x) for x in p.get('id',ID).split(',')]};self.e.api.key='not-a-real-key';self.e.api.sleep=lambda x:None
     def approve(self,id=ID):
         self.e.editorial[id]=copy.deepcopy(ED);self.e.details([id]);return self.e.s['records'][id]
@@ -134,12 +135,31 @@ class DeployRecoveryTests(unittest.TestCase):
             (root/'index.html').write_text('<html></html>')
             subprocess.run(['git','init','--bare',str(bare)],capture_output=True,check=True);subprocess.run(['git','init',str(root)],capture_output=True,check=True);subprocess.run(['git','-C',str(root),'remote','add','origin',str(bare)],check=True)
             original=runner.ROOT;argv=sys.argv[:];runner.ROOT=root
-            try:
-                sys.argv=['run.py','--persist','--build-only'];self.assertEqual(runner.main(),0)
-                self.assertTrue(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
-                # Simulate failed deploy: no acknowledgment. The next run must still request a deploy.
-                self.assertEqual(runner.main(),0);self.assertTrue(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
-                sys.argv=['run.py','--persist','--ack-deploy'];self.assertEqual(runner.main(),0)
-                sys.argv=['run.py','--persist','--build-only'];self.assertEqual(runner.main(),0)
-                self.assertFalse(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
-            finally:runner.ROOT=original;sys.argv=argv
+            from unittest.mock import patch
+            with patch.dict(os.environ,{"SUPABASE_URL":"","SUPABASE_SERVICE_ROLE_KEY":"","ADMIN_REQUEST":"","YOUTUBE_API_KEY":""}):
+                try:
+                    sys.argv=['run.py','--persist','--build-only'];self.assertEqual(runner.main(),0)
+                    self.assertTrue(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
+                    # Simulate failed deploy: no acknowledgment. The next run must still request a deploy.
+                    self.assertEqual(runner.main(),0);self.assertTrue(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
+                    sys.argv=['run.py','--persist','--ack-deploy'];self.assertEqual(runner.main(),0)
+                    sys.argv=['run.py','--persist','--build-only'];self.assertEqual(runner.main(),0)
+                    self.assertFalse(json.loads((root/'.biblioteca-runtime/relatorio.json').read_text())['publicChanged'])
+                finally:runner.ROOT=original;sys.argv=argv
+class AutomaticApprovalTests(unittest.TestCase):
+    def setUp(self):
+        Tests.setUp(self);self.e.cfg['autoApprovalEnabled']=True
+    def test_auto_eligible(self):
+        self.assertEqual(classify(video(),{},self.e.cfg)['aprovacao'],'approved')
+    def test_auto_unknown_language_pending(self):
+        v=video();v['snippet'].pop('defaultAudioLanguage');self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')
+    def test_auto_nonbiblical_pending(self):
+        v=video();v['snippet']['title']='Filme de aventura em português';self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')
+    def test_auto_trailer_pending(self):
+        v=video();v['snippet']['title']='Trailer de filme bíblico';self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')
+    def test_auto_conflicting_audio_pending(self):
+        v=video();v['snippet']['title']='Desenho bíblico em português';v['snippet']['defaultAudioLanguage']='en';self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')
+    def test_auto_rejected_preserved(self):
+        self.assertEqual(classify(video(),{'aprovacao':'rejected'},self.e.cfg)['aprovacao'],'rejected')
+    def test_uncertain_classification(self):
+        v=video();v['snippet']['title']='Conteúdo não identificado';self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')

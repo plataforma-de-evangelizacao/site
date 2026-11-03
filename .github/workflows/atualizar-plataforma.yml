@@ -1,0 +1,71 @@
+name: Atualizar plataforma
+run-name: "Atualizar plataforma · ${{ inputs.admin_request || github.run_number }}"
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'backend/**'
+      - 'supabase/functions/**'
+      - 'scripts/admin/update_backend.py'
+      - 'scripts/admin/maintenance.sql'
+      - '.github/workflows/atualizar-plataforma.yml'
+  workflow_dispatch:
+    inputs:
+      admin_request:
+        description: Identificador do pedido do painel (opcional na primeira configuração)
+        type: string
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: plataforma-backend-maintenance
+  cancel-in-progress: false
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ADMIN_REQUEST: ${{ inputs.admin_request }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      GITHUB_DISPATCH_TOKEN: ${{ secrets.GITHUB_DISPATCH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Conferir migrações e regras de atualização
+        env:
+          ADMIN_REQUEST: ''
+          SUPABASE_URL: ''
+          SUPABASE_SERVICE_ROLE_KEY: ''
+          SUPABASE_ACCESS_TOKEN: ''
+          GITHUB_DISPATCH_TOKEN: ''
+          YOUTUBE_API_KEY: ''
+        run: python -m unittest discover -s tests/admin -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar autenticação do disparo
+        run: |
+          node tests/admin/test_dispatch.cjs
+          node tests/admin/test_jobs.cjs
+      - name: Instalar PostgreSQL local de teste
+        run: npm ci --prefix tests/admin/sql-test --ignore-scripts --no-audit --no-fund
+      - name: Conferir migrações em PostgreSQL local antes de aplicar
+        run: node tests/admin/sql-test/maintenance.cjs
+      - name: Conferir que esta versão ainda é a atual da main
+        shell: bash
+        run: |
+          set -euo pipefail
+          remote=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [[ "$remote" != "$GITHUB_SHA" ]]; then
+            echo "Há uma versão mais nova na main. Esta atualização antiga foi interrompida."
+            exit 1
+          fi
+      - name: Atualizar banco, segredos de integração e função
+        run: python scripts/admin/update_backend.py
+      - name: Registrar falha ou interrupção da atualização
+        if: failure() || cancelled()
+        run: python scripts/admin/update_backend.py --record-failure
