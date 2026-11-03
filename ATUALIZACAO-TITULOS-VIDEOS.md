@@ -16,7 +16,7 @@ As próximas consultas ao YouTube preservam os textos editoriais. Os originais c
 
 1. Faça uma cópia da pasta local do repositório. Extraia **site-atualizado-github-v42.zip** sobre ela. Inclua as pastas `.github`, `backend`, `supabase`, `scripts`, `tests` e `admin`.
 2. O pacote não contém `admin/config.json`, `biblioteca-controle/config.json`, `biblioteca-controle/fontes.json` ou `biblioteca-controle/editorial.json`: mantenha seus arquivos atuais. Não substitua a pasta inteira apagando o conteúdo existente.
-3. A correção de `test_auto_eligible` já está incluída. Se ainda faltarem, cadastre os Repository Secrets **SUPABASE_ACCESS_TOKEN** e **GITHUB_DISPATCH_TOKEN**, conforme **LEIA-PRIMEIRO.md**. Não envie os valores pelo chat.
+3. A correção de `test_auto_eligible` já está incluída. Se ainda faltarem, cadastre os Repository Secrets **SUPABASE_ACCESS_TOKEN** e **PLATFORM_DISPATCH_TOKEN**, conforme **LEIA-PRIMEIRO.md**. Não envie os valores pelo chat.
 4. Faça commit e push para `main`. Aguarde **Atualizar plataforma** e **Biblioteca e GitHub Pages** ficarem verdes. Esta versão registra uma nova migração, sem alterar os arquivos das migrações antigas.
 5. Se os Secrets forem cadastrados depois do push, inicie uma nova execução: **Actions → Atualizar plataforma → Run workflow → main**.
 6. No painel, abra **Tarefas administrativas → Verificar instalação**: versão esperada **2026.11.03.4**, quatro migrações registradas. Depois clique em **Recarregar painel**. A instalação ocorre pelo workflow; não é necessário copiar SQL manualmente. Até instalar a nova migração, o painel informa que a edição de textos exige atualização do backend.

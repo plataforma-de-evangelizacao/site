@@ -121,7 +121,7 @@ def main():
   release,items=load_release();version=release['version'];authorize_request(client)
   reporter.emit('Validando o pacote e as permissões do backend',stage='backend_package',progress=15,force=True)
   token=os.getenv('SUPABASE_ACCESS_TOKEN','');github=os.getenv('GITHUB_DISPATCH_TOKEN','')
-  if not token or not github:raise Failure('configure_github_secrets_SUPABASE_ACCESS_TOKEN_and_GITHUB_DISPATCH_TOKEN')
+  if not token or not github:raise Failure('configure_github_secrets_SUPABASE_ACCESS_TOKEN_and_PLATFORM_DISPATCH_TOKEN')
   if not client.url or not client.key:raise Failure('configure_existing_SUPABASE_URL_and_SUPABASE_SERVICE_ROLE_KEY')
   project=client.url.removeprefix('https://').removesuffix('.supabase.co');manager=Management(project,token)
   reporter.emit('Aplicando somente migrações pendentes no Supabase',stage='migrations',progress=30,force=True)

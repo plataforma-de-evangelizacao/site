@@ -13,7 +13,7 @@ No GitHub do repositório `plataforma-de-evangelizacao/site`, abra **Settings �
 | Nome exato | O que cadastrar |
 |---|---|
 | `SUPABASE_ACCESS_TOKEN` | Token de integração da sua conta Supabase, limitado ao projeto da plataforma. Permissões: `database_migrations_write`, `edge_functions_write` e `edge_functions_secrets_write`. |
-| `GITHUB_DISPATCH_TOKEN` | Token fine-grained do GitHub, limitado ao repositório `site`, com **Actions: Read and write**. Se a organização exigir aprovação, aprove o token. |
+| `PLATFORM_DISPATCH_TOKEN` | Token fine-grained do GitHub, limitado ao repositório `site`, com **Actions: Read and write**. Se a organização exigir aprovação, aprove o token. |
 
 Crie o token Supabase em **Account → Access tokens**: https://supabase.com/dashboard/account/tokens . Prefira um token com escopo limitado ao projeto, e não um token legado com acesso à conta inteira.
 
