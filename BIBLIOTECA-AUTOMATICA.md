@@ -1,3 +1,21 @@
+# Aprovação automática ativada na configuração desta atualização
+
+A execução real enviada por Marcos confirmou a API e a descoberta: 272 vídeos novos, 273 pendentes (incluindo o teste), sem erros e sem tarefas restantes. O catálogo não mudou porque a aprovação estava desligada.
+
+Esta atualização habilita `autoApprovalEnabled` e uma regra inicial de seleção por metadados. Não basta trocar false por true em uma lista de regras vazia. Copie também os scripts atualizados.
+
+A regra exige título com indicação de produção audiovisual e contexto bíblico explícito, duração mínima de quatro minutos (vinte para filmes), categoria identificável e português declarado no áudio da API ou, quando não houver declaração de áudio, no título. Uma declaração de áudio em outro idioma impede a aprovação por essa regra. Trailers, análises, músicas, pregações, resumos e formatos excluídos continuam pendentes. Rejeições e bloqueios são respeitados.
+
+Essa seleção é automática por informações declaradas na origem: não significa que o vídeo foi assistido, que a idade foi certificada ou que a adaptação foi conferida teologicamente. Nenhuma referência bíblica é inventada. Casos sem informação suficiente continuam em revisão.
+
+Para aplicar: copie `biblioteca-controle/config.json`, `scripts/biblioteca/core.py`, `scripts/biblioteca/run.py` e `tests/biblioteca/test_core.py` para os mesmos caminhos do repositório e faça commit. O ID do vídeo de teste já informado foi preservado. Não altere Secrets nem apague a branch `biblioteca-estado`.
+
+Depois execute **Actions → Biblioteca e GitHub Pages → Run workflow → atualizar**, em `main`. Os metadados recentes dos vídeos encontrados serão reprocessados sem repetir buscas ainda válidas. Confira o último resumo: `approvedPublic` mostra os títulos elegíveis publicados/para publicar e `pendingReview` os restantes. O deploy só está confirmado quando o job `publicar` termina com sucesso.
+
+Validação desta atualização: 42 testes locais passaram, incluindo casos específicos de aprovação, idioma ausente/conflitante, trailer e rejeição preservada. A alteração ainda não foi aplicada ao GitHub por esta conversa; use o pacote ou os arquivos indicados.
+
+---
+
 # Biblioteca Bíblica Audiovisual — implementação V3
 
 ## Estado desta entrega

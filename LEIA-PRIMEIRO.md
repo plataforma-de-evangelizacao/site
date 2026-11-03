@@ -1,6 +1,8 @@
+> Esta versão inclui a edição de títulos e descrições. Siga também **ATUALIZACAO-TITULOS-VIDEOS.md** para o teste dos cartões.
+
 # Nova versão — atualização automática do backend
 
-**3 de novembro de 2026 · versão 2026.11.03.3**
+**3 de novembro de 2026 · versão 2026.11.03.4**
 
 Esta é a atualização para o painel que você já usa. Substitui a instalação manual das integrações descrita nos guias anteriores. Inclui as melhorias de vídeos, projetos, lixeira, sessão, integrações e filtros.
 
@@ -20,9 +22,9 @@ Esses tokens são segredos de servidor: não envie pelo chat, não coloque em ar
 ## Subir esta versão
 
 1. Cadastre os dois Secrets acima.
-2. Extraia `atualizacao-plataforma-automatica.zip` na pasta local do repositório, substitua os arquivos correspondentes e envie para `main`. Inclua as pastas `.github`, `backend` e `supabase`.
+2. Extraia `site-atualizado-github-v42.zip` na pasta local do repositório, substitua os arquivos correspondentes e envie para `main`. Inclua as pastas `.github`, `backend` e `supabase`.
 3. Aguarde **Atualizar plataforma** e a publicação do Pages ficarem verdes. O workflow prepara o banco, registra as migrações, configura o disparo e publica a função automaticamente. **Não precisa abrir o SQL Editor nem copiar o código de uma Edge Function.**
-4. Entre no painel → **Tarefas administrativas → Verificar instalação**. A versão instalada esperada é **2026.11.03.3**. Depois, use **Atualizar plataforma** sempre que precisar aplicar/verificar o backend.
+4. Entre no painel → **Tarefas administrativas → Verificar instalação**. A versão instalada esperada é **2026.11.03.4**. Depois, use **Atualizar plataforma** sempre que precisar aplicar/verificar o backend.
 
 O pacote preserva `admin/config.json`, as fontes, o orçamento da busca e as decisões editoriais existentes. Não precisa trocar a senha de login ou cadastrar novamente seu usuário.
 

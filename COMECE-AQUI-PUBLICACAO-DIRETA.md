@@ -1,5 +1,7 @@
 # Publicação direta — instalação e primeiro teste
 
+> Guia histórico: para a versão nova, use **LEIA-PRIMEIRO.md**. A atualização automática substitui a execução manual de SQL e a publicação manual da função.
+
 **Versão:** 2026.11.02-publicacao-direta · **Data:** 2 de novembro de 2026, horário de Mato Grosso.
 
 Esta atualização transforma os dados em formulários e faz aprovações, alterações, arquivamentos e remoções serem lidos diretamente do Supabase. O GitHub continua recebendo uma cópia em segundo plano. O primeiro objetivo de validação é fechar as telas de **vídeos** e **projetos**.

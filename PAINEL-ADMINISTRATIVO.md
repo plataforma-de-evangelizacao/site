@@ -1,4 +1,22 @@
+## Atualização — 3 de novembro de 2026 · textos dos vídeos
+
+Backend **2026.11.03.4**, pacote v42. Campos de título e descrição para revisão e vídeos publicados, preservando originais, aprovação e edições nas buscas futuras. Correção do teste de aprovação incluída. Instalação e teste: **ATUALIZACAO-TITULOS-VIDEOS.md**.
+
 # Administração da Plataforma Global de Evangelização
+
+## Atualização automática — 3 de novembro de 2026
+
+Versão **2026.11.03.3**. Siga **LEIA-PRIMEIRO.md**, que substitui a preparação manual de SQL e Edge Functions dos guias anteriores. Depois da autorização inicial por dois Secrets no GitHub, a guia **Tarefas administrativas** verifica versões e aplica as migrações e as funções do backend. O push de uma nova versão do backend também dispara a preparação automaticamente. O token de gestão não é recebido pelo navegador.
+
+A atualização usa migrações versionadas e checksums, uma transação para o conjunto SQL e verificação posterior da função publicada. O backend só é marcado como instalado ao confirmar ambos. Rotinas de busca agora registram tempos reais e etapas de requisição/resposta. **TESTE-RAPIDO-ATUALIZACAO.md** lista os testes após instalar.
+
+
+## Atualização — 3 de novembro de 2026
+
+Acompanhamento por cartão com etapas e contadores reais, disparo direto protegido do GitHub, sessão preservada no F5 com dez minutos de inatividade, filtro de vídeos excluídos/arquivados, lixeira de projetos e indexação automática dos filtros audiovisuais.
+
+Instalação e configuração: **COMECE-AQUI-INTEGRACOES.md**. Testes: **ROTEIRO-TESTES-INTEGRACOES.md**. O disparo imediato exige publicar a função Supabase `admin-dispatch` e configurar seu segredo do GitHub; arquivos do frontend sozinhos não ativam essa integração. A rotina antiga continua como recuperação. Este bloco substitui as instruções antigas sobre perder a sessão no F5 e excluir cartões de objetos definitivamente.
+
 
 **Atualização:** 2 de novembro de 2026, horário de Mato Grosso.  
 **Versão:** `2026.11.02-publicacao-direta`.

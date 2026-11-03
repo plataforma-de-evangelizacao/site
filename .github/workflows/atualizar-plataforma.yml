@@ -51,10 +51,13 @@ jobs:
         run: |
           node tests/admin/test_dispatch.cjs
           node tests/admin/test_jobs.cjs
+          node tests/admin/test_display_ui.cjs
       - name: Instalar PostgreSQL local de teste
         run: npm ci --prefix tests/admin/sql-test --ignore-scripts --no-audit --no-fund
       - name: Conferir migrações em PostgreSQL local antes de aplicar
-        run: node tests/admin/sql-test/maintenance.cjs
+        run: |
+          node tests/admin/sql-test/maintenance.cjs
+          node tests/admin/sql-test/display.cjs
       - name: Conferir que esta versão ainda é a atual da main
         shell: bash
         run: |

@@ -1,13 +1,23 @@
 name: Painel administrativo
+run-name: "Painel · ${{ inputs.admin_request || github.run_number }}"
 on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      admin_request:
+        description: Identificador do pedido do painel
+        type: string
+        required: false
 permissions:
   contents: read
 concurrency:
   group: plataforma-pages-biblioteca
   cancel-in-progress: false
+env:
+  ADMIN_REQUEST: ${{ inputs.admin_request }}
+  SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+  SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 jobs:
   gerir:
     runs-on: ubuntu-latest
@@ -22,18 +32,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Informar início ao painel
+        if: env.ADMIN_REQUEST != ''
+        run: python scripts/admin/report.py --progress 15 --phase "Executor iniciado. Conferindo sincronização."
       - name: Testar permissões e validações locais
+        env:
+          ADMIN_REQUEST: ''
+          SUPABASE_URL: ''
+          SUPABASE_SERVICE_ROLE_KEY: ''
+          SUPABASE_ACCESS_TOKEN: ''
+          GITHUB_DISPATCH_TOKEN: ''
+          YOUTUBE_API_KEY: ''
         run: python -m unittest discover -s tests/admin -v
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - name: Testar adaptador público
-        run: node tests/admin/test_live_content.cjs
+        run: |
+          node tests/admin/test_live_content.cjs
+          node tests/admin/test_session.cjs
+          node tests/admin/test_dispatch.cjs
+          node tests/admin/test_jobs.cjs
+          node tests/admin/test_catalog_index.cjs
       - name: Instalar PostgreSQL local de teste
         run: npm ci --prefix tests/admin/sql-test --ignore-scripts --no-audit --no-fund
       - name: Testar funções e permissões no PostgreSQL
-        run: node tests/admin/sql-test/test.cjs
+        run: |
+          node tests/admin/sql-test/test.cjs
+          node tests/admin/sql-test/maintenance.cjs
       - name: Aplicar solicitações autorizadas
+        if: env.ADMIN_REQUEST == ''
         id: admin
         env:
           GH_TOKEN: ${{ github.token }}
@@ -51,3 +79,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run biblioteca.yml --ref main -f modo=publicar-site
+      - name: Informar resultado da sincronização
+        if: always() && env.ADMIN_REQUEST != ''
+        env:
+          JOB_RESULT: ${{ job.status }}
+        run: python scripts/admin/report.py --processing-finished

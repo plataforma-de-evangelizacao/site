@@ -56,9 +56,14 @@ def main():
     engine=Engine(ROOT,store.path)
     if args.ack_deploy:
         engine.s['deployedHash']=engine.s.get('lastPublishedHash','');engine.save();store.checkpoint();return 0
+    from telemetry import Reporter
+    telemetry=Reporter()
+    telemetry.engine(engine,'Carregando fontes e limites da busca',force=True)
     original_save=engine.save
-    def checkpoint():original_save();store.checkpoint()
+    def checkpoint():
+        original_save();telemetry.engine(engine);store.checkpoint()
     engine.save=checkpoint;engine.api.save=checkpoint
+    engine.api.on_event=lambda event:telemetry.engine(engine)
     previous=store.dir/'catalogo.json'
     if previous.exists():
         c=json.loads(previous.read_text());validate_catalog(c,engine.tax);atomic(ROOT/'dados/biblioteca/catalogo.json',c)
@@ -82,6 +87,7 @@ def main():
             report['publicChanged']=changed or engine.s.get('deployedHash')!=engine.s['lastPublishedHash']
             report['approvedPublic']=len(catalog['itens'])
             report['pendingReview']=sum(r['aprovacao']=='pending_review' for r in engine.s['records'].values())
+        telemetry.emit('Catálogo calculado. Sincronizando dados com o painel.',stage='panel_export',progress=78,stats={**report,'eligiblePublic':report.get('approvedPublic',0)},force=True)
         if report.get('errors'):code=1
     except Exception as ex:
         # Never emit raw URL/exceptions from transport: these may contain credentials.

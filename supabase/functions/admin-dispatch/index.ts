@@ -1,6 +1,6 @@
 // Server-only GitHub credential. Every call validates Supabase Auth AND admin membership.
 export function createHandler(env, transport=fetch){
- const RELEASE='2026.11.03.3';
+ const RELEASE='2026.11.03.4';
  const repo='plataforma-de-evangelizacao/site',base=env('SUPABASE_URL'),key=env('SUPABASE_SERVICE_ROLE_KEY');
  const send=(url,options={})=>transport(url,{...options,signal:AbortSignal.timeout(15000)});
  return async(req)=>{const origin=req.headers.get('Origin')||'',allowed=(env('ADMIN_ALLOWED_ORIGIN')||'https://plataforma-de-evangelizacao.github.io').split(',');const cors={'Access-Control-Allow-Origin':allowed.includes(origin)?origin:allowed[0],'Vary':'Origin','Access-Control-Allow-Headers':'authorization,apikey,content-type','Access-Control-Allow-Methods':'GET,POST,OPTIONS'};const reply=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{...cors,'Content-Type':'application/json'}});if(req.method==='GET'&&new URL(req.url).searchParams.get('health')==='1')return reply({release:RELEASE,dispatchReady:!!env('GITHUB_DISPATCH_TOKEN')});if(req.method==='OPTIONS')return new Response(null,{headers:cors});if(req.method!=='POST')return reply({error:'method_not_allowed'},405);if(origin&&!allowed.includes(origin))return reply({error:'origin_not_allowed'},403);

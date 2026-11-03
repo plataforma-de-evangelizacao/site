@@ -148,9 +148,18 @@ class DeployRecoveryTests(unittest.TestCase):
                 finally:runner.ROOT=original;sys.argv=argv
 class AutomaticApprovalTests(unittest.TestCase):
     def setUp(self):
-        Tests.setUp(self);self.e.cfg['autoApprovalEnabled']=True
+        Tests.setUp(self)
+        # Deterministic test policy; never depend on the owner's live approval settings.
+        self.e.cfg.update(autoApprovalEnabled=True,approvedRules=[dict(
+            id='fixture-auto-approval',approved=True,channelId='UCfixture',
+            requirePortugueseMetadata=True,requireBiblicalTitle=True,
+            minDurationSeconds=240,titlePattern=r'desenho|filme|s[eé]rie',
+            biblicalTitlePattern=r'b[ií]blic|jonas')],excludedTitleTerms=['trailer','teaser'])
     def test_auto_eligible(self):
         self.assertEqual(classify(video(),{},self.e.cfg)['aprovacao'],'approved')
+    def test_production_can_disable_automatic_approval(self):
+        cfg={**self.e.cfg,'autoApprovalEnabled':False,'approvedRules':[]}
+        self.assertEqual(classify(video(),{},cfg)['aprovacao'],'pending_review')
     def test_auto_unknown_language_pending(self):
         v=video();v['snippet'].pop('defaultAudioLanguage');self.assertEqual(classify(v,{},self.e.cfg)['aprovacao'],'pending_review')
     def test_auto_nonbiblical_pending(self):

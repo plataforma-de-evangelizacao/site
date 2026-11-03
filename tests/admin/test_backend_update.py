@@ -10,9 +10,9 @@ class Response:
  def read(self):return json.dumps(self.body).encode()
 class BackendUpdateTests(unittest.TestCase):
  def test_manifest_matches_sources_and_frontend(self):
-  release,items=b.load_release();self.assertEqual(release['version'],'2026.11.03.3');self.assertEqual(len(items),3)
+  release,items=b.load_release();self.assertEqual(release['version'],json.loads((ROOT/'admin/release.json').read_text())['version']);self.assertEqual([x['version'] for x in items],json.loads((ROOT/'admin/release.json').read_text())['migrations'])
  def test_bundle_is_atomic_guarded_and_versioned(self):
-  _,items=b.load_release();sql=b.migration_bundle(items);self.assertTrue(sql.startswith('begin;'));self.assertTrue(sql.endswith('commit;'));self.assertIn('pg_advisory_xact_lock',sql);self.assertEqual(sql.count('migration_checksum_conflict'),3)
+  _,items=b.load_release();sql=b.migration_bundle(items);self.assertTrue(sql.startswith('begin;'));self.assertTrue(sql.endswith('commit;'));self.assertIn('pg_advisory_xact_lock',sql);self.assertEqual(sql.count('migration_checksum_conflict'),len(items))
  def test_outer_transaction_strip_keeps_function_blocks(self):
   text='-- comment\nbegin;\ncreate function f() returns void as $$ begin null; end; $$ language plpgsql;\ncommit;\n';self.assertIn('begin null;',b.inner(text));self.assertFalse(b.inner(text).endswith('commit;'))
  def test_unwrapped_sql_is_rejected(self):

@@ -45,7 +45,7 @@ def snapshot(state):
   checked=state.get('checks',{}).get(id,{}).get('verified')
   if not checked or (now-instant(checked)).total_seconds()>=29*86400 or not r.get('titulo'):continue
   # Don't export raw provider responses or internal logs to the browser.
-  record={k:r.get(k) for k in ['id','titulo','descricao','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao','thumbnail','url','testamento','livros','referencias','personagens','temas','publico','formato','serieId','temporada','episodio','dataInclusao']}
+  record={k:r.get(k) for k in ['id','titulo','descricao','tituloOriginal','descricaoOriginal','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao','thumbnail','url','testamento','livros','referencias','personagens','temas','publico','formato','serieId','temporada','episodio','dataInclusao','tags','catalogacaoAutomatica','camposEditoriais']}
   rows.append(dict(id=id,record=record,sha=sha(canonical(record)),expires_at=(instant(checked)+dt.timedelta(days=29)).isoformat(),updated_at=now.isoformat()))
  return rows
 
@@ -57,6 +57,9 @@ def export(client,state=None):
  state=state if state is not None else load_remote_state()
  rows=snapshot(state)
  for i in range(0,len(rows),100):client.call('pge_videos','on_conflict=id','POST',rows[i:i+100])
+ try:client.call('pge_video_decisions','last_title_expires_at=lt.'+parse.quote(dt.datetime.now(dt.timezone.utc).isoformat(),safe=''),'PATCH',dict(last_title=None))
+ except error.HTTPError as ex:
+  if ex.code not in [400,404]:raise
  client.call('pge_videos','expires_at=lt.'+parse.quote(dt.datetime.now(dt.timezone.utc).isoformat(),safe=''),'DELETE')
  docs=[]
  live=live_rows(client,'pge_live_documents');live_by_path={x['path']:x for x in live}
@@ -156,15 +159,22 @@ def dispatch_library(command,mode):
  req=request.Request('https://api.github.com/repos/'+repo+'/actions/workflows/biblioteca.yml/dispatches',data=body,method='POST',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'})
  with request.urlopen(req,timeout=30) as response:response.read()
 
+def dispatch_backend(command):
+ token=os.getenv('GH_TOKEN','');repo=os.getenv('GITHUB_REPOSITORY','');id=command['id']
+ if not token or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+',repo) or not re.fullmatch(r'[0-9a-f-]{36}',id):raise ValueError('invalid_github_dispatch_configuration')
+ req=request.Request('https://api.github.com/repos/'+repo+'/actions/workflows/atualizar-plataforma.yml/dispatches',data=json.dumps({'ref':'main','inputs':{'admin_request':id}}).encode(),method='POST',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'})
+ with request.urlopen(req,timeout=30) as response:response.read()
+
 def sync_command(client,command):
  target=command.get('payload',{}).get('target')
- if target not in ['video-discovery','site-publication','panel-sync']:raise ValueError('invalid_sync_target')
+ if target not in ['video-discovery','site-publication','panel-sync','platform-update']:raise ValueError('invalid_sync_target')
  # Never dispatch a second workflow for a command already handed to GitHub.
  if command.get('status')=='processing':
   # A callback can be interrupted; reconcile on later scheduled runs using this request's run title.
   repo=os.getenv('GITHUB_REPOSITORY','');token=os.getenv('GH_TOKEN','')
   if not token or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+',repo):return
-  req=request.Request('https://api.github.com/repos/'+repo+'/actions/workflows/biblioteca.yml/runs?event=workflow_dispatch&per_page=100',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'})
+  workflow='atualizar-plataforma.yml' if target=='platform-update' else 'biblioteca.yml'
+  req=request.Request('https://api.github.com/repos/'+repo+'/actions/workflows/'+workflow+'/runs?event=workflow_dispatch&per_page=100',headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'})
   with request.urlopen(req,timeout=30) as response:runs=json.load(response).get('workflow_runs',[])
   found=next((run for run in runs if run.get('display_title','').endswith(command['id'])),None)
   query='id=eq.'+parse.quote(command['id'],safe='')
@@ -184,7 +194,9 @@ def sync_command(client,command):
  else:
   info.update(progress=10,phase='Aguardando início no GitHub Actions')
   client.call('pge_commands',query,'PATCH',dict(result=json.dumps(info,ensure_ascii=False)))
-  try:dispatch_library(command,'buscar-agora' if target=='video-discovery' else 'publicar-site')
+  try:
+   if target=='platform-update':dispatch_backend(command)
+   else:dispatch_library(command,'buscar-agora' if target=='video-discovery' else 'publicar-site')
   except error.HTTPError as ex:
    if ex.code in [400,401,403,404,422]:raise ValueError('invalid_github_dispatch_permissions') from None
    raise
@@ -217,6 +229,10 @@ def hydrate_live(root,client=None,commit=False):
  file=root/'biblioteca-controle/editorial.json';editorial=json.loads(file.read_text());previous=canonical(editorial)
  for decision in live_rows(client,'pge_video_decisions'):
   entry=editorial.setdefault(decision['id'],{});state=decision['decision'];entry.update(aprovacao=state,revisado=True,reabrir=state in ['approved','pending_review'])
+  for column,key in [('display_title','tituloExibicao'),('display_description','descricaoExibicao')]:
+   if column in decision:
+    if decision[column] is None:entry.pop(key,None)
+    else:entry[key]=decision[column]
   if decision.get('category'):entry['categoria']=decision['category']
   if decision.get('portuguese_confirmed'):entry.update(idioma='pt-BR',idiomaVerificado=True)
  if canonical(editorial)!=previous:

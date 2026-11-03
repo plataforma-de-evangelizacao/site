@@ -29,8 +29,8 @@ class DirectTests(unittest.TestCase):
    class Client:
     url='https://fixture.supabase.co';key='fixture'
     def call(self,table,query='',method='GET',data=None):
-     return [{'path':'dados/projetos.json','content':'{"itens":[{"id":"new","titulo":"Novo"}]}','sha':'live:1'}] if table=='pge_live_documents' else [{'id':'abc123def45','decision':'rejected','category':'filme','portuguese_confirmed':False}]
-   changed=b.hydrate_live(root,Client());self.assertIn('dados/projetos.json',changed);self.assertEqual(json.loads((root/'dados/projetos.json').read_text())['itens'][0]['titulo'],'Novo');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['aprovacao'],'rejected')
+     return [{'path':'dados/projetos.json','content':'{"itens":[{"id":"new","titulo":"Novo"}]}','sha':'live:1'}] if table=='pge_live_documents' else [{'id':'abc123def45','decision':'rejected','category':'filme','portuguese_confirmed':False,'display_title':'Ester','display_description':'Descrição editorial'}]
+   changed=b.hydrate_live(root,Client());self.assertIn('dados/projetos.json',changed);self.assertEqual(json.loads((root/'dados/projetos.json').read_text())['itens'][0]['titulo'],'Novo');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['aprovacao'],'rejected');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['tituloExibicao'],'Ester');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['descricaoExibicao'],'Descrição editorial')
  def test_paths_protected(self):
   class Client:
    url='https://fixture.supabase.co';key='fixture'
