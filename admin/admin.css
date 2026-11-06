@@ -18,3 +18,15 @@
 .job-steps li[data-state=done]::before{content:'✓ ';color:var(--accent,#307561)}.job-steps li[data-state=current]::before{content:'● '}
 /* v43: compact integration cards, admin review player and safe progress. */
 .integration-grid{align-items:start}.sync-card{align-self:start}.admin-cover{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin:12px 0}.admin-player{width:min(900px,94vw);max-height:90vh;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);padding:24px}.admin-player iframe{display:block;width:100%;aspect-ratio:16/9;border:0}.admin-player::backdrop{background:#071f1bd9}#bulk-progress{position:sticky;top:8px;z-index:5;background:var(--card);border:1px solid var(--line);padding:16px;border-radius:8px;margin-bottom:16px}#bulk-progress progress{width:100%}#diagnostics-results p{overflow-wrap:anywhere}#diagnostics-results article{padding:14px;border:1px solid var(--line);margin:12px 0}#diagnostics-results a{display:block}#invite-permissions{max-height:260px;overflow:auto;padding:12px;border:1px solid var(--line)}#auth-loading{max-width:500px;margin:12vh auto;text-align:center}input[type=checkbox]{width:auto}#published-list .card{max-width:100%}#published-list img{max-height:200px;object-fit:contain}#users-list{display:grid;gap:18px;margin-top:24px}
+
+.admin-nav-group { display: grid; gap: .45rem; }
+.admin-nav-group > p { margin: .7rem 0 0; font-weight: 600; }
+.admin-nav-group > button { width: 100%; }
+.record-dialog { width: min(48rem, 94vw); max-height: 88vh; overflow: auto; }
+.record-dialog .actions { position: sticky; bottom: 0; background: inherit; padding: .6rem 0; }
+
+.admin-nav-group { grid-column: 1 / -1; }
+@media (max-width: 760px) {
+  .admin-nav-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-nav-group > p { grid-column: 1 / -1; }
+}
