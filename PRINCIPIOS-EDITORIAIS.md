@@ -61,3 +61,7 @@ Marcos reafirmou que Deus deve ser o centro da abordagem em todas as áreas. As 
 ## Orientação reafirmada pelo responsável
 
 Marcos definiu como inegociável nesta plataforma: “Preciso de Deus para explicar todas as coisas.” Esse é o ponto de partida confessional do projeto, a ser respeitado em todos os materiais. Os conteúdos devem buscar em Deus compreensão da criação, do conhecimento e da vida, incluindo questões em aberto. Ao desenvolver respostas, registrar as Escrituras, o contexto e os argumentos usados, distinguindo a convicção cristã da alegação de uma demonstração formal. A plataforma acolhe perguntas e pessoas com respeito.
+
+## Fontes legítimas — atualização de 04/11/2026
+
+A plataforma indica fontes legítimas e mantém pendentes os conteúdos cuja autorização não conseguiu verificar. Não presume desonestidade de quem sugeriu um link. Rejeita promoção de fraude, mentira e exploração; verifica autoria, licença e atribuição antes de publicar materiais de terceiros. Presença no YouTube ou incorporação habilitada não comprova direitos. Filmes indicam acesso externo oficial, inclusive pago, com transparência.

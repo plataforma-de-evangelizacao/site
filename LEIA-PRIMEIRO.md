@@ -1,3 +1,5 @@
+> **v43 — 04/11/2026:** consulte primeiro `COMECE-AQUI-V43.md` e `README.md`. O texto abaixo conserva instruções e inventário de versões anteriores; a organização e política atuais estão no novo manual.
+
 > Esta versão inclui a edição de títulos e descrições. Siga também **ATUALIZACAO-TITULOS-VIDEOS.md** para o teste dos cartões.
 
 # Nova versão — atualização automática do backend

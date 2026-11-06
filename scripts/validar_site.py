@@ -29,7 +29,7 @@ try:
     for h in set(p.hashes):check(unquote(h) in p.ids,'Âncora inexistente: #'+h)
     for f in p.files:check((ROOT/urlsplit(f).path).is_file(),'Arquivo local ausente: '+f)
 except OSError as exc:errors.append(str(exc))
-shared=['planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json','comunidades.json','agenda-solidaria.json','atividades-parcerias.json','rede-parceiros.json','formacoes.json']
+shared=['programas.json','plano-biblico.json','fontes-legitimas.json','planejamento.json','projetos.json','ideias-sociais.json','catalogo-conteudos.json','prestacao-contas.json','comunidades.json','agenda-solidaria.json','atividades-parcerias.json','rede-parceiros.json','formacoes.json']
 agenda=data.get('dados/agenda-solidaria.json',{})
 check(isinstance(agenda,dict) and isinstance(agenda.get('acoes'),list),'Agenda: esperado objeto com lista acoes')
 seen=set()

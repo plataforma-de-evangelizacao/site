@@ -9,7 +9,9 @@
       "descricao": "",
       "link": "",
       "fonte": "",
-      "creditos": ""
+      "creditos": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/comunidades.json.instituicoes": {
       "id": "",
@@ -23,7 +25,9 @@
         "site": ""
       },
       "agenda": [],
-      "formacao": []
+      "formacao": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/atividades-parcerias.json.instituicoes": {
       "id": "",
@@ -51,7 +55,9 @@
     },
     "dados/youtube.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/buscando.json.temas": {
       "titulo": "",
@@ -59,7 +65,9 @@
       "abandonar": "",
       "cultivar": "",
       "exemplo": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/buscando.json.temas[].passagens": {
       "referencia": "",
@@ -86,7 +94,9 @@
     "dados/buscando.json.ensinamentos_jesus": {
       "titulo": "",
       "explicacao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/buscando.json.ensinamentos_jesus[].passagens": {
       "referencia": "",
@@ -94,7 +104,9 @@
     },
     "dados/buscando.json.pai_nosso.estudo": {
       "titulo": "",
-      "texto": ""
+      "texto": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/buscando.json.vicios": {
       "titulo": "",
@@ -102,7 +114,9 @@
       "cultivar": "",
       "ambiente_risco": "",
       "ambiente_cuidado": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/buscando.json.vicios[].passagens": {
       "referencia": "",
@@ -166,7 +180,9 @@
     "dados/pecado.json.everyday[]": "",
     "dados/louvores.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/acolhimento.json.safeSteps": "",
     "dados/acolhimento.json.cards": {
@@ -180,7 +196,9 @@
     "dados/pagina-inicial.json.libraryItems": {
       "id": "",
       "titulo": "",
-      "descricao": ""
+      "descricao": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/pagina-inicial.json.solidarityItems": [],
     "dados/pagina-inicial.json.solidarityItems[]": "",
@@ -191,7 +209,9 @@
       "testamento": "",
       "ordem": 0,
       "descricao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/temas-biblicos.json[].passagens": {
       "referencia": "",
@@ -214,13 +234,17 @@
       "descricao": "",
       "link": "",
       "status": "a-propor",
-      "id": ""
+      "id": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/biblias-e-apps.json": {
       "titulo": "",
       "tipo": "",
       "descricao": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/reflexoes.txt": "",
     "dados/planejamento.json.itens": {
@@ -232,7 +256,9 @@
       "descricao": "",
       "idioma": "",
       "distribuicao": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/parcerias.json.frentes": {
       "titulo": "",
@@ -256,7 +282,9 @@
       "documentacao": "",
       "licenca": "a-definir",
       "traducoes": {},
-      "parcerias": []
+      "parcerias": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/rede-parceiros.json.unidades": {
       "id": "",
@@ -280,7 +308,9 @@
       "contribuicoes_possiveis": [],
       "agenda_link": "",
       "comunidades": [],
-      "agenda": []
+      "agenda": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/rede-parceiros.json.unidades[].contribuicoes_possiveis": "",
     "dados/rede-parceiros.json.unidades[].traducoes.en.contribuicoes_possiveis": "",
@@ -290,14 +320,18 @@
       "fundamento": "",
       "pergunta": "",
       "pratica": "",
-      "recursos": []
+      "recursos": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/fe-conhecimento.json.disciplinas[].recursos": {
       "tipo": "curso",
       "titulo": "",
       "descricao": "",
       "status": "proposta",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/ideias-sociais.json.itens": {
       "id": "",
@@ -305,7 +339,9 @@
       "titulo": "",
       "descricao": "",
       "status": "proposta",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/recursos-santidade.txt": "",
     "dados/autocuidado.json.temas": {
@@ -316,7 +352,9 @@
       "pratica": "",
       "reflexao": "",
       "fonte": "",
-      "fonte_titulo": ""
+      "fonte_titulo": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/catalogo.txt": "",
     "dados/es/oracoes.txt": "",
@@ -328,11 +366,15 @@
       "descricao": "",
       "link": "",
       "fonte": "",
-      "creditos": ""
+      "creditos": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/youtube.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/buscando.json.temas": {
       "titulo": "",
@@ -340,7 +382,9 @@
       "abandonar": "",
       "cultivar": "",
       "exemplo": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/es/buscando.json.temas[].passagens": {
       "referencia": "",
@@ -367,7 +411,9 @@
     "dados/es/buscando.json.ensinamentos_jesus": {
       "titulo": "",
       "explicacao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/es/buscando.json.ensinamentos_jesus[].passagens": {
       "referencia": "",
@@ -375,7 +421,9 @@
     },
     "dados/es/buscando.json.pai_nosso.estudo": {
       "titulo": "",
-      "texto": ""
+      "texto": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/buscando.json.vicios": {
       "titulo": "",
@@ -383,7 +431,9 @@
       "cultivar": "",
       "ambiente_risco": "",
       "ambiente_cuidado": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/es/buscando.json.vicios[].passagens": {
       "referencia": "",
@@ -447,7 +497,9 @@
     "dados/es/pecado.json.everyday[]": "",
     "dados/es/louvores.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/acolhimento.json.safeSteps": "",
     "dados/es/acolhimento.json.cards": {
@@ -461,7 +513,9 @@
     "dados/es/pagina-inicial.json.libraryItems": {
       "id": "",
       "titulo": "",
-      "descricao": ""
+      "descricao": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/pagina-inicial.json.solidarityItems": [],
     "dados/es/pagina-inicial.json.solidarityItems[]": "",
@@ -472,7 +526,9 @@
       "testamento": "",
       "ordem": 0,
       "descricao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/es/temas-biblicos.json[].passagens": {
       "referencia": "",
@@ -495,13 +551,17 @@
       "descricao": "",
       "link": "",
       "status": "a-propor",
-      "id": ""
+      "id": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/biblias-e-apps.json": {
       "titulo": "",
       "tipo": "",
       "descricao": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/reflexoes.txt": "",
     "dados/es/parcerias.json.frentes": {
@@ -514,14 +574,18 @@
       "fundamento": "",
       "pergunta": "",
       "pratica": "",
-      "recursos": []
+      "recursos": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/es/fe-conhecimento.json.disciplinas[].recursos": {
       "tipo": "curso",
       "titulo": "",
       "descricao": "",
       "status": "proposta",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/es/recursos-santidade.txt": "",
     "dados/es/autocuidado.json.temas": {
@@ -532,14 +596,18 @@
       "pratica": "",
       "reflexao": "",
       "fonte": "",
-      "fonte_titulo": ""
+      "fonte_titulo": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/biblioteca/taxonomia.json.livros": {
       "id": "",
       "nome": "",
       "capitulos": 0,
       "testamento": "",
-      "bibliaOnline": ""
+      "bibliaOnline": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/catalogo.txt": "",
     "dados/en/oracoes.txt": "",
@@ -551,11 +619,15 @@
       "descricao": "",
       "link": "",
       "fonte": "",
-      "creditos": ""
+      "creditos": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/youtube.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/buscando.json.temas": {
       "titulo": "",
@@ -563,7 +635,9 @@
       "abandonar": "",
       "cultivar": "",
       "exemplo": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/en/buscando.json.temas[].passagens": {
       "referencia": "",
@@ -590,7 +664,9 @@
     "dados/en/buscando.json.ensinamentos_jesus": {
       "titulo": "",
       "explicacao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/en/buscando.json.ensinamentos_jesus[].passagens": {
       "referencia": "",
@@ -598,7 +674,9 @@
     },
     "dados/en/buscando.json.pai_nosso.estudo": {
       "titulo": "",
-      "texto": ""
+      "texto": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/buscando.json.vicios": {
       "titulo": "",
@@ -606,7 +684,9 @@
       "cultivar": "",
       "ambiente_risco": "",
       "ambiente_cuidado": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/en/buscando.json.vicios[].passagens": {
       "referencia": "",
@@ -670,7 +750,9 @@
     "dados/en/pecado.json.everyday[]": "",
     "dados/en/louvores.json": {
       "titulo": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/acolhimento.json.safeSteps": "",
     "dados/en/acolhimento.json.cards": {
@@ -684,7 +766,9 @@
     "dados/en/pagina-inicial.json.libraryItems": {
       "id": "",
       "titulo": "",
-      "descricao": ""
+      "descricao": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/pagina-inicial.json.solidarityItems": [],
     "dados/en/pagina-inicial.json.solidarityItems[]": "",
@@ -695,7 +779,9 @@
       "testamento": "",
       "ordem": 0,
       "descricao": "",
-      "passagens": []
+      "passagens": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/en/temas-biblicos.json[].passagens": {
       "referencia": "",
@@ -718,13 +804,17 @@
       "descricao": "",
       "link": "",
       "status": "a-propor",
-      "id": ""
+      "id": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/biblias-e-apps.json": {
       "titulo": "",
       "tipo": "",
       "descricao": "",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/reflexoes.txt": "",
     "dados/en/parcerias.json.frentes": {
@@ -737,14 +827,18 @@
       "fundamento": "",
       "pergunta": "",
       "pratica": "",
-      "recursos": []
+      "recursos": [],
+      "capa": "",
+      "alt": ""
     },
     "dados/en/fe-conhecimento.json.disciplinas[].recursos": {
       "tipo": "curso",
       "titulo": "",
       "descricao": "",
       "status": "proposta",
-      "link": ""
+      "link": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/en/recursos-santidade.txt": "",
     "dados/en/autocuidado.json.temas": {
@@ -755,7 +849,9 @@
       "pratica": "",
       "reflexao": "",
       "fonte": "",
-      "fonte_titulo": ""
+      "fonte_titulo": "",
+      "capa": "",
+      "alt": ""
     },
     "dados/livros.json": {
       "id": "",
@@ -764,7 +860,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/artigos.json": {
       "id": "",
@@ -773,7 +871,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/estudos.json": {
       "id": "",
@@ -782,7 +882,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/materiais-ensino.json": {
       "id": "",
@@ -791,7 +893,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/spotify.json": {
       "id": "",
@@ -800,7 +904,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/lives.json": {
       "id": "",
@@ -809,7 +915,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/acoes.json": {
       "id": "",
@@ -818,7 +926,9 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/palestras.json": {
       "id": "",
@@ -827,9 +937,108 @@
       "link": "",
       "autor": "",
       "texto": "",
-      "status": "proposta"
+      "status": "proposta",
+      "capa": "",
+      "alt": ""
     },
     "dados/projetos.json.itens[].roteiro": "",
-    "dados/projetos.json.itens[].principais_pontos": ""
+    "dados/projetos.json.itens[].principais_pontos": "",
+    "dados/programas.json.programas": {
+      "id": "",
+      "tipo": "programa",
+      "titulo": "",
+      "subtitulo": "",
+      "descricao": "",
+      "descricao_completa": "",
+      "capa": "",
+      "alt": "",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 0,
+      "links": [],
+      "parcerias": [],
+      "criado_em": "",
+      "atualizado_em": ""
+    },
+    "dados/programas.json.programas[].links": {
+      "rotulo": "",
+      "url": ""
+    },
+    "dados/programas.json.formacoes": {
+      "id": "",
+      "tipo": "formacao",
+      "titulo": "",
+      "subtitulo": "",
+      "descricao": "",
+      "descricao_completa": "",
+      "capa": "",
+      "alt": "",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 0,
+      "links": [],
+      "programas": [],
+      "criado_em": "",
+      "atualizado_em": ""
+    },
+    "dados/programas.json.formacoes[].links": {
+      "rotulo": "",
+      "url": ""
+    },
+    "dados/programas.json.softwares": {
+      "id": "",
+      "tipo": "software",
+      "titulo": "",
+      "subtitulo": "",
+      "descricao": "",
+      "descricao_completa": "",
+      "capa": "",
+      "alt": "",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 0,
+      "links": [],
+      "programas": [],
+      "criado_em": "",
+      "atualizado_em": ""
+    },
+    "dados/programas.json.softwares[].links": {
+      "rotulo": "",
+      "url": ""
+    },
+    "dados/programas.json.acoes": {
+      "id": "",
+      "tipo": "acao-social",
+      "titulo": "",
+      "subtitulo": "",
+      "descricao": "",
+      "descricao_completa": "",
+      "capa": "",
+      "alt": "",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 0,
+      "links": [],
+      "programas": [],
+      "parcerias": [],
+      "criado_em": "",
+      "atualizado_em": ""
+    },
+    "dados/programas.json.acoes[].links": {
+      "rotulo": "",
+      "url": ""
+    },
+    "dados/fontes-legitimas.json.itens": {
+      "id": "",
+      "titulo": "",
+      "descricao": "",
+      "categoria": "filme",
+      "acesso": "gratuito",
+      "link": "",
+      "source_status": "pending",
+      "evidence": "",
+      "capa": "",
+      "alt": ""
+    }
   }
 }

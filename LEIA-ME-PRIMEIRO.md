@@ -1,3 +1,5 @@
+> **v43 — 04/11/2026:** consulte primeiro `COMECE-AQUI-V43.md` e `README.md`. O texto abaixo conserva instruções e inventário de versões anteriores; a organização e política atuais estão no novo manual.
+
 # Plataforma Global de Evangelização — pacote revisado
 
 ## Publicar no seu GitHub

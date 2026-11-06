@@ -1,3 +1,5 @@
+> **v43 — 04/11/2026:** consulte primeiro `COMECE-AQUI-V43.md` e `README.md`. O texto abaixo conserva instruções e inventário de versões anteriores; a organização e política atuais estão no novo manual.
+
 # Aprovação automática ativada na configuração desta atualização
 
 A execução real enviada por Marcos confirmou a API e a descoberta: 272 vídeos novos, 273 pendentes (incluindo o teste), sem erros e sem tarefas restantes. O catálogo não mudou porque a aprovação estava desligada.

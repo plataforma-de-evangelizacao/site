@@ -43,7 +43,9 @@ jobs:
           SUPABASE_ACCESS_TOKEN: ''
           GITHUB_DISPATCH_TOKEN: ''
           YOUTUBE_API_KEY: ''
-        run: python -m unittest discover -s tests/admin -v
+        run: |
+          python -m pip install "cryptography>=43,<47"
+          python -m unittest discover -s tests/admin -v
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -60,6 +62,8 @@ jobs:
         run: |
           node tests/admin/sql-test/test.cjs
           node tests/admin/sql-test/maintenance.cjs
+          node tests/admin/sql-test/v43.cjs
+          node tests/admin/sql-test/v44.cjs
       - name: Aplicar solicitações autorizadas
         if: env.ADMIN_REQUEST == ''
         id: admin

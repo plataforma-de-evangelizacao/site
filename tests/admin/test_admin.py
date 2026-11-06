@@ -77,17 +77,17 @@ if __name__=='__main__':unittest.main()
 class QueueTests(unittest.TestCase):
  def setUp(self):
   self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name);self.oldroot=bridge.ROOT;bridge.ROOT=self.root;self.addCleanup(setattr,bridge,'ROOT',self.oldroot)
-  (self.root/'biblioteca-controle').mkdir();(self.root/'biblioteca-controle/editorial.json').write_text('{}')
+  (self.root/'dados').mkdir();(self.root/'dados/projetos.json').write_text('{}')
   self.oldgit=bridge.git;self.oldvalidate=bridge.validate_change;self.addCleanup(setattr,bridge,'git',self.oldgit);self.addCleanup(setattr,bridge,'validate_change',self.oldvalidate)
   old_reviews=bridge.current_reviews;self.addCleanup(setattr,bridge,'current_reviews',old_reviews);bridge.current_reviews=lambda:[dict(id=ID,sha='v1')]
   self.calls=[];bridge.git=lambda *args:self.calls.append(args) or '';bridge.validate_change=lambda *a:None
-  self.command={'id':'11111111-1111-4111-8111-111111111111','user_id':'owner','action':'review_video','payload':{'id':ID,'expected_sha':'v1','decision':'rejected'}}
+  self.command={'id':'11111111-1111-4111-8111-111111111111','user_id':'owner','action':'save_json','payload':{'path':'dados/projetos.json','expected_sha':bridge.sha('{}'),'content':'{"itens":[]}'}}
   outer=self
   class Fake:
    def __init__(self):self.patches=[]
    def call(self,table,query='',method='GET',data=None):
     if method=='PATCH':self.patches.append(data);return []
-    return [outer.command] if table=='pge_commands' else [{'user_id':'owner'}] if table=='pge_admins' else [{'id':ID,'sha':'v1'}]
+    return [outer.command] if table=='pge_commands' else [{'user_id':'owner'}] if table=='pge_admins' else []
   self.client=Fake()
   old_hydrate=bridge.hydrate_live;self.addCleanup(setattr,bridge,'hydrate_live',old_hydrate);bridge.hydrate_live=lambda *a,**k:[]
  def test_revoked_admin_cannot_change_git(self):

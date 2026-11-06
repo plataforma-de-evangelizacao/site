@@ -1,3 +1,5 @@
+> **v43 — 04/11/2026:** consulte primeiro `COMECE-AQUI-V43.md` e `README.md`. O texto abaixo conserva instruções e inventário de versões anteriores; a organização e política atuais estão no novo manual.
+
 # Cursos, palestras e materiais gratuitos
 
 Esta é uma decisão editorial de Marcos Lucas Pereira para a Plataforma Global de Evangelização. Deve acompanhar a criação e revisão dos cursos, palestras, slides, roteiros e materiais associados ao projeto.

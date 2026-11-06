@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.03.4",
+  "version": "2026.11.05.1",
   "function": "supabase/functions/admin-dispatch/index.ts",
   "migrations": [
     {
@@ -21,6 +21,16 @@
       "version": "2026110303",
       "path": "scripts/admin/video-display.sql",
       "sha256": "1f497fccd5e67d8a79961168c872e49af68f3e903fe57a83b41b45a131a56e87"
+    },
+    {
+      "version": "2026110401",
+      "path": "scripts/admin/platform-v43.sql",
+      "sha256": "0de91018781809ef653ab3992551fb6ec262c0ada00171b7bdf327bc77ad5a88"
+    },
+    {
+      "version": "2026110501",
+      "path": "scripts/admin/platform-v44.sql",
+      "sha256": "af089aaa6b510900cc1ded90e9bb70072366dbb34beee5dda8431d1adcb9b00f"
     }
   ]
 }

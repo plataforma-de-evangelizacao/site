@@ -8,7 +8,7 @@ NOW=dt.datetime(2026,11,2,12,tzinfo=UTC)
 ID='abc123def45'
 def video(id=ID,**kw):
     d=dict(id=id,snippet=dict(title='Jonas — desenho bíblico',description='Uma adaptação.',channelId='UCfixture',channelTitle='Canal teste',defaultAudioLanguage='pt-BR',thumbnails={'high':{'url':'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}}),contentDetails=dict(duration='PT25M'),status=dict(privacyStatus='public',uploadStatus='processed',embeddable=True));d.update(kw);return d
-ED=dict(revisado=True,aprovacao='approved',categoria='desenho',idioma='pt-BR',idiomaVerificado=True,livros=['jn'],testamento='antigo',referencias=[dict(livro='jn',capitulo=1,revisada=True)])
+ED=dict(source_status="verified",source_url="https://official.example/video",revisado=True,aprovacao='approved',categoria='desenho',idioma='pt-BR',idiomaVerificado=True,livros=['jn'],testamento='antigo',referencias=[dict(livro='jn',capitulo=1,revisada=True)])
 class Tests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name)
@@ -16,6 +16,7 @@ class Tests(unittest.TestCase):
             import shutil;shutil.copytree(ROOT/name,self.root/name)
         self.e=Engine(self.root,self.root/'state.json',now=NOW)
         self.e.cfg['autoApprovalEnabled']=False
+        self.e.sources['buscas']=['consulta de teste']
         self.e.api.transport=lambda ep,p:{'items':[video(x) for x in p.get('id',ID).split(',')]};self.e.api.key='not-a-real-key';self.e.api.sleep=lambda x:None
     def approve(self,id=ID):
         self.e.editorial[id]=copy.deepcopy(ED);self.e.details([id]);return self.e.s['records'][id]

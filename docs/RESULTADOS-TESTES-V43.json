@@ -1,0 +1,422 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/validar_site.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": "OK: JSONs, traduções, IDs, âncoras, arquivos locais, catálogos e datas conferidos.\nNão foram verificados destinos externos, pagamentos ou serviços de integração.\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/admin",
+      "-q"
+    ],
+    "exit_code": 0,
+    "seconds": 0.88,
+    "output": "----------------------------------------------------------------------\nRan 89 tests in 0.769s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/biblioteca",
+      "-q"
+    ],
+    "exit_code": 0,
+    "seconds": 20.52,
+    "output": "{\"publicChanged\": true, \"approvedPublic\": 0, \"pendingReview\": 0}\n{\"publicChanged\": true, \"approvedPublic\": 0, \"pendingReview\": 0}\n{\"publicChanged\": false, \"approvedPublic\": 0, \"pendingReview\": 0}\n----------------------------------------------------------------------\nRan 69 tests in 20.422s\n\nOK\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_live_content.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.2,
+    "output": "8 checks passed: live documents, deletion, approval, removal, initial source fallback, outage fail-closed, origin isolation, no admin token.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_session.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.08,
+    "output": "7 session checks passed: tab reload, token rotation, no password, activity, idle expiry, logout, empty restore.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_dispatch.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09,
+    "output": "10 dispatch checks passed: auth, membership, configuration, immediate dispatch, no duplicate, GitHub failure, inactive provider, terminal reconciliation.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_jobs.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09,
+    "output": "3 job UI checks passed: terminal duration freezes, backend stage, measured API response.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_catalog_index.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.49,
+    "output": "10 metadata checks passed; 273 demo records indexed in 384ms.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/test_display_ui.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": "7 video display UI checks passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/sql-test/test.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.93,
+    "output": "32 PostgreSQL checks passed: migration and rerun, roles/RLS, approval, category, atomic conflict, archive/restore, rejection/unblock, expiry, project CRUD, public visibility, partner FK/cascade.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/sql-test/maintenance.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.39,
+    "output": "12 maintenance PostgreSQL checks passed: atomic bundle, repeat, checksum conflict, data preservation, anon/non-admin denial, admin read-only health, service status.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/sql-test/display.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.23,
+    "output": "16 display editing PostgreSQL checks passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/admin/sql-test/v43.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.56,
+    "output": "22 v43 PostgreSQL checks passed: provenance, optional language, archive/restore, roles, RLS, history, relations.\n"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/admin.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/forms.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/diagnostics.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/maintenance.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/workspace.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/jobs.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.1,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/session.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "admin/preferences.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/localization.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/sin.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/solidarity.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.14,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/search.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/catalog-index.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/plan.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/body.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/organization.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/platform.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/live-content.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/accounts.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/biblioteca.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/vitrine.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/faith.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/admin-link.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.06,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/activities.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.08,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/programas.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/support.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.08,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/spirit.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "assets/partners.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "output": ""
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "py_compile",
+      "scripts/backup/pge_backup.py",
+      "scripts/admin/sync.py",
+      "scripts/biblioteca/core.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.05,
+    "output": ""
+  }
+]

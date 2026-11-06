@@ -3,3 +3,13 @@ _site/
 __pycache__/
 *.pyc
 .env
+
+# Cofres e snapshots locais de recuperacao
+credentials.enc
+google.enc
+schedule.env
+destino-teste.json
+pge-recovery-report.json
+PGE-Backups/
+*.dump
+*.bundle

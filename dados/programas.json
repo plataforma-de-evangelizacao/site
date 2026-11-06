@@ -1,0 +1,1198 @@
+{
+  "versao": 1,
+  "programas": [
+    {
+      "id": "educacao-inteligente",
+      "tipo": "programa",
+      "titulo": "Educação Inteligente",
+      "subtitulo": "Escolas, Professores e Alunos.",
+      "descricao": "Capacitação em inteligência artificial, tecnologia, pensamento crítico e inovação educacional.",
+      "descricao_completa": "Capacitação em inteligência artificial, tecnologia, pensamento crítico e inovação educacional.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 1,
+      "capa": "assets/programas/educacao-inteligente.svg",
+      "alt": "Ilustração do programa Educação Inteligente",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "municipio-inteligente-2040",
+      "tipo": "programa",
+      "titulo": "Município Inteligente 2040",
+      "subtitulo": "Gestão Pública, Tecnologia e Cidadania.",
+      "descricao": "Modernização dos serviços públicos, capacitação de servidores, automação e desenvolvimento de soluções municipais.",
+      "descricao_completa": "Modernização dos serviços públicos, capacitação de servidores, automação e desenvolvimento de soluções municipais.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 2,
+      "capa": "assets/programas/municipio-inteligente-2040.svg",
+      "alt": "Ilustração do programa Município Inteligente 2040",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "campo-inteligente-2040",
+      "tipo": "programa",
+      "titulo": "Campo Inteligente 2040",
+      "subtitulo": "Agricultura e Tecnologia Rural.",
+      "descricao": "Formação tecnológica para produtores rurais, agricultura familiar, pecuária, gestão da produção e sustentabilidade.",
+      "descricao_completa": "Formação tecnológica para produtores rurais, agricultura familiar, pecuária, gestão da produção e sustentabilidade.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 3,
+      "capa": "assets/programas/campo-inteligente-2040.svg",
+      "alt": "Ilustração do programa Campo Inteligente 2040",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "negocio-inteligente",
+      "tipo": "programa",
+      "titulo": "Negócio Inteligente",
+      "subtitulo": "Comércio e Empreendedorismo.",
+      "descricao": "Apoio a pequenos comerciantes e empreendedores por meio de IA, gestão empresarial, ferramentas digitais e inovação.",
+      "descricao_completa": "Apoio a pequenos comerciantes e empreendedores por meio de IA, gestão empresarial, ferramentas digitais e inovação.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 4,
+      "capa": "assets/programas/negocio-inteligente.svg",
+      "alt": "Ilustração do programa Negócio Inteligente",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "rede-solidaria",
+      "tipo": "programa",
+      "titulo": "Rede Solidária",
+      "subtitulo": "Assistência e Mobilização Comunitária.",
+      "descricao": "Arrecadação e distribuição de alimentos e roupas, voluntariado, apoio a famílias vulneráveis e ações solidárias.",
+      "descricao_completa": "Arrecadação e distribuição de alimentos e roupas, voluntariado, apoio a famílias vulneráveis e ações solidárias.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 5,
+      "capa": "assets/programas/rede-solidaria.svg",
+      "alt": "Ilustração do programa Rede Solidária",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "cuidar-aprender",
+      "tipo": "programa",
+      "titulo": "Cuidar e Aprender",
+      "subtitulo": "Desenvolvimento Humano e Inclusão.",
+      "descricao": "Acolhimento de crianças, adolescentes e idosos, inclusão digital, capacitação profissional e apoio a pessoas e famílias afetadas pelo álcool e outras drogas.",
+      "descricao_completa": "Acolhimento de crianças, adolescentes e idosos, inclusão digital, capacitação profissional e apoio a pessoas e famílias afetadas pelo álcool e outras drogas.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 6,
+      "capa": "assets/programas/cuidar-aprender.svg",
+      "alt": "Ilustração do programa Cuidar e Aprender",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "comunidade-conectada",
+      "tipo": "programa",
+      "titulo": "Comunidade Conectada",
+      "subtitulo": "Igrejas e Organizações Comunitárias.",
+      "descricao": "Capacitação de voluntários, organização de atividades, gestão comunitária, produção de materiais educativos e utilização de tecnologias.",
+      "descricao_completa": "Capacitação de voluntários, organização de atividades, gestão comunitária, produção de materiais educativos e utilização de tecnologias.",
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "ordem": 7,
+      "capa": "assets/programas/comunidade-conectada.svg",
+      "alt": "Ilustração do programa Comunidade Conectada",
+      "links": [],
+      "_admin_hidden": false,
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    }
+  ],
+  "formacoes": [
+    {
+      "id": "formacao-1",
+      "tipo": "formacao",
+      "titulo": "IA para Professores: Planejamento, Avaliação, Inclusão e Segurança.",
+      "descricao": "IA para Professores: Planejamento, Avaliação, Inclusão e Segurança.",
+      "programas": [
+        "educacao-inteligente"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-2",
+      "tipo": "formacao",
+      "titulo": "IA para Alunos: Aprendizagem, Criatividade, Pensamento Crítico e Futuro Profissional.",
+      "descricao": "IA para Alunos: Aprendizagem, Criatividade, Pensamento Crítico e Futuro Profissional.",
+      "programas": [
+        "educacao-inteligente"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-3",
+      "tipo": "formacao",
+      "titulo": "Inteligência Artificial e Transformação do Serviço Público.",
+      "descricao": "Inteligência Artificial e Transformação do Serviço Público.",
+      "programas": [
+        "municipio-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-4",
+      "tipo": "formacao",
+      "titulo": "Gestão Municipal Baseada em Dados, Transparência e Indicadores.",
+      "descricao": "Gestão Municipal Baseada em Dados, Transparência e Indicadores.",
+      "programas": [
+        "municipio-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-5",
+      "tipo": "formacao",
+      "titulo": "Automação Administrativa, Atendimento e Gestão de Recursos.",
+      "descricao": "Automação Administrativa, Atendimento e Gestão de Recursos.",
+      "programas": [
+        "municipio-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-6",
+      "tipo": "formacao",
+      "titulo": "Desenvolvimento de Soluções Públicas com IA: do Problema ao Protótipo.",
+      "descricao": "Desenvolvimento de Soluções Públicas com IA: do Problema ao Protótipo.",
+      "programas": [
+        "municipio-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-7",
+      "tipo": "formacao",
+      "titulo": "IA no Campo: Gestão e Produtividade.",
+      "descricao": "IA no Campo: Gestão e Produtividade.",
+      "programas": [
+        "campo-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-8",
+      "tipo": "formacao",
+      "titulo": "Produção Inteligente: Colheita, Café e Pecuária.",
+      "descricao": "Produção Inteligente: Colheita, Café e Pecuária.",
+      "programas": [
+        "campo-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-9",
+      "tipo": "formacao",
+      "titulo": "Agricultura Digital: Sensores, Água, Solo e Sustentabilidade.",
+      "descricao": "Agricultura Digital: Sensores, Água, Solo e Sustentabilidade.",
+      "programas": [
+        "campo-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-10",
+      "tipo": "formacao",
+      "titulo": "Comercialização, Rastreabilidade e Inovação Rural.",
+      "descricao": "Comercialização, Rastreabilidade e Inovação Rural.",
+      "programas": [
+        "campo-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-19",
+      "tipo": "formacao",
+      "titulo": "Inteligência Artificial para Pequenos Negócios: Gestão, Vendas, Marketing e Empreendedorismo.",
+      "descricao": "Inteligência Artificial para Pequenos Negócios: Gestão, Vendas, Marketing e Empreendedorismo.",
+      "programas": [
+        "negocio-inteligente"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-11",
+      "tipo": "formacao",
+      "titulo": "Inclusão Digital e Aprendizagem para Crianças e Adolescentes em Acolhimento.",
+      "descricao": "Inclusão Digital e Aprendizagem para Crianças e Adolescentes em Acolhimento.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-12",
+      "tipo": "formacao",
+      "titulo": "Criatividade, Estudos e Projetos de Vida com IA.",
+      "descricao": "Criatividade, Estudos e Projetos de Vida com IA.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-13",
+      "tipo": "formacao",
+      "titulo": "Trabalho, Empreendedorismo e Ferramentas Digitais para Pessoas Acolhidas.",
+      "descricao": "Trabalho, Empreendedorismo e Ferramentas Digitais para Pessoas Acolhidas.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-14",
+      "tipo": "formacao",
+      "titulo": "Gestão de Casas de Apoio, Comunicação e Organização de Equipes.",
+      "descricao": "Gestão de Casas de Apoio, Comunicação e Organização de Equipes.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-15",
+      "tipo": "formacao",
+      "titulo": "Autonomia Digital e Prevenção de Golpes para Pessoas Idosas.",
+      "descricao": "Autonomia Digital e Prevenção de Golpes para Pessoas Idosas.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-16",
+      "tipo": "formacao",
+      "titulo": "IA, Memória, Arte e Convivência na Terceira Idade.",
+      "descricao": "IA, Memória, Arte e Convivência na Terceira Idade.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-17",
+      "tipo": "formacao",
+      "titulo": "Inteligência Artificial para Comunicação, Educação e Projetos Comunitários.",
+      "descricao": "Inteligência Artificial para Comunicação, Educação e Projetos Comunitários.",
+      "programas": [
+        "comunidade-conectada"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "formacao-18",
+      "tipo": "formacao",
+      "titulo": "Gestão de Voluntariado, Doações e Prestação de Contas.",
+      "descricao": "Gestão de Voluntariado, Doações e Prestação de Contas.",
+      "programas": [
+        "comunidade-conectada"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    }
+  ],
+  "softwares": [
+    {
+      "id": "escola-aberta",
+      "tipo": "software",
+      "titulo": "Escola Aberta",
+      "descricao": "Gestão escolar, organização de informações, atividades, calendário, comunicação e módulos de transporte escolar.",
+      "descricao_completa": "Gestão escolar, organização de informações, atividades, calendário, comunicação e módulos de transporte escolar.",
+      "programas": [
+        "educacao-inteligente"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "municipio-inteligente",
+      "tipo": "software",
+      "titulo": "Município Inteligente",
+      "descricao": "Gestão de solicitações administrativas, processos, indicadores, relatórios e apoio à administração pública.",
+      "descricao_completa": "Gestão de solicitações administrativas, processos, indicadores, relatórios e apoio à administração pública.",
+      "programas": [
+        "municipio-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "campo-conectado",
+      "tipo": "software",
+      "titulo": "Campo Conectado",
+      "descricao": "Gestão de propriedades rurais, produção, colheitas, equipamentos, mapas de áreas e possibilidades de integração com sensores.",
+      "descricao_completa": "Gestão de propriedades rurais, produção, colheitas, equipamentos, mapas de áreas e possibilidades de integração com sensores.",
+      "programas": [
+        "campo-inteligente-2040"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "comunidade-organizada",
+      "tipo": "software",
+      "titulo": "Comunidade Organizada",
+      "descricao": "Gestão de organizações comunitárias, voluntários, atividades, comunicação e acervo digital.",
+      "descricao_completa": "Gestão de organizações comunitárias, voluntários, atividades, comunicação e acervo digital.",
+      "programas": [
+        "comunidade-conectada"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "partilha-solidaria",
+      "tipo": "software",
+      "titulo": "Partilha Solidária",
+      "descricao": "Gestão de campanhas, doações, estoque, distribuição de materiais e voluntariado.",
+      "descricao_completa": "Gestão de campanhas, doações, estoque, distribuição de materiais e voluntariado.",
+      "programas": [
+        "rede-solidaria"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    },
+    {
+      "id": "negocio-simples",
+      "tipo": "software",
+      "titulo": "Negócio Simples",
+      "descricao": "Gestão de pequenos negócios, vendas, estoque, clientes, despesas, relatórios e experiência de uso em dispositivos móveis.",
+      "descricao_completa": "Gestão de pequenos negócios, vendas, estoque, clientes, despesas, relatórios e experiência de uso em dispositivos móveis.",
+      "programas": [
+        "negocio-inteligente"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "gratuito": true,
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "arquitetura": "Aplicação web responsiva; backend quando necessário; Linux/Docker; autenticação, permissões, HTTPS e backups. Arquitetura proposta, sem implantação anunciada.",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04"
+    }
+  ],
+  "acoes": [
+    {
+      "id": "acao-1",
+      "tipo": "acao-social",
+      "titulo": "Campanhas de arrecadação",
+      "descricao": "Campanhas de arrecadação. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "rede-solidaria"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-2",
+      "tipo": "acao-social",
+      "titulo": "Distribuição de alimentos, roupas e materiais",
+      "descricao": "Distribuição de alimentos, roupas e materiais. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "rede-solidaria"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-3",
+      "tipo": "acao-social",
+      "titulo": "Mobilização de voluntários",
+      "descricao": "Mobilização de voluntários. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "rede-solidaria"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-4",
+      "tipo": "acao-social",
+      "titulo": "Apoio comunitário a famílias",
+      "descricao": "Apoio comunitário a famílias. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "rede-solidaria"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-5",
+      "tipo": "acao-social",
+      "titulo": "Inclusão digital",
+      "descricao": "Inclusão digital. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-6",
+      "tipo": "acao-social",
+      "titulo": "Capacitação para o trabalho",
+      "descricao": "Capacitação para o trabalho. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-7",
+      "tipo": "acao-social",
+      "titulo": "Apoio a famílias vulneráveis",
+      "descricao": "Apoio a famílias vulneráveis. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-8",
+      "tipo": "acao-social",
+      "titulo": "Apoio e encaminhamento a serviços especializados para pessoas afetadas pelo álcool e outras drogas",
+      "descricao": "Apoio e encaminhamento a serviços especializados para pessoas afetadas pelo álcool e outras drogas. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    },
+    {
+      "id": "acao-9",
+      "tipo": "acao-social",
+      "titulo": "Apoio à obtenção da CNH",
+      "descricao": "Apoio à obtenção da CNH. Proposta em planejamento, sujeita a definição de critérios, equipe e parcerias. Nenhum atendimento ou benefício disponível é anunciado.",
+      "programas": [
+        "cuidar-aprender"
+      ],
+      "status": "em-desenvolvimento",
+      "etapa": "planejamento",
+      "links": [],
+      "capa": "",
+      "alt": "",
+      "criado_em": "2026-11-04",
+      "atualizado_em": "2026-11-04",
+      "parcerias": []
+    }
+  ],
+  "legado": [
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-aberta",
+      "titulo": "Escola Aberta — gestão escolar",
+      "destino": "escola-aberta",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "comunidade-organizada",
+      "titulo": "Comunidade Organizada — gestão para igrejas",
+      "destino": "comunidade-organizada",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "caminho-escola",
+      "titulo": "Caminho da Escola — apoio ao transporte escolar",
+      "destino": "escola-aberta",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "partilha-solidaria",
+      "titulo": "Partilha Solidária — organização de doações",
+      "destino": "partilha-solidaria",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "negocio-simples",
+      "titulo": "Negócio Simples — apoio ao comércio local",
+      "destino": "negocio-simples",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "acervo-comunitario",
+      "titulo": "Acervo Comunitário — materiais para ensinar",
+      "destino": "comunidade-organizada",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "aprender-juntos",
+      "titulo": "Aprender Juntos — cursos e materiais para acolhimento",
+      "destino": "cuidar-aprender",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-historias-imagens",
+      "titulo": "Histórias que viram imagens — criatividade com IA",
+      "destino": "formacao-12",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-primeiros-passos-digitais",
+      "titulo": "Primeiros passos no mundo digital",
+      "destino": "formacao-11",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ler-contar-criar",
+      "titulo": "Ler, contar e criar histórias",
+      "destino": "formacao-11",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-matematica-cotidiano",
+      "titulo": "Matemática para a vida e pequenos projetos",
+      "destino": "formacao-11",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-para-estudar",
+      "titulo": "IA para estudar com responsabilidade",
+      "destino": "formacao-12",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "cuidado-em-rede",
+      "titulo": "Cuidado em Rede — ferramentas para casas de apoio",
+      "destino": "cuidar-aprender",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-curriculo-trabalho",
+      "titulo": "IA, currículo e preparação para o trabalho",
+      "destino": "formacao-13",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-imagens-pequenos-negocios",
+      "titulo": "Criação de imagens para pequenos negócios",
+      "destino": "formacao-13",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-planilhas-casas-apoio",
+      "titulo": "Planilhas para doações, estoque e rotina",
+      "destino": "formacao-14",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-organizacao-apoio-ia",
+      "titulo": "Organização de equipes com apoio de IA",
+      "destino": "formacao-14",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-escuta-convivencia",
+      "titulo": "Escuta, convivência e comunicação no acolhimento",
+      "destino": "formacao-14",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "viver-e-aprender",
+      "titulo": "Viver e Aprender — cursos para centros de idosos",
+      "destino": "cuidar-aprender",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-celular-autonomia",
+      "titulo": "Celular com autonomia e tranquilidade",
+      "destino": "formacao-15",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-golpes-imagens-falsas",
+      "titulo": "Reconhecer golpes, mensagens e imagens fabricadas",
+      "destino": "formacao-15",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-memorias-historias",
+      "titulo": "Memórias e histórias em palavras e imagens",
+      "destino": "formacao-16",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-cotidiano-idosos",
+      "titulo": "Conhecendo a IA no cotidiano",
+      "destino": "formacao-16",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-arte-musica-encontros",
+      "titulo": "Arte, música e encontros para compartilhar",
+      "destino": "formacao-16",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "formacao-comunitaria",
+      "titulo": "Formação Comunitária — cursos e ferramentas para servir",
+      "destino": "comunidade-conectada",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-imagens-comunidades",
+      "titulo": "IA para criar imagens e materiais de comunicação",
+      "destino": "formacao-17",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-mercado-trabalho",
+      "titulo": "IA para o mercado de trabalho e projetos pessoais",
+      "destino": "formacao-17",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-ia-educadores",
+      "titulo": "IA para educadores e cuidadores — atividades para crianças",
+      "destino": "formacao-1",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-slides-aulas",
+      "titulo": "Slides, aulas e apresentações com clareza",
+      "destino": "formacao-17",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "curso-voluntariado-organizado",
+      "titulo": "Voluntariado, doações e prestação de contas",
+      "destino": "formacao-18",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "formacao-escolas",
+      "titulo": "Palestras para escolas, professores e alunos",
+      "destino": "educacao-inteligente",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-ia-aprendizagem",
+      "titulo": "IA na escola: aprender mais sem terceirizar o pensamento",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-planejamento-professor",
+      "titulo": "O professor e a IA: planejamento, tempo e qualidade da aula",
+      "destino": "formacao-1",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-avaliacao-autoria",
+      "titulo": "Avaliação na era da IA: autoria, processo e aprendizagem real",
+      "destino": "formacao-1",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-acessibilidade",
+      "titulo": "Tecnologia e acessibilidade: materiais que mais pessoas conseguem usar",
+      "destino": "formacao-1",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-desinformacao",
+      "titulo": "Imagens, vozes e notícias fabricadas: educação para verificar",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-dados-criancas",
+      "titulo": "Dados pessoais na escola: cuidado desde o primeiro clique",
+      "destino": "formacao-1",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-imagens-criacao",
+      "titulo": "Criar com IA: arte, histórias e pensamento visual",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-trabalho-futuro",
+      "titulo": "Estudar hoje, trabalhar amanhã: habilidades humanas e IA",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-projetos-interdisciplinares",
+      "titulo": "Projetos que resolvem problemas reais da escola e do bairro",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "escola-convivencia-digital",
+      "titulo": "Convivência digital: respeito, responsabilidade e participação",
+      "destino": "formacao-2",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "formacao-servico-publico",
+      "titulo": "Palestras para servidores públicos e gestão municipal",
+      "destino": "municipio-inteligente-2040",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-rotinas-ia",
+      "titulo": "IA no serviço público: automatizar tarefas sem automatizar responsabilidades",
+      "destino": "formacao-5",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-documentos",
+      "titulo": "Documentos e conhecimento institucional: encontrar, resumir e conferir",
+      "destino": "formacao-5",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-indicadores",
+      "titulo": "Dados do município: de planilhas a perguntas melhores",
+      "destino": "formacao-4",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-atendimento",
+      "titulo": "Atendimento público com linguagem clara e apoio de IA",
+      "destino": "formacao-5",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-sustentabilidade",
+      "titulo": "IA e sustentabilidade municipal: medir antes de prometer",
+      "destino": "formacao-4",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-transparencia",
+      "titulo": "Transparência e prestação de contas: explicar números com clareza",
+      "destino": "formacao-4",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-acessibilidade",
+      "titulo": "Serviços digitais que mais cidadãos conseguem utilizar",
+      "destino": "formacao-3",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-camara",
+      "titulo": "IA na Câmara Municipal: pesquisa, leitura e apoio à organização",
+      "destino": "formacao-3",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-estoque",
+      "titulo": "Planejamento de materiais, estoque e manutenção com dados",
+      "destino": "formacao-5",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "publico-prototipos",
+      "titulo": "Do problema ao protótipo: ferramentas públicas com apoio de IA",
+      "destino": "formacao-6",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "formacao-campo",
+      "titulo": "Cursos para o campo, fazendas e cooperativas",
+      "destino": "campo-inteligente-2040",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "agro-colheita",
+      "titulo": "Gestão da colheita: planejamento, registros e indicadores",
+      "destino": "formacao-8",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "agro-ia-propriedade",
+      "titulo": "IA na propriedade rural: começar pelas tarefas certas",
+      "destino": "formacao-7",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "agro-sustentabilidade",
+      "titulo": "Dados para água, resíduos e uso responsável de recursos no campo",
+      "destino": "formacao-9",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "agro-rastreabilidade",
+      "titulo": "Rastreabilidade e comunicação: organizar a história da produção",
+      "destino": "formacao-10",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "agro-sensores",
+      "titulo": "Sensores, planilhas e protótipos para a lavoura",
+      "destino": "formacao-9",
+      "situacao": "modulo-proposto"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "colheita-organizada",
+      "titulo": "Colheita Organizada — gestão e acompanhamento da produção",
+      "destino": "campo-conectado",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "campo-conectado",
+      "titulo": "Campo Conectado — rotinas e manutenção da propriedade",
+      "destino": "campo-conectado",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "municipio-sustentavel",
+      "titulo": "Município Sustentável — indicadores e acompanhamento de ações",
+      "destino": "municipio-inteligente",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "servico-publico-simples",
+      "titulo": "Serviço Público Simples — organização de rotinas administrativas",
+      "destino": "municipio-inteligente",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "recomecar-alcool",
+      "titulo": "Recomeçar — apoio diante da dependência de álcool",
+      "destino": "cuidar-aprender",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "recomecar-outras-drogas",
+      "titulo": "Recomeçar — caminhos de cuidado diante das drogas",
+      "destino": "cuidar-aprender",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "roupas-que-acolhem",
+      "titulo": "Roupas que acolhem — partilha com dignidade",
+      "destino": "rede-solidaria",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "alimento-e-partilha",
+      "titulo": "Alimento e partilha — cuidado que chega à mesa",
+      "destino": "rede-solidaria",
+      "situacao": "preservado-como-referencia"
+    },
+    {
+      "origem": "dados/projetos.json",
+      "id": "mutirao-solidario",
+      "titulo": "Mutirão solidário — tempo e trabalho pelo próximo",
+      "destino": "rede-solidaria",
+      "situacao": "preservado-como-referencia"
+    }
+  ]
+}

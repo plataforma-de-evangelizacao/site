@@ -1,5 +1,5 @@
 """Biblioteca V3: processamento local; chave somente no ambiente do runner."""
-import copy, datetime as dt, hashlib, json, os, random, re, time
+import unicodedata, copy, datetime as dt, hashlib, json, os, random, re, time
 from metadata import enrich
 from pathlib import Path
 from urllib import request, parse, error
@@ -146,7 +146,15 @@ def classify(v,editorial,cfg):
     if blocked and r['aprovacao']=='pending_review':r['motivoRevisao']='Formato possivelmente excluído (trailer, análise, música ou pregação).'
     if v.get('status',{}).get('madeForKids') is True and 'publico' not in ed:r['publico']='infantil'
     r['tags']=[str(x)[:100] for x in sn.get('tags',[])[:40]] if isinstance(sn.get('tags'),list) else []
+    r.update(source_status=ed.get('source_status','pending'),source_url=ed.get('source_url'),ai_generated=ed.get('ai_generated',False),theme=ed.get('theme','biblico'))
     return enrich(r,sn,protected=ed.keys())
+
+def discovery_relevant(record):
+    # Conservative metadata evidence for candidate discovery, never proof of rights or doctrine.
+    text=' '.join(str(record.get(k) or '') for k in ['tituloOriginal','descricaoOriginal'])
+    text=''.join(c for c in unicodedata.normalize('NFD',text) if not unicodedata.combining(c)).casefold()
+    if record.get('livros') or record.get('personagens'):return True
+    return bool(re.search(r'\b(biblic[oa]s?|biblia|jesus|cristo|cristaos?|cristas?|gospel|evangelico|deus|fe|superacao|esperanca|milagre|perdao|a cabana|quarto de guerra|desafiando gigantes)\b',text))
 
 def validate_catalog(c,tax):
     assert c['versao']==3 and isinstance(c['itens'],list)
@@ -157,7 +165,7 @@ def validate_catalog(c,tax):
         assert r['aprovacao']=='approved' and r['disponibilidade'] in ['available','embed_restricted']
         assert r['categoria'] in ['desenho','filme','serie'] and isinstance(r['titulo'],str) and r['titulo'].strip()
         assert r['url']=='https://www.youtube.com/watch?v='+r['id']
-        assert r.get('idiomaVerificado') is True and str(r.get('idioma','')).startswith('pt')
+        assert r.get('source_status')=='verified'
         assert isinstance(r['duracao'],(int,type(None))) and (r['duracao'] is None or r['duracao']>=0)
         for b in r['livros']:assert b in books
         assert r['testamento'] in [None,'antigo','novo']
@@ -178,7 +186,7 @@ def public_catalog(s,tax,now,cfg):
         check=s['checks'].get(id,{})
         if r['aprovacao']!='approved' or r['disponibilidade'] not in ['available','embed_restricted','suspected_unavailable']:continue
         if age(check.get('verified'),now)>=cfg['maxMetadataAgeDays']:continue
-        if not r.get('idiomaVerificado') or not str(r.get('idioma','')).startswith('pt'):continue
+        if r.get('source_status')!='verified':continue
         item={k:v for k,v in r.items() if k!='motivoRevisao'}
         if item['disponibilidade']=='suspected_unavailable':item['disponibilidade']='available'
         items.append(item)
@@ -209,6 +217,11 @@ class Engine:
             if instant(rd['nextDue'])>self.now:continue
             round_id=self.now.strftime('%Y%m%dT%H%M%S')
             if routine=='discovery':
+                manual=self.root/'biblioteca-controle/links-para-revisao.json'
+                if manual.exists():
+                    entries=json.loads(manual.read_text());rows=entries.get('itens',[]) if isinstance(entries,dict) else entries
+                    ids=[x.get('id','') for x in rows if isinstance(x,dict)]
+                    if ids:enqueue(self.s,routine,'manual',','.join(ids),{},self.now,round_id,0)
                 for ch in self.sources['canais']:
                     if ch.get('approved') and not ch.get('blocked'):enqueue(self.s,routine,'channel',ch['id'],{},self.now,round_id,1)
                 for pl in self.sources['playlists']:
@@ -223,7 +236,7 @@ class Engine:
             while due<=self.now:due+=dt.timedelta(days=days)
             rd['nextDue']=due.isoformat()
         self.save()
-    def details(self,ids,force=False):
+    def details(self,ids,force=False,discovery=False):
         original_count=len(ids)
         ids=list(dict.fromkeys(x for x in ids if VIDEO.fullmatch(x)))
         self.metrics['duplicatesAvoided']+=original_count-len(ids)
@@ -231,7 +244,7 @@ class Engine:
         before=len(ids)
         ids=[x for x in ids if x not in self.sources['blockedVideos'] and self.editorial.get(x,{}).get('aprovacao') not in ['rejected','archived'] and (force or self.editorial.get(x,{}).get('reabrir') is True or self.s['records'].get(x,{}).get('aprovacao') not in ['rejected','archived'])]
         self.metrics['blockedIgnored']+=before-len(ids)
-        needed=[x for x in ids if force or age(self.s['videos'].get(x,{}).get('at'),self.now)>=self.cfg['videoCacheDays']]
+        needed=[x for x in ids if force or self.s['records'].get(x,{}).get('aprovacao')!='approved' and age(self.s['videos'].get(x,{}).get('at'),self.now)>=self.cfg['videoCacheDays']]
         self.metrics['duplicatesAvoided']+=len(ids)-len(needed)
         if not needed:return
         for start in range(0,len(needed),self.cfg['maxVideoIdsPerBatch']):
@@ -265,9 +278,11 @@ class Engine:
                 ed=self.editorial.get(id,{})
                 # Rejected IDs remain tombstones and cannot reappear by discovery.
                 old=self.s['records'].get(id,{})
-                if not old:self.metrics['newVideos']+=1
                 if old.get('aprovacao') in ['rejected','archived'] and not ed.get('reabrir'):continue
                 rec=classify(v,ed,self.cfg)
+                if discovery and not ed.get('revisado') and not discovery_relevant(rec):
+                    self.metrics['irrelevantIgnored']=self.metrics.get('irrelevantIgnored',0)+1;continue
+                if not old:self.metrics['newVideos']+=1
                 rec['dataInclusao']=old.get('dataInclusao',self.now.isoformat())
                 relevant_old={k:v for k,v in old.items() if k!='ultimaVerificacao'}
                 if relevant_old!={k:v for k,v in rec.items() if k!='ultimaVerificacao'}:
@@ -276,7 +291,7 @@ class Engine:
     def discover(self,t):
         op=t['op'];target=t['target'];params=t['params'];key=t['key'];cached=self.s['cache'].get(key)
         if cached and age(cached['at'],self.now)<self.cfg['discoveryCacheDays'] and cached['state']=='completed':
-            self.details(cached['ids']);return
+            self.details(cached['ids'],discovery=True);return
         if op=='channel':
             out=self.api.call('channels',part='contentDetails',id=target)
             for c in out['items']:
@@ -292,7 +307,7 @@ class Engine:
         ids=list(dict.fromkeys(x for x in ids if VIDEO.fullmatch(x)))
         self.s['cache'][key]=dict(at=self.now.isoformat(),expires=(self.now+dt.timedelta(days=self.cfg['discoveryCacheDays'])).isoformat(),ids=ids,params={'operation':op,'target':target,**params},algorithm=ALG,state='details_pending',pagination=out.get('nextPageToken'))
         # Persist returned IDs before any follow-up API call.
-        self.save();self.details(ids)
+        self.save();self.details(ids,discovery=True)
         self.s['cache'][key]['state']='completed'
         page=params.get('page',1)
         if out.get('nextPageToken') and page<self.cfg['maxSearchPagesPerQuery']:
@@ -365,6 +380,7 @@ class Engine:
                 t=eligible[0];t.update(state='processing',lastAttempt=self.now.isoformat(),attempts=t['attempts']+1);self.save()
                 try:
                     if t['op']=='audit':self.audit()
+                    elif t['op']=='manual':self.details(t['target'].split(','))
                     elif t['op']=='verify':self.details(t['target'].split(','),True)
                     else:
                         c=self.s['cache'].get(t['key'])

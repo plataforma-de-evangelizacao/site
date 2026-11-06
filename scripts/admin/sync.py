@@ -20,6 +20,8 @@ ALLOWED={
 for path,label in {'dados/acoes.json': 'Acoes', 'dados/acolhimento.json': 'Acolhimento', 'dados/agenda-solidaria.json': 'Agenda solidaria', 'dados/artigos.json': 'Artigos', 'dados/atividades-parcerias.json': 'Atividades parcerias', 'dados/autocuidado.json': 'Autocuidado', 'dados/biblias-e-apps.json': 'Biblias e apps', 'dados/biblias-pdf.json': 'Biblias pdf', 'dados/biblioteca/colecoes.json': 'Colecoes', 'dados/buscando.json': 'Buscando', 'dados/catalogo-conteudos.json': 'Catalogo conteudos', 'dados/comunidades.json': 'Comunidades', 'dados/corpo-escolhas.json': 'Corpo escolhas', 'dados/en/acoes.json': 'Acoes · English', 'dados/en/acolhimento.json': 'Acolhimento · English', 'dados/en/artigos.json': 'Artigos · English', 'dados/en/autocuidado.json': 'Autocuidado · English', 'dados/en/biblias-e-apps.json': 'Biblias e apps · English', 'dados/en/biblias-pdf.json': 'Biblias pdf · English', 'dados/en/buscando.json': 'Buscando · English', 'dados/en/catalogo.txt': 'Catalogo · English', 'dados/en/corpo-escolhas.json': 'Corpo escolhas · English', 'dados/en/espirito-santidade.json': 'Espirito santidade · English', 'dados/en/estudos.json': 'Estudos · English', 'dados/en/fe-conhecimento.json': 'Fe conhecimento · English', 'dados/en/interface.json': 'Interface · English', 'dados/en/leituras.json': 'Leituras · English', 'dados/en/lives.json': 'Lives · English', 'dados/en/livros.json': 'Livros · English', 'dados/en/louvores.json': 'Louvores · English', 'dados/en/materiais-ensino.json': 'Materiais ensino · English', 'dados/en/midias-biblicas.json': 'Midias biblicas · English', 'dados/en/oracoes.txt': 'Oracoes · English', 'dados/en/pagina-inicial.json': 'Pagina inicial · English', 'dados/en/palestras.json': 'Palestras · English', 'dados/en/parceiros.json': 'Parceiros · English', 'dados/en/parcerias.json': 'Parcerias · English', 'dados/en/pausa-diaria.json': 'Pausa diaria · English', 'dados/en/pecado.json': 'Pecado · English', 'dados/en/recursos-santidade.txt': 'Recursos santidade · English', 'dados/en/reflexoes.txt': 'Reflexoes · English', 'dados/en/spotify.json': 'Spotify · English', 'dados/en/temas-biblicos.json': 'Temas biblicos · English', 'dados/en/versiculos.json': 'Versiculos · English', 'dados/en/youtube.json': 'Youtube · English', 'dados/es/acoes.json': 'Acoes · Español', 'dados/es/acolhimento.json': 'Acolhimento · Español', 'dados/es/artigos.json': 'Artigos · Español', 'dados/es/autocuidado.json': 'Autocuidado · Español', 'dados/es/biblias-e-apps.json': 'Biblias e apps · Español', 'dados/es/biblias-pdf.json': 'Biblias pdf · Español', 'dados/es/buscando.json': 'Buscando · Español', 'dados/es/catalogo.txt': 'Catalogo · Español', 'dados/es/corpo-escolhas.json': 'Corpo escolhas · Español', 'dados/es/espirito-santidade.json': 'Espirito santidade · Español', 'dados/es/estudos.json': 'Estudos · Español', 'dados/es/fe-conhecimento.json': 'Fe conhecimento · Español', 'dados/es/interface.json': 'Interface · Español', 'dados/es/leituras.json': 'Leituras · Español', 'dados/es/lives.json': 'Lives · Español', 'dados/es/livros.json': 'Livros · Español', 'dados/es/louvores.json': 'Louvores · Español', 'dados/es/materiais-ensino.json': 'Materiais ensino · Español', 'dados/es/midias-biblicas.json': 'Midias biblicas · Español', 'dados/es/oracoes.txt': 'Oracoes · Español', 'dados/es/pagina-inicial.json': 'Pagina inicial · Español', 'dados/es/palestras.json': 'Palestras · Español', 'dados/es/parceiros.json': 'Parceiros · Español', 'dados/es/parcerias.json': 'Parcerias · Español', 'dados/es/pausa-diaria.json': 'Pausa diaria · Español', 'dados/es/pecado.json': 'Pecado · Español', 'dados/es/recursos-santidade.txt': 'Recursos santidade · Español', 'dados/es/reflexoes.txt': 'Reflexoes · Español', 'dados/es/spotify.json': 'Spotify · Español', 'dados/es/temas-biblicos.json': 'Temas biblicos · Español', 'dados/es/versiculos.json': 'Versiculos · Español', 'dados/es/youtube.json': 'Youtube · Español', 'dados/espirito-santidade.json': 'Espirito santidade', 'dados/estudos.json': 'Estudos', 'dados/fe-conhecimento.json': 'Fe conhecimento', 'dados/formacoes.json': 'Formacoes', 'dados/ideias-sociais.json': 'Ideias sociais', 'dados/leituras.json': 'Leituras', 'dados/lives.json': 'Lives', 'dados/livros.json': 'Livros', 'dados/louvores.json': 'Louvores', 'dados/materiais-ensino.json': 'Materiais ensino', 'dados/midias-biblicas.json': 'Midias biblicas', 'dados/oracoes.txt': 'Oracoes', 'dados/pagina-inicial.json': 'Pagina inicial', 'dados/palestras.json': 'Palestras', 'dados/parceiros.json': 'Parceiros', 'dados/parcerias.json': 'Parcerias', 'dados/pausa-diaria.json': 'Pausa diaria', 'dados/pecado.json': 'Pecado', 'dados/planejamento.json': 'Planejamento', 'dados/prestacao-contas.json': 'Prestacao contas', 'dados/projetos.json': 'Projetos', 'dados/recursos-santidade.txt': 'Recursos santidade', 'dados/rede-parceiros.json': 'Rede parceiros', 'dados/reflexoes.txt': 'Reflexoes', 'dados/spotify.json': 'Spotify', 'dados/temas-biblicos.json': 'Temas biblicos', 'dados/versiculos.json': 'Versiculos', 'dados/youtube.json': 'Youtube'}.items():
  ALLOWED.setdefault(path,label)
 
+ALLOWED.update({'dados/programas.json':'Programas e projetos','dados/plano-biblico.json':'Plano bíblico anual','dados/fontes-legitimas.json':'Fontes legítimas'})
+
 def sha(text):return hashlib.sha256(text.encode()).hexdigest()
 def canonical(v):return json.dumps(v,ensure_ascii=False,sort_keys=True,separators=(',',':'))
 def git(*args):
@@ -45,7 +47,7 @@ def snapshot(state):
   checked=state.get('checks',{}).get(id,{}).get('verified')
   if not checked or (now-instant(checked)).total_seconds()>=29*86400 or not r.get('titulo'):continue
   # Don't export raw provider responses or internal logs to the browser.
-  record={k:r.get(k) for k in ['id','titulo','descricao','tituloOriginal','descricaoOriginal','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao','thumbnail','url','testamento','livros','referencias','personagens','temas','publico','formato','serieId','temporada','episodio','dataInclusao','tags','catalogacaoAutomatica','camposEditoriais']}
+  record={k:r.get(k) for k in ['source_status','source_url','source_evidence','ai_generated','theme','id','titulo','descricao','tituloOriginal','descricaoOriginal','categoria','idioma','idiomaVerificado','aprovacao','disponibilidade','fonteClassificacao','canalNome','duracao','ultimaVerificacao','thumbnail','url','testamento','livros','referencias','personagens','temas','publico','formato','serieId','temporada','episodio','dataInclusao','tags','catalogacaoAutomatica','camposEditoriais']}
   rows.append(dict(id=id,record=record,sha=sha(canonical(record)),expires_at=(instant(checked)+dt.timedelta(days=29)).isoformat(),updated_at=now.isoformat()))
  return rows
 
@@ -54,23 +56,17 @@ def load_remote_state():
  return json.loads(git('show','FETCH_HEAD:estado.json'))
 
 def export(client,state=None):
- state=state if state is not None else load_remote_state()
- rows=snapshot(state)
- for i in range(0,len(rows),100):client.call('pge_videos','on_conflict=id','POST',rows[i:i+100])
- try:client.call('pge_video_decisions','last_title_expires_at=lt.'+parse.quote(dt.datetime.now(dt.timezone.utc).isoformat(),safe=''),'PATCH',dict(last_title=None))
- except error.HTTPError as ex:
-  if ex.code not in [400,404]:raise
- client.call('pge_videos','expires_at=lt.'+parse.quote(dt.datetime.now(dt.timezone.utc).isoformat(),safe=''),'DELETE')
  docs=[]
  live=live_rows(client,'pge_live_documents');live_by_path={x['path']:x for x in live}
  for path in ALLOWED:
+  if path.startswith(('dados/biblioteca/','biblioteca-controle/')) or path=='dados/fontes-legitimas.json':continue
   file=ROOT/path
   if file.exists():
    content=live_by_path[path]['content'] if path in live_by_path else file.read_text()
    if path.endswith('.json'):json.loads(content)
    docs.append(dict(path=path,content=content,sha=live_by_path[path]['sha'] if path in live_by_path else sha(content),updated_at=dt.datetime.now(dt.timezone.utc).isoformat()))
  if docs:client.call('pge_documents','on_conflict=path','POST',docs)
- return dict(videos=len(rows),documents=len(docs))
+ return dict(videos=0,documents=len(docs))
 
 def apply_command(command,records):
  payload=command['payload']
@@ -134,7 +130,7 @@ def validate_change(path,text):
    if not isinstance(data,dict):raise ValueError('invalid_editorial')
    for id,r in data.items():
     if not VIDEO.fullmatch(id) or not isinstance(r,dict) or r.get('aprovacao') not in ['approved','rejected','archived','pending_review']:raise ValueError('invalid_editorial_record')
-    if r.get('aprovacao')=='approved' and (r.get('revisado') is not True or r.get('categoria') not in ['desenho','filme','serie'] or r.get('idiomaVerificado') is not True or not str(r.get('idioma','')).startswith('pt')):raise ValueError('invalid_editorial_approval')
+    if r.get('aprovacao')=='approved' and (r.get('revisado') is not True or r.get('categoria') not in ['desenho','filme','serie']):raise ValueError('invalid_editorial_approval')
     books={b['id']:b for b in json.loads((ROOT/'dados/biblioteca/taxonomia.json').read_text())['livros']}
     for ref in r.get('referencias',[]):
      if ref.get('livro') not in books or not isinstance(ref.get('capitulo'),int) or not 1<=ref['capitulo']<=books[ref['livro']]['capitulos'] or ref.get('revisada') is not True:raise ValueError('invalid_scripture_reference')
@@ -167,7 +163,7 @@ def dispatch_backend(command):
 
 def sync_command(client,command):
  target=command.get('payload',{}).get('target')
- if target not in ['video-discovery','site-publication','panel-sync','platform-update']:raise ValueError('invalid_sync_target')
+ if target not in ['site-publication','panel-sync','platform-update']:raise ValueError('invalid_sync_target')
  # Never dispatch a second workflow for a command already handed to GitHub.
  if command.get('status')=='processing':
   # A callback can be interrupted; reconcile on later scheduled runs using this request's run title.
@@ -196,7 +192,7 @@ def sync_command(client,command):
   client.call('pge_commands',query,'PATCH',dict(result=json.dumps(info,ensure_ascii=False)))
   try:
    if target=='platform-update':dispatch_backend(command)
-   else:dispatch_library(command,'buscar-agora' if target=='video-discovery' else 'publicar-site')
+   else:dispatch_library(command,'publicar-site')
   except error.HTTPError as ex:
    if ex.code in [400,401,403,404,422]:raise ValueError('invalid_github_dispatch_permissions') from None
    raise
@@ -219,6 +215,7 @@ def hydrate_live(root,client=None,commit=False):
  changed=[]
  for doc in live_rows(client,'pge_live_documents'):
   path=doc['path']
+  if path.startswith(('dados/biblioteca/','biblioteca-controle/')) or path=='dados/fontes-legitimas.json':continue
   if path not in ALLOWED:raise ValueError('path_not_allowed')
   text=doc['content']
   if path.endswith('.json'):json.loads(text)
@@ -226,19 +223,6 @@ def hydrate_live(root,client=None,commit=False):
   if file.exists() and file.read_text()!=text:
    if commit:validate_change(path,text)
    file.write_text(text);changed.append(path)
- file=root/'biblioteca-controle/editorial.json';editorial=json.loads(file.read_text());previous=canonical(editorial)
- for decision in live_rows(client,'pge_video_decisions'):
-  entry=editorial.setdefault(decision['id'],{});state=decision['decision'];entry.update(aprovacao=state,revisado=True,reabrir=state in ['approved','pending_review'])
-  for column,key in [('display_title','tituloExibicao'),('display_description','descricaoExibicao')]:
-   if column in decision:
-    if decision[column] is None:entry.pop(key,None)
-    else:entry[key]=decision[column]
-  if decision.get('category'):entry['categoria']=decision['category']
-  if decision.get('portuguese_confirmed'):entry.update(idioma='pt-BR',idiomaVerificado=True)
- if canonical(editorial)!=previous:
-  text=json.dumps(editorial,ensure_ascii=False,indent=2)+'\n'
-  if commit:validate_change('biblioteca-controle/editorial.json',text)
-  file.write_text(text);changed.append('biblioteca-controle/editorial.json')
  if commit and changed:
   git('add','--',*changed);git('-c','user.name=Painel da plataforma','-c','user.email=painel@users.noreply.github.com','commit','-m','Sincronizar publicação direta do painel');git('push','origin','HEAD:main')
  return changed
@@ -249,11 +233,12 @@ def process(client):
  hydrate_live(ROOT,client,commit=True)
  pending=client.call('pge_commands','status=in.(pending,processing)&order=created_at.asc&limit=20')
  admins={x['user_id'] for x in client.call('pge_admins','select=user_id')}
- videos={x['id']:x for x in current_reviews()}
+ videos={}
  applied=0;failed=0
  for command in pending:
   id=command['id'];query='id=eq.'+parse.quote(id,safe='')
   try:
+   if command['action']=='review_video':raise ValueError('action_retired')
    if command['user_id'] not in admins:raise ValueError('administrator_revoked')
    if command['action']=='save_json' and any(d['path']==command['payload'].get('path') for d in live_rows(client,'pge_live_documents')):
     raise ValueError('conflict_direct_publication_enabled')

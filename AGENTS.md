@@ -26,6 +26,13 @@ Biblioteca audiovisual V3: ler BIBLIOTECA-AUTOMATICA.md. Os dados de controle fi
 
 Painel administrativo: ler PAINEL-ADMINISTRATIVO.md. Login real por Supabase Auth e RLS; nunca substituir por senha estática ou autenticação apenas visual. Nenhuma chave service_role/sb_secret pode entrar em admin/config.json. Não publicar mocks/fixtures de autenticação. Alterações de vídeos e documentos usam as RPCs autenticadas de publicação direta, com validação e comparação de versão. A fila continua para buscas externas e sincronização Git, com commit sem força. Não anunciar RLS ativo ou acesso real antes de testar no projeto configurado pelo usuário.
 
-Atualizações e integrações: ler COMECE-AQUI-INTEGRACOES.md. Não expor GITHUB_DISPATCH_TOKEN. admin-dispatch autentica via Auth e pge_admins e só permite workflows fixos. Sessão é por aba, com dez minutos de inatividade. Percentuais e contadores devem refletir retornos reais. Excluir cartões de objeto usa lixeira reversível. Regras de indexação são sugestões explicáveis e não alteram aprovação ou referências bíblicas revisadas.
+Atualizações e integrações: ler COMECE-AQUI-INTEGRACOES.md. Não expor GITHUB_DISPATCH_TOKEN. admin-dispatch autentica via Auth e pge_members ativo e só permite workflows fixos. Sessão é por aba, com vinte minutos de inatividade. Percentuais e contadores devem refletir retornos reais. Excluir cartões de objeto usa lixeira reversível. Regras de indexação são sugestões explicáveis e não alteram aprovação ou referências bíblicas revisadas.
 
 Manutenção automática: ler LEIA-PRIMEIRO.md. backend/release.json e admin/release.json precisam concordar com a função. Nunca editar migrações já registradas: criar novas versões e atualizar checksums. SUPABASE_ACCESS_TOKEN permanece apenas no runner. O frontend só dispara workflows fixos, sem SQL livre ou credenciais de gestão.
+
+Atualização v43: README.md e COMECE-AQUI-V43.md são as referências atuais. Preservar programas.json, plano-biblico.json e fontes-legitimas.json como documentos compartilhados. Fontes de filmes sem procedência verificada permanecem fora do catálogo público. Backup/recuperação usa cofre local criptografado, nunca frontend; não afirmar recuperar valores de Secrets pela API nem testar produção sem resultado real.
+
+
+## Revisão bíblica antes de publicar
+
+Em toda atualização da PGE, examine a proposta à luz das Escrituras, especialmente Êxodo 20:1–17, Deuteronômio 5:6–21 e Mateus 22:37–40. Ao identificar conflito concreto, indique o mandamento, a evidência e uma alternativa. Diferencie fatos de suspeitas e mandamento de aplicação prudencial. Revise veracidade, procedência e autorização de materiais, transparência de doações e dignidade das pessoas. A revisão é um processo de discernimento e correção contínua.

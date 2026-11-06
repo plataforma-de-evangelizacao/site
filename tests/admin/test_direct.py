@@ -23,14 +23,14 @@ class DirectTests(unittest.TestCase):
   for name in ['pge_live_documents','pge_video_decisions','pge_partner_entities','pge_project_entities','pge_project_partners']:self.assertIn('alter table public.'+name+' enable row level security',SQL)
  def test_foreign_keys(self):self.assertIn('references public.pge_partner_entities(id) on delete cascade',SQL);self.assertIn('invalid_unknown_partner',SQL)
  def test_restore_and_archive(self):self.assertIn("old.decision='archived' and old.portuguese_confirmed",SQL);self.assertIn("item->>'_admin_hidden'='true'",SQL)
- def test_hydrate_preserves_edits_and_blocks(self):
+ def test_hydrate_preserves_content_without_importing_video_decisions(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp);(root/'dados').mkdir();(root/'biblioteca-controle').mkdir();(root/'dados/projetos.json').write_text('{"itens":[]}');(root/'biblioteca-controle/editorial.json').write_text('{}')
    class Client:
     url='https://fixture.supabase.co';key='fixture'
     def call(self,table,query='',method='GET',data=None):
      return [{'path':'dados/projetos.json','content':'{"itens":[{"id":"new","titulo":"Novo"}]}','sha':'live:1'}] if table=='pge_live_documents' else [{'id':'abc123def45','decision':'rejected','category':'filme','portuguese_confirmed':False,'display_title':'Ester','display_description':'Descrição editorial'}]
-   changed=b.hydrate_live(root,Client());self.assertIn('dados/projetos.json',changed);self.assertEqual(json.loads((root/'dados/projetos.json').read_text())['itens'][0]['titulo'],'Novo');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['aprovacao'],'rejected');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['tituloExibicao'],'Ester');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text())['abc123def45']['descricaoExibicao'],'Descrição editorial')
+   changed=b.hydrate_live(root,Client());self.assertIn('dados/projetos.json',changed);self.assertEqual(json.loads((root/'dados/projetos.json').read_text())['itens'][0]['titulo'],'Novo');self.assertEqual(json.loads((root/'biblioteca-controle/editorial.json').read_text()),{})
  def test_paths_protected(self):
   class Client:
    url='https://fixture.supabase.co';key='fixture'
