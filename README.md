@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Plataforma Global de Evangelização (PGE) · V46
 
 **6 de novembro de 2026** · [Site publicado](https://plataforma-de-evangelizacao.github.io/site/)
@@ -27,6 +28,9 @@ O kit de backup atual é mantido separadamente e usa um JSON local. As referênc
 ---
 
 # Plataforma Global de Evangelização v45
+=======
+# Plataforma Global de Evangelização v46
+>>>>>>> e324d54d2a2eac9aa799486a68a175d3187fce5a
 
 Consulte [Instalação](COMECE-AQUI-V45.md), [Alterações](docs/ALTERACOES-V45.md), [Testes](docs/TESTES-V45.md) e [Migração de chat](GUIA-MIGRACAO-PGE.md). A documentação da v44 segue abaixo para histórico.
 
