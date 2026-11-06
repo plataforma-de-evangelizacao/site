@@ -1,4 +1,4 @@
-# Plataforma Global de Evangelização v45
+# Plataforma Global de Evangelização v46
 
 Consulte [Instalação](COMECE-AQUI-V45.md), [Alterações](docs/ALTERACOES-V45.md), [Testes](docs/TESTES-V45.md) e [Migração de chat](GUIA-MIGRACAO-PGE.md). A documentação da v44 segue abaixo para histórico.
 
