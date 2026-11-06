@@ -1,3 +1,31 @@
+# Plataforma Global de Evangelização (PGE) · V46
+
+**6 de novembro de 2026** · [Site publicado](https://plataforma-de-evangelizacao.github.io/site/)
+
+Projeto comunitário cristão de evangelização, formação e participação solidária. Reúne estudos bíblicos, livros, palestras, projetos e indicações de fontes oficiais.
+
+## Comece por aqui
+
+- [Instalação e roteiro de conferência da V46](COMECE-AQUI-V46.md)
+- [Painel administrativo](PAINEL-ADMINISTRATIVO.md)
+- [Kit de backup e restauração com JSON local](https://chatgpt.com/library?file_id=libfile_a7ed57669fcc81918077e24aadd274bd&account_id=personal)
+
+## O que mudou na V46
+
+- O painel agrupa os menus em **Conteúdos** e **Administração**. Palestras e lives ficam junto dos demais conteúdos.
+- A lista de conteúdos publicados ganhou o filtro **Atividades e instituições**. A lixeira distingue itens arquivados de excluídos e permite restaurá-los.
+- O editor abre a ficha diretamente, com ações para publicar ou descartar. Instituições ganharam campos de endereço e site oficial. Atividades propostas podem ser movidas entre instituições.
+- A página pública de Atividades distingue propostas de agendas oficiais e respeita o arquivamento.
+- O catálogo audiovisual ganhou filtros por formato e quatro indicações com links oficiais. A disponibilidade depende da região e do serviço.
+
+## Publicação e manutenção
+
+A V46 é incremental sobre a V45 e dispensa nova migração do Supabase. O GitHub Pages publica o site e o Supabase sustenta o painel e os dados dinâmicos. Para a conferência em produção, siga o roteiro da V46.
+
+O kit de backup atual é mantido separadamente e usa um JSON local. As referências ao kit V43 abaixo fazem parte do histórico.
+
+---
+
 # Plataforma Global de Evangelização v45
 
 Consulte [Instalação](COMECE-AQUI-V45.md), [Alterações](docs/ALTERACOES-V45.md), [Testes](docs/TESTES-V45.md) e [Migração de chat](GUIA-MIGRACAO-PGE.md). A documentação da v44 segue abaixo para histórico.
