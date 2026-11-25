@@ -43,7 +43,7 @@ def build_site(root,out):
     # Explicit allowlist prevents control data, scripts, logs, prompts and credentials leaking into Pages.
     for name in ['index.html','favicon.ico','catalogo.txt','links-biblias-pdf.txt','CNAME']:
         if (root/name).is_file():shutil.copy2(root/name,out/name)
-    for name in ['assets','dados','modelos','admin']:
+    for name in ['assets','dados','modelos','admin','v49','aluno']:
         if (root/name).exists():shutil.copytree(root/name,out/name,ignore=shutil.ignore_patterns('*.tmp','*.bak','__pycache__'))
     (out/'.nojekyll').touch()
 

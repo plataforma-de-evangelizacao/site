@@ -1,0 +1,20 @@
+/* Public surfaces use the Home r3 planet, theme variables and atmosphere. */
+.aurora-public.portfolio-page{--p-surface:rgba(10,25,44,.68);--p-raised:rgba(20,44,69,.76);--p-line:rgba(139,198,237,.23);--p-accent:var(--cyan);--p-gold:#edcf8e;isolation:isolate;background:var(--canvas)}
+html[data-theme=light] .aurora-public.portfolio-page{--p-surface:rgba(249,253,255,.72);--p-raised:rgba(225,241,250,.76);--p-line:rgba(72,124,157,.30);--p-accent:#09688c}
+.aurora-public .page-aura{z-index:-1}.aurora-public .portfolio-hero{background:linear-gradient(180deg,transparent,rgba(9,22,42,.13));border-color:var(--p-line)}
+html[data-theme=light] .aurora-public .portfolio-hero{background:linear-gradient(180deg,transparent,rgba(239,248,253,.24))}
+.aurora-public .site-header{background:rgba(5,11,24,.78);backdrop-filter:blur(18px)}
+html[data-theme=light] .aurora-public .site-header{background:rgba(247,252,255,.78)}
+.aurora-public .proposal-card,.aurora-public .lib-card,.aurora-public .lib-sidebar,.aurora-public .detail-sidebar,.aurora-public .detail-hero,.aurora-public .program-panel,.aurora-public .catalog-search,.aurora-public .catalog-state,.aurora-public .portfolio-invite,.aurora-public .sidebar-note,.aurora-public .p-dialog{background:var(--p-surface);border-color:var(--p-line);backdrop-filter:blur(8px)}
+.aurora-public .card-cover,.aurora-public .lib-cover,.aurora-public .lib-hero img{background:linear-gradient(135deg,rgba(40,85,117,.38),rgba(13,36,64,.49));border-bottom:1px solid var(--p-line)}
+.aurora-public .card-cover img,.aurora-public .lib-cover img{opacity:.93}
+.aurora-public .hero-copy h1 em,.aurora-public .lib-hero h1 em{color:var(--cyan)}
+html[data-theme=light] .aurora-public .hero-copy h1 em,html[data-theme=light] .aurora-public .lib-hero h1 em{color:#176b91}
+.aurora-public .p-button.primary{background:linear-gradient(110deg,#98dcfa,#50b8e5);color:#082a3e;border-color:rgba(153,224,255,.56)}
+html[data-theme=light] .aurora-public .p-button.primary{background:linear-gradient(110deg,#126b95,#075372);color:#fff}
+.aurora-public .site-footer{background:rgba(5,11,24,.6)}
+html[data-theme=light] .aurora-public .site-footer{background:rgba(242,249,253,.65)}
+.aurora-public .type-tab[aria-pressed=true],.aurora-public .area-button[aria-pressed=true],.aurora-public .lib-tab[aria-pressed=true],.aurora-public .lib-area[aria-pressed=true]{background:var(--p-raised);border-color:var(--p-accent)}
+.aurora-public .cover-icon,.aurora-public .lib-cover .p-icon{color:#a3e6ff;border-color:rgba(138,211,243,.35)}
+.aurora-public .art-caption{background:var(--p-surface);border-color:var(--p-line)}
+html[data-theme=light] .aurora-public .art-caption{background:var(--p-surface)}

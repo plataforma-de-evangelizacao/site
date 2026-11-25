@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área do Aluno | PGE</title>
+<link rel="stylesheet" href="../assets/aluno-portal.css"><script src="../assets/theme-boot.js"></script><style>
+body{margin:auto;padding:1.5rem;max-width:52rem;font:1rem/1.6 system-ui;color:#153b35;background:#faf8f1}
+section,article{margin:1rem 0}article{border:1px solid #789b89;border-radius:.5rem;padding:1rem}
+label{display:block;margin:.7rem 0}input,textarea,button{font:inherit;padding:.4rem;max-width:100%;box-sizing:border-box}
+textarea{display:block;width:100%;min-height:8rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}
+</style>
+<script src="portal.js" defer></script>
+</head>
+<body>
+<header><a href="../">Voltar à plataforma</a><h1>Área do Aluno</h1></header>
+<main>
+<p id="status" role="status">Consultando disponibilidade…</p>
+<section id="catalog" hidden><h2>Cursos disponíveis</h2><div id="courses"></div></section>
+<form id="login" hidden>
+<h2>Entrar</h2>
+<label>E-mail <input name="email" type="email" required autocomplete="username"></label>
+<label>Senha <input name="password" type="password" required autocomplete="current-password"></label>
+<button>Entrar</button>
+</form>
+<section id="portal" hidden><h2>Minhas matrículas</h2><button id="logout" type="button">Sair</button><div id="records"></div></section>
+</main>
+</body>
+</html>

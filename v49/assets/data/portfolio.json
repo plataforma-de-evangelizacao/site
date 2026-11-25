@@ -1,0 +1,1632 @@
+{
+  "version": "projetos-r1",
+  "areas": [
+    {
+      "id": "education",
+      "icon": "book",
+      "title": {
+        "pt": "Educação e cultura",
+        "en": "Education & culture",
+        "es": "Educación y cultura"
+      }
+    },
+    {
+      "id": "care",
+      "icon": "hands",
+      "title": {
+        "pt": "Proteção e cuidado",
+        "en": "Protection & care",
+        "es": "Protección y cuidado"
+      }
+    },
+    {
+      "id": "food",
+      "icon": "sprout",
+      "title": {
+        "pt": "Alimentação e moradia",
+        "en": "Food & housing",
+        "es": "Alimentación y vivienda"
+      }
+    },
+    {
+      "id": "health",
+      "icon": "heart",
+      "title": {
+        "pt": "Saúde e inclusão",
+        "en": "Health & inclusion",
+        "es": "Salud e inclusión"
+      }
+    },
+    {
+      "id": "technology",
+      "icon": "chip",
+      "title": {
+        "pt": "Tecnologia e trabalho",
+        "en": "Technology & work",
+        "es": "Tecnología y trabajo"
+      }
+    },
+    {
+      "id": "community",
+      "icon": "globe",
+      "title": {
+        "pt": "Fé e comunidade",
+        "en": "Faith & community",
+        "es": "Fe y comunidad"
+      }
+    }
+  ],
+  "programs": [
+    {
+      "id": "educacao-inteligente",
+      "title": {
+        "pt": "Educação Inteligente",
+        "en": "Smart Education",
+        "es": "Educación Inteligente"
+      },
+      "summary": {
+        "pt": "Programa formativo proposto para educadores e alunos, com IA, tecnologia e pensamento crítico.",
+        "en": "A proposed learning program for educators and students on AI, technology and critical thinking.",
+        "es": "Programa formativo propuesto para docentes y estudiantes sobre IA, tecnología y pensamiento crítico."
+      },
+      "area": "education",
+      "icon": "book"
+    },
+    {
+      "id": "municipio-inteligente-2040",
+      "title": {
+        "pt": "Município Inteligente 2040",
+        "en": "Smart Municipality 2040",
+        "es": "Municipio Inteligente 2040"
+      },
+      "summary": {
+        "pt": "Percursos propostos para servidores, gestão baseada em dados e melhoria dos serviços públicos.",
+        "en": "Proposed learning pathways for public servants, data-informed management and better public services.",
+        "es": "Recorridos formativos propuestos para servidores públicos, gestión basada en datos y servicios públicos."
+      },
+      "area": "technology",
+      "icon": "city"
+    },
+    {
+      "id": "campo-inteligente-2040",
+      "title": {
+        "pt": "Campo Inteligente 2040",
+        "en": "Smart Countryside 2040",
+        "es": "Campo Inteligente 2040"
+      },
+      "summary": {
+        "pt": "Formação tecnológica proposta para produtores rurais, agricultura familiar e sustentabilidade.",
+        "en": "Proposed technology education for rural producers, family farming and sustainability.",
+        "es": "Formación tecnológica propuesta para productores rurales, agricultura familiar y sostenibilidad."
+      },
+      "area": "technology",
+      "icon": "sprout"
+    },
+    {
+      "id": "negocio-inteligente",
+      "title": {
+        "pt": "Negócio Inteligente",
+        "en": "Smart Business",
+        "es": "Negocio Inteligente"
+      },
+      "summary": {
+        "pt": "Programa formativo proposto de IA, ferramentas digitais e gestão de pequenos negócios.",
+        "en": "A proposed learning program on AI, digital tools and small business management.",
+        "es": "Programa formativo propuesto sobre IA, herramientas digitales y gestión de pequeños negocios."
+      },
+      "area": "technology",
+      "icon": "briefcase"
+    },
+    {
+      "id": "rede-solidaria",
+      "title": {
+        "pt": "Rede Solidária",
+        "en": "Solidarity Network",
+        "es": "Red Solidaria"
+      },
+      "summary": {
+        "pt": "Proposta comunitária de solidariedade e voluntariado. O percurso formativo ainda não está detalhado.",
+        "en": "A community program proposal focused on solidarity and volunteering. A learning pathway has not yet been detailed.",
+        "es": "Propuesta comunitaria de solidaridad y voluntariado. El recorrido formativo aún no está detallado."
+      },
+      "area": "care",
+      "icon": "hands"
+    },
+    {
+      "id": "cuidar-aprender",
+      "title": {
+        "pt": "Cuidar e Aprender",
+        "en": "Care & Learning",
+        "es": "Cuidar y Aprender"
+      },
+      "summary": {
+        "pt": "Percursos propostos de inclusão digital, organizações de acolhimento, pessoas idosas e pessoas em vulnerabilidade.",
+        "en": "Proposed learning pathways for digital inclusion, care organizations, older adults and vulnerable people.",
+        "es": "Recorridos propuestos de inclusión digital, organizaciones de acogida, personas mayores y personas vulnerables."
+      },
+      "area": "care",
+      "icon": "heart"
+    },
+    {
+      "id": "comunidade-conectada",
+      "title": {
+        "pt": "Comunidade Conectada",
+        "en": "Connected Community",
+        "es": "Comunidad Conectada"
+      },
+      "summary": {
+        "pt": "Percursos propostos para voluntários, organização comunitária e comunicação educativa.",
+        "en": "Proposed learning pathways for volunteers, community organization and educational communication.",
+        "es": "Recorridos propuestos para voluntarios, organización comunitaria y comunicación educativa."
+      },
+      "area": "community",
+      "icon": "people"
+    }
+  ],
+  "items": [
+    {
+      "id": "P01",
+      "type": "project",
+      "area": "education",
+      "icon": "laptop",
+      "title": {
+        "pt": "Informática para Todos",
+        "en": "Digital Skills for Everyone",
+        "es": "Informática para Todos"
+      },
+      "summary": {
+        "pt": "Autonomia para aprender, trabalhar e participar do mundo digital. Uma proposta que reúne informática, inteligência artificial e cidadania.",
+        "en": "A proposal bringing together computer skills, artificial intelligence and digital citizenship for greater independence.",
+        "es": "Una propuesta que reúne informática, inteligencia artificial y ciudadanía para una mayor autonomía."
+      },
+      "audience": {
+        "pt": "Iniciantes, estudantes, trabalhadores e pessoas empreendedoras.",
+        "en": "Beginners, students, workers and entrepreneurs.",
+        "es": "Principiantes, estudiantes, trabajadores y personas emprendedoras."
+      },
+      "goals": {
+        "pt": [
+          "Desenvolver autonomia e segurança no uso da tecnologia.",
+          "Conectar aprendizagem prática, pensamento crítico e cidadania.",
+          "Organizar uma formação integral, com níveis ajustáveis ao público."
+        ],
+        "en": [
+          "Build confidence and safety when using technology.",
+          "Connect practical learning, critical thinking and citizenship.",
+          "Develop a complete learning pathway, adapted to participants."
+        ],
+        "es": [
+          "Desarrollar autonomía y seguridad al usar tecnología.",
+          "Conectar aprendizaje práctico, pensamiento crítico y ciudadanía.",
+          "Organizar una formación integral adaptada a sus participantes."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": [
+        "formacao-comunitaria-p01"
+      ]
+    },
+    {
+      "id": "P02",
+      "type": "project",
+      "area": "food",
+      "icon": "house",
+      "title": {
+        "pt": "Cidades para Cristo",
+        "en": "Cities for Christ",
+        "es": "Ciudades para Cristo"
+      },
+      "summary": {
+        "pt": "Estudo de comunidades inclusivas, com moradia, infraestrutura, produção de alimentos e oportunidades de autonomia.",
+        "en": "A concept for inclusive communities connecting housing, infrastructure, food production and opportunities for independence.",
+        "es": "Estudio de comunidades inclusivas que conectan vivienda, infraestructura, producción de alimentos y autonomía."
+      },
+      "audience": {
+        "pt": "Pessoas e famílias em vulnerabilidade habitacional e social.",
+        "en": "People and families facing housing and social vulnerability.",
+        "es": "Personas y familias en situación de vulnerabilidad social y habitacional."
+      },
+      "goals": {
+        "pt": [
+          "Estudar a viabilidade de moradia e infraestrutura dignas.",
+          "Integrar alimentação, educação e oportunidades de trabalho.",
+          "Planejar com respeito às escolhas e necessidades da comunidade."
+        ],
+        "en": [
+          "Study the feasibility of dignified housing and infrastructure.",
+          "Connect food access, education and work opportunities.",
+          "Plan around community choices and needs."
+        ],
+        "es": [
+          "Estudiar la viabilidad de vivienda e infraestructura dignas.",
+          "Integrar alimentación, educación y oportunidades de trabajo.",
+          "Planificar respetando las decisiones y necesidades de la comunidad."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P03",
+      "type": "project",
+      "area": "care",
+      "icon": "shield",
+      "title": {
+        "pt": "Proteção contra abuso e exploração",
+        "en": "Protection from abuse & exploitation",
+        "es": "Protección contra el abuso y la explotación"
+      },
+      "summary": {
+        "pt": "Prevenção, informação e encaminhamento responsável para redes competentes de proteção de pessoas.",
+        "en": "Prevention, information and responsible referral to qualified protection networks.",
+        "es": "Prevención, información y orientación responsable hacia redes de protección competentes."
+      },
+      "audience": {
+        "pt": "Pessoas em risco de abuso, exploração sexual ou tráfico de pessoas.",
+        "en": "People at risk of abuse, sexual exploitation or human trafficking.",
+        "es": "Personas en riesgo de abuso, explotación sexual o trata."
+      },
+      "goals": {
+        "pt": [
+          "Ampliar o acesso a informação preventiva.",
+          "Preservar segurança, privacidade e dignidade.",
+          "Estudar cooperação com redes e serviços competentes."
+        ],
+        "en": [
+          "Improve access to prevention information.",
+          "Protect safety, privacy and dignity.",
+          "Explore cooperation with qualified networks and services."
+        ],
+        "es": [
+          "Ampliar el acceso a información preventiva.",
+          "Proteger la seguridad, privacidad y dignidad.",
+          "Estudiar la cooperación con redes y servicios competentes."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P04",
+      "type": "project",
+      "area": "care",
+      "icon": "hands",
+      "title": {
+        "pt": "Reabilitação e reintegração social",
+        "en": "Recovery & social reintegration",
+        "es": "Rehabilitación y reintegración social"
+      },
+      "summary": {
+        "pt": "Caminhos de autonomia, educação e reconstrução de vínculos. Inclui a proposta Recuperação de Vidas, voltada a pessoas afetadas pela dependência química.",
+        "en": "Pathways to independence, education and renewed relationships, including a proposed support initiative for people affected by substance dependence.",
+        "es": "Caminos de autonomía, educación y reconstrucción de vínculos, con una propuesta de apoyo a personas afectadas por la dependencia de sustancias."
+      },
+      "audience": {
+        "pt": "Pessoas em processos de reintegração social e suas famílias.",
+        "en": "People rebuilding their lives and their families.",
+        "es": "Personas en procesos de reintegración social y sus familias."
+      },
+      "goals": {
+        "pt": [
+          "Apoiar a reconstrução de vínculos e projetos de vida.",
+          "Articular educação, inclusão e oportunidades de autonomia.",
+          "Planejar encaminhamento a profissionais e serviços qualificados."
+        ],
+        "en": [
+          "Support renewed relationships and life goals.",
+          "Connect education, inclusion and opportunities for independence.",
+          "Plan referral to qualified professionals and services."
+        ],
+        "es": [
+          "Apoyar la reconstrucción de vínculos y proyectos de vida.",
+          "Articular educación, inclusión y oportunidades de autonomía.",
+          "Planificar la orientación hacia profesionales y servicios cualificados."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P05",
+      "type": "project",
+      "area": "care",
+      "icon": "people",
+      "title": {
+        "pt": "Acolhimento e proteção",
+        "en": "Welcome & protection",
+        "es": "Acogida y protección"
+      },
+      "summary": {
+        "pt": "Proposta de cuidado digno para pessoas em vulnerabilidade, com atenção a crianças, pessoas idosas e famílias.",
+        "en": "A proposal for dignified support for vulnerable people, with attention to children, older adults and families.",
+        "es": "Propuesta de cuidado digno para personas vulnerables, con atención a la infancia, personas mayores y familias."
+      },
+      "audience": {
+        "pt": "Crianças, pessoas idosas, viúvas e famílias em vulnerabilidade.",
+        "en": "Children, older adults, widowed people and vulnerable families.",
+        "es": "Niños, personas mayores, personas viudas y familias vulnerables."
+      },
+      "goals": {
+        "pt": [
+          "Identificar necessidades de proteção sem expor pessoas.",
+          "Estudar redes de acolhimento e encaminhamento.",
+          "Promover vínculos familiares e comunitários seguros."
+        ],
+        "en": [
+          "Identify protection needs without exposing individuals.",
+          "Explore support and referral networks.",
+          "Encourage safe family and community relationships."
+        ],
+        "es": [
+          "Identificar necesidades de protección sin exponer a las personas.",
+          "Estudiar redes de acogida y orientación.",
+          "Promover vínculos familiares y comunitarios seguros."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P06",
+      "type": "project",
+      "area": "food",
+      "icon": "wheat",
+      "title": {
+        "pt": "Segurança alimentar",
+        "en": "Food security",
+        "es": "Seguridad alimentaria"
+      },
+      "summary": {
+        "pt": "Acesso digno a alimentos e água, agricultura comunitária e alternativas de autonomia para famílias.",
+        "en": "Dignified access to food and water, community agriculture and pathways to family independence.",
+        "es": "Acceso digno a alimentos y agua, agricultura comunitaria y alternativas de autonomía para las familias."
+      },
+      "audience": {
+        "pt": "Pessoas e famílias em insegurança alimentar.",
+        "en": "People and families experiencing food insecurity.",
+        "es": "Personas y familias en situación de inseguridad alimentaria."
+      },
+      "goals": {
+        "pt": [
+          "Estudar ações de acesso a alimentos e água.",
+          "Valorizar produção local e práticas sustentáveis.",
+          "Planejar distribuição responsável e acompanhamento agregado."
+        ],
+        "en": [
+          "Explore ways to improve access to food and water.",
+          "Value local production and sustainable practices.",
+          "Plan responsible distribution and aggregate monitoring."
+        ],
+        "es": [
+          "Estudiar acciones de acceso a alimentos y agua.",
+          "Valorar la producción local y las prácticas sostenibles.",
+          "Planificar una distribución responsable y un seguimiento agregado."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P07",
+      "type": "project",
+      "area": "health",
+      "icon": "heart",
+      "title": {
+        "pt": "Saúde e prevenção",
+        "en": "Health & prevention",
+        "es": "Salud y prevención"
+      },
+      "summary": {
+        "pt": "Educação em saúde, prevenção e acesso a informação responsável, em diálogo com profissionais e serviços qualificados.",
+        "en": "Health education, prevention and responsible information, in dialogue with qualified professionals and services.",
+        "es": "Educación para la salud, prevención e información responsable en diálogo con profesionales y servicios cualificados."
+      },
+      "audience": {
+        "pt": "Comunidades com barreiras de acesso à informação e ao cuidado.",
+        "en": "Communities facing barriers to health information and care.",
+        "es": "Comunidades con barreras de acceso a la información y al cuidado."
+      },
+      "goals": {
+        "pt": [
+          "Promover educação e hábitos de prevenção.",
+          "Organizar informação clara e revisada.",
+          "Estudar articulação com serviços e profissionais habilitados."
+        ],
+        "en": [
+          "Promote health education and prevention.",
+          "Organize clear, reviewed information.",
+          "Explore connections with qualified services and professionals."
+        ],
+        "es": [
+          "Promover educación y hábitos de prevención.",
+          "Organizar información clara y revisada.",
+          "Estudiar la articulación con servicios y profesionales habilitados."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P08",
+      "type": "project",
+      "area": "care",
+      "icon": "shield",
+      "title": {
+        "pt": "Prevenção da violência",
+        "en": "Violence prevention",
+        "es": "Prevención de la violencia"
+      },
+      "summary": {
+        "pt": "Educação, convivência e fortalecimento de redes de proteção para comunidades mais seguras.",
+        "en": "Education, community relationships and stronger protection networks for safer communities.",
+        "es": "Educación, convivencia y fortalecimiento de redes de protección para comunidades más seguras."
+      },
+      "audience": {
+        "pt": "Famílias, comunidades e pessoas em situação de risco.",
+        "en": "Families, communities and people at risk.",
+        "es": "Familias, comunidades y personas en situación de riesgo."
+      },
+      "goals": {
+        "pt": [
+          "Construir materiais de prevenção e convivência.",
+          "Promover cultura de respeito e proteção.",
+          "Planejar encaminhamento responsável para redes competentes."
+        ],
+        "en": [
+          "Develop prevention and community learning materials.",
+          "Encourage respect and protection.",
+          "Plan responsible referral to qualified networks."
+        ],
+        "es": [
+          "Crear materiales de prevención y convivencia.",
+          "Promover una cultura de respeto y protección.",
+          "Planificar la orientación responsable hacia redes competentes."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P09",
+      "type": "project",
+      "area": "community",
+      "icon": "prayer",
+      "title": {
+        "pt": "Espiritualidade, oração e testemunhos",
+        "en": "Spirituality, prayer & testimonies",
+        "es": "Espiritualidad, oración y testimonios"
+      },
+      "summary": {
+        "pt": "Estudo bíblico, oração voluntária e partilha de experiências de fé com respeito à liberdade de cada pessoa.",
+        "en": "Bible study, voluntary prayer and sharing faith experiences while respecting each person’s freedom.",
+        "es": "Estudio bíblico, oración voluntaria y experiencias de fe respetando la libertad de cada persona."
+      },
+      "audience": {
+        "pt": "Pessoas interessadas em reflexão, oração e estudo bíblico.",
+        "en": "People interested in reflection, prayer and Bible study.",
+        "es": "Personas interesadas en reflexión, oración y estudio bíblico."
+      },
+      "goals": {
+        "pt": [
+          "Propor espaços de reflexão e estudo contextualizado.",
+          "Acolher testemunhos com consentimento e revisão.",
+          "Respeitar a liberdade de participar de atividades de fé."
+        ],
+        "en": [
+          "Propose spaces for reflection and contextual Bible study.",
+          "Welcome testimonies with consent and review.",
+          "Respect freedom to take part in faith activities."
+        ],
+        "es": [
+          "Proponer espacios de reflexión y estudio contextualizado.",
+          "Acoger testimonios con consentimiento y revisión.",
+          "Respetar la libertad de participar en actividades de fe."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P10",
+      "type": "project",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "Tecnologia acessível e produtores",
+        "en": "Accessible technology & producers",
+        "es": "Tecnología accesible y productores"
+      },
+      "summary": {
+        "pt": "Soluções de baixo custo para comunidades e pequenos produtores, aproximando conhecimento, sustentabilidade e trabalho.",
+        "en": "Low-cost solutions for communities and small producers, bringing knowledge, sustainability and work together.",
+        "es": "Soluciones de bajo costo para comunidades y pequeños productores, conectando conocimiento, sostenibilidad y trabajo."
+      },
+      "audience": {
+        "pt": "Pequenos produtores e comunidades com recursos limitados.",
+        "en": "Small producers and communities with limited resources.",
+        "es": "Pequeños productores y comunidades con recursos limitados."
+      },
+      "goals": {
+        "pt": [
+          "Pesquisar tecnologias acessíveis e úteis ao contexto local.",
+          "Estudar ferramentas de produção e gestão.",
+          "Valorizar sustentabilidade, acessibilidade e autonomia."
+        ],
+        "en": [
+          "Research accessible technologies useful in local contexts.",
+          "Explore production and management tools.",
+          "Value sustainability, accessibility and independence."
+        ],
+        "es": [
+          "Investigar tecnologías accesibles y útiles para el contexto local.",
+          "Estudiar herramientas de producción y gestión.",
+          "Valorar la sostenibilidad, accesibilidad y autonomía."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P11",
+      "type": "project",
+      "area": "community",
+      "icon": "link",
+      "title": {
+        "pt": "Parcerias e cooperação",
+        "en": "Partnerships & cooperation",
+        "es": "Alianzas y cooperación"
+      },
+      "summary": {
+        "pt": "Uma frente para construir cooperação transparente em educação, ações humanitárias e produção de conhecimento.",
+        "en": "A proposal to build transparent cooperation in education, humanitarian initiatives and knowledge production.",
+        "es": "Una propuesta para construir cooperación transparente en educación, acciones humanitarias y producción de conocimiento."
+      },
+      "audience": {
+        "pt": "Pessoas, comunidades e instituições interessadas em cooperação.",
+        "en": "People, communities and institutions interested in cooperation.",
+        "es": "Personas, comunidades e instituciones interesadas en cooperar."
+      },
+      "goals": {
+        "pt": [
+          "Definir critérios e responsabilidades para cooperação.",
+          "Preparar propostas proporcionais aos recursos disponíveis.",
+          "Planejar transparência e prestação de contas."
+        ],
+        "en": [
+          "Define cooperation criteria and responsibilities.",
+          "Prepare proposals suited to available resources.",
+          "Plan transparency and accountability."
+        ],
+        "es": [
+          "Definir criterios y responsabilidades de cooperación.",
+          "Preparar propuestas proporcionales a los recursos disponibles.",
+          "Planificar transparencia y rendición de cuentas."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P12",
+      "type": "project",
+      "area": "care",
+      "icon": "family",
+      "title": {
+        "pt": "Gestação e proteção materno-infantil",
+        "en": "Pregnancy & maternal-child protection",
+        "es": "Gestación y protección maternoinfantil"
+      },
+      "summary": {
+        "pt": "Informação responsável, acolhimento voluntário e proteção da dignidade de gestantes, crianças e famílias.",
+        "en": "Responsible information, voluntary support and protection of the dignity of pregnant people, children and families.",
+        "es": "Información responsable, apoyo voluntario y protección de la dignidad de gestantes, niños y familias."
+      },
+      "audience": {
+        "pt": "Gestantes, crianças e famílias que precisam de orientação e apoio.",
+        "en": "Pregnant people, children and families seeking information and support.",
+        "es": "Gestantes, niños y familias que necesitan información y apoyo."
+      },
+      "goals": {
+        "pt": [
+          "Planejar informação clara e apoio voluntário.",
+          "Respeitar autonomia, privacidade e decisões pessoais.",
+          "Estudar encaminhamento a redes de cuidado competentes."
+        ],
+        "en": [
+          "Plan clear information and voluntary support.",
+          "Respect autonomy, privacy and personal decisions.",
+          "Explore referral to qualified care networks."
+        ],
+        "es": [
+          "Planificar información clara y apoyo voluntario.",
+          "Respetar la autonomía, privacidad y decisiones personales.",
+          "Estudiar la orientación hacia redes de cuidado competentes."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "P13",
+      "type": "project",
+      "area": "education",
+      "icon": "music",
+      "title": {
+        "pt": "Música para Todos",
+        "en": "Music for Everyone",
+        "es": "Música para Todos"
+      },
+      "summary": {
+        "pt": "Uma proposta de formação musical comunitária: fundamentos em comum, prática em conjunto e percursos de violão, teclado, baixo e bateria.",
+        "en": "A community music education proposal: shared foundations, ensemble practice and pathways for guitar, keyboard, bass and drums.",
+        "es": "Una propuesta de formación musical comunitaria: fundamentos comunes, práctica en conjunto y recorridos de guitarra, teclado, bajo y batería."
+      },
+      "audience": {
+        "pt": "Iniciantes e pessoas interessadas em aprender música em comunidade.",
+        "en": "Beginners and people interested in learning music together.",
+        "es": "Principiantes y personas interesadas en aprender música en comunidad."
+      },
+      "goals": {
+        "pt": [
+          "Ampliar o acesso à aprendizagem musical.",
+          "Unir teoria, escuta, prática e convivência.",
+          "Organizar uma formação com fundamentos comuns e diferentes instrumentos."
+        ],
+        "en": [
+          "Expand access to music education.",
+          "Connect theory, listening, practice and community.",
+          "Organize a pathway with shared foundations and different instruments."
+        ],
+        "es": [
+          "Ampliar el acceso al aprendizaje musical.",
+          "Unir teoría, escucha, práctica y convivencia.",
+          "Organizar una formación con fundamentos comunes y distintos instrumentos."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": [
+        "formacao-comunitaria-p13"
+      ]
+    },
+    {
+      "id": "P14",
+      "type": "project",
+      "area": "health",
+      "icon": "mind",
+      "title": {
+        "pt": "Saúde mental e inclusão",
+        "en": "Mental health & inclusion",
+        "es": "Salud mental e inclusión"
+      },
+      "summary": {
+        "pt": "Acolhimento, acessibilidade e respeito à neurodiversidade, com informação e encaminhamento a cuidado profissional qualificado.",
+        "en": "Welcome, accessibility and respect for neurodiversity, with information and referral to qualified professional care.",
+        "es": "Acogida, accesibilidad y respeto a la neurodiversidad, con información y orientación hacia atención profesional cualificada."
+      },
+      "audience": {
+        "pt": "Pessoas com diferentes necessidades de apoio e suas famílias.",
+        "en": "People with different support needs and their families.",
+        "es": "Personas con distintas necesidades de apoyo y sus familias."
+      },
+      "goals": {
+        "pt": [
+          "Promover inclusão e compreensão da neurodiversidade.",
+          "Planejar acessibilidade e formação de voluntários.",
+          "Conectar informação responsável e redes de apoio qualificadas."
+        ],
+        "en": [
+          "Promote inclusion and understanding of neurodiversity.",
+          "Plan accessibility and volunteer education.",
+          "Connect responsible information and qualified support networks."
+        ],
+        "es": [
+          "Promover inclusión y comprensión de la neurodiversidad.",
+          "Planificar accesibilidad y formación de voluntarios.",
+          "Conectar información responsable y redes de apoyo cualificadas."
+        ]
+      },
+      "status": "planning",
+      "programs": [],
+      "projects": [],
+      "related": []
+    },
+    {
+      "id": "formacao-1",
+      "type": "training",
+      "area": "education",
+      "icon": "book",
+      "title": {
+        "pt": "IA para Professores: Planejamento, Avaliação, Inclusão e Segurança",
+        "en": "AI for Teachers: Planning, Assessment, Inclusion and Safety",
+        "es": "IA para Docentes: Planificación, Evaluación, Inclusión y Seguridad"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Educação Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Education. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Educación Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "educacao-inteligente"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-2",
+      "type": "training",
+      "area": "education",
+      "icon": "book",
+      "title": {
+        "pt": "IA para Alunos: Aprendizagem, Criatividade, Pensamento Crítico e Futuro Profissional",
+        "en": "AI for Students: Learning, Creativity, Critical Thinking and Future Careers",
+        "es": "IA para Estudiantes: Aprendizaje, Creatividad, Pensamiento Crítico y Futuro Profesional"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Educação Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Education. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Educación Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "educacao-inteligente"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-3",
+      "type": "training",
+      "area": "technology",
+      "icon": "city",
+      "title": {
+        "pt": "Inteligência Artificial e Transformação do Serviço Público",
+        "en": "Artificial Intelligence and Public Service Transformation",
+        "es": "Inteligencia Artificial y Transformación del Servicio Público"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "municipio-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-4",
+      "type": "training",
+      "area": "technology",
+      "icon": "city",
+      "title": {
+        "pt": "Gestão Municipal Baseada em Dados, Transparência e Indicadores",
+        "en": "Data-Informed Municipal Management, Transparency and Indicators",
+        "es": "Gestión Municipal Basada en Datos, Transparencia e Indicadores"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "municipio-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-5",
+      "type": "training",
+      "area": "technology",
+      "icon": "city",
+      "title": {
+        "pt": "Automação Administrativa, Atendimento e Gestão de Recursos",
+        "en": "Administrative Automation, Public Service and Resource Management",
+        "es": "Automatización Administrativa, Atención y Gestión de Recursos"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "municipio-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-6",
+      "type": "training",
+      "area": "technology",
+      "icon": "city",
+      "title": {
+        "pt": "Desenvolvimento de Soluções Públicas com IA: do Problema ao Protótipo",
+        "en": "Public Solutions with AI: From Problem to Prototype",
+        "es": "Soluciones Públicas con IA: del Problema al Prototipo"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "municipio-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-7",
+      "type": "training",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "IA no Campo: Gestão e Produtividade",
+        "en": "AI in Agriculture: Management and Productivity",
+        "es": "IA en el Campo: Gestión y Productividad"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "campo-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-8",
+      "type": "training",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "Produção Inteligente: Colheita, Café e Pecuária",
+        "en": "Smart Production: Harvests, Coffee and Livestock",
+        "es": "Producción Inteligente: Cosecha, Café y Ganadería"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "campo-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-9",
+      "type": "training",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "Agricultura Digital: Sensores, Água, Solo e Sustentabilidade",
+        "en": "Digital Agriculture: Sensors, Water, Soil and Sustainability",
+        "es": "Agricultura Digital: Sensores, Agua, Suelo y Sostenibilidad"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "campo-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-10",
+      "type": "training",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "Comercialização, Rastreabilidade e Inovação Rural",
+        "en": "Marketing, Traceability and Rural Innovation",
+        "es": "Comercialización, Trazabilidad e Innovación Rural"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "campo-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-19",
+      "type": "training",
+      "area": "technology",
+      "icon": "briefcase",
+      "title": {
+        "pt": "Inteligência Artificial para Pequenos Negócios: Gestão, Vendas, Marketing e Empreendedorismo",
+        "en": "AI for Small Businesses: Management, Sales, Marketing and Entrepreneurship",
+        "es": "IA para Pequeños Negocios: Gestión, Ventas, Marketing y Emprendimiento"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Negócio Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Smart Business. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Negocio Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "negocio-inteligente"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-11",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "Inclusão Digital e Aprendizagem para Crianças e Adolescentes em Acolhimento",
+        "en": "Digital Inclusion and Learning for Children and Teenagers in Care",
+        "es": "Inclusión Digital y Aprendizaje para Niños y Adolescentes en Acogida"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-12",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "Criatividade, Estudos e Projetos de Vida com IA",
+        "en": "Creativity, Learning and Life Goals with AI",
+        "es": "Creatividad, Estudios y Proyectos de Vida con IA"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-13",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "Trabalho, Empreendedorismo e Ferramentas Digitais para Pessoas Acolhidas",
+        "en": "Work, Entrepreneurship and Digital Tools for People in Care",
+        "es": "Trabajo, Emprendimiento y Herramientas Digitales para Personas en Acogida"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-14",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "Gestão de Casas de Apoio, Comunicação e Organização de Equipes",
+        "en": "Care Home Management, Communication and Team Organization",
+        "es": "Gestión de Casas de Apoyo, Comunicación y Organización de Equipos"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-15",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "Autonomia Digital e Prevenção de Golpes para Pessoas Idosas",
+        "en": "Digital Independence and Scam Prevention for Older Adults",
+        "es": "Autonomía Digital y Prevención de Estafas para Personas Mayores"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-16",
+      "type": "training",
+      "area": "care",
+      "icon": "heart",
+      "title": {
+        "pt": "IA, Memória, Arte e Convivência na Terceira Idade",
+        "en": "AI, Memory, Art and Community in Later Life",
+        "es": "IA, Memoria, Arte y Convivencia en la Tercera Edad"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "cuidar-aprender"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-17",
+      "type": "training",
+      "area": "community",
+      "icon": "people",
+      "title": {
+        "pt": "Inteligência Artificial para Comunicação, Educação e Projetos Comunitários",
+        "en": "AI for Communication, Education and Community Projects",
+        "es": "IA para Comunicación, Educación y Proyectos Comunitarios"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Comunidade Conectada. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Connected Community. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Comunidad Conectada. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "comunidade-conectada"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-18",
+      "type": "training",
+      "area": "community",
+      "icon": "people",
+      "title": {
+        "pt": "Gestão de Voluntariado, Doações e Prestação de Contas",
+        "en": "Volunteer, Donation and Accountability Management",
+        "es": "Gestión del Voluntariado, Donaciones y Rendición de Cuentas"
+      },
+      "summary": {
+        "pt": "Proposta de formação do programa Comunidade Conectada. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+        "en": "A proposed learning pathway within Connected Community. The detailed curriculum and class availability are being planned.",
+        "es": "Propuesta de formación del programa Comunidad Conectada. El contenido detallado y la oferta de grupos están en planificación."
+      },
+      "programs": [
+        "comunidade-conectada"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "escola-aberta",
+      "type": "tool",
+      "area": "education",
+      "icon": "book",
+      "title": {
+        "pt": "Escola Aberta",
+        "en": "Escola Aberta",
+        "es": "Escola Aberta"
+      },
+      "summary": {
+        "pt": "Gestão escolar, organização de informações, atividades, calendário, comunicação e módulos de transporte escolar.",
+        "en": "School information, activities, calendars, communication and school transport management.",
+        "es": "Información escolar, actividades, calendarios, comunicación y gestión del transporte escolar."
+      },
+      "programs": [
+        "educacao-inteligente"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "municipio-inteligente",
+      "type": "tool",
+      "area": "technology",
+      "icon": "city",
+      "title": {
+        "pt": "Município Inteligente",
+        "en": "Município Inteligente",
+        "es": "Município Inteligente"
+      },
+      "summary": {
+        "pt": "Gestão de solicitações administrativas, processos, indicadores, relatórios e apoio à administração pública.",
+        "en": "Administrative requests, processes, indicators, reports and support for public management.",
+        "es": "Solicitudes administrativas, procesos, indicadores, informes y apoyo a la gestión pública."
+      },
+      "programs": [
+        "municipio-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "campo-conectado",
+      "type": "tool",
+      "area": "technology",
+      "icon": "sprout",
+      "title": {
+        "pt": "Campo Conectado",
+        "en": "Campo Conectado",
+        "es": "Campo Conectado"
+      },
+      "summary": {
+        "pt": "Gestão de propriedades rurais, produção, colheitas, equipamentos, mapas de áreas e possibilidades de integração com sensores.",
+        "en": "Farm information, production, harvests, equipment, field maps and possible sensor integration.",
+        "es": "Gestión rural, producción, cosechas, equipos, mapas de áreas y posible integración con sensores."
+      },
+      "programs": [
+        "campo-inteligente-2040"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "comunidade-organizada",
+      "type": "tool",
+      "area": "community",
+      "icon": "people",
+      "title": {
+        "pt": "Comunidade Organizada",
+        "en": "Comunidade Organizada",
+        "es": "Comunidade Organizada"
+      },
+      "summary": {
+        "pt": "Gestão de organizações comunitárias, voluntários, atividades, comunicação e acervo digital.",
+        "en": "Community organizations, volunteers, activities, communication and digital collections.",
+        "es": "Organizaciones comunitarias, voluntarios, actividades, comunicación y acervo digital."
+      },
+      "programs": [
+        "comunidade-conectada"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "partilha-solidaria",
+      "type": "tool",
+      "area": "care",
+      "icon": "hands",
+      "title": {
+        "pt": "Partilha Solidária",
+        "en": "Partilha Solidária",
+        "es": "Partilha Solidária"
+      },
+      "summary": {
+        "pt": "Gestão de campanhas, doações, estoque, distribuição de materiais e voluntariado.",
+        "en": "Campaigns, donations, inventory, material distribution and volunteer coordination.",
+        "es": "Campañas, donaciones, inventario, distribución de materiales y coordinación de voluntarios."
+      },
+      "programs": [
+        "rede-solidaria"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "negocio-simples",
+      "type": "tool",
+      "area": "technology",
+      "icon": "briefcase",
+      "title": {
+        "pt": "Negócio Simples",
+        "en": "Negócio Simples",
+        "es": "Negócio Simples"
+      },
+      "summary": {
+        "pt": "Gestão de pequenos negócios, vendas, estoque, clientes, despesas, relatórios e experiência de uso em dispositivos móveis.",
+        "en": "Small business sales, stock, customers, expenses and reports with mobile-friendly use.",
+        "es": "Ventas, inventario, clientes, gastos e informes para pequeños negocios, con uso en dispositivos móviles."
+      },
+      "programs": [
+        "negocio-inteligente"
+      ],
+      "projects": [],
+      "related": [],
+      "status": "planning"
+    },
+    {
+      "id": "formacao-comunitaria-p01",
+      "type": "training",
+      "area": "education",
+      "icon": "laptop",
+      "title": {
+        "pt": "Informática, IA e Cidadania Digital",
+        "en": "Computer Skills, AI & Digital Citizenship",
+        "es": "Informática, IA y Ciudadanía Digital"
+      },
+      "summary": {
+        "pt": "Um percurso integral: dos primeiros passos no computador a projetos práticos, segurança, IA e cidadania.",
+        "en": "A complete pathway from first computer steps to practical projects, safety, AI and citizenship.",
+        "es": "Un recorrido integral desde los primeros pasos en el ordenador hasta proyectos prácticos, seguridad, IA y ciudadanía."
+      },
+      "duration": {
+        "pt": "12 meses · cerca de 192 horas propostas",
+        "en": "12 months · approximately 192 proposed hours",
+        "es": "12 meses · unas 192 horas propuestas"
+      },
+      "programs": [],
+      "projects": [
+        "P01"
+      ],
+      "related": [
+        "P01"
+      ],
+      "status": "planning",
+      "community": true,
+      "steps": [
+        {
+          "pt": "Inclusão digital e diagnóstico",
+          "en": "Digital inclusion and starting skills",
+          "es": "Inclusión digital y diagnóstico"
+        },
+        {
+          "pt": "Hardware e manutenção segura",
+          "en": "Hardware and safe maintenance",
+          "es": "Hardware y mantenimiento seguro"
+        },
+        {
+          "pt": "Sistemas operacionais",
+          "en": "Operating systems",
+          "es": "Sistemas operativos"
+        },
+        {
+          "pt": "Internet e redes",
+          "en": "Internet and networks",
+          "es": "Internet y redes"
+        },
+        {
+          "pt": "Word e escrita",
+          "en": "Word and writing",
+          "es": "Word y escritura"
+        },
+        {
+          "pt": "Excel e dados",
+          "en": "Excel and data",
+          "es": "Excel y datos"
+        },
+        {
+          "pt": "PowerPoint e comunicação",
+          "en": "PowerPoint and communication",
+          "es": "PowerPoint y comunicación"
+        },
+        {
+          "pt": "Segurança digital",
+          "en": "Digital safety",
+          "es": "Seguridad digital"
+        },
+        {
+          "pt": "Redes sociais e cidadania",
+          "en": "Social media and citizenship",
+          "es": "Redes sociales y ciudadanía"
+        },
+        {
+          "pt": "Marketing e pequenos negócios",
+          "en": "Marketing and small businesses",
+          "es": "Marketing y pequeños negocios"
+        },
+        {
+          "pt": "Inteligência artificial básica",
+          "en": "AI foundations",
+          "es": "Fundamentos de inteligencia artificial"
+        },
+        {
+          "pt": "IA aplicada e automação",
+          "en": "Applied AI and automation",
+          "es": "IA aplicada y automatización"
+        },
+        {
+          "pt": "Servidores e infraestrutura",
+          "en": "Servers and infrastructure",
+          "es": "Servidores e infraestructura"
+        },
+        {
+          "pt": "Cidades inteligentes e conectadas",
+          "en": "Smart and connected cities",
+          "es": "Ciudades inteligentes y conectadas"
+        },
+        {
+          "pt": "Tecnologia no trabalho",
+          "en": "Technology at work",
+          "es": "Tecnología en el trabajo"
+        },
+        {
+          "pt": "Tecnologia no campo e na comunidade",
+          "en": "Technology in agriculture and communities",
+          "es": "Tecnología en el campo y la comunidad"
+        },
+        {
+          "pt": "Pensamento crítico e futuros",
+          "en": "Critical thinking and possible futures",
+          "es": "Pensamiento crítico y futuros posibles"
+        },
+        {
+          "pt": "Pesquisa acadêmica e TCC",
+          "en": "Academic research and final projects",
+          "es": "Investigación académica y proyecto final"
+        },
+        {
+          "pt": "Laboratório integrador",
+          "en": "Integrated practical lab",
+          "es": "Laboratorio integrador"
+        },
+        {
+          "pt": "Revisão, apresentação e continuidade",
+          "en": "Review, presentation and next steps",
+          "es": "Revisión, presentación y continuidad"
+        }
+      ],
+      "audience": {
+        "pt": "Iniciantes, estudantes, trabalhadores e pessoas empreendedoras.",
+        "en": "Beginners, students, workers and entrepreneurs.",
+        "es": "Principiantes, estudiantes, trabajadores y personas emprendedoras."
+      }
+    },
+    {
+      "id": "formacao-comunitaria-p13",
+      "type": "training",
+      "area": "education",
+      "icon": "music",
+      "title": {
+        "pt": "Formação comunitária Música para Todos",
+        "en": "Music for Everyone Community Learning Pathway",
+        "es": "Formación comunitaria Música para Todos"
+      },
+      "summary": {
+        "pt": "Uma formação com fundamentos comuns e percursos de violão, teclado, baixo e bateria.",
+        "en": "One learning pathway with shared foundations and guitar, keyboard, bass and drums.",
+        "es": "Una formación con fundamentos comunes y recorridos de guitarra, teclado, bajo y batería."
+      },
+      "duration": {
+        "pt": "6 meses propostos",
+        "en": "6 proposed months",
+        "es": "6 meses propuestos"
+      },
+      "programs": [],
+      "projects": [
+        "P13"
+      ],
+      "related": [
+        "P13"
+      ],
+      "status": "planning",
+      "community": true,
+      "steps": [
+        {
+          "pt": "Iniciação e escuta musical",
+          "en": "Getting started and musical listening",
+          "es": "Iniciación y escucha musical"
+        },
+        {
+          "pt": "Fundamentos e técnica do instrumento",
+          "en": "Foundations and instrument technique",
+          "es": "Fundamentos y técnica instrumental"
+        },
+        {
+          "pt": "Repertório e prática orientada",
+          "en": "Repertoire and guided practice",
+          "es": "Repertorio y práctica guiada"
+        },
+        {
+          "pt": "Prática em conjunto",
+          "en": "Ensemble practice",
+          "es": "Práctica en conjunto"
+        },
+        {
+          "pt": "Consolidação e participação voluntária",
+          "en": "Consolidation and voluntary participation",
+          "es": "Consolidación y participación voluntaria"
+        }
+      ],
+      "audience": {
+        "pt": "Iniciantes e pessoas interessadas em aprender música em comunidade.",
+        "en": "Beginners and people interested in learning music together.",
+        "es": "Principiantes y personas interesadas en aprender música en comunidad."
+      }
+    },
+    {
+      "id": "formacao-casais",
+      "type": "training",
+      "area": "care",
+      "icon": "family",
+      "title": {
+        "pt": "Amor, Aliança e Restauração",
+        "en": "Love, Covenant & Restoration",
+        "es": "Amor, Alianza y Restauración"
+      },
+      "summary": {
+        "pt": "Proposta cristã para casais sobre comunicação, respeito, responsabilidades compartilhadas, fé e proteção das pessoas.",
+        "en": "A Christian proposal for couples on communication, respect, shared responsibilities, faith and personal safety.",
+        "es": "Propuesta cristiana para parejas sobre comunicación, respeto, responsabilidades compartidas, fe y protección de las personas."
+      },
+      "duration": {
+        "pt": "6 meses · 24 encontros propostos",
+        "en": "6 months · 24 proposed meetings",
+        "es": "6 meses · 24 encuentros propuestos"
+      },
+      "programs": [],
+      "projects": [],
+      "related": [],
+      "status": "planning",
+      "community": true,
+      "steps": [
+        {
+          "pt": "Aliança, amor, emoções e comunicação",
+          "en": "Covenant, love, emotions and communication",
+          "es": "Alianza, amor, emociones y comunicación"
+        },
+        {
+          "pt": "Ira, perdão, fidelidade e intimidade",
+          "en": "Anger, forgiveness, fidelity and intimacy",
+          "es": "Ira, perdón, fidelidad e intimidad"
+        },
+        {
+          "pt": "Dor, humildade, rotina e finanças",
+          "en": "Hurt, humility, routines and finances",
+          "es": "Dolor, humildad, rutina y finanzas"
+        },
+        {
+          "pt": "Filhos, família, sexualidade e tecnologia",
+          "en": "Children, family, sexuality and technology",
+          "es": "Hijos, familia, sexualidad y tecnología"
+        },
+        {
+          "pt": "Oração, comunidade, batismo e proteção",
+          "en": "Prayer, community, baptism and protection",
+          "es": "Oración, comunidad, bautismo y protección"
+        },
+        {
+          "pt": "Discernimento, serviço e continuidade",
+          "en": "Discernment, service and next steps",
+          "es": "Discernimiento, servicio y continuidad"
+        }
+      ],
+      "audience": {
+        "pt": "Casais interessados em um percurso cristão de aprendizagem e reflexão.",
+        "en": "Couples interested in a Christian pathway of learning and reflection.",
+        "es": "Parejas interesadas en un recorrido cristiano de aprendizaje y reflexión."
+      }
+    },
+    {
+      "id": "ideia-bia",
+      "type": "idea",
+      "area": "technology",
+      "icon": "spark",
+      "title": {
+        "pt": "BIA: conhecimento com responsabilidade",
+        "en": "BIA: responsible knowledge support",
+        "es": "BIA: conocimiento con responsabilidad"
+      },
+      "summary": {
+        "pt": "Ideia de assistência à pesquisa, ao estudo e à escrita, com fontes, limites claros e revisão humana.",
+        "en": "An idea for research, learning and writing assistance, with sources, clear limits and human review.",
+        "es": "Idea de asistencia a la investigación, estudio y escritura, con fuentes, límites claros y revisión humana."
+      },
+      "programs": [],
+      "projects": [],
+      "related": [],
+      "status": "idea"
+    },
+    {
+      "id": "ideia-universo-educacional",
+      "type": "idea",
+      "area": "education",
+      "icon": "gamepad",
+      "title": {
+        "pt": "Universo Educacional Cristão",
+        "en": "Christian Educational Universe",
+        "es": "Universo Educativo Cristiano"
+      },
+      "summary": {
+        "pt": "Ideias de jogos, narrativas, HQs e atividades acessíveis, conectadas por temas na Biblioteca da PGE.",
+        "en": "Ideas for games, stories, comics and accessible activities, connected by theme within the PGE Library.",
+        "es": "Ideas de juegos, narrativas, cómics y actividades accesibles, conectadas por temas en la Biblioteca de la PGE."
+      },
+      "programs": [],
+      "projects": [],
+      "related": [],
+      "status": "idea"
+    },
+    {
+      "id": "ideia-producao-editorial",
+      "type": "idea",
+      "area": "community",
+      "icon": "headphones",
+      "title": {
+        "pt": "Histórias, vozes e conhecimento",
+        "en": "Stories, voices & knowledge",
+        "es": "Historias, voces y conocimiento"
+      },
+      "summary": {
+        "pt": "Produção editorial em concepção: livros, podcasts e audiovisual, com autoria, revisão e atenção à acessibilidade.",
+        "en": "Editorial production in concept: books, podcasts and audiovisual work, with authorship, review and attention to accessibility.",
+        "es": "Producción editorial en concepción: libros, podcasts y audiovisual, con autoría, revisión y atención a la accesibilidad."
+      },
+      "programs": [],
+      "projects": [],
+      "related": [],
+      "status": "idea"
+    }
+  ]
+}

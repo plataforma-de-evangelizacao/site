@@ -1,0 +1,1761 @@
+[
+  {
+    "id": "bible-pdf-0",
+    "kind": "pdf",
+    "area": "faith",
+    "title": {
+      "pt": "Bíblia Livre — edição Textus Receptus",
+      "en": "Bíblia Livre — Textus Receptus edition (Portuguese)",
+      "es": "Bíblia Livre — edición Textus Receptus (portugués)"
+    },
+    "summary": {
+      "pt": "PDF em formato A4 para leitura offline e impressão. Preserve os créditos e a licença presentes no arquivo.",
+      "en": "A4 PDF for offline reading and printing. Preserve the credits and licence included in the file.",
+      "es": "PDF en formato A4 para leer sin conexión e imprimir. Conserva los créditos y la licencia incluidos en el archivo."
+    },
+    "url": "https://ebible.org/pdf/porbr2018/porbr2018_a4.pdf",
+    "source": "https://ebible.org/pdf/porbr2018/",
+    "credits": {
+      "pt": "© Diego Santos, Mario Sérgio e Marco Teles. Licença e atribuição conforme o PDF de origem.",
+      "en": "© Diego Santos, Mario Sérgio and Marco Teles. Licence and attribution as stated in the original PDF.",
+      "es": "© Diego Santos, Mario Sérgio y Marco Teles. Licencia y atribución según el PDF original."
+    },
+    "language": "pt",
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "bible-pdf-1",
+    "kind": "pdf",
+    "area": "faith",
+    "title": {
+      "pt": "Bíblia Livre Para Todos",
+      "en": "Bíblia Livre Para Todos (Portuguese)",
+      "es": "Bíblia Livre Para Todos (portugués)"
+    },
+    "summary": {
+      "pt": "PDFs em diferentes tamanhos. Este material não inclui o Antigo Testamento.",
+      "en": "PDFs in different sizes. This resource does not include the Old Testament.",
+      "es": "PDF en diferentes tamaños. Este material no incluye el Antiguo Testamento."
+    },
+    "url": "https://ebible.org/pdf/porblt/",
+    "source": "https://ebible.org/details.php?id=porblt",
+    "credits": {
+      "pt": "© 2022 Free Bible Ministry, Inc. CC BY-SA 4.0; preserve os créditos e a licença.",
+      "en": "© 2022 Free Bible Ministry, Inc. CC BY-SA 4.0; retain the credits and licence.",
+      "es": "© 2022 Free Bible Ministry, Inc. CC BY-SA 4.0; conserva los créditos y la licencia."
+    },
+    "language": "pt",
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "bible-online-0",
+    "kind": "bible",
+    "area": "faith",
+    "title": {
+      "pt": "Bíblia Online",
+      "en": "Bíblia Online",
+      "es": "Bíblia Online"
+    },
+    "summary": {
+      "pt": "Leia a Bíblia no navegador e escolha uma tradução. Os links protestantes desta página usam Almeida Corrigida Fiel (ACF).",
+      "en": "Read the Bible in your browser and choose a translation. This page’s Protestant links use Almeida Corrigida Fiel (ACF), in Portuguese.",
+      "es": "Lee la Biblia en el navegador y elige una traducción. Los enlaces protestantes de esta página usan Almeida Corrigida Fiel (ACF), en portugués."
+    },
+    "url": "https://www.bibliaonline.com.br/acf",
+    "language": "multi",
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "bible-online-1",
+    "kind": "bible",
+    "area": "faith",
+    "title": {
+      "pt": "Bíblia Católica Online",
+      "en": "Bíblia Católica Online",
+      "es": "Bíblia Católica Online"
+    },
+    "summary": {
+      "pt": "Leitura de edições católicas. Os links católicos desta página usam a Bíblia Ave-Maria.",
+      "en": "Read Catholic editions. This page’s Catholic links use the Portuguese Bíblia Ave-Maria.",
+      "es": "Lectura de ediciones católicas. Los enlaces católicos de esta página usan la Bíblia Ave-Maria en portugués."
+    },
+    "url": "https://www.bibliacatolica.com.br/",
+    "language": "multi",
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "bible-online-2",
+    "kind": "bible",
+    "area": "faith",
+    "title": {
+      "pt": "App da Bíblia — YouVersion",
+      "en": "Bible App — YouVersion",
+      "es": "App de la Biblia — YouVersion"
+    },
+    "summary": {
+      "pt": "Página oficial para baixar o aplicativo no celular. Confira as traduções disponíveis e escolha a edição desejada.",
+      "en": "Official page for downloading the mobile app. Check the available translations and choose your preferred edition.",
+      "es": "Página oficial para descargar la aplicación móvil. Consulta las traducciones disponibles y elige la edición deseada."
+    },
+    "url": "https://www.bible.com/pt/app",
+    "language": "multi",
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "study-faith-0",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Amar a Deus e ao próximo",
+      "en": "Loving God and our neighbour",
+      "es": "Amar a Dios y al prójimo"
+    },
+    "summary": {
+      "pt": "Jesus reúne o amor a Deus e ao próximo no centro dos mandamentos. O amor entre seus discípulos deve refletir seu próprio amor.",
+      "en": "Jesus places love for God and our neighbour at the heart of the commandments. Love among his disciples should reflect his own love.",
+      "es": "Jesús sitúa el amor a Dios y al prójimo en el centro de los mandamientos. El amor entre sus discípulos debe reflejar su propio amor."
+    },
+    "body": [
+      {
+        "pt": "Amor a Deus, respeito por cada pessoa e disposição para servir.",
+        "en": "Love for God, respect for every person and a willingness to serve.",
+        "es": "Amor a Dios, respeto por cada persona y disposición para servir."
+      },
+      {
+        "pt": "Ouça alguém com atenção e ofereça uma ajuda concreta que esteja ao seu alcance.",
+        "en": "Listen attentively to someone and offer concrete help within your means.",
+        "es": "Escucha a alguien con atención y ofrece una ayuda concreta que esté a tu alcance."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Mateus 22:34–40",
+        "link": "https://www.bibliaonline.com.br/acf/mt/22"
+      },
+      {
+        "referencia": "João 13:34–35",
+        "link": "https://www.bibliaonline.com.br/acf/jo/13"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-1",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Arrepender-se e mudar de direção",
+      "en": "Repenting and changing direction",
+      "es": "Arrepentirse y cambiar de rumbo"
+    },
+    "summary": {
+      "pt": "Arrependimento envolve reconhecer o pecado e voltar-se para Deus, produzindo frutos na maneira de viver. Em Lucas 3, João Batista dá exemplos de partilha e de abandono da exploração.",
+      "en": "Repentance involves recognizing sin and turning to God, bearing fruit in the way we live. In Luke 3, John the Baptist gives examples of sharing and leaving exploitation behind.",
+      "es": "El arrepentimiento implica reconocer el pecado y volverse a Dios, dando frutos en la forma de vivir. En Lucas 3, Juan el Bautista da ejemplos de compartir y abandonar la explotación."
+    },
+    "body": [
+      {
+        "pt": "Confissão sincera, mudança de atitude e reparação possível.",
+        "en": "Sincere confession, a change of attitude and making amends where possible.",
+        "es": "Confesión sincera, cambio de actitud y reparación posible."
+      },
+      {
+        "pt": "Se enganou alguém numa cobrança, corrija o valor e explique o erro com honestidade.",
+        "en": "If you overcharged someone dishonestly, correct the amount and explain the mistake honestly.",
+        "es": "Si engañaste a alguien al cobrar, corrige el importe y explica el error con honestidad."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Marcos 1:14–15",
+        "link": "https://www.bibliaonline.com.br/acf/mc/1"
+      },
+      {
+        "referencia": "Lucas 3:8–14",
+        "link": "https://www.bibliaonline.com.br/acf/lc/3"
+      },
+      {
+        "referencia": "2 Coríntios 7:9–10",
+        "link": "https://www.bibliaonline.com.br/acf/2co/7"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-2",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Honestidade: deixar de roubar e de mentir",
+      "en": "Honesty: leaving theft and lies behind",
+      "es": "Honestidad: dejar de robar y mentir"
+    },
+    "summary": {
+      "pt": "Paulo liga a renovação da vida à verdade, ao trabalho honesto e à disposição de repartir. A mudança inclui aquilo que fazemos e falamos.",
+      "en": "Paul connects renewed life with truth, honest work and a willingness to share. Change includes what we do and say.",
+      "es": "Pablo relaciona la renovación de la vida con la verdad, el trabajo honesto y la disposición a compartir. El cambio incluye lo que hacemos y decimos."
+    },
+    "body": [
+      {
+        "pt": "Verdade, trabalho responsável e generosidade.",
+        "en": "Truth, responsible work and generosity.",
+        "es": "Verdad, trabajo responsable y generosidad."
+      },
+      {
+        "pt": "Devolva um objeto emprestado, reconheça uma informação falsa que compartilhou e corrija-a.",
+        "en": "Return something you borrowed, acknowledge false information you shared and correct it.",
+        "es": "Devuelve un objeto prestado, reconoce una información falsa que compartiste y corrígela."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Efésios 4:22–28",
+        "link": "https://www.bibliaonline.com.br/acf/ef/4"
+      },
+      {
+        "referencia": "Colossenses 3:9–10",
+        "link": "https://www.bibliaonline.com.br/acf/cl/3"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-3",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Fidelidade e santificação nas relações",
+      "en": "Faithfulness and sanctification in relationships",
+      "es": "Fidelidad y santificación en las relaciones"
+    },
+    "summary": {
+      "pt": "Jesus trata do adultério também no âmbito do desejo cultivado. Paulo apresenta a santificação em ligação com honra e com não prejudicar o próximo.",
+      "en": "Jesus addresses adultery also in terms of deliberately cultivated desire. Paul presents sanctification in connection with honour and not wronging others.",
+      "es": "Jesús trata el adulterio también en el ámbito del deseo cultivado. Pablo presenta la santificación relacionada con la honra y con no perjudicar al prójimo."
+    },
+    "body": [
+      {
+        "pt": "Fidelidade, respeito, domínio próprio e responsabilidade nas relações.",
+        "en": "Faithfulness, respect, self-control and responsibility in relationships.",
+        "es": "Fidelidad, respeto, dominio propio y responsabilidad en las relaciones."
+      },
+      {
+        "pt": "Rejeite uma relação baseada em traição e estabeleça limites que respeitem os compromissos assumidos.",
+        "en": "Reject a relationship based on betrayal and establish boundaries that respect your commitments.",
+        "es": "Rechaza una relación basada en la traición y establece límites que respeten los compromisos asumidos."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Mateus 5:27–30",
+        "link": "https://www.bibliaonline.com.br/acf/mt/5"
+      },
+      {
+        "referencia": "1 Tessalonicenses 4:3–8",
+        "link": "https://www.bibliaonline.com.br/acf/1ts/4"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-4",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Cuidar das palavras e buscar reconciliação",
+      "en": "Caring for our words and seeking reconciliation",
+      "es": "Cuidar las palabras y buscar la reconciliación"
+    },
+    "summary": {
+      "pt": "Jesus aprofunda o mandamento contra o homicídio ao tratar da ira e das ofensas. Tiago ensina a ouvir com prontidão e a falar sem precipitação.",
+      "en": "Jesus deepens the commandment against murder by addressing anger and insults. James teaches readiness to listen and restraint in speaking.",
+      "es": "Jesús profundiza en el mandamiento contra el homicidio al tratar la ira y las ofensas. Santiago enseña a escuchar con prontitud y a hablar sin precipitación."
+    },
+    "body": [
+      {
+        "pt": "Mansidão, escuta, verdade e busca da paz.",
+        "en": "Gentleness, listening, truth and the pursuit of peace.",
+        "es": "Mansedumbre, escucha, verdad y búsqueda de la paz."
+      },
+      {
+        "pt": "Em uma discussão, interrompa os insultos e procure conversar com respeito quando houver condições seguras.",
+        "en": "During an argument, stop the insults and try to speak respectfully when it is safe to do so.",
+        "es": "En una discusión, detén los insultos y busca conversar con respeto cuando existan condiciones seguras."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Mateus 5:21–24",
+        "link": "https://www.bibliaonline.com.br/acf/mt/5"
+      },
+      {
+        "referencia": "Efésios 4:29–32",
+        "link": "https://www.bibliaonline.com.br/acf/ef/4"
+      },
+      {
+        "referencia": "Tiago 1:19–20",
+        "link": "https://www.bibliaonline.com.br/acf/tg/1"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-5",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Ajudar quem precisa: fé que se torna cuidado",
+      "en": "Helping those in need: faith expressed through care",
+      "es": "Ayudar a quien lo necesita: fe que se convierte en cuidado"
+    },
+    "summary": {
+      "pt": "Tiago relaciona a fé às obras e mostra a insuficiência de palavras que deixam alguém sem alimento ou roupa. A prática inclui acolher sem favorecer pessoas pela riqueza.",
+      "en": "James connects faith with works and shows the inadequacy of words that leave someone without food or clothing. This includes welcoming people without favouring them for their wealth.",
+      "es": "Santiago relaciona la fe con las obras y muestra la insuficiencia de las palabras que dejan a alguien sin alimento o ropa. La práctica incluye acoger sin favorecer a las personas por su riqueza."
+    },
+    "body": [
+      {
+        "pt": "Partilha, acolhimento e serviço que preserva a dignidade.",
+        "en": "Sharing, welcome and service that preserves dignity.",
+        "es": "Compartir, acoger y servir preservando la dignidad."
+      },
+      {
+        "pt": "Separe alimentos ou roupas em condições de uso e ajude sem expor a pessoa atendida.",
+        "en": "Set aside food or clothing in usable condition and help without exposing the person receiving support.",
+        "es": "Separa alimentos o ropa en buen estado y ayuda sin exponer a la persona atendida."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Tiago 1:22–27",
+        "link": "https://www.bibliaonline.com.br/acf/tg/1"
+      },
+      {
+        "referencia": "Tiago 2:1–17",
+        "link": "https://www.bibliaonline.com.br/acf/tg/2"
+      },
+      {
+        "referencia": "Mateus 25:31–46",
+        "link": "https://www.bibliaonline.com.br/acf/mt/25"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-6",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Abandonar as obras da carne e cultivar o fruto do Espírito",
+      "en": "Leaving the works of the flesh and cultivating the fruit of the Spirit",
+      "es": "Abandonar las obras de la carne y cultivar el fruto del Espíritu"
+    },
+    "summary": {
+      "pt": "Paulo contrapõe práticas destrutivas ao fruto do Espírito. A transformação envolve amor, alegria, paz, paciência, benignidade, bondade, fé, mansidão e domínio próprio.",
+      "en": "Paul contrasts destructive practices with the fruit of the Spirit. Transformation involves love, joy, peace, patience, kindness, goodness, faith, gentleness and self-control.",
+      "es": "Pablo contrapone las prácticas destructivas al fruto del Espíritu. La transformación implica amor, alegría, paz, paciencia, benignidad, bondad, fe, mansedumbre y dominio propio."
+    },
+    "body": [
+      {
+        "pt": "Uma vida conduzida pelo Espírito e orientada ao amor.",
+        "en": "A life led by the Spirit and directed towards love.",
+        "es": "Una vida guiada por el Espíritu y orientada al amor."
+      },
+      {
+        "pt": "Ao sentir inveja, evite diminuir alguém e escolha reconhecer o bem na vida dessa pessoa.",
+        "en": "When you feel envy, avoid belittling someone and choose to recognize what is good in their life.",
+        "es": "Cuando sientas envidia, evita menospreciar a alguien y elige reconocer el bien en su vida."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Gálatas 5:13–26",
+        "link": "https://www.bibliaonline.com.br/acf/gl/5"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-7",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Renovar a mente com humildade",
+      "en": "Renewing the mind with humility",
+      "es": "Renovar la mente con humildad"
+    },
+    "summary": {
+      "pt": "A transformação da vida inclui discernimento, humildade, hospitalidade e resposta ao mal por meio do bem. Tiago relaciona sabedoria à mansidão e à promoção da paz.",
+      "en": "Life’s transformation includes discernment, humility, hospitality and responding to evil with good. James connects wisdom with gentleness and promoting peace.",
+      "es": "La transformación de la vida incluye discernimiento, humildad, hospitalidad y responder al mal con el bien. Santiago relaciona la sabiduría con la mansedumbre y la promoción de la paz."
+    },
+    "body": [
+      {
+        "pt": "Discernimento, humildade, hospitalidade e pacificação.",
+        "en": "Discernment, humility, hospitality and peacemaking.",
+        "es": "Discernimiento, humildad, hospitalidad y búsqueda de la paz."
+      },
+      {
+        "pt": "Antes de responder a uma provocação, pergunte como agir com justiça sem repetir a agressão.",
+        "en": "Before responding to a provocation, ask how to act justly without repeating the aggression.",
+        "es": "Antes de responder a una provocación, pregúntate cómo actuar con justicia sin repetir la agresión."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Romanos 12:1–21",
+        "link": "https://www.bibliaonline.com.br/acf/rm/12"
+      },
+      {
+        "referencia": "Tiago 3:13–18",
+        "link": "https://www.bibliaonline.com.br/acf/tg/3"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-8",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Permanecer em Cristo e aprender pela graça",
+      "en": "Remaining in Christ and learning through grace",
+      "es": "Permanecer en Cristo y aprender por la gracia"
+    },
+    "summary": {
+      "pt": "Jesus relaciona o fruto à permanência nele. Em Tito, a graça de Deus também educa para abandonar a impiedade e viver com sensatez, justiça e devoção.",
+      "en": "Jesus connects bearing fruit with remaining in him. In Titus, God’s grace also teaches us to leave ungodliness behind and live with sound judgement, justice and devotion.",
+      "es": "Jesús relaciona el fruto con permanecer en él. En Tito, la gracia de Dios también enseña a abandonar la impiedad y a vivir con sensatez, justicia y devoción."
+    },
+    "body": [
+      {
+        "pt": "Comunhão com Cristo, oração, obediência e disposição para boas obras.",
+        "en": "Communion with Christ, prayer, obedience and a willingness to do good works.",
+        "es": "Comunión con Cristo, oración, obediencia y disposición para las buenas obras."
+      },
+      {
+        "pt": "Leia uma passagem com atenção e escolha uma atitude concreta para praticar a partir dela.",
+        "en": "Read a passage carefully and choose a concrete action to put it into practice.",
+        "es": "Lee un pasaje con atención y elige una acción concreta para ponerlo en práctica."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "João 15:1–17",
+        "link": "https://www.bibliaonline.com.br/acf/jo/15"
+      },
+      {
+        "referencia": "Tito 2:11–14",
+        "link": "https://www.bibliaonline.com.br/acf/tt/2"
+      },
+      {
+        "referencia": "Efésios 2:8–10",
+        "link": "https://www.bibliaonline.com.br/acf/ef/2"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-faith-9",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Justiça, misericórdia e fidelidade",
+      "en": "Justice, mercy and faithfulness",
+      "es": "Justicia, misericordia y fidelidad"
+    },
+    "summary": {
+      "pt": "Jesus critica a religiosidade que negligencia os aspectos mais importantes da lei: justiça, misericórdia e fé. O cuidado com o exterior não dispensa a mudança interior.",
+      "en": "Jesus criticizes religious practice that neglects the weightier matters of the law: justice, mercy and faith. Attention to outward appearances does not replace inward change.",
+      "es": "Jesús critica la religiosidad que descuida lo más importante de la ley: justicia, misericordia y fe. Cuidar el exterior no sustituye el cambio interior."
+    },
+    "body": [
+      {
+        "pt": "Integridade, compaixão e coerência entre palavras e atitudes.",
+        "en": "Integrity, compassion and consistency between words and actions.",
+        "es": "Integridad, compasión y coherencia entre las palabras y las acciones."
+      },
+      {
+        "pt": "Trate com a mesma dignidade quem pode ou não oferecer algo em troca.",
+        "en": "Treat people with the same dignity whether or not they can offer you something in return.",
+        "es": "Trata con la misma dignidad a quien puede y a quien no puede ofrecerte algo a cambio."
+      }
+    ],
+    "references": [
+      {
+        "referencia": "Mateus 23:23–28",
+        "link": "https://www.bibliaonline.com.br/acf/mt/23"
+      },
+      {
+        "referencia": "Miqueias 6:8",
+        "link": "https://www.bibliaonline.com.br/acf/mq/6"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "study-character-abraao",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Abraão",
+      "en": "Abraham",
+      "es": "Abraham"
+    },
+    "summary": {
+      "pt": "Chamado, caminhada e aliança. Leitura geral de contexto: Gênesis 12–25; cada vídeo terá suas referências específicas após revisão.",
+      "en": "Calling, journey and covenant. General background reading: Genesis 12–25; each video will have its own references after review.",
+      "es": "Llamado, camino y alianza. Lectura general de contexto: Génesis 12–25; cada video tendrá sus referencias específicas tras la revisión."
+    },
+    "references": [
+      {
+        "referencia": "Gênesis 12 — início da leitura de contexto",
+        "link": "https://www.bibliaonline.com.br/acf/gn/12"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "old"
+    ]
+  },
+  {
+    "id": "study-character-moises",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Moisés",
+      "en": "Moses",
+      "es": "Moisés"
+    },
+    "summary": {
+      "pt": "Nascimento, saída do Egito e caminhada no deserto. A vida de Moisés é narrada principalmente de Êxodo a Deuteronômio; Gênesis integra o Pentateuco, mas não narra sua vida.",
+      "en": "Birth, departure from Egypt and journey through the wilderness. Moses’ life is told mainly from Exodus to Deuteronomy; Genesis belongs to the Pentateuch but does not narrate his life.",
+      "es": "Nacimiento, salida de Egipto y camino por el desierto. La vida de Moisés se narra principalmente desde Éxodo hasta Deuteronomio; Génesis integra el Pentateuco, pero no narra su vida."
+    },
+    "references": [
+      {
+        "referencia": "Êxodo 1 — início do contexto narrativo",
+        "link": "https://www.bibliaonline.com.br/acf/ex/1"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "old"
+    ]
+  },
+  {
+    "id": "study-character-jonas",
+    "kind": "study",
+    "area": "faith",
+    "title": {
+      "pt": "Jonas",
+      "en": "Jonah",
+      "es": "Jonás"
+    },
+    "summary": {
+      "pt": "A história de Jonas é narrada nos quatro capítulos do livro. Comece pelo capítulo 1 e prossiga até o 4.",
+      "en": "Jonah’s story is told in the book’s four chapters. Begin with chapter 1 and continue through chapter 4.",
+      "es": "La historia de Jonás se narra en los cuatro capítulos del libro. Empieza por el capítulo 1 y continúa hasta el 4."
+    },
+    "references": [
+      {
+        "referencia": "Jonas 1 — início do livro",
+        "link": "https://www.bibliaonline.com.br/acf/jn/1"
+      }
+    ],
+    "language": "multi",
+    "tags": [
+      "old"
+    ]
+  },
+  {
+    "id": "study-discipline-0",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Ciência",
+      "en": "Science",
+      "es": "Ciencia"
+    },
+    "summary": {
+      "pt": "Investigação do mundo natural por observações, modelos e testes. Explicações científicas são avaliadas por evidências e podem ser revisadas.",
+      "en": "Investigation of the natural world through observations, models and tests. Scientific explanations are assessed against evidence and may be revised.",
+      "es": "Investigación del mundo natural mediante observaciones, modelos y pruebas. Las explicaciones científicas se evalúan a partir de evidencias y pueden revisarse."
+    },
+    "body": [
+      {
+        "pt": "Por que Deus criou um mundo que podemos investigar e o que a criação nos convida a reconhecer sobre Ele?",
+        "en": "Why did God create a world we can investigate, and what does creation invite us to recognize about Him?",
+        "es": "¿Por qué creó Dios un mundo que podemos investigar y qué nos invita la creación a reconocer sobre Él?"
+      },
+      {
+        "pt": "Observe uma questão do cotidiano e separe observação, hipótese e conclusão.",
+        "en": "Observe an everyday question and distinguish observation, hypothesis and conclusion.",
+        "es": "Observa una cuestión cotidiana y distingue observación, hipótesis y conclusión."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-1",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Matemática",
+      "en": "Mathematics",
+      "es": "Matemáticas"
+    },
+    "summary": {
+      "pt": "Estuda quantidades, estruturas, relações e formas por meio de definições e raciocínio lógico. Demonstrações matemáticas têm critérios diferentes dos testes empíricos.",
+      "en": "It studies quantities, structures, relations and forms through definitions and logical reasoning. Mathematical proofs have different criteria from empirical tests.",
+      "es": "Estudia cantidades, estructuras, relaciones y formas mediante definiciones y razonamiento lógico. Las demostraciones matemáticas tienen criterios distintos de las pruebas empíricas."
+    },
+    "body": [
+      {
+        "pt": "Como a ordem e as relações matemáticas podem fundamentar uma reflexão sobre a existência de Deus e seu propósito na criação?",
+        "en": "How can mathematical order and relationships support reflection on God’s existence and purpose in creation?",
+        "es": "¿Cómo pueden el orden y las relaciones matemáticas fundamentar una reflexión sobre la existencia de Dios y su propósito en la creación?"
+      },
+      {
+        "pt": "Use medidas e contas com honestidade ao planejar uma partilha ou uma compra.",
+        "en": "Use measurements and calculations honestly when planning a purchase or sharing resources.",
+        "es": "Usa las medidas y las cuentas con honestidad al planear una compra o un reparto de recursos."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-2",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "História",
+      "en": "History",
+      "es": "Historia"
+    },
+    "summary": {
+      "pt": "Investiga sociedades e acontecimentos ao longo do tempo por meio de fontes, crítica e interpretação contextual.",
+      "en": "It investigates societies and events over time through sources, critical examination and interpretation in context.",
+      "es": "Investiga sociedades y acontecimientos a lo largo del tiempo mediante fuentes, análisis crítico e interpretación contextual."
+    },
+    "body": [
+      {
+        "pt": "Como compreender a presença e o propósito de Deus na história e nossa responsabilidade pelas escolhas que fazemos?",
+        "en": "How can we understand God’s presence and purpose in history and our responsibility for the choices we make?",
+        "es": "¿Cómo comprender la presencia y el propósito de Dios en la historia y nuestra responsabilidad por las decisiones que tomamos?"
+      },
+      {
+        "pt": "Compare fontes e diferencie o registro histórico da interpretação religiosa do acontecimento.",
+        "en": "Compare sources and distinguish the historical record from a religious interpretation of the event.",
+        "es": "Compara fuentes y distingue el registro histórico de la interpretación religiosa del acontecimiento."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-3",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Geografia",
+      "en": "Geography",
+      "es": "Geografía"
+    },
+    "summary": {
+      "pt": "Estuda o espaço geográfico e as relações entre sociedade e natureza, em diferentes escalas.",
+      "en": "It studies geographical space and relationships between society and nature at different scales.",
+      "es": "Estudia el espacio geográfico y las relaciones entre la sociedad y la naturaleza en diferentes escalas."
+    },
+    "body": [
+      {
+        "pt": "O que os lugares, a diversidade da criação e a vida em comunidade nos ajudam a compreender sobre Deus e o cuidado com o mundo?",
+        "en": "What can places, the diversity of creation and community life help us understand about God and care for the world?",
+        "es": "¿Qué nos ayudan a comprender los lugares, la diversidad de la creación y la vida comunitaria sobre Dios y el cuidado del mundo?"
+      },
+      {
+        "pt": "Observe uma necessidade de acesso à água, mobilidade ou cuidado ambiental em sua comunidade.",
+        "en": "Notice a need involving access to water, mobility or environmental care in your community.",
+        "es": "Observa una necesidad de acceso al agua, movilidad o cuidado ambiental en tu comunidad."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-4",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Linguagem e semântica",
+      "en": "Language and semantics",
+      "es": "Lenguaje y semántica"
+    },
+    "summary": {
+      "pt": "A linguagem permite comunicação; a semântica estuda o significado, em diálogo com outros campos que investigam contexto e uso.",
+      "en": "Language makes communication possible; semantics studies meaning, in dialogue with other fields investigating context and use.",
+      "es": "El lenguaje permite la comunicación; la semántica estudia el significado, en diálogo con otros campos que investigan el contexto y el uso."
+    },
+    "body": [
+      {
+        "pt": "Por que a capacidade de falar, compreender e transmitir conhecimento pode ser vista como um dom de Deus para a verdade e a comunhão?",
+        "en": "Why can the ability to speak, understand and pass on knowledge be seen as God’s gift for truth and communion?",
+        "es": "¿Por qué la capacidad de hablar, comprender y transmitir conocimiento puede verse como un don de Dios para la verdad y la comunión?"
+      },
+      {
+        "pt": "Explique um termo religioso com palavras simples e confira se a outra pessoa compreendeu.",
+        "en": "Explain a religious term in simple words and check whether the other person understood.",
+        "es": "Explica un término religioso con palabras sencillas y comprueba si la otra persona lo entendió."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-5",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Filosofia",
+      "en": "Philosophy",
+      "es": "Filosofía"
+    },
+    "summary": {
+      "pt": "Examina problemas de conhecimento, existência, ética e sentido por meio de conceitos e argumentos. Existem diferentes tradições e posições.",
+      "en": "It examines questions of knowledge, existence, ethics and meaning through concepts and arguments. There are different traditions and positions.",
+      "es": "Examina problemas de conocimiento, existencia, ética y sentido mediante conceptos y argumentos. Existen distintas tradiciones y posturas."
+    },
+    "body": [
+      {
+        "pt": "Como as perguntas sobre existência, verdade, liberdade e sentido podem nos conduzir à reflexão sobre Deus?",
+        "en": "How can questions about existence, truth, freedom and meaning lead us to reflect on God?",
+        "es": "¿Cómo pueden las preguntas sobre existencia, verdad, libertad y sentido conducirnos a reflexionar sobre Dios?"
+      },
+      {
+        "pt": "Apresente uma razão para sua posição e escute uma objeção sem desqualificar quem pergunta.",
+        "en": "Give a reason for your position and listen to an objection without dismissing the person asking.",
+        "es": "Presenta una razón para tu postura y escucha una objeción sin descalificar a quien pregunta."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-6",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Sociologia",
+      "en": "Sociology",
+      "es": "Sociología"
+    },
+    "summary": {
+      "pt": "Investiga relações, grupos, instituições e processos sociais por diferentes métodos de pesquisa.",
+      "en": "It investigates relationships, groups, institutions and social processes through different research methods.",
+      "es": "Investiga relaciones, grupos, instituciones y procesos sociales mediante distintos métodos de investigación."
+    },
+    "body": [
+      {
+        "pt": "Como a vida em sociedade pode expressar o propósito de Deus para justiça, dignidade e amor ao próximo?",
+        "en": "How can social life express God’s purpose for justice, dignity and love of neighbour?",
+        "es": "¿Cómo puede la vida social expresar el propósito de Dios para justicia, dignidad y amor al prójimo?"
+      },
+      {
+        "pt": "Escute quem vive uma dificuldade antes de formular uma explicação ou propor uma ação.",
+        "en": "Listen to the person experiencing a difficulty before offering an explanation or proposing action.",
+        "es": "Escucha a quien vive una dificultad antes de formular una explicación o proponer una acción."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-7",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Arquitetura e engenharia",
+      "en": "Architecture and engineering",
+      "es": "Arquitectura e ingeniería"
+    },
+    "summary": {
+      "pt": "A arquitetura trabalha espaços e seus usos; as engenharias aplicam conhecimentos para projetar e resolver problemas técnicos. Segurança e normas exigem profissionais habilitados.",
+      "en": "Architecture addresses spaces and their uses; engineering applies knowledge to design and solve technical problems. Safety and regulatory requirements call for qualified professionals.",
+      "es": "La arquitectura trabaja con los espacios y sus usos; las ingenierías aplican conocimientos para diseñar y resolver problemas técnicos. La seguridad y las normas requieren profesionales habilitados."
+    },
+    "body": [
+      {
+        "pt": "Como a capacidade de planejar e construir pode ser compreendida, pela fé, como um dom de Deus a serviço da vida?",
+        "en": "How can planning and building be understood, through faith, as God’s gift in service of life?",
+        "es": "¿Cómo puede comprenderse la capacidad de planificar y construir, desde la fe, como un don de Dios al servicio de la vida?"
+      },
+      {
+        "pt": "Observe se uma entrada permite acesso a pessoas com mobilidade reduzida. Alterações técnicas devem ser avaliadas por profissional.",
+        "en": "Notice whether an entrance is accessible to people with reduced mobility. Technical alterations should be assessed by a professional.",
+        "es": "Observa si una entrada permite el acceso de personas con movilidad reducida. Las modificaciones técnicas deben ser evaluadas por un profesional."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-8",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Carpintaria e ofícios",
+      "en": "Carpentry and trades",
+      "es": "Carpintería y oficios"
+    },
+    "summary": {
+      "pt": "Envolvem conhecimento de materiais, ferramentas, medidas e técnicas de construção e acabamento, com práticas de segurança.",
+      "en": "They involve knowledge of materials, tools, measurements and building and finishing techniques, with safe working practices.",
+      "es": "Implican conocimiento de materiales, herramientas, medidas y técnicas de construcción y acabado, con prácticas de seguridad."
+    },
+    "body": [
+      {
+        "pt": "Como o trabalho, as habilidades manuais e a criação de objetos úteis podem revelar uma vocação de serviço diante de Deus?",
+        "en": "How can work, manual skills and making useful objects reveal a calling to serve before God?",
+        "es": "¿Cómo pueden el trabajo, las habilidades manuales y crear objetos útiles revelar una vocación de servicio ante Dios?"
+      },
+      {
+        "pt": "Valorize o trabalhador, combine condições justas e não improvise o uso de ferramentas sem preparo.",
+        "en": "Value workers, agree on fair conditions and do not improvise with tools without preparation.",
+        "es": "Valora al trabajador, acuerda condiciones justas y no improvises el uso de herramientas sin preparación."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "study-discipline-9",
+    "kind": "study",
+    "area": "knowledge",
+    "title": {
+      "pt": "Música e artes",
+      "en": "Music and the arts",
+      "es": "Música y artes"
+    },
+    "summary": {
+      "pt": "Estudam e criam formas de expressão por sons, imagens, movimentos e outras linguagens, em diferentes contextos culturais.",
+      "en": "They study and create forms of expression through sounds, images, movement and other languages in different cultural contexts.",
+      "es": "Estudian y crean formas de expresión mediante sonidos, imágenes, movimientos y otros lenguajes en distintos contextos culturales."
+    },
+    "body": [
+      {
+        "pt": "Como a música e as artes podem expressar a beleza da criação, reconhecer Deus e compartilhar esperança?",
+        "en": "How can music and the arts express creation’s beauty, acknowledge God and share hope?",
+        "es": "¿Cómo pueden la música y las artes expresar la belleza de la creación, reconocer a Dios y compartir esperanza?"
+      },
+      {
+        "pt": "Escute com atenção a letra, o contexto e sua experiência. Escolha o que favorece uma relação saudável com a música.",
+        "en": "Listen attentively to the lyrics, context and your experience. Choose what supports a healthy relationship with music.",
+        "es": "Escucha con atención la letra, el contexto y tu experiencia. Elige lo que favorezca una relación saludable con la música."
+      }
+    ],
+    "language": "multi"
+  },
+  {
+    "id": "youtube-playlist-0",
+    "kind": "video",
+    "area": "faith",
+    "title": {
+      "pt": "Qual o verdadeiro evangelho de Deus?",
+      "en": "What is the true Gospel of God?",
+      "es": "¿Cuál es el verdadero Evangelio de Dios?"
+    },
+    "summary": {
+      "pt": "Playlist registrada na Plataforma. Consulte os vídeos no YouTube.",
+      "en": "Playlist listed by the platform. Explore videos on YouTube.",
+      "es": "Lista registrada en la plataforma. Consulta los videos en YouTube."
+    },
+    "url": "https://www.youtube.com/playlist?list=PLV8UCJEGadSg",
+    "language": "pt",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "youtube-playlist-1",
+    "kind": "video",
+    "area": "faith",
+    "title": {
+      "pt": "Vida Cristã",
+      "en": "Christian Life",
+      "es": "Vida cristiana"
+    },
+    "summary": {
+      "pt": "Playlist registrada na Plataforma. Consulte os vídeos no YouTube.",
+      "en": "Playlist listed by the platform. Explore videos on YouTube.",
+      "es": "Lista registrada en la plataforma. Consulta los videos en YouTube."
+    },
+    "url": "https://www.youtube.com/playlist?list=PLb-JrfEGZHdg",
+    "language": "pt",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "youtube-playlist-2",
+    "kind": "video",
+    "area": "faith",
+    "title": {
+      "pt": "A Bíblia explicada de forma simples",
+      "en": "The Bible explained simply",
+      "es": "La Biblia explicada de forma sencilla"
+    },
+    "summary": {
+      "pt": "Playlist registrada na Plataforma. Consulte os vídeos no YouTube.",
+      "en": "Playlist listed by the platform. Explore videos on YouTube.",
+      "es": "Lista registrada en la plataforma. Consulta los videos en YouTube."
+    },
+    "url": "https://www.youtube.com/playlist?list=PLLufff3HvUMM",
+    "language": "pt",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "youtube-playlist-3",
+    "kind": "video",
+    "area": "faith",
+    "title": {
+      "pt": "O que é arrepender-se?",
+      "en": "What does it mean to repent?",
+      "es": "¿Qué significa arrepentirse?"
+    },
+    "summary": {
+      "pt": "Playlist registrada na Plataforma. Consulte os vídeos no YouTube.",
+      "en": "Playlist listed by the platform. Explore videos on YouTube.",
+      "es": "Lista registrada en la plataforma. Consulta los videos en YouTube."
+    },
+    "url": "https://www.youtube.com/playlist?list=PLTGMWnh1CQw4",
+    "language": "pt",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "youtube-playlist-4",
+    "kind": "video",
+    "area": "faith",
+    "title": {
+      "pt": "Deus, de uma forma quase não vista ou comentada.",
+      "en": "God, in a way rarely seen or discussed.",
+      "es": "Dios, de una forma pocas veces vista o comentada."
+    },
+    "summary": {
+      "pt": "Playlist registrada na Plataforma. Consulte os vídeos no YouTube.",
+      "en": "Playlist listed by the platform. Explore videos on YouTube.",
+      "es": "Lista registrada en la plataforma. Consulta los videos en YouTube."
+    },
+    "url": "https://www.youtube.com/playlist?list=PLFQ_Mcih0cNg",
+    "language": "pt",
+    "tags": [
+      "christ"
+    ]
+  },
+  {
+    "id": "song-0",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Alvo Mais Que a Neve — Harpa Cristã",
+      "en": "Alvo Mais Que a Neve — Harpa Cristã",
+      "es": "Alvo Mais Que a Neve — Harpa Cristã"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Alvo%20Mais%20Que%20a%20Neve%20%E2%80%94%20Harpa%20Crist%C3%A3",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-1",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Grandioso És Tu — Harpa Cristã",
+      "en": "Grandioso És Tu — Harpa Cristã",
+      "es": "Grandioso És Tu — Harpa Cristã"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Grandioso%20%C3%89s%20Tu%20%E2%80%94%20Harpa%20Crist%C3%A3",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-2",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Porque Ele Vive — Harpa Cristã",
+      "en": "Porque Ele Vive — Harpa Cristã",
+      "es": "Porque Ele Vive — Harpa Cristã"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Porque%20Ele%20Vive%20%E2%80%94%20Harpa%20Crist%C3%A3",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-3",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Deus Cuidará de Ti — hino cristão",
+      "en": "Deus Cuidará de Ti — Christian hymn (Portuguese title)",
+      "es": "Deus Cuidará de Ti — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Deus%20Cuidar%C3%A1%20de%20Ti%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-4",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Firme nas Promessas — hino cristão",
+      "en": "Firme nas Promessas — Christian hymn (Portuguese title)",
+      "es": "Firme nas Promessas — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Firme%20nas%20Promessas%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-5",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Castelo Forte — hino cristão",
+      "en": "Castelo Forte — Christian hymn (Portuguese title)",
+      "es": "Castelo Forte — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Castelo%20Forte%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-6",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Tu És Fiel, Senhor — hino cristão",
+      "en": "Tu És Fiel, Senhor — Christian hymn (Portuguese title)",
+      "es": "Tu És Fiel, Senhor — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Tu%20%C3%89s%20Fiel%2C%20Senhor%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-7",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Sonda-me, Usa-me — Aline Barros",
+      "en": "Sonda-me, Usa-me — Aline Barros",
+      "es": "Sonda-me, Usa-me — Aline Barros"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Sonda-me%2C%20Usa-me%20%E2%80%94%20Aline%20Barros",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-8",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Rude Cruz — hino cristão",
+      "en": "Rude Cruz — Christian hymn (Portuguese title)",
+      "es": "Rude Cruz — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Rude%20Cruz%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-9",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Mais Perto Quero Estar — hino cristão",
+      "en": "Mais Perto Quero Estar — Christian hymn (Portuguese title)",
+      "es": "Mais Perto Quero Estar — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Mais%20Perto%20Quero%20Estar%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-10",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Conta as Bênçãos — hino cristão",
+      "en": "Conta as Bênçãos — Christian hymn (Portuguese title)",
+      "es": "Conta as Bênçãos — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Conta%20as%20B%C3%AAn%C3%A7%C3%A3os%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-11",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Santo, Santo, Santo — hino cristão",
+      "en": "Santo, Santo, Santo — Christian hymn (Portuguese title)",
+      "es": "Santo, Santo, Santo — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Santo%2C%20Santo%2C%20Santo%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-12",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Jesus, o Bom Amigo — hino cristão",
+      "en": "Jesus, o Bom Amigo — Christian hymn (Portuguese title)",
+      "es": "Jesus, o Bom Amigo — himno cristiano (título en portugués)"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Jesus%2C%20o%20Bom%20Amigo%20%E2%80%94%20hino%20crist%C3%A3o",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "song-13",
+    "kind": "music",
+    "area": "arts",
+    "title": {
+      "pt": "Chuvas de Graça — Harpa Cristã",
+      "en": "Chuvas de Graça — Harpa Cristã",
+      "es": "Chuvas de Graça — Harpa Cristã"
+    },
+    "summary": {
+      "pt": "Louvor do repertório da plataforma. Busque uma gravação no YouTube.",
+      "en": "Song from the platform repertoire. Search for a recording on YouTube.",
+      "es": "Canción del repertorio de la plataforma. Busca una grabación en YouTube."
+    },
+    "url": "https://www.youtube.com/results?search_query=Chuvas%20de%20Gra%C3%A7a%20%E2%80%94%20Harpa%20Crist%C3%A3",
+    "language": "pt",
+    "search": true,
+    "tags": [
+      "arts",
+      "christ"
+    ]
+  },
+  {
+    "id": "formacao-1",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "IA para Professores: Planejamento, Avaliação, Inclusão e Segurança",
+      "en": "AI for Teachers: Planning, Assessment, Inclusion and Safety",
+      "es": "IA para Docentes: Planificación, Evaluación, Inclusión y Seguridad"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Educação Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Education. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Educación Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-1&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-2",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "IA para Alunos: Aprendizagem, Criatividade, Pensamento Crítico e Futuro Profissional",
+      "en": "AI for Students: Learning, Creativity, Critical Thinking and Future Careers",
+      "es": "IA para Estudiantes: Aprendizaje, Creatividad, Pensamiento Crítico y Futuro Profesional"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Educação Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Education. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Educación Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-2&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-3",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Inteligência Artificial e Transformação do Serviço Público",
+      "en": "Artificial Intelligence and Public Service Transformation",
+      "es": "Inteligencia Artificial y Transformación del Servicio Público"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-3&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-4",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Gestão Municipal Baseada em Dados, Transparência e Indicadores",
+      "en": "Data-Informed Municipal Management, Transparency and Indicators",
+      "es": "Gestión Municipal Basada en Datos, Transparencia e Indicadores"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-4&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-5",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Automação Administrativa, Atendimento e Gestão de Recursos",
+      "en": "Administrative Automation, Public Service and Resource Management",
+      "es": "Automatización Administrativa, Atención y Gestión de Recursos"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-5&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-6",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Desenvolvimento de Soluções Públicas com IA: do Problema ao Protótipo",
+      "en": "Public Solutions with AI: From Problem to Prototype",
+      "es": "Soluciones Públicas con IA: del Problema al Prototipo"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Município Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Municipality 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Municipio Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-6&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-7",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "IA no Campo: Gestão e Produtividade",
+      "en": "AI in Agriculture: Management and Productivity",
+      "es": "IA en el Campo: Gestión y Productividad"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-7&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-8",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Produção Inteligente: Colheita, Café e Pecuária",
+      "en": "Smart Production: Harvests, Coffee and Livestock",
+      "es": "Producción Inteligente: Cosecha, Café y Ganadería"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-8&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-9",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Agricultura Digital: Sensores, Água, Solo e Sustentabilidade",
+      "en": "Digital Agriculture: Sensors, Water, Soil and Sustainability",
+      "es": "Agricultura Digital: Sensores, Agua, Suelo y Sostenibilidad"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-9&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-10",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Comercialização, Rastreabilidade e Inovação Rural",
+      "en": "Marketing, Traceability and Rural Innovation",
+      "es": "Comercialización, Trazabilidad e Innovación Rural"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Campo Inteligente 2040. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Countryside 2040. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Campo Inteligente 2040. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-10&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-19",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Inteligência Artificial para Pequenos Negócios: Gestão, Vendas, Marketing e Empreendedorismo",
+      "en": "AI for Small Businesses: Management, Sales, Marketing and Entrepreneurship",
+      "es": "IA para Pequeños Negocios: Gestión, Ventas, Marketing y Emprendimiento"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Negócio Inteligente. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Smart Business. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Negocio Inteligente. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-19&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-11",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Inclusão Digital e Aprendizagem para Crianças e Adolescentes em Acolhimento",
+      "en": "Digital Inclusion and Learning for Children and Teenagers in Care",
+      "es": "Inclusión Digital y Aprendizaje para Niños y Adolescentes en Acogida"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-11&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-12",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Criatividade, Estudos e Projetos de Vida com IA",
+      "en": "Creativity, Learning and Life Goals with AI",
+      "es": "Creatividad, Estudios y Proyectos de Vida con IA"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-12&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-13",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Trabalho, Empreendedorismo e Ferramentas Digitais para Pessoas Acolhidas",
+      "en": "Work, Entrepreneurship and Digital Tools for People in Care",
+      "es": "Trabajo, Emprendimiento y Herramientas Digitales para Personas en Acogida"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-13&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-14",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Gestão de Casas de Apoio, Comunicação e Organização de Equipes",
+      "en": "Care Home Management, Communication and Team Organization",
+      "es": "Gestión de Casas de Apoyo, Comunicación y Organización de Equipos"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-14&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-15",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Autonomia Digital e Prevenção de Golpes para Pessoas Idosas",
+      "en": "Digital Independence and Scam Prevention for Older Adults",
+      "es": "Autonomía Digital y Prevención de Estafas para Personas Mayores"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-15&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-16",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "IA, Memória, Arte e Convivência na Terceira Idade",
+      "en": "AI, Memory, Art and Community in Later Life",
+      "es": "IA, Memoria, Arte y Convivencia en la Tercera Edad"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Cuidar e Aprender. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Care & Learning. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Cuidar y Aprender. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-16&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-17",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Inteligência Artificial para Comunicação, Educação e Projetos Comunitários",
+      "en": "AI for Communication, Education and Community Projects",
+      "es": "IA para Comunicación, Educación y Proyectos Comunitarios"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Comunidade Conectada. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Connected Community. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Comunidad Conectada. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-17&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-18",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Gestão de Voluntariado, Doações e Prestação de Contas",
+      "en": "Volunteer, Donation and Accountability Management",
+      "es": "Gestión del Voluntariado, Donaciones y Rendición de Cuentas"
+    },
+    "summary": {
+      "pt": "Proposta de formação do programa Comunidade Conectada. O conteúdo detalhado e a oferta de turmas estão em planejamento.",
+      "en": "A proposed learning pathway within Connected Community. The detailed curriculum and class availability are being planned.",
+      "es": "Propuesta de formación del programa Comunidad Conectada. El contenido detallado y la oferta de grupos están en planificación."
+    },
+    "url": "projetos.html?item=formacao-18&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-comunitaria-p01",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Informática, IA e Cidadania Digital",
+      "en": "Computer Skills, AI & Digital Citizenship",
+      "es": "Informática, IA y Ciudadanía Digital"
+    },
+    "summary": {
+      "pt": "Um percurso integral: dos primeiros passos no computador a projetos práticos, segurança, IA e cidadania.",
+      "en": "A complete pathway from first computer steps to practical projects, safety, AI and citizenship.",
+      "es": "Un recorrido integral desde los primeros pasos en el ordenador hasta proyectos prácticos, seguridad, IA y ciudadanía."
+    },
+    "url": "projetos.html?item=formacao-comunitaria-p01&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-comunitaria-p13",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Formação comunitária Música para Todos",
+      "en": "Music for Everyone Community Learning Pathway",
+      "es": "Formación comunitaria Música para Todos"
+    },
+    "summary": {
+      "pt": "Uma formação com fundamentos comuns e percursos de violão, teclado, baixo e bateria.",
+      "en": "One learning pathway with shared foundations and guitar, keyboard, bass and drums.",
+      "es": "Una formación con fundamentos comunes y recorridos de guitarra, teclado, bajo y batería."
+    },
+    "url": "projetos.html?item=formacao-comunitaria-p13&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "id": "formacao-casais",
+    "kind": "training",
+    "area": "education",
+    "title": {
+      "pt": "Amor, Aliança e Restauração",
+      "en": "Love, Covenant & Restoration",
+      "es": "Amor, Alianza y Restauración"
+    },
+    "summary": {
+      "pt": "Proposta cristã para casais sobre comunicação, respeito, responsabilidades compartilhadas, fé e proteção das pessoas.",
+      "en": "A Christian proposal for couples on communication, respect, shared responsibilities, faith and personal safety.",
+      "es": "Propuesta cristiana para parejas sobre comunicación, respeto, responsabilidades compartidas, fe y protección de las personas."
+    },
+    "url": "projetos.html?item=formacao-casais&type=training",
+    "status": "planning",
+    "language": "multi",
+    "tags": [
+      "projects"
+    ]
+  }
+]
