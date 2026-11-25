@@ -125,6 +125,13 @@ $('home-search-form').addEventListener('submit',e=>{e.preventDefault();clearTime
 input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>search(false),180);});
 $('clear-search').addEventListener('click',()=>{input.value='';section.hidden=true;results.replaceChildren();status.textContent='';input.focus();});
 window.addEventListener('pge-locale-change',()=>{localizeRows();updateTheme();updateMotion();if(input.value.trim())search(false);});
-Promise.allSettled([fetch('assets/data/portfolio.json').then(r=>r.json()),fetch('assets/data/library.json').then(r=>r.json()),window.PGEPublicData?.games()]).then(([p,l,g])=>{const extra=[];if(p.status==='fulfilled')for(const x of p.value.items)extra.push({id:'portfolio-'+x.id,title:x.title.pt,text:x.summary.pt,aliases:Object.values(x.title).join(' '),url:'projetos.html?item='+encodeURIComponent(x.id),traducoes:{en:{title:x.title.en,text:x.summary.en},es:{title:x.title.es,text:x.summary.es}}});for(const result of [l,g])if(result.status==='fulfilled'&&Array.isArray(result.value))for(const x of result.value)extra.push({id:'library-'+x.id,title:x.title.pt,text:x.summary.pt,aliases:Object.values(x.title).join(' '),url:'biblioteca.html?q='+encodeURIComponent(x.title.pt),traducoes:{en:{title:x.title.en,text:x.summary.en},es:{title:x.title.es,text:x.summary.es}}});data.index.push(...extra);localizeRows();if(input.value.trim())search(false);});
+function addSearchItems(items,portfolio=false){
+ for(const x of items||[]){if(!x.title?.pt||!x.summary?.pt)continue;const id=(portfolio?'portfolio-':'library-')+x.id;if(data.index.some(row=>row.id===id))continue;data.index.push({id,title:x.title.pt,text:x.summary.pt,aliases:Object.values(x.title).join(' '),url:portfolio?'projetos.html?item='+encodeURIComponent(x.id):'biblioteca.html?q='+encodeURIComponent(x.title.pt),traducoes:{en:{title:x.title.en||x.title.pt,text:x.summary.en||x.summary.pt},es:{title:x.title.es||x.title.pt,text:x.summary.es||x.summary.pt}}});}
+ localizeRows();if(input.value.trim())search(false);
+}
+fetch('assets/data/portfolio.json').then(r=>r.json()).then(p=>addSearchItems(p.items,true)).catch(()=>{});
+fetch('assets/data/library.json').then(r=>r.json()).then(addSearchItems).catch(()=>{});
+window.PGEPublicData?.games().then(addSearchItems).catch(()=>{});
+
 if(location.hash)requestAnimationFrame(()=>route(location.hash));
 })();

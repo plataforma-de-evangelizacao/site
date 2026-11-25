@@ -15,7 +15,7 @@ function render(root=document.body){
 function setLocale(value,announce=true){
  if(!supported.includes(value))return;lang=value;document.documentElement.lang={pt:'pt-BR',en:'en',es:'es'}[lang];
  const select=document.getElementById('locale-select');if(select)select.value=lang;
- document.title=t('Início · Plataforma Global de Evangelização · Prévia V49');render();
+ document.title=t('Início · Plataforma Global de Evangelização · V50');render();
  if(announce){try{localStorage.setItem('pge.locale',lang);}catch{}const next=new URL(location.href);next.searchParams.set('lang',lang);history.replaceState(null,'',next);}
  window.dispatchEvent(new CustomEvent('pge-locale-change',{detail:{lang}}));
 }
