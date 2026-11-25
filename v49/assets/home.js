@@ -13,7 +13,7 @@ function open(title,label,nodes){
  $('dialog-body').replaceChildren(...nodes);if(!modal.open)modal.showModal();syncDialogs();window.pgeI18n.render(modal);$('dialog-title').focus();
 }
 function sourceLink(id,label='Consultar no site atual'){
- const p=paragraph('', 'source-link'),a=el('a',label);a.href='https://plataforma-de-evangelizacao.github.io/site/#'+encodeURIComponent(id);a.target='_blank';a.rel='noopener noreferrer';p.append(a);return p;
+ const p=paragraph('', 'source-link'),a=el('a',label);a.href='legacy.html#'+encodeURIComponent(id);a.target='_blank';a.rel='noopener noreferrer';p.append(a);return p;
 }
 function entry(id){
  const item=rows.find(x=>x.id===id);if(!item)return;
@@ -117,7 +117,7 @@ function search(scroll=false){
  section.hidden=false;const found=window.pgeSearchRank(rows,query);
  status.textContent=found.length?t('{count} espaço(s) encontrado(s) para “{query}”.',{count:found.length,query}):t('Nenhum espaço encontrado para “{query}”.',{query});
  if(!found.length){const box=el('div','', 'empty-state');box.append(paragraph('Tente outro assunto ou explore o mapa da plataforma.'));const button=el('button','Explorar os espaços','text-button');button.type='button';button.addEventListener('click',infos.directory);box.append(button);results.append(box);}
- for(const item of found){const article=el('article','','search-result'),h=el('h3'),button=el('button',item.title);button.type='button';button.addEventListener('click',()=>entry(item.id));h.append(button);article.append(h,paragraph(item.text||'Conheça este espaço na plataforma.'));results.append(article);}
+ for(const item of found){const article=el('article','','search-result'),h=el('h3'),button=el('button',item.title);button.type='button';button.addEventListener('click',()=>item.url?location.assign(item.url):entry(item.id));h.append(button);article.append(h,paragraph(item.text||'Conheça este espaço na plataforma.'));results.append(article);}
  window.pgeI18n.render(section);
  if(scroll)section.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
 }
@@ -125,5 +125,6 @@ $('home-search-form').addEventListener('submit',e=>{e.preventDefault();clearTime
 input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>search(false),180);});
 $('clear-search').addEventListener('click',()=>{input.value='';section.hidden=true;results.replaceChildren();status.textContent='';input.focus();});
 window.addEventListener('pge-locale-change',()=>{localizeRows();updateTheme();updateMotion();if(input.value.trim())search(false);});
+Promise.allSettled([fetch('assets/data/portfolio.json').then(r=>r.json()),fetch('assets/data/library.json').then(r=>r.json()),window.PGEPublicData?.games()]).then(([p,l,g])=>{const extra=[];if(p.status==='fulfilled')for(const x of p.value.items)extra.push({id:'portfolio-'+x.id,title:x.title.pt,text:x.summary.pt,aliases:Object.values(x.title).join(' '),url:'projetos.html?item='+encodeURIComponent(x.id),traducoes:{en:{title:x.title.en,text:x.summary.en},es:{title:x.title.es,text:x.summary.es}}});for(const result of [l,g])if(result.status==='fulfilled'&&Array.isArray(result.value))for(const x of result.value)extra.push({id:'library-'+x.id,title:x.title.pt,text:x.summary.pt,aliases:Object.values(x.title).join(' '),url:'biblioteca.html?q='+encodeURIComponent(x.title.pt),traducoes:{en:{title:x.title.en,text:x.summary.en},es:{title:x.title.es,text:x.summary.es}}});data.index.push(...extra);localizeRows();if(input.value.trim())search(false);});
 if(location.hash)requestAnimationFrame(()=>route(location.hash));
 })();

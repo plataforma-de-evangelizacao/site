@@ -1,4 +1,14 @@
 {
   "versao": 1,
-  "itens": []
+  "itens": [
+    {
+      "id": "jogo-caminhos-de-cuidado",
+      "tipo": "jogo",
+      "titulo": "Caminhos de cuidado",
+      "descricao": "Atividade educativa sobre atitudes de amor ao próximo.",
+      "categoria": "Fé e convivência",
+      "link": "https://plataforma-de-evangelizacao.github.io/site/jogos/amor-ao-proximo/index.html",
+      "status": "publicado"
+    }
+  ]
 }

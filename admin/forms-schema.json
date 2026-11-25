@@ -1039,6 +1039,15 @@
       "evidence": "",
       "capa": "",
       "alt": ""
+    },
+    "dados/catalogo-conteudos.json.itens": {
+      "id": "",
+      "tipo": "jogo",
+      "titulo": "",
+      "descricao": "",
+      "categoria": "Educação",
+      "link": "https://plataforma-de-evangelizacao.github.io/site/jogos/nome-do-jogo/index.html",
+      "status": "proposta"
     }
   }
 }

@@ -35,6 +35,7 @@ function action(form, work) {
 }
 function renderCatalog(state) {
   $('catalog').hidden = false;
+  $('registration-status').textContent = state.registration_open ? 'Selecione um curso disponível e informe seu nome para solicitar inscrição.' : 'As inscrições ainda não foram abertas. A equipe disponibilizará as turmas neste espaço.';
   $('courses').replaceChildren();
   if (!state.courses.length) $('courses').append(node('p', 'Nenhum curso publicado.'));
   for (const course of state.courses) {

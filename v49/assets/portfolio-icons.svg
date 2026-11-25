@@ -35,4 +35,4 @@
 <symbol id="menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
 <symbol id="check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
 <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
-</svg>
+<symbol id="play-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 7 4-7 4z"/></symbol><symbol id="playlist" viewBox="0 0 24 24"><path d="M3 5h14M3 10h14M3 15h8m3-2 7 4-7 4z"/></symbol><symbol id="gamepad" viewBox="0 0 24 24"><path d="M7 7h10c2 0 4 3 5 9 0 3-3 4-5 1l-2-2H9l-2 2c-2 3-5 2-5-1 1-6 3-9 5-9zM7 10v5m-2-2h4m7-1h1m2 2h1"/></symbol></svg>

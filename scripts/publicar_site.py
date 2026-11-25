@@ -34,6 +34,8 @@ if (aurora / "index.html").is_file():
         if name == "index.html":
             html = html.replace("</head>", '<script defer src="assets/legacy-links.js"></script></head>', 1)
         (output / name).write_text(html, encoding="utf-8")
+    if (ROOT / "jogos").is_dir():
+        shutil.copytree(ROOT / "jogos", output / "jogos", dirs_exist_ok=True)
     home_js = output / "assets" / "home.js"
     home_js.write_text(home_js.read_text(encoding="utf-8").replace(
         "https://plataforma-de-evangelizacao.github.io/site/#", "legacy.html#"), encoding="utf-8")
