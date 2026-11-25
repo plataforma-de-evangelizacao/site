@@ -1,5 +1,6 @@
 """Build the Pages artifact without running the retired discovery pipeline."""
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -9,6 +10,13 @@ from run import build_site
 
 output = ROOT / "_site"
 build_site(ROOT, output)
+# Promote Aurora Azul at the public entry point while preserving the entire
+# prior page, its existing donation details, local assets and deep links.
+if (output / "v49" / "index.html").is_file():
+    shutil.copy2(output / "index.html", output / "legacy.html")
+    shutil.copy2(ROOT / "deploy" / "index.html", output / "index.html")
+    shutil.copy2(ROOT / "deploy" / "entrada-v49.js", output / "entrada-v49.js")
+
 for name in ("biblioteca.js", "catalog-index.js"):
     (output / "assets" / name).unlink(missing_ok=True)
 catalog = output / "dados/biblioteca"
