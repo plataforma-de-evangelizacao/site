@@ -10,12 +10,50 @@ from run import build_site
 
 output = ROOT / "_site"
 build_site(ROOT, output)
-# Promote Aurora Azul at the public entry point while preserving the entire
-# prior page, its existing donation details, local assets and deep links.
-if (output / "v49" / "index.html").is_file():
+# Publish the approved interface at canonical root URLs. Keep former deep
+# content links and the existing donation page intact on legacy.html.
+aurora = output / "v49"
+if (aurora / "index.html").is_file():
     shutil.copy2(output / "index.html", output / "legacy.html")
-    shutil.copy2(ROOT / "deploy" / "index.html", output / "index.html")
-    shutil.copy2(ROOT / "deploy" / "entrada-v49.js", output / "entrada-v49.js")
+    pages = ["index.html", "biblioteca.html", "projetos.html",
+             "atlas-solidario.html", "participar.html", "aluno.html", "aluno-acesso.html"]
+    for source in (aurora / "assets").rglob("*"):
+        if not source.is_file() or source.name.startswith("admin-preview"):
+            continue
+        target = output / "assets" / source.relative_to(aurora / "assets")
+        if target.exists() and target.read_bytes() != source.read_bytes():
+            raise RuntimeError("Conflito de ativo: " + str(target.relative_to(output)))
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+    for name in pages:
+        html = (aurora / name).read_text(encoding="utf-8")
+        html = html.replace('href="administracao.html"', 'href="admin/"')
+        html = html.replace('href="../aluno/"', 'href="aluno/"')
+        html = html.replace("https://plataforma-de-evangelizacao.github.io/site/#doacoes",
+                            "legacy.html#doacoes")
+        if name == "index.html":
+            html = html.replace("</head>", '<script defer src="assets/legacy-links.js"></script></head>', 1)
+        (output / name).write_text(html, encoding="utf-8")
+    home_js = output / "assets" / "home.js"
+    home_js.write_text(home_js.read_text(encoding="utf-8").replace(
+        "https://plataforma-de-evangelizacao.github.io/site/#", "legacy.html#"), encoding="utf-8")
+    # Old URLs are compatibility redirects, not a second application.
+    shutil.rmtree(aurora)
+    aurora.mkdir()
+    def redirect(path, target):
+        path.write_text(
+            '<!doctype html><html lang="pt-BR"><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<script defer src="' + ('../' if path.parent == aurora else '') + 'assets/canonical-redirect.js"></script>'
+            '<title>Plataforma Global de Evangelização</title>'
+            '<p><a id="canonical-destination" href="' + target + '">Acessar a plataforma</a></p></html>',
+            encoding="utf-8")
+    for name in pages:
+        redirect(aurora / name, "../" if name == "index.html" else "../" + name)
+    redirect(aurora / "administracao.html", "../admin/")
+    redirect(output / "administracao.html", "admin/")
+    shutil.copy2(ROOT / "deploy" / "legacy-links.js", output / "assets" / "legacy-links.js")
+    shutil.copy2(ROOT / "deploy" / "canonical-redirect.js", output / "assets" / "canonical-redirect.js")
 
 for name in ("biblioteca.js", "catalog-index.js"):
     (output / "assets" / name).unlink(missing_ok=True)

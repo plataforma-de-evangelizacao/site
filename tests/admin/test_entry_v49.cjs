@@ -1,17 +1,19 @@
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const vm = require('node:vm');
-const path = require('node:path');
-const script = fs.readFileSync(path.join(__dirname,'../../deploy/entrada-v49.js'),'utf8');
-function route(input) {
-  const location = new URL(input); let actual;
-  location.replace = url => {actual = url;};
-  vm.runInNewContext(script,{location,URL}); return actual;
-}
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const read=name=>fs.readFileSync(path.join(__dirname,'../../deploy',name),'utf8');
 const root='https://example.org/site/';
-assert.equal(route(root),root+'v49/');
-assert.equal(route(root+'index.html'),root+'v49/');
-assert.equal(route(root+'?lang=en'),root+'v49/?lang=en');
-assert.equal(route(root+'#doacoes'),root+'legacy.html#doacoes');
-assert.equal(route(root+'?lang=es#estudos'),root+'legacy.html?lang=es#estudos');
-console.log('5 verificações de navegação e preservação de links históricos aprovadas.');
+function legacy(input,existing){
+ const location=new URL(input);let actual;location.replace=url=>actual=url;
+ vm.runInNewContext(read('legacy-links.js'),{location,URL,document:{getElementById:id=>existing.includes(id)?{}:null}});return actual;
+}
+function compat(input,target){
+ const location=new URL(input);let actual;location.replace=url=>actual=url;
+ vm.runInNewContext(read('canonical-redirect.js'),{location,URL,document:{getElementById:()=>({getAttribute:()=>target})}});return actual;
+}
+assert.equal(legacy(root,[]),undefined);
+assert.equal(legacy(root+'#inicio',['inicio']),undefined);
+assert.equal(legacy(root+'#doacoes',[]),root+'legacy.html#doacoes');
+assert.equal(compat(root+'v49/projetos.html?lang=en#explorar','../projetos.html'),root+'projetos.html?lang=en#explorar');
+assert.equal(compat(root+'v49/administracao.html','../admin/'),root+'admin/');
+assert.equal(compat(root+'administracao.html','admin/'),root+'admin/');
+assert.equal(compat(root+'administracao.html','https://example.net/'),undefined);
+console.log('7 verificações de URLs canônicas e rotas administrativas aprovadas.');
