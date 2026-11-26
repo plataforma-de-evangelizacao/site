@@ -2,7 +2,8 @@
   'use strict';
   const features = new Map();
   const loaded = new Map();
-  const colors = {housing:'#e8b977',food:'#f4c970',clothes:'#b49cf0',care:'#f39abf',health:'#7cdec5',protection:'#f9997d',education:'#83cbfb',response:'#b4e68e',all:'#74dbed'};
+  const failedUntil = new Map();
+  const colors = {housing:'#e8b977',food:'#f4c970',clothes:'#b49cf0',care:'#f39abf',health:'#7cdec5',protection:'#f9997d',education:'#83cbfb',response:'#b4e68e',water:'#7cbdff',displacement:'#fbbf9a',poverty:'#cec89e',all:'#74dbed'};
   const states = {
     11:['RO','Rondônia'],12:['AC','Acre'],13:['AM','Amazonas'],14:['RR','Roraima'],15:['PA','Pará'],16:['AP','Amapá'],17:['TO','Tocantins'],
     21:['MA','Maranhão'],22:['PI','Piauí'],23:['CE','Ceará'],24:['RN','Rio Grande do Norte'],25:['PB','Paraíba'],26:['PE','Pernambuco'],27:['AL','Alagoas'],28:['SE','Sergipe'],29:['BA','Bahia'],
@@ -33,8 +34,10 @@
   }
   function layer(key,load) {
     if (loaded.has(key)) return loaded.get(key);
-    const pending=load().then(refresh).catch(()=>{
+    if ((failedUntil.get(key)||0)>Date.now()) return Promise.resolve();
+    const pending=load().then(()=>{const status=document.getElementById('atlas-boundary-status');if(status)status.textContent=''; refresh();}).catch(()=>{
       loaded.delete(key);
+      failedUntil.set(key,Date.now()+90000);
       const status=document.getElementById('atlas-boundary-status');
       if (status) status.textContent='Limites locais indisponíveis no momento. Você pode continuar navegando no mapa.';
     });
@@ -75,7 +78,46 @@
       }
     });
   }
+  function loadForeign(id,level){
+    const code=id.slice(8).toUpperCase();
+    if (!/^[A-Z]{3}$/.test(code)) return;
+    return layer('foreign-'+code+'-'+level, async()=>{
+      const metadata=await read('https://www.geoboundaries.org/api/current/gbOpen/'+code+'/ADM'+level+'/');
+      const url=new URL(metadata.simplifiedGeometryGeoJSON||metadata.gjDownloadURL);
+      if(url.protocol!=='https:'||!['raw.githubusercontent.com','media.githubusercontent.com','www.geoboundaries.org'].includes(url.hostname))throw new Error('Origem cartográfica inválida');
+      const data=await read(url.href);
+      for(const feature of data.features||[]){
+        const p=feature.properties||{};
+        if(!p.shapeName||!p.shapeID||!['Polygon','MultiPolygon'].includes(feature.geometry?.type))continue;
+        const rings=polygons(feature);
+        const [x,y]=rings[0][0][0];
+        const parent=level===2?(hit(x,y,8)||id):id;
+        add('adm-'+code.toLowerCase()+'-'+p.shapeID,p.shapeISO?.includes('-')?p.shapeISO.split('-').at(-1):p.shapeName,names(p.shapeName),parent, rings,level);
+      }
+    });
+  }
+  async function watchViewport(lon,lat,zoom){
+    if(zoom<3)return;
+    const x=((lon+180)%360+360)%360-180;
+    const country=hit(x,lat,1);
+    if(country==='br'){
+      await loadStates();
+      if(zoom>=9){
+        const state=hit(x,lat,8);
+        if(state==='mt'||state?.startsWith('uf-'))await loadCities(state==='mt'?'51':state.slice(3));
+      }
+    }else if(country?.startsWith('country-')){
+      await loadForeign(country,1);
+      if(zoom>=9)await loadForeign(country,2);
+    }
+  }
   async function loadChildren(id){
+    if(id.startsWith('country-'))return loadForeign(id,1);
+    if(id.startsWith('adm-')){
+      const code=id.split('-')[1];
+      await loadForeign('country-'+code,1);
+      return loadForeign('country-'+code,2);
+    }
     if(id==='br'||id==='mt'||id==='nb'||id.startsWith('uf-')||id.startsWith('mun-')) await loadStates();
     if(id==='mt'||id==='nb') await loadCities('51');
     else if(id.startsWith('uf-')||id.startsWith('mun-')) await loadCities(id.slice(id.indexOf('-')+1,id.indexOf('-')+3));
@@ -98,10 +140,10 @@
     }
     return best?.id;
   }
-  function paint({ctx,proj,line,width,height,zoom,territory,category,light}){
+  function paint({ctx,proj,line,width,height,zoom,territory,category,light,compared=[]}){
     for(const feature of features.values()){
       if(feature.level===1&&zoom<3||feature.level===2&&zoom<9)continue;
-      const selected=feature.id===territory;
+      const selected=feature.id===territory||compared.includes(feature.id);
       const available=hasData(feature.id,category,Object.values(feature.title));
       ctx.strokeStyle=selected?'#f7d083':light?'#29475c99':'#c7ebf388';
       ctx.lineWidth=selected?2:feature.level?.7:.85;
@@ -130,5 +172,5 @@
       all.sort((a,b)=> (b[0]==='world')-(a[0]==='world') || a[1].pt.localeCompare(b[1].pt,'pt-BR'));
     });
   }
-  window.AtlasGeo={init,paint,hit,loadChildren,colors,setCoverage(fn){hasData=fn}};
+  window.AtlasGeo={init,paint,hit,loadChildren,watchViewport,colors,setCoverage(fn){hasData=fn}};
 })();
