@@ -41,6 +41,7 @@
     'SH.DYN.MORT':['Saúde','Mortalidade de menores de cinco anos','por mil nascidos vivos']
   };
   const external = [
+    ...[{"year":2024,"region":"Brasil · Norte","territory_code":"br-norte","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":6.3,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Nordeste","territory_code":"br-nordeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":4.8,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Sudeste","territory_code":"br-sudeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":2.3,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Sul","territory_code":"br-sul","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":1.7,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Centro-Oeste","territory_code":"br-centro-oeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":2.8,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."}],
     {year:2026,region:'Sudão',territory_code:'SDN',category:'Alimentação',label:'Insegurança alimentar aguda · IPC fase 3+',value:19500000,unit:'pessoas',percent:41,qualifier:'Fevereiro a maio de 2026 · estimativa nacional',source:'IPC',url:'https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163315/',note:'Estimativa aproximada para fevereiro a maio de 2026. As projeções posteriores do mesmo relatório têm cobertura geográfica parcial.'},
     {year:2026,region:'Chade',territory_code:'TCD',category:'Alimentação',label:'Insegurança alimentar aguda · CH fase 3+',value:3180000,unit:'pessoas',percent:17,qualifier:'Junho a agosto de 2026 · população analisada',source:'Cadre Harmonisé · FAO GIEWS',url:'https://www.fao.org/giews/countrybrief/country.jsp?code=TCD',note:'Estimativa aproximada da população analisada. Uma análise separada da população refugiada não foi somada.'}
   ];
@@ -182,7 +183,13 @@
     csv.disabled=json.disabled=!list.length;
   }
   function refresh(){
-    rows=[...baseline,...external,...[...series.values()].flat()];
+    const unique=new Map();
+    for(const row of [...external,...[...series.values()].flat(),...baseline]){
+      const key=JSON.stringify([row.territory_code||row.territory_id||row.region,row.year,row.label,row.unit,row.source,row.qualifier||'']);
+      const old=unique.get(key);
+      if(!old||(Date.parse(row.collected_at)||0)>=(Date.parse(old.collected_at)||0))unique.set(key,row);
+    }
+    rows=[...unique.values()];
     const years=[...new Set(rows.map(r=>r.year))].sort((a,b)=>b-a).map(y=>[String(y),String(y)]);
     const regions=[...new Set(rows.map(r=>r.region))].filter(Boolean).sort((a,b)=>a.localeCompare(b,'pt-BR')).map(x=>[x,x]);
     const categoryLabels=Object.entries(definitions).map(([k,v])=>[k,v[0]]);
