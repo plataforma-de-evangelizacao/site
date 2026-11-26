@@ -3,3 +3,5 @@
 .library-page .lib-hero .primary{color:#082832}
 html[data-theme=light] .library-page .lib-hero .primary{color:white}
 @media(max-width:720px){.library-page .lib-filter-toggle{display:inline-flex}}
+
+.aurora-public .lib-hero img{background:transparent;border:0;box-shadow:none;border-radius:0}
