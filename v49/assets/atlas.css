@@ -45,3 +45,5 @@
 @media(max-width:720px){.atlas-main.container{width:calc(100% - 22px)}.atlas-info{order:initial}.atlas-info #territory-kpis{max-height:23rem}}
 
 .atlas-chart-col span:last-child{font-variant-numeric:tabular-nums}.atlas-indicator-chart figcaption{font-size:.78rem;color:var(--muted)}.atlas-stat details summary,.atlas-kpi-item details summary{cursor:pointer;font-size:.85rem}.atlas-map-panel:focus-within #atlas-canvas:focus-visible{outline:3px solid #87ccf5;outline-offset:-3px}
+
+.atlas-chart-bar.is-zero{min-height:0;height:0;border-top:1px solid var(--p-line)}

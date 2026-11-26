@@ -20,7 +20,7 @@
   const explanations = {
     'Moradia':'Condições habitacionais, incluindo assentamentos precários.',
     'Alimentação':'Subalimentação e insegurança alimentar aguda são medidas distintas.',
-    'Vestuário e higiene':'Acesso a roupas e itens de higiene, com lacunas nas séries públicas.',
+    'Vestuário e higiene':'O acesso a água e sabão em casa tem série própria. A disponibilidade de roupas continua sem uma série comparável no Atlas.',
     'Acolhimento':'Apoio e serviços de acolhimento com cobertura identificada.',
     'Saúde':'Indicadores de saúde e acesso a cuidados.',
     'Acessibilidade':'Indicadores com recorte de deficiência e acessibilidade quando disponíveis.',
@@ -36,11 +36,94 @@
     'SH.HOMC.P2':['Violência','Homicídios intencionais','por 100 mil habitantes'],
     'SH.H2O.SMDW.ZS':['Água e saneamento','Água potável gerida com segurança','% da população'],
     'SH.STA.SMSS.ZS':['Água e saneamento','Saneamento gerido com segurança','% da população'],
+    'SH.STA.HYGN.ZS':['Vestuário e higiene','Acesso a local para lavar as mãos com água e sabão','% da população'],
     'SI.POV.DDAY':['Pobreza','População abaixo da linha internacional de pobreza','% da população'],
     'SE.PRM.UNER.ZS':['Educação','Crianças em idade escolar primária fora da escola','% da faixa etária'],
     'SH.DYN.MORT':['Saúde','Mortalidade de menores de cinco anos','por mil nascidos vivos']
   };
+  const displacement = [
+  {
+    "year": 2020,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 81490000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  },
+  {
+    "year": 2021,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 88230000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  },
+  {
+    "year": 2022,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 107220000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  },
+  {
+    "year": 2023,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 116360000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  },
+  {
+    "year": 2024,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 123250000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  },
+  {
+    "year": 2025,
+    "region": "Mundo",
+    "category": "Deslocamento",
+    "label": "Pessoas deslocadas à força",
+    "value": 117830000,
+    "unit": "pessoas",
+    "qualifier": "aproximadamente · fim do ano",
+    "source": "ACNUR · Global Trends 2025",
+    "url": "https://www.unhcr.org/figures-at-a-glance.html",
+    "note": "Série mundial do ACNUR, com valores do fim de cada ano na edição Global Trends 2025. O total inclui deslocamento interno e outras populações deslocadas sob as definições do ACNUR."
+  }
+];
+  const hygiene = {
+    year:2024,region:'Mundo',category:'Vestuário e higiene',
+    label:'Pessoas sem serviço básico de higiene em casa',
+    value:1700000000,unit:'pessoas',percent:20,qualifier:'aproximadamente',
+    source:'JMP · OMS e UNICEF',url:'https://data.unicef.org/resources/jmp-report-2025/',
+    note:'Serviço básico de higiene significa ter um local para lavar as mãos com água e sabão na residência. O indicador não mede acesso a roupas.'
+  };
   const external = [
+    ...displacement,hygiene,
     ...[{"region":"Mundo","category":"Alimentação","label":"Subalimentação crônica","unit":"pessoas","source":"FAO · SOFI 2026","url":"https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en","qualifier":"aproximadamente","year":2022,"value":688000000,"note":"Estimativa arredondada, reconstituída da edição SOFI 2026: 645 milhões em 2025, 43 milhões abaixo do pico de 2022."},{"region":"Mundo","category":"Alimentação","label":"Subalimentação crônica","unit":"pessoas","source":"FAO · SOFI 2026","url":"https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en","qualifier":"aproximadamente","year":2024,"value":659000000,"note":"Estimativa arredondada, reconstituída da edição SOFI 2026: 645 milhões em 2025, quase 14 milhões abaixo de 2024."},{"region":"Mundo","category":"Alimentação","label":"Subalimentação crônica","unit":"pessoas","source":"FAO · SOFI 2026","url":"https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en","qualifier":"aproximadamente","year":2025,"value":645000000,"percent":7.8,"note":"Estimativa divulgada pela FAO na edição SOFI 2026."},{"region":"África","category":"Alimentação","label":"Prevalência de subalimentação","unit":"% da população","source":"FAO · SOFI 2026","url":"https://www.fao.org/director-general/speeches/details/launch-of-the-state-of-food-security-and-nutrition-in-the-world-%28sofi%29-2026-report-statement/","note":"Série regional publicada na apresentação da edição SOFI 2026.","year":2024,"value":20.3},{"region":"África","category":"Alimentação","label":"Prevalência de subalimentação","unit":"% da população","source":"FAO · SOFI 2026","url":"https://www.fao.org/director-general/speeches/details/launch-of-the-state-of-food-security-and-nutrition-in-the-world-%28sofi%29-2026-report-statement/","note":"Série regional publicada na apresentação da edição SOFI 2026.","year":2025,"value":20}],
     ...[{"year":2024,"region":"Brasil · Norte","territory_code":"br-norte","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":6.3,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Nordeste","territory_code":"br-nordeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":4.8,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Sudeste","territory_code":"br-sudeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":2.3,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Sul","territory_code":"br-sul","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":1.7,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."},{"year":2024,"region":"Brasil · Centro-Oeste","territory_code":"br-centro-oeste","category":"Alimentação","label":"Domicílios em insegurança alimentar grave","value":2.8,"unit":"% dos domicílios","qualifier":"Grandes Regiões · Escala Brasileira de Insegurança Alimentar","source":"IBGE · PNAD Contínua","url":"https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/724f23c52823528787ba0ef28b7940e3.pdf","note":"Domicílios particulares permanentes. O percentual se refere a domicílios e à definição da EBIA."}],
     {year:2026,region:'Sudão',territory_code:'SDN',category:'Alimentação',label:'Insegurança alimentar aguda · IPC fase 3+',value:19500000,unit:'pessoas',percent:41,qualifier:'Fevereiro a maio de 2026 · estimativa nacional',source:'IPC',url:'https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163315/',note:'Estimativa aproximada para fevereiro a maio de 2026. As projeções posteriores do mesmo relatório têm cobertura geográfica parcial.'},
@@ -77,39 +160,53 @@
     }
     return [...groups.values()].map(values=>[...values.values()].sort((a,b)=>a.year-b.year));
   }
+  function percentageScope(row){
+    const world=normalize(row.region)==='mundo';
+    const scope=world?'':' · '+row.region;
+    if(row.territory_code==='SDN'&&row.source==='IPC')return 'da população do Sudão · fev.–mai. de 2026';
+    if(row.territory_code==='TCD'&&row.source.includes('Cadre Harmonisé'))return 'da população analisada no Chade · jun.–ago. de 2026';
+    if(row.unit.startsWith('% dos domicílios'))return 'dos domicílios particulares permanentes'+scope+' · '+row.year;
+    if(row.unit.startsWith('% da faixa etária'))return 'das crianças em idade escolar primária'+scope+' · '+row.year;
+    return (world?'da população mundial':'da população · '+row.region)+' em '+row.year;
+  }
   function chart(items){
     const latest=items.at(-1);
     const fig=make('figure','','atlas-indicator-chart');
-    const annual=items.filter(r=>r.year>=2020&&r.year<=2026);
-    if(annual.length>1&&annual.every(r=>r.value>=0)){
+    const finite=items.filter(r=>Number.isFinite(r.value)&&r.value>=0);
+    const share=latest.percent??(latest.unit?.startsWith('%')?latest.value:null);
+    const validShare=typeof share==='number'&&share>=0&&share<=100;
+    const annual=finite.filter(r=>r.year>=2020&&r.year<=2026);
+    if(annual.length>1||(!validShare&&finite.length>0)){
       const bars=make('div','','atlas-chart-bars');
+      const years=annual.length>1?Array.from({length:7},(_,i)=>2020+i):finite.map(r=>r.year);
+      const points=years.map(year=>[year,finite.find(r=>r.year===year)]);
+      const max=Math.max(1,...points.map(([,r])=>r?.value||0));
+      const summary=points.map(([year,r])=>year+' '+(r?[r.qualifier,format.format(r.value)].filter(Boolean).join(' '):'sem dados')).join(', ');
       bars.setAttribute('role','img');
-      bars.setAttribute('aria-label','Série anual: '+Array.from({length:7},(_,i)=>{
-        const yr=2020+i, match=annual.find(r=>r.year===yr);
-        return yr+' '+(match?format.format(match.value):'sem dados');
-      }).join(', ')+'. Unidade: '+latest.unit);
-      const max=Math.max(1,...annual.map(r=>r.value));
-      for(let yr=2020;yr<=2026;yr++){
-        const item=annual.find(r=>r.year===yr);
+      bars.setAttribute('aria-label',latest.label+' · '+latest.region+' · '+summary+'. Unidade: '+latest.unit+'. Fonte: '+latest.source);
+      for(const [year,item] of points){
         const col=make('div','','atlas-chart-col');
         const bar=make('span','',item?'atlas-chart-bar':'atlas-chart-bar is-missing');
-        bar.style.setProperty('--bar-size',(item?item.value/max*100:0)+'%');
-        col.title=yr+' · '+(item?format.format(item.value)+' '+latest.unit:'sem dados');
-        col.append(bar,make('span',String(yr).slice(2)));
+        const size=item?item.value/max*100:0;
+        bar.style.setProperty('--bar-size',size+'%');
+        if(item?.value===0)bar.classList.add('is-zero');
+        col.title=year+' · '+(item?[item.qualifier,format.format(item.value),item.unit].filter(Boolean).join(' '):'sem dados');
+        col.append(bar,make('span',String(year).slice(2)));
         bars.append(col);
       }
-      fig.append(bars,make('figcaption','2020–2026 · hachurado: sem dados nesta série'));
-      return fig;
+      const time=annual.length>1?'2020–2026 · hachurado: sem dados nesta série':latest.year+' · observação disponível';
+      fig.append(bars,make('figcaption',[latest.region,latest.unit,time,latest.source].filter(Boolean).join(' · ')));
     }
-    const share=latest.percent??(latest.unit.startsWith('%')?latest.value:null);
-    if(typeof share==='number'&&share>=0&&share<=100){
+    if(validShare){
       const ring=make('div','','atlas-chart-ring');
+      const label=format.format(share)+'% '+percentageScope(latest);
+      ring.setAttribute('role','img');
+      ring.setAttribute('aria-label',label);
       ring.style.setProperty('--slice',share+'%');
       ring.append(make('span',format.format(share)+'%'));
-      fig.append(ring,make('figcaption','Proporção na população de referência'));
-      return fig;
+      fig.append(ring,make('figcaption',label+' · '+latest.source));
     }
-    return null;
+    return fig.childElementCount?fig:null;
   }
   function indicatorCard(items, compact=false){
     const row=items.at(-1);
@@ -186,7 +283,8 @@
   }
   function refresh(){
     const unique=new Map();
-    for(const row of [...external,...[...series.values()].flat(),...baseline]){
+    const revisedDisplacementYears = new Set(displacement.map(r=>r.year));
+    for(const row of [...external,...[...series.values()].flat(),...baseline.filter(r=>!(r.region==='Mundo'&&r.label==='Pessoas deslocadas à força'&&revisedDisplacementYears.has(r.year)))]){
       const key=JSON.stringify([row.territory_code||row.territory_id||row.region,row.year,row.label,row.unit,row.source,row.qualifier||'']);
       const old=unique.get(key);
       if(!old||(Date.parse(row.collected_at)||0)>=(Date.parse(old.collected_at)||0))unique.set(key,row);
