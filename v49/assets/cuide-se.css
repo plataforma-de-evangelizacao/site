@@ -1,0 +1,7 @@
+.care-main{padding-block:clamp(40px,5vw,76px) 64px}
+.care-main .care-heading{border-bottom:1px solid var(--p-line);padding-bottom:32px}
+.care-main .care-heading h1{font-size:clamp(2.5rem,4.2vw,4rem);line-height:1.1;margin:12px 0 0}
+.care-main .care-card{background:var(--p-surface);border-color:var(--p-line);backdrop-filter:blur(8px)}
+.care-main .care-card h2{font-size:1.125rem;font-weight:600;line-height:1.45;margin:20px 0 13px;letter-spacing:-.2px}
+.care-main .care-card>p{margin-bottom:0}
+.care-main .care-footnote{margin-bottom:12px}
