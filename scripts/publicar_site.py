@@ -16,7 +16,7 @@ aurora = output / "v49"
 if (aurora / "index.html").is_file():
     shutil.copy2(output / "index.html", output / "legacy.html")
     pages = ["index.html", "biblioteca.html", "projetos.html",
-             "atlas-solidario.html", "participar.html", "aluno.html", "aluno-acesso.html"]
+             "atlas-solidario.html", "participar.html", "aluno.html", "aluno-acesso.html", "cuide-se.html"]
     for source in (aurora / "assets").rglob("*"):
         if not source.is_file() or source.name.startswith("admin-preview"):
             continue
